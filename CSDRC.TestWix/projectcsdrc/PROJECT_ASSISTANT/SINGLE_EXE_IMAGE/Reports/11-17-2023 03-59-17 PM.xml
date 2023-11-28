@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="C:\Program Files (x86)\InstallShield\2020\Support\0409\buildreport.xsl"?>
+<BuildReport ProductName="CSD Reusable Components" ProductVersion="2.1.4" Built="11-17-2023 03-59-17 PM" Config="PROJECT_ASSISTANT" Media="SINGLE_EXE_IMAGE" Uncompressed="0.00 MB">
+  <Features>
+    <Feature Title="##ID_STRING51##" Description="##ID_STRING16##">BioHand</Feature>
+    <Feature Title="##ID_STRING50##" Description="##ID_STRING20##">BioWin</Feature>
+    <Feature Title="##IDS_FEATURE_DISPLAY_NAME1##" Description="##IDS_FEATURE_DISPLAY_DESCRIPTION1##">Biometrics</Feature>
+    <Feature Title="##ID_STRING52##" Description="##ID_STRING21##">XCanonCam</Feature>
+    <Feature Title="##IDS_FEATURE_DISPLAY_NAME2##" Description="##IDS_FEATURE_DISPLAY_DESCRIPTION2##">XScan</Feature>
+  </Features>
+  <Components>
+    <Component x64="32" KeyPath="FL_atl71_dll_5_____X86.3643236F_FC70_11D3_A536_0090278A1BB8">ATL71_ANSI_Customer_Redist_____X86.3643236F_FC70_11D3_A536_0090278A1BB8</Component>
+    <Component x64="32" KeyPath="FL_atl71_dll_4_____X86.3643236F_FC70_11D3_A536_0090278A1BB8">ATL71_Customer_Redist_____X86.3643236F_FC70_11D3_A536_0090278A1BB8</Component>
+    <Component x64="32" KeyPath="axbar32.dll" Comment="This component consists of a Windows dynamic link library.">AXBAR32.DLL</Component>
+    <Component x64="32" KeyPath="activexctrlhelper.dll">ActiveXCtrlHelper.dll</Component>
+    <Component x64="32" KeyPath="xscandefaults.ini" Comment="This component consists of files not belonging to other components.">AllOtherFiles</Component>
+    <Component x64="32" KeyPath="xcanoncam.reg" Comment="This component consists of files not belonging to other components.">AllOtherFiles1</Component>
+    <Component x64="32">AllOtherFiles2</Component>
+    <Component x64="32">AllOtherFiles5</Component>
+    <Component x64="32">AllOtherFiles6</Component>
+    <Component x64="32" KeyPath="axinterop.biohand3.dll">AxInterop.Biohand3.dll</Component>
+    <Component x64="32" KeyPath="axinterop.xcanoncamlib.dll">AxInterop.XCANONCAMLib.dll</Component>
+    <Component x64="32" KeyPath="axinterop.ximagedisplib.dll">AxInterop.XIMAGEDISPLib.dll</Component>
+    <Component x64="32" KeyPath="axinterop.xscanlib.dll">AxInterop.XSCANLib.dll</Component>
+    <Component x64="32" KeyPath="biowin.ocx">BioWin.ocx</Component>
+    <Component x64="32" KeyPath="biowin2.ocx" Comment="This component consists of a custom control.">BioWin2.ocx</Component>
+    <Component x64="32" KeyPath="biowin3.dll">BioWin3.dll</Component>
+    <Component x64="32" KeyPath="biowin3.ocx" Comment="This component consists of a custom control.">BioWin3.ocx</Component>
+    <Component x64="32" KeyPath="biohand.ocx">Biohand.ocx</Component>
+    <Component x64="32" KeyPath="biohand2.ocx" Comment="This component consists of a custom control.">Biohand2.ocx</Component>
+    <Component x64="32" KeyPath="biohand3.ocx" Comment="This component consists of a custom control.">Biohand3.ocx</Component>
+    <Component x64="32" KeyPath="biowinactivex.dll">BiowinActiveX.dll</Component>
+    <Component x64="32" KeyPath="cdproc.exe">CDPROC.exe</Component>
+    <Component x64="32" KeyPath="cdprocmn.exe">CDPROCMN.exe</Component>
+    <Component x64="32" KeyPath="cdptpcls.dll">CDPTPCLS.dll</Component>
+    <Component x64="32" KeyPath="cdptpclt.dll">CDPTPCLT.dll</Component>
+    <Component x64="32" KeyPath="cdrapcls.dll">CDRAPCLS.dll</Component>
+    <Component x64="32" KeyPath="cdsdk.dll">CDSDK.dll</Component>
+    <Component x64="32" KeyPath="cms.dll" Comment="This component consists of a Windows dynamic link library.">CMS.dll</Component>
+    <Component x64="32" KeyPath="FL_msvcr71_dll_3_____X86.3643236F_FC70_11D3_A536_0090278A1BB8">CRT71_Customer_Redist_____X86.3643236F_FC70_11D3_A536_0090278A1BB8</Component>
+    <Component x64="32" KeyPath="csdrcutil.exe">CSDRCUtil.exe</Component>
+    <Component x64="32" KeyPath="connectionmanagerencrypter.d">ConnectionManagerEncrypter.dll</Component>
+    <Component x64="32" KeyPath="dppdll.dll" Comment="This component consists of a Windows dynamic link library.">DPPDLL.dll</Component>
+    <Component x64="32" KeyPath="dpplibcom.dll" Comment="This component consists of a Windows dynamic link library.">DPPLibCom.dll</Component>
+    <Component x64="32" KeyPath="dpprsc.dll" Comment="This component consists of a Windows dynamic link library.">DPPRSC.dll</Component>
+    <Component x64="32" KeyPath="edsdk.dll" Comment="This component consists of a Windows dynamic link library.">EDSDK.dll</Component>
+    <Component x64="32" KeyPath="ewatch.exe">EWatch.exe</Component>
+    <Component x64="32" KeyPath="edsimage.dll" Comment="This component consists of a Windows dynamic link library.">EdsImage.dll</Component>
+    <Component x64="32" KeyPath="fqui.dll">FQUI.dll</Component>
+    <Component x64="32" KeyPath="fqui.ocx">FQUI.ocx</Component>
+    <Component x64="32" KeyPath="fquics.dll">FQUICS.dll</Component>
+    <Component x64="32" KeyPath="fquics.dll1">FQUICS.dll1</Component>
+    <Component x64="32" KeyPath="faceitlocate.dll">FaceItLocate.dll</Component>
+    <Component x64="32" KeyPath="faceitmedia.dll">FaceItMedia.dll</Component>
+    <Component x64="32" KeyPath="facialqual.dll">FacialQual.dll</Component>
+    <Component x64="32" KeyPath="facialqual.dll1">FacialQual.dll1</Component>
+    <Component x64="32" KeyPath="ieshims.dll">IEShims.dll</Component>
+    <Component x64="32">ISRegistryComponent</Component>
+    <Component x64="32" Comment="This component consists of a Windows dynamic link library.">IWrap.dll</Component>
+    <Component x64="32" KeyPath="iwrap.dll">IWrap.dll1</Component>
+    <Component x64="32" KeyPath="interop.biohand3.dll">Interop.Biohand3.dll</Component>
+    <Component x64="32" KeyPath="interop.xcanoncamlib.dll">Interop.XCANONCAMLib.dll</Component>
+    <Component x64="32" KeyPath="interop.ximagedisplib.dll">Interop.XIMAGEDISPLib.dll</Component>
+    <Component x64="32" KeyPath="interop.xscanlib.dll">Interop.XSCANLib.dll</Component>
+    <Component x64="32" KeyPath="leadtoolswrapper.dll">LeadToolsWrapper.dll</Component>
+    <Component x64="32" KeyPath="lfcmpu.dll">Lfcmpu.dll</Component>
+    <Component x64="32" KeyPath="lffaxu.dll">Lffaxu.dll</Component>
+    <Component x64="32" KeyPath="lfpngu.dll">Lfpngu.dll</Component>
+    <Component x64="32" KeyPath="lftifu.dll">Lftifu.dll</Component>
+    <Component x64="32" KeyPath="ltdisu.dll">Ltdisu.dll</Component>
+    <Component x64="32" KeyPath="ltfilu.dll">Ltfilu.dll</Component>
+    <Component x64="32" KeyPath="ltimgclru.dll">Ltimgclru.dll</Component>
+    <Component x64="32" KeyPath="ltimgcoru.dll">Ltimgcoru.dll</Component>
+    <Component x64="32" KeyPath="ltimgsfxu.dll">Ltimgsfxu.dll</Component>
+    <Component x64="32" KeyPath="ltimgutlu.dll">Ltimgutlu.dll</Component>
+    <Component x64="32" KeyPath="ltkrnu.dll">Ltkrnu.dll</Component>
+    <Component x64="32" KeyPath="ltwvcu.dll">Ltwvcu.dll</Component>
+    <Component x64="32" KeyPath="FL_mfc71_dll_1_____X86.3643236F_FC70_11D3_A536_0090278A1BB8">MFC71_Customer_Redist_____X86.3643236F_FC70_11D3_A536_0090278A1BB8</Component>
+    <Component x64="32" KeyPath="FL_mfc71u_dll_1_____X86.3643236F_FC70_11D3_A536_0090278A1BB8">MFCu71_Customer_Redist_____X86.3643236F_FC70_11D3_A536_0090278A1BB8</Component>
+    <Component x64="32" KeyPath="mlib.dll" Comment="This component consists of a Windows dynamic link library.">MLib.dll</Component>
+    <Component x64="32">MSCOMCT2.OCX</Component>
+    <Component x64="32" KeyPath="mscomct2.ocx">MSCOMCT2.OCX1</Component>
+    <Component x64="32">MSCOMCTL.OCX</Component>
+    <Component x64="32" KeyPath="mscomctl.ocx">MSCOMCTL.OCX1</Component>
+    <Component x64="32" KeyPath="prlib.dll" Comment="This component consists of a Windows dynamic link library.">PRLIB.dll</Component>
+    <Component x64="32" KeyPath="prsdk.dll" Comment="This component consists of a Windows dynamic link library.">PRSDK.dll</Component>
+    <Component x64="32" KeyPath="FL_msvcp71_dll_2_____X86.3643236F_FC70_11D3_A536_0090278A1BB8">STL71_Customer_Redist_____X86.3643236F_FC70_11D3_A536_0090278A1BB8</Component>
+    <Component x64="32" KeyPath="scanprocessclient.dll">ScanProcessClient.dll</Component>
+    <Component x64="32" KeyPath="scanprocessclient.dll1">ScanProcessClient.dll1</Component>
+    <Component x64="32" KeyPath="ucs32p.dll" Comment="This component consists of a Windows dynamic link library.">Ucs32P.dll</Component>
+    <Component x64="32" KeyPath="vic32.dll">VIC32.DLL</Component>
+    <Component x64="32" KeyPath="xcanoncam.ocx">XCanonCam.ocx</Component>
+    <Component x64="32" KeyPath="xcanoncam2.ocx">XCanonCam2.ocx</Component>
+    <Component x64="32" KeyPath="xcanoncamui.ocx">XCanonCamUI.ocx</Component>
+    <Component x64="32" KeyPath="xcanoncamui2.dll">XCanonCamUI2.dll</Component>
+    <Component x64="32" KeyPath="xcanoncamui2.ocx">XCanonCamUI2.ocx</Component>
+    <Component x64="32" KeyPath="ximagedisp.ocx">XImageDisp.ocx</Component>
+    <Component x64="32" KeyPath="xscan.ocx">XScan.ocx</Component>
+    <Component x64="32" KeyPath="xscanui.ocx" Comment="This component consists of a custom control.">XScanUI.ocx</Component>
+    <Component x64="32" KeyPath="xscanuifq.ocx">XScanUIFQ.ocx</Component>
+    <Component x64="32" KeyPath="xscanuiprocess.exe">XScanUIProcess.exe</Component>
+    <Component x64="32" KeyPath="cddcd.dll">cdDcd.dll</Component>
+    <Component x64="32" KeyPath="cddvlp.dll">cdDvlp.dll</Component>
+    <Component x64="32" KeyPath="cdparse.dll">cdParse.dll</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.100.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.100.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.100.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.100.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.100.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.100.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.100.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.100.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.101.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.101.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.101.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.101.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.101.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.101.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.101.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.101.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.103.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.103.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.103.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.103.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.103.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.103.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.103.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.103.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.104.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.104.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.104.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.104.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.104.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.104.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.104.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.104.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.193.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.193.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.193.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.193.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.193.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.193.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.193.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.193.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.762.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.762.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.762.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.762.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.762.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.762.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.762.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.762.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.89.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.89.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.89.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.89.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.89.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.89.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.89.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.89.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.93.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.93.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.93.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.93.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.93.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.93.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.93.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.93.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.94.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.94.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.94.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.94.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.94.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.94.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.94.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.94.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.95.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.95.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.95.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.95.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.95.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.95.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.95.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.95.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.96.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.96.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.96.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.96.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.96.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.96.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.96.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.96.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.97.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.97.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.97.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.97.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.97.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.97.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.97.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.97.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.98.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.98.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.98.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.98.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.98.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.98.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.98.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.98.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.99.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.99.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.99.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.99.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.99.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.99.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.8.0.50727.99.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.8.0.50727.99.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_manifest.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_manifest.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_manifest.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.100.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.100.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.100.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.100.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.101.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.101.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.101.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.101.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.103.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.103.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.103.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.103.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.104.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.104.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.104.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.104.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.193.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.193.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.193.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.193.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.762.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.762.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.762.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.762.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.89.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.89.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.89.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.89.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.93.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.93.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.93.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.93.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.94.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.94.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.94.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.94.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.95.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.95.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.95.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.95.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.96.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.96.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.96.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.96.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.97.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.97.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.97.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.97.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.98.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.98.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.98.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.98.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.99.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.99.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.8.0.50727.99.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.8.0.50727.99.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">downlevel_payload.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_downlevel_payload.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">downlevel_payload.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="gdiplus_dll_2_____X86.3643236F_FC70_11D3_A536_0090278A1BB8">gdiPlus_Customer_Redist_____X86.3643236F_FC70_11D3_A536_0090278A1BB8</Component>
+    <Component x64="32" KeyPath="gpsvc.dll">gpsvc.dll</Component>
+    <Component x64="32" KeyPath="msstdfmt.dll">msstdfmt.dll</Component>
+    <Component x64="32" KeyPath="reg_nosxs.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">nosxs.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="reg_nosxs.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">nosxs.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="pscamdat.dll">psCamDat.dll</Component>
+    <Component x64="32" KeyPath="stdole.dll">stdole.dll</Component>
+    <Component x64="32" KeyPath="sysntfy.dll">sysntfy.dll</Component>
+    <Component x64="32" KeyPath="ul_manifest.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E">uplevel.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="ul_manifest.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E">uplevel.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="ul_msvcr80.dll.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E">uplevel.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E</Component>
+    <Component x64="32" KeyPath="ul_mfcm80.dll.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E">uplevel.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E</Component>
+  </Components>
+  <Prerequisites />
+  <MergeModules>
+    <MergeModule>VC User ATL71 RTL X86 ---</MergeModule>
+    <MergeModule>VC User CRT71 RTL X86 ---</MergeModule>
+    <MergeModule>VC User MFC71 RTL X86 ---</MergeModule>
+    <MergeModule>VC User STL71 RTL X86 ---</MergeModule>
+    <MergeModule>VC User gdiPlus RTL X86 ---</MergeModule>
+    <MergeModule>Visual C++ 8.0 CRT (x86) WinSXS MSM</MergeModule>
+    <MergeModule>Visual C++ 8.0 CRT.Policy (x86) WinSXS MSM</MergeModule>
+    <MergeModule>Visual C++ 8.0 MFC (x86) WinSXS MSM</MergeModule>
+    <MergeModule>Visual C++ 8.0 MFC.Policy (x86) WinSXS MSM</MergeModule>
+  </MergeModules>
+  <DynamicLinks />
+  <Files>
+    <File Destination="{BIOHAND} [ProgramFilesFolder]CSD Reusable Components\BioHand" Component="Biohand2.ocx" Modified="" Size="0" Version="">Biohand2.ocx</File>
+    <File Destination="{BIOHAND} [ProgramFilesFolder]CSD Reusable Components\BioHand" Component="Biohand3.ocx" Modified="" Size="0" Version="">Biohand3.ocx</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="CDPROC.exe" Modified="" Size="0" Version="">CDPROC.exe</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="CDPROCMN.exe" Modified="" Size="0" Version="">CDPROCMN.exe</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="CDPTPCLS.dll" Modified="" Size="0" Version="">CDPTPCLS.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="CDPTPCLT.dll" Modified="" Size="0" Version="">CDPTPCLT.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="CDRAPCLS.dll" Modified="" Size="0" Version="">CDRAPCLS.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="CDSDK.dll" Modified="" Size="0" Version="">CDSDK.dll</File>
+    <File Destination="[SystemFolder]" Component="ConnectionManagerEncrypter.dll" Modified="" Size="0" Version="">ConnectionManagerEncrypter.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="EWatch.exe" Modified="" Size="0" Version="">EWatch.exe</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="IWrap.dll1" Modified="" Size="0" Version="">IWrap.dll</File>
+    <File Destination="[SystemFolder]" Component="VIC32.DLL" Modified="" Size="0" Version="">VIC32.DLL</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="cdDcd.dll" Modified="" Size="0" Version="">cdDcd.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="cdDvlp.dll" Modified="" Size="0" Version="">cdDvlp.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="cdParse.dll" Modified="" Size="0" Version="">cdParse.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="psCamDat.dll" Modified="" Size="0" Version="">psCamDat.dll</File>
+    <File Destination="{BIOWIN} [ProgramFilesFolder]CSD Reusable Components\BioWin" Component="BioWin2.ocx" Modified="" Size="0" Version="">BioWin2.ocx</File>
+    <File Destination="{BIOWIN} [ProgramFilesFolder]CSD Reusable Components\BioWin" Component="BioWin3.ocx" Modified="" Size="0" Version="">BioWin3.ocx</File>
+    <File Destination="[SystemFolder]" Component="CRT71_Customer_Redist_____X86.3643236F_FC70_11D3_A536_0090278A1BB8" Modified="2/21/2003 4:42:22 AM" Size="348160" Version="7.10.3052.4">msvcr71.dll</File>
+    <File Destination="[SystemFolder]" Component="MFCu71_Customer_Redist_____X86.3643236F_FC70_11D3_A536_0090278A1BB8" Modified="3/18/2003 9:12:12 PM" Size="1047552" Version="7.10.3077.0">mfc71u.dll</File>
+    <File Destination="[SystemFolder]" Component="MFC71_Customer_Redist_____X86.3643236F_FC70_11D3_A536_0090278A1BB8" Modified="3/18/2003 9:20:00 PM" Size="1060864" Version="7.10.3077.0">mfc71.dll</File>
+    <File Destination="[ProgramFilesFolder]" Component="FQUI.ocx" Modified="" Size="0" Version="">FQUI.ocx</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="FaceItLocate.dll" Modified="" Size="0" Version="">FaceItLocate.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="FaceItMedia.dll" Modified="" Size="0" Version="">FaceItMedia.dll</File>
+    <File Destination="[ProgramFilesFolder]" Component="IEShims.dll" Modified="" Size="0" Version="">IEShims.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="XCanonCamUI.ocx" Modified="" Size="0" Version="">XCanonCamUI.ocx</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="XCanonCamUI2.ocx" Modified="" Size="0" Version="">XCanonCamUI2.ocx</File>
+    <File Destination="[ProgramFilesFolder]" Component="XScanUIFQ.ocx" Modified="" Size="0" Version="">XScanUIFQ.ocx</File>
+    <File Destination="[ProgramFilesFolder]" Component="gpsvc.dll" Modified="" Size="0" Version="">gpsvc.dll</File>
+    <File Destination="[ProgramFilesFolder]" Component="msstdfmt.dll" Modified="" Size="0" Version="">msstdfmt.dll</File>
+    <File Destination="[ProgramFilesFolder]" Component="sysntfy.dll" Modified="" Size="0" Version="">sysntfy.dll</File>
+    <File Destination="{payload_ul.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E} [WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E]winsxs\b2rg91xw.1p4" Component="uplevel.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E" Modified="12/1/2006 10:54:32 PM" Size="626688" Version="8.0.50727.762">msvcr80.dll</File>
+    <File Destination="{payload_ul.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E} [WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E]winsxs\b2rg91xw.1p4" Component="uplevel.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E" Modified="12/1/2006 10:54:32 PM" Size="479232" Version="8.0.50727.762">msvcm80.dll</File>
+    <File Destination="{WinSxsManifests.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E} [WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E]winsxs\Manifests" Component="downlevel_manifest.8.0.50727.762.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E" Modified="12/2/2006 6:23:00 AM" Size="1869" Version="">x86_Microsoft.VC80.CRT_1fc8b3b9a1e18e3b_8.0.50727.762_x-ww_6b128700.manifest</File>
+    <File Destination="{payload.8.0.50727.762.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E} [WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E]winsxs\92rg91xw.1p4" Component="downlevel_payload.8.0.50727.762.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E" Modified="12/1/2006 10:54:32 PM" Size="626688" Version="8.0.50727.762">msvcr80.dll</File>
+    <File Destination="{payload_ul.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E} [WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E]winsxs\b2rg91xw.1p4" Component="uplevel.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E" Modified="12/1/2006 10:54:34 PM" Size="548864" Version="8.0.50727.762">msvcp80.dll</File>
+    <File Destination="{payload_ul.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E} [WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E]winsxs\b2rg91xw.1p4" Component="uplevel.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E" Modified="12/2/2006 6:25:08 AM" Size="8335" Version="">x86_Microsoft.VC80.CRT_1fc8b3b9a1e18e3b_8.0.50727.762_x-ww_6b128700.cat</File>
+    <File Destination="{payload_ul.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E} [WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E]winsxs\b2rg91xw.1p4" Component="uplevel.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E" Modified="12/2/2006 6:23:00 AM" Size="1869" Version="">x86_Microsoft.VC80.CRT_1fc8b3b9a1e18e3b_8.0.50727.762_x-ww_6b128700.manifest</File>
+    <File Destination="{WinSxsManifests.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E} [WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E]winsxs\Manifests" Component="downlevel_manifest.8.0.50727.762.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E" Modified="12/2/2006 6:25:08 AM" Size="8335" Version="">x86_Microsoft.VC80.CRT_1fc8b3b9a1e18e3b_8.0.50727.762_x-ww_6b128700.cat</File>
+    <File Destination="{payload.8.0.50727.762.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E} [WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E]winsxs\92rg91xw.1p4" Component="downlevel_payload.8.0.50727.762.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E" Modified="12/1/2006 10:54:32 PM" Size="479232" Version="8.0.50727.762">msvcm80.dll</File>
+    <File Destination="{payload.8.0.50727.762.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E} [WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E]winsxs\92rg91xw.1p4" Component="downlevel_payload.8.0.50727.762.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E" Modified="12/1/2006 10:54:34 PM" Size="548864" Version="8.0.50727.762">msvcp80.dll</File>
+    <File Destination="{SystemFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E} [WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E]system32" Component="nosxs.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E" Modified="12/1/2006 10:54:32 PM" Size="626688" Version="8.0.50727.762">msvcr80.dll</File>
+    <File Destination="{SystemFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E} [WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E]system32" Component="nosxs.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E" Modified="12/1/2006 10:54:34 PM" Size="548864" Version="8.0.50727.762">msvcp80.dll</File>
+    <File Destination="{SystemFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E} [WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E]system32" Component="nosxs.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E" Modified="12/1/2006 10:54:32 PM" Size="479232" Version="8.0.50727.762">msvcm80.dll</File>
+    <File Destination="{payload_ul.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E} [WindowsFolder.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E]winsxs\vxgs54we.kj4" Component="uplevel.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E" Modified="12/1/2006 10:54:36 PM" Size="800" Version="">8.0.50727.762.policy</File>
+    <File Destination="{policydir.8.0.50727.762.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E} [WindowsFolder.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E]winsxs\Policies\uxgs54we.kj4" Component="downlevel_manifest.8.0.50727.762.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E" Modified="12/2/2006 6:25:14 AM" Size="8355" Version="">8.0.50727.762.cat</File>
+    <File Destination="{policydir.8.0.50727.762.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E} [WindowsFolder.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E]winsxs\Policies\uxgs54we.kj4" Component="downlevel_manifest.8.0.50727.762.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E" Modified="12/1/2006 10:54:36 PM" Size="800" Version="">8.0.50727.762.policy</File>
+    <File Destination="{payload_ul.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E} [WindowsFolder.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E]winsxs\vxgs54we.kj4" Component="uplevel.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E" Modified="12/2/2006 6:25:14 AM" Size="8355" Version="">8.0.50727.762.cat</File>
+    <File Destination="{payload_ul.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]winsxs\7z1v718o.6n8" Component="uplevel.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 6:23:00 AM" Size="2371" Version="">x86_Microsoft.VC80.MFC_1fc8b3b9a1e18e3b_8.0.50727.762_x-ww_3bf8fa05.manifest</File>
+    <File Destination="{payload_ul.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]winsxs\7z1v718o.6n8" Component="uplevel.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 12:25:58 AM" Size="69632" Version="8.0.50727.762">mfcm80.dll</File>
+    <File Destination="{payload.8.0.50727.762.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]winsxs\5z1v718o.6n8" Component="downlevel_payload.8.0.50727.762.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 12:25:56 AM" Size="1093120" Version="8.0.50727.762">mfc80u.dll</File>
+    <File Destination="{WinSxsManifests.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]winsxs\Manifests" Component="downlevel_manifest.8.0.50727.762.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 6:25:08 AM" Size="8335" Version="">x86_Microsoft.VC80.MFC_1fc8b3b9a1e18e3b_8.0.50727.762_x-ww_3bf8fa05.cat</File>
+    <File Destination="{payload.8.0.50727.762.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]winsxs\5z1v718o.6n8" Component="downlevel_payload.8.0.50727.762.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 12:25:58 AM" Size="69632" Version="8.0.50727.762">mfcm80.dll</File>
+    <File Destination="{payload_ul.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]winsxs\7z1v718o.6n8" Component="uplevel.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 6:25:08 AM" Size="8335" Version="">x86_Microsoft.VC80.MFC_1fc8b3b9a1e18e3b_8.0.50727.762_x-ww_3bf8fa05.cat</File>
+    <File Destination="{WinSxsManifests.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]winsxs\Manifests" Component="downlevel_manifest.8.0.50727.762.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 6:23:00 AM" Size="2371" Version="">x86_Microsoft.VC80.MFC_1fc8b3b9a1e18e3b_8.0.50727.762_x-ww_3bf8fa05.manifest</File>
+    <File Destination="{payload.8.0.50727.762.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]winsxs\5z1v718o.6n8" Component="downlevel_payload.8.0.50727.762.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 12:26:00 AM" Size="57856" Version="8.0.50727.762">mfcm80u.dll</File>
+    <File Destination="{payload_ul.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]winsxs\7z1v718o.6n8" Component="uplevel.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 12:26:00 AM" Size="57856" Version="8.0.50727.762">mfcm80u.dll</File>
+    <File Destination="{payload_ul.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]winsxs\7z1v718o.6n8" Component="uplevel.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 12:25:52 AM" Size="1101824" Version="8.0.50727.762">mfc80.dll</File>
+    <File Destination="{payload.8.0.50727.762.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]winsxs\5z1v718o.6n8" Component="downlevel_payload.8.0.50727.762.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 12:25:52 AM" Size="1101824" Version="8.0.50727.762">mfc80.dll</File>
+    <File Destination="{payload_ul.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]winsxs\7z1v718o.6n8" Component="uplevel.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 12:25:56 AM" Size="1093120" Version="8.0.50727.762">mfc80u.dll</File>
+    <File Destination="{SystemFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]system32" Component="nosxs.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 12:25:58 AM" Size="69632" Version="8.0.50727.762">mfcm80.dll</File>
+    <File Destination="{SystemFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]system32" Component="nosxs.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 12:25:56 AM" Size="1093120" Version="8.0.50727.762">mfc80u.dll</File>
+    <File Destination="{SystemFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]system32" Component="nosxs.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 12:25:52 AM" Size="1101824" Version="8.0.50727.762">mfc80.dll</File>
+    <File Destination="{SystemFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E} [WindowsFolder.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E]system32" Component="nosxs.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E" Modified="12/2/2006 12:26:00 AM" Size="57856" Version="8.0.50727.762">mfcm80u.dll</File>
+    <File Destination="{payload_ul.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E} [WindowsFolder.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E]winsxs\v1sw1o0k.9hi" Component="uplevel.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E" Modified="12/2/2006 12:26:02 AM" Size="800" Version="">8.0.50727.762.policy</File>
+    <File Destination="{policydir.8.0.50727.762.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E} [WindowsFolder.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E]winsxs\Policies\u1sw1o0k.9hi" Component="downlevel_manifest.8.0.50727.762.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E" Modified="12/2/2006 6:24:58 AM" Size="8355" Version="">8.0.50727.762.cat</File>
+    <File Destination="{policydir.8.0.50727.762.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E} [WindowsFolder.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E]winsxs\Policies\u1sw1o0k.9hi" Component="downlevel_manifest.8.0.50727.762.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E" Modified="12/2/2006 12:26:02 AM" Size="800" Version="">8.0.50727.762.policy</File>
+    <File Destination="{payload_ul.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E} [WindowsFolder.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E]winsxs\v1sw1o0k.9hi" Component="uplevel.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E" Modified="12/2/2006 6:24:58 AM" Size="8355" Version="">8.0.50727.762.cat</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="AllOtherFiles1" Modified="" Size="0" Version="">XCanonCam.reg</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="DPPDLL.dll" Modified="" Size="0" Version="">DPPDLL.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="DPPLibCom.dll" Modified="" Size="0" Version="">DPPLibCom.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="DPPRSC.dll" Modified="" Size="0" Version="">DPPRSC.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="EDSDK.dll" Modified="" Size="0" Version="">EDSDK.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="EdsImage.dll" Modified="" Size="0" Version="">EdsImage.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="MLib.dll" Modified="" Size="0" Version="">MLib.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="PRLIB.dll" Modified="" Size="0" Version="">PRLIB.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="PRSDK.dll" Modified="" Size="0" Version="">PRSDK.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="Ucs32P.dll" Modified="" Size="0" Version="">Ucs32P.dll</File>
+    <File Destination="[SystemFolder]" Component="STL71_Customer_Redist_____X86.3643236F_FC70_11D3_A536_0090278A1BB8" Modified="3/18/2003 8:14:52 PM" Size="499712" Version="7.10.3077.0">msvcp71.dll</File>
+    <File Destination="[VC_Configurable_gdiPlus.3643236F_FC70_11D3_A536_0090278A1BB8]" Component="gdiPlus_Customer_Redist_____X86.3643236F_FC70_11D3_A536_0090278A1BB8" Modified="2/26/2004 8:33:18 PM" Size="1638400" Version="5.1.3102.1355">gdiplus.dll</File>
+    <File Destination="[ProgramFilesFolder]" Component="AXBAR32.DLL" Modified="" Size="0" Version="">AXBAR32.DLL</File>
+    <File Destination="{ACTIVEX} [ProgramFilesFolder]CSD Reusable Components\BioWin\ActiveX" Component="ActiveXCtrlHelper.dll" Modified="" Size="0" Version="">ActiveXCtrlHelper.dll</File>
+    <File Destination="[ProgramFilesFolder]" Component="AllOtherFiles" Modified="" Size="0" Version="">XScanDefaults.ini</File>
+    <File Destination="[ProgramFilesFolder]" Component="AllOtherFiles" Modified="" Size="0" Version="">309xprof.icm</File>
+    <File Destination="[ProgramFilesFolder]" Component="AllOtherFiles" Modified="" Size="0" Version="">4220prof.icm</File>
+    <File Destination="[ProgramFilesFolder]" Component="AllOtherFiles" Modified="" Size="0" Version="">4340prof.icm</File>
+    <File Destination="[ProgramFilesFolder]" Component="AllOtherFiles" Modified="" Size="0" Version="">acs.icm</File>
+    <File Destination="[ProgramFilesFolder]" Component="AllOtherFiles" Modified="" Size="0" Version="">ELGProfile.icm</File>
+    <File Destination="[ProgramFilesFolder]" Component="AllOtherFiles" Modified="" Size="0" Version="">sRGB Color Space Profile.icm</File>
+    <File Destination="[ProgramFilesFolder]" Component="AllOtherFiles" Modified="" Size="0" Version="">XScan.ini</File>
+    <File Destination="[ProgramFilesFolder]" Component="AllOtherFiles" Modified="" Size="0" Version="">XScanACSPlus.ini</File>
+    <File Destination="[SystemFolder]" Component="AllOtherFiles2" Modified="" Size="0" Version="">LEADTOOLS.LIC</File>
+    <File Destination="{SCANPROCESS} [ProgramFilesFolder]CSD_Scan\ScanProcess" Component="AllOtherFiles6" Modified="" Size="0" Version="">XScanUIProcess.exe.config</File>
+    <File Destination="{ACTIVEX} [ProgramFilesFolder]CSD Reusable Components\BioWin\ActiveX" Component="AxInterop.Biohand3.dll" Modified="" Size="0" Version="">AxInterop.Biohand3.dll</File>
+    <File Destination="{ACTIVEX} [ProgramFilesFolder]CSD Reusable Components\BioWin\ActiveX" Component="AxInterop.XCANONCAMLib.dll" Modified="" Size="0" Version="">AxInterop.XCANONCAMLib.dll</File>
+    <File Destination="{ACTIVEX} [ProgramFilesFolder]CSD Reusable Components\BioWin\ActiveX" Component="AxInterop.XIMAGEDISPLib.dll" Modified="" Size="0" Version="">AxInterop.XIMAGEDISPLib.dll</File>
+    <File Destination="{SCANPROCESS} [ProgramFilesFolder]CSD_Scan\ScanProcess" Component="AxInterop.XSCANLib.dll" Modified="" Size="0" Version="">AxInterop.XSCANLib.dll</File>
+    <File Destination="{BIOWIN} [ProgramFilesFolder]CSD Reusable Components\BioWin" Component="BioWin.ocx" Modified="" Size="0" Version="">BioWin.ocx</File>
+    <File Destination="{ACTIVEX} [ProgramFilesFolder]CSD Reusable Components\BioWin\ActiveX" Component="BioWin3.dll" Modified="" Size="0" Version="">BioWin3.dll</File>
+    <File Destination="{BIOHAND} [ProgramFilesFolder]CSD Reusable Components\BioHand" Component="Biohand.ocx" Modified="" Size="0" Version="">Biohand.ocx</File>
+    <File Destination="{ACTIVEX} [ProgramFilesFolder]CSD Reusable Components\BioWin\ActiveX" Component="BiowinActiveX.dll" Modified="" Size="0" Version="">BiowinActiveX.dll</File>
+    <File Destination="[ProgramFilesFolder]" Component="CMS.dll" Modified="" Size="0" Version="">CMS.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="CSDRCUtil.exe" Modified="" Size="0" Version="">CSDRCUtil.exe</File>
+    <File Destination="{SCANPROCESS} [ProgramFilesFolder]CSD_Scan\ScanProcess" Component="FQUI.dll" Modified="" Size="0" Version="">FQUI.dll</File>
+    <File Destination="{ACTIVEX} [ProgramFilesFolder]CSD Reusable Components\BioWin\ActiveX" Component="FQUICS.dll" Modified="" Size="0" Version="">FQUICS.dll</File>
+    <File Destination="{SCANPROCESS} [ProgramFilesFolder]CSD_Scan\ScanProcess" Component="FQUICS.dll1" Modified="" Size="0" Version="">FQUICS.dll</File>
+    <File Destination="{ACTIVEX} [ProgramFilesFolder]CSD Reusable Components\BioWin\ActiveX" Component="FacialQual.dll" Modified="" Size="0" Version="">FacialQual.dll</File>
+    <File Destination="{SCANPROCESS} [ProgramFilesFolder]CSD_Scan\ScanProcess" Component="FacialQual.dll1" Modified="" Size="0" Version="">FacialQual.dll</File>
+    <File Destination="{ACTIVEX} [ProgramFilesFolder]CSD Reusable Components\BioWin\ActiveX" Component="Interop.Biohand3.dll" Modified="" Size="0" Version="">Interop.Biohand3.dll</File>
+    <File Destination="{ACTIVEX} [ProgramFilesFolder]CSD Reusable Components\BioWin\ActiveX" Component="Interop.XCANONCAMLib.dll" Modified="" Size="0" Version="">Interop.XCANONCAMLib.dll</File>
+    <File Destination="{ACTIVEX} [ProgramFilesFolder]CSD Reusable Components\BioWin\ActiveX" Component="Interop.XIMAGEDISPLib.dll" Modified="" Size="0" Version="">Interop.XIMAGEDISPLib.dll</File>
+    <File Destination="{SCANPROCESS} [ProgramFilesFolder]CSD_Scan\ScanProcess" Component="Interop.XSCANLib.dll" Modified="" Size="0" Version="">Interop.XSCANLib.dll</File>
+    <File Destination="[SystemFolder]" Component="LeadToolsWrapper.dll" Modified="" Size="0" Version="">LeadToolsWrapper.dll</File>
+    <File Destination="[SystemFolder]" Component="Lfcmpu.dll" Modified="" Size="0" Version="">Lfcmpu.dll</File>
+    <File Destination="[SystemFolder]" Component="Lffaxu.dll" Modified="" Size="0" Version="">Lffaxu.dll</File>
+    <File Destination="[SystemFolder]" Component="Lfpngu.dll" Modified="" Size="0" Version="">Lfpngu.dll</File>
+    <File Destination="[SystemFolder]" Component="Lftifu.dll" Modified="" Size="0" Version="">Lftifu.dll</File>
+    <File Destination="[SystemFolder]" Component="Ltdisu.dll" Modified="" Size="0" Version="">Ltdisu.dll</File>
+    <File Destination="[SystemFolder]" Component="Ltfilu.dll" Modified="" Size="0" Version="">Ltfilu.dll</File>
+    <File Destination="[SystemFolder]" Component="Ltimgclru.dll" Modified="" Size="0" Version="">Ltimgclru.dll</File>
+    <File Destination="[SystemFolder]" Component="Ltimgcoru.dll" Modified="" Size="0" Version="">Ltimgcoru.dll</File>
+    <File Destination="[SystemFolder]" Component="Ltimgsfxu.dll" Modified="" Size="0" Version="">Ltimgsfxu.dll</File>
+    <File Destination="[SystemFolder]" Component="Ltimgutlu.dll" Modified="" Size="0" Version="">Ltimgutlu.dll</File>
+    <File Destination="[SystemFolder]" Component="Ltkrnu.dll" Modified="" Size="0" Version="">Ltkrnu.dll</File>
+    <File Destination="[SystemFolder]" Component="Ltwvcu.dll" Modified="" Size="0" Version="">Ltwvcu.dll</File>
+    <File Destination="[SystemFolder]" Component="MSCOMCT2.OCX1" Modified="" Size="0" Version="">MSCOMCT2.OCX</File>
+    <File Destination="[SystemFolder]" Component="MSCOMCTL.OCX1" Modified="" Size="0" Version="">MSCOMCTL.OCX</File>
+    <File Destination="{ACTIVEX} [ProgramFilesFolder]CSD Reusable Components\BioWin\ActiveX" Component="ScanProcessClient.dll" Modified="" Size="0" Version="">ScanProcessClient.dll</File>
+    <File Destination="{SCANPROCESS} [ProgramFilesFolder]CSD_Scan\ScanProcess" Component="ScanProcessClient.dll1" Modified="" Size="0" Version="">ScanProcessClient.dll</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="XCanonCam.ocx" Modified="" Size="0" Version="">XCanonCam.ocx</File>
+    <File Destination="{XCANONCAM} [ProgramFilesFolder]CSD Reusable Components\XCanonCam" Component="XCanonCam2.ocx" Modified="" Size="0" Version="">XCanonCam2.ocx</File>
+    <File Destination="{ACTIVEX} [ProgramFilesFolder]CSD Reusable Components\BioWin\ActiveX" Component="XCanonCamUI2.dll" Modified="" Size="0" Version="">XCanonCamUI2.dll</File>
+    <File Destination="{BIOWIN} [ProgramFilesFolder]CSD Reusable Components\BioWin" Component="XImageDisp.ocx" Modified="" Size="0" Version="">XImageDisp.ocx</File>
+    <File Destination="[ProgramFilesFolder]" Component="XScan.ocx" Modified="" Size="0" Version="">XScan.ocx</File>
+    <File Destination="[ProgramFilesFolder]" Component="XScanUI.ocx" Modified="" Size="0" Version="">XScanUI.ocx</File>
+    <File Destination="{SCANPROCESS} [ProgramFilesFolder]CSD_Scan\ScanProcess" Component="XScanUIProcess.exe" Modified="" Size="0" Version="">XScanUIProcess.exe</File>
+    <File Destination="{SCANPROCESS} [ProgramFilesFolder]CSD_Scan\ScanProcess" Component="stdole.dll" Modified="" Size="0" Version="">stdole.dll</File>
+    <File Destination="[SystemFolder]" Component="ATL71_Customer_Redist_____X86.3643236F_FC70_11D3_A536_0090278A1BB8" Modified="3/18/2003 7:05:50 PM" Size="89088" Version="7.10.3077.0">atl71.dll</File>
+    <File Destination="[SystemFolder]" Component="ATL71_ANSI_Customer_Redist_____X86.3643236F_FC70_11D3_A536_0090278A1BB8" Modified="3/18/2003 7:05:58 PM" Size="106496" Version="7.10.3077.0">atl71.dll</File>
+  </Files>
+</BuildReport>

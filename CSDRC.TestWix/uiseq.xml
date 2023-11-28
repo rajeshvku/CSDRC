@@ -1,0 +1,36 @@
+<UI>
+    <InstallUISequence>
+        <AppSearch Sequence="400" />
+        <CCPSearch Sequence="427" />
+        <CostFinalize Sequence="980" />
+        <CostInitialize Sequence="600" />
+        <ExecuteAction Sequence="1300" />
+        <FileCost Sequence="700" />
+        <FindRelatedProducts Sequence="425" />
+        <Custom Action="ISPreventDowngrade"
+                Sequence="450">&lt;![CDATA[ISFOUNDNEWERPRODUCTVERSION]]&gt;</Custom>
+        <Custom Action="ISSetAllUsers"
+                Sequence="10">&lt;![CDATA[Not Installed]]&gt;</Custom>
+        <InstallWelcome Sequence="1200" />
+        <IsolateComponents Sequence="800" />
+        <LaunchConditions Sequence="410" />
+        <MaintenanceWelcome Sequence="1213" />
+        <MigrateFeatureStates Sequence="990" />
+        <PatchWelcome Sequence="1000" />
+        <RMCCPSearch Sequence="430" />
+        <ResolveSource Sequence="970" />
+        <Custom Action="SetAllUsersProfileNT"
+                Sequence="950">&lt;![CDATA[VersionNT = 400]]&gt;</Custom>
+        <SetupCompleteError Sequence="-3" />
+        <SetupCompleteSuccess Sequence="-1" />
+        <SetupInitialization Sequence="420" />
+        <SetupInterrupted Sequence="-2" />
+        <SetupProgress Sequence="1240" />
+        <SetupResume Sequence="1215" />
+        <ValidateProductID Sequence="500" />
+        <Custom Action="setAllUsersProfile2K"
+                Sequence="960">&lt;![CDATA[VersionNT &gt;= 500]]&gt;</Custom>
+        <Custom Action="setUserProfileNT"
+                Sequence="900">&lt;![CDATA[VersionNT]]&gt;</Custom>
+    </InstallUISequence>
+</UI>

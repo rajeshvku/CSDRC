@@ -1,0 +1,12 @@
+<AdminUISequence>
+<AdminWelcome Sequence="1010"/>
+<CostFinalize Sequence="1000"/>
+<CostInitialize Sequence="800"/>
+<ExecuteAction Sequence="1300"/>
+<FileCost Sequence="900"/>
+<SetupCompleteError Sequence="-3"/>
+<SetupCompleteSuccess Sequence="-1"/>
+<SetupInitialization Sequence="50"/>
+<SetupInterrupted Sequence="-2"/>
+<SetupProgress Sequence="1020"/>
+</AdminUISequence>

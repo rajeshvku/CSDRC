@@ -1,0 +1,2 @@
+E:\Personal\CSDRC\Test.Wixtool\bin\Debug\en-us\CsdReusableComponents.msi
+E:\Personal\CSDRC\Test.Wixtool\bin\Debug\en-us\CsdReusableComponents.wixpdb

@@ -1,0 +1,18 @@
+<AdvtExecuteSequence>
+<CostFinalize Sequence="1000"/>
+<CostInitialize Sequence="800"/>
+<CreateShortcuts Sequence="4500"/>
+<InstallFinalize Sequence="6600"/>
+<InstallInitialize Sequence="1500"/>
+<InstallValidate Sequence="1400"/>
+<MsiPublishAssemblies Sequence="6250"/>
+<PublishComponents Sequence="6200"/>
+<PublishFeatures Sequence="6300"/>
+<PublishProduct Sequence="6400"/>
+<RegisterClassInfo Sequence="4600"/>
+<RegisterExtensionInfo Sequence="4700"/>
+<RegisterMIMEInfo Sequence="4900"/>
+<RegisterProgIdInfo Sequence="4800"/>
+<RegisterTypeLibraries Sequence="4910"/>
+<ScheduleReboot Sequence="6410"/>
+</AdvtExecuteSequence>

@@ -1,0 +1,11 @@
+<AdminExecuteSequence>
+<CostFinalize Sequence="900"/>
+<CostInitialize Sequence="5"/>
+<FileCost Sequence="800"/>
+<InstallAdminPackage Sequence="3900"/>
+<InstallFiles Sequence="4000"/>
+<InstallFinalize Sequence="6600"/>
+<InstallInitialize Sequence="1400"/>
+<InstallValidate Sequence="1000"/>
+<ScheduleReboot Sequence="4010"/>
+</AdminExecuteSequence>

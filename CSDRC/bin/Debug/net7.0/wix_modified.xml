@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <Component Id="iconFile1" Guid="ba5e077c-7b67-4480-952d-66e805cdd9f2">
+      <File Id="IconFile" Source="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\setupicon.ico" />
+    </Component>
+    <Component Guid="2d8a6375-715a-43e1-8cd8-8af4b339c8e2">
+      <File Id="axbar32.dll" Name="AXBAR32.DLL" Source="!(loc.XSCAN_FILES)\AXBAR32.DLL" />
+    </Component>
+    <Component Id="ActiveXCtrlHelper.dll" Guid="da85f2bb-6e94-4478-8a32-c832af2a1b1e" Directory="ACTIVEX">
+      <File Id="activexctrlhelper.dll" Name="ActiveXCtrlHelper.dll" Source="!(loc.BioWinActiveXRelease)\ActiveXCtrlHelper.dll" />
+    </Component>
+    <Component Guid="4deb5b1c-83c9-4b9d-bb39-baaf7fc6a2c8">
+      <File Id="_09xprof.icm" Name="309xprof.icm" Source="!(loc.XSCAN_FILES)\309xprof.icm" />
+      <File Id="_220prof.icm" Name="4220prof.icm" Source="!(loc.XSCAN_FILES)\4220prof.icm" />
+      <File Id="_340prof.icm" Name="4340prof.icm" Source="!(loc.XSCAN_FILES)\4340prof.icm" />
+      <File Id="acs.icm" Name="acs.icm" Source="!(loc.XSCAN_FILES)\acs.icm" />
+      <File Id="elgprofile.icm" Name="ELGProfile.icm" ShortName="ELGPRO~1.ICM" Source="!(loc.XSCAN_FILES)\ELGProfile.icm" />
+      <File Id="srgb_color_space_profile.icm" Name="sRGB Color Space Profile.icm" ShortName="SRGBCO~1.ICM" Source="!(loc.XSCAN_FILES)\sRGB Color Space Profile.icm" />
+      <File Id="xscan.ini" Name="XScan.ini" Source="!(loc.XSCAN_FILES)\XScan.ini" />
+      <File Id="xscanacsplus.ini" Name="XScanACSPlus.ini" Source="!(loc.SHARED_FILES)\XScanACSPlus.ini" />
+      <File Id="xscandefaults.ini" Name="XScanDefaults.ini" ShortName="XSCAND~1.INI" Source="!(loc.XSCAN_FILES)\XScanDefaults.ini" />
+    </Component>
+    <Component Guid="005b9350-49d4-468e-9d94-6c19d98a8ee9">
+      <File Id="xcanoncam.reg" Name="XCanonCam.reg" ShortName="XCANON~1.REG" Source="!(loc.XCANON2_FILES)\XCanonCam.reg" />
+    </Component>
+    <Component Id="AllOtherFiles2" Guid="b408b6ec-2d55-4499-9a23-f33820151447" Directory="SystemFolder">
+      <File Id="leadtools.lic" Name="LEADTOOLS.LIC" ShortName="LEADTO~1.LIC" Source="!(loc.SHARED_FILES)\LEADTOOLS.LIC" />
+    </Component>
+    <Component Id="AllOtherFiles5" Guid="307a1d75-ecd0-4fe8-b60c-d7dcc22e31e5" Directory="ACTIVEX">
+      <CreateFolder Directory="ACTIVEX" />
+    </Component>
+    <Component Id="AllOtherFiles6" Guid="b35e1309-16bf-42f2-848d-80abf2f6db37" Directory="SCANPROCESS">
+      <File Id="xscanuiprocess.exe.config" Name="XScanUIProcess.exe.config" Source="!(loc.ScanProcessRelease)\XScanUIProcess.exe.config" />
+    </Component>
+    <Component Id="AxInterop.Biohand3.dll" Guid="05a9c1a9-556d-43df-a0e4-815c41cc65a5" Directory="ACTIVEX">
+      <File Id="axinterop.biohand3.dll" Name="AxInterop.Biohand3.dll" Source="!(loc.BioWinActiveXRelease)\AxInterop.Biohand3.dll" />
+    </Component>
+    <Component Id="AxInterop.XCANONCAMLib.dll" Guid="fc7e2322-fc6a-48ed-a189-1198f5d56258" Directory="ACTIVEX">
+      <File Id="axinterop.xcanoncamlib.dll" Name="AxInterop.XCANONCAMLib.dll" Source="!(loc.BioWinActiveXRelease)\AxInterop.XCANONCAMLib.dll" />
+    </Component>
+    <Component Id="AxInterop.XIMAGEDISPLib.dll" Guid="c936ddb3-91eb-4a31-b94e-599bffbd5d9a" Directory="ACTIVEX">
+      <File Id="axinterop.ximagedisplib.dll" Name="AxInterop.XIMAGEDISPLib.dll" Source="!(loc.BioWinActiveXRelease)\AxInterop.XIMAGEDISPLib.dll" />
+    </Component>
+    <Component Id="AxInterop.XSCANLib.dll" Guid="5bf5cb2b-ac12-483f-85cd-abf697c88dba" Directory="SCANPROCESS">
+      <File Id="axinterop.xscanlib.dll" Name="AxInterop.XSCANLib.dll" Source="!(loc.ScanProcessRelease)\AxInterop.XSCANLib.dll" />
+    </Component>
+    <Component Id="BioWin.ocx" Guid="e8a5bad1-b0cc-459a-82fe-054f54c04fc2" Directory="BIOWIN">
+      <File Id="biowin.ocx" Name="BioWin.ocx" Source="!(loc.BIOWIN_FILES)\BioWin.ocx" />
+    </Component>
+    <Component Guid="833d9e40-a7a1-4f26-a22a-e52dfe53c856">
+      <File Id="biowin2.ocx" Name="BioWin2.ocx" Source="!(loc.BIOWIN2_FILES)\BioWin2.ocx" />
+    </Component>
+    <Component Id="BioWin3.dll" Guid="3c11ab3c-31b2-4d78-b916-22b1bf88e96a" Directory="ACTIVEX">
+      <File Id="biowin3.dll" Name="BioWin3.dll" Source="!(loc.BioWinActiveXRelease)\BioWin3.dll" />
+    </Component>
+    <Component Guid="f521e5cd-afce-4f83-945b-5eaa86445871">
+      <File Id="biowin3.ocx" Name="BioWin3.ocx" Source="!(loc.BIOWIN3_FILES)\BioWin3.ocx" />
+    </Component>
+    <Component Id="Biohand.ocx" Guid="77e85765-d396-48ab-b299-9e3052d178c7" Directory="BIOHAND">
+      <File Id="biohand.ocx" Name="Biohand.ocx" Source="!(loc.BIOHAND_FILES)\Biohand.ocx" />
+    </Component>
+    <Component Guid="c2435360-511a-4845-8cee-3926dedddd38">
+      <File Id="biohand2.ocx" Name="Biohand2.ocx" Source="!(loc.BIOHAND2_FILES)\Biohand2.ocx" />
+    </Component>
+    <Component Guid="38376b13-c1ca-4c54-a2c4-c952042d3b7e">
+      <File Id="biohand3.ocx" Name="Biohand3.ocx" Source="!(loc.BIOHAND3_FILES)\Biohand3.ocx" />
+    </Component>
+    <Component Id="BiowinActiveX.dll" Guid="6d116e34-943e-4d6b-af4b-ed69981ba419" Directory="ACTIVEX">
+      <File Id="biowinactivex.dll" Name="BiowinActiveX.dll" Source="!(loc.BioWinActiveXRelease)\BiowinActiveX.dll" />
+    </Component>
+    <Component Id="CDPROC.exe" Guid="97be7997-04ed-4e02-afd6-c9c48ff6acb5" Directory="XCANONCAM">
+      <File Id="cdproc.exe" Name="CDPROC.exe" Source="!(loc.XCANON_SHARED_FILES)\CDPROC.exe" />
+    </Component>
+    <Component Id="CDPROCMN.exe" Guid="46778f4e-cc41-40ae-b304-cb2bdff87eab" Directory="XCANONCAM">
+      <File Id="cdprocmn.exe" Name="CDPROCMN.exe" Source="!(loc.XCANON_SHARED_FILES)\CDPROCMN.exe" />
+    </Component>
+    <Component Id="CDPTPCLS.dll" Guid="f0528d42-1e29-43df-9e9b-fc1cdf8dd69b" Directory="XCANONCAM">
+      <File Id="cdptpcls.dll" Name="CDPTPCLS.dll" Source="!(loc.XCANON_SHARED_FILES)\CDPTPCLS.dll" />
+    </Component>
+    <Component Id="CDPTPCLT.dll" Guid="cfe5400d-96e2-4710-86cc-0b686f05f740" Directory="XCANONCAM">
+      <File Id="cdptpclt.dll" Name="CDPTPCLT.dll" Source="!(loc.XCANON_SHARED_FILES)\CDPTPCLT.dll" />
+    </Component>
+    <Component Id="CDRAPCLS.dll" Guid="91f72498-1542-48ea-99b7-cf412d9e1615" Directory="XCANONCAM">
+      <File Id="cdrapcls.dll" Name="CDRAPCLS.dll" Source="!(loc.XCANON_SHARED_FILES)\CDRAPCLS.dll" />
+    </Component>
+    <Component Id="CDSDK.dll" Guid="86d16518-d8c4-41cb-9d28-e2b6d991c9d6" Directory="XCANONCAM">
+      <File Id="cdsdk.dll" Name="CDSDK.dll" Source="!(loc.XCANON_SHARED_FILES)\CDSDK.dll" />
+    </Component>
+    <Component Guid="9fff2756-1415-4cf5-b949-4582515d6d48">
+      <File Id="cms.dll" Name="CMS.dll" Source="!(loc.XSCAN_FILES)\CMS.dll" />
+    </Component>
+    <Component Id="CSDRCUtil.exe" Guid="99206d44-b0d4-4c0a-a78b-a5474a078fbc" Directory="XCANONCAM">
+      <File Id="csdrcutil.exe" Name="CSDRCUtil.exe" ShortName="CSDRCU~1.EXE" Source="!(loc.CSDRCUtilRelease)\CSDRCUtil.exe" />
+    </Component>
+    <Component Guid="395ce5d9-e22b-4f1a-9b8a-d45bc6607861">
+      <File Id="connectionmanagerencrypter.d" Name="ConnectionManagerEncrypter.dll" ShortName="CONNEC~1.DLL" Source="!(loc.SHARED_FILES)\ConnectionManagerEncrypter.dll" />
+    </Component>
+    <Component Guid="15e36c57-42f3-4829-802f-7445557ed4a3">
+      <File Id="dppdll.dll" Name="DPPDLL.dll" Source="!(loc.XCANON2_FILES)\DPPDLL.dll" />
+    </Component>
+    <Component Guid="ec87e5da-9c65-4766-b023-8b6ec0c1985d">
+      <File Id="dpplibcom.dll" Name="DPPLibCom.dll" ShortName="DPPLIB~1.DLL" Source="!(loc.XCANON2_FILES)\DPPLibCom.dll" />
+    </Component>
+    <Component Guid="d59dd075-a56a-450d-bc78-816fc3ff75d3">
+      <File Id="dpprsc.dll" Name="DPPRSC.dll" Source="!(loc.XCANON2_FILES)\DPPRSC.dll" />
+    </Component>
+    <Component Guid="ddf4e56d-f0e4-40f2-b2f2-7154414d2d6d">
+      <File Id="edsdk.dll" Name="EDSDK.dll" Source="!(loc.XCANON2_FILES)\EDSDK.dll" />
+    </Component>
+    <Component Id="EWatch.exe" Guid="605a65b1-81ab-46d1-abf2-fc7dc92f837e" Directory="XCANONCAM">
+      <File Id="ewatch.exe" Name="EWatch.exe" Source="!(loc.XCANON_SHARED_FILES)\EWatch.exe" />
+    </Component>
+    <Component Guid="01ab2641-3115-4d62-85a9-4eb8c41940e1">
+      <File Id="edsimage.dll" Name="EdsImage.dll" Source="!(loc.XCANON2_FILES)\EdsImage.dll" />
+    </Component>
+    <Component Id="FQUI.dll" Guid="23a2f7b6-8b26-49ea-b9a8-60de29ff1bed" Directory="SCANPROCESS">
+      <File Id="fqui.dll" Name="FQUI.dll" Source="!(loc.ScanProcessRelease)\FQUI.dll" />
+    </Component>
+    <Component Id="FQUI.ocx" Guid="363587c3-9c12-4544-8bbf-fd8b73889ff5" Directory="CSD_SCAN">
+      <File Id="fqui.ocx" Name="FQUI.ocx" Source="!(loc.FQUI_FILES)\FQUI.ocx" />
+    </Component>
+    <Component Id="FQUICS.dll" Guid="57071e71-c07e-48ac-bb11-5a5aee303dab" Directory="ACTIVEX">
+      <File Id="fquics.dll" Name="FQUICS.dll" Source="!(loc.BioWinActiveXRelease)\FQUICS.dll" />
+    </Component>
+    <Component Id="FQUICS.dll1" Guid="8ee6541d-7c04-4e66-a4f4-1d71ccd5f733" Directory="SCANPROCESS">
+      <File Id="fquics.dll1" Name="FQUICS.dll" Source="!(loc.ScanProcessRelease)\FQUICS.dll" />
+    </Component>
+    <Component Id="FaceItLocate.dll" Guid="2a91fc97-b1e6-4883-b842-c362fb5e83a7" Directory="XCANONCAM">
+      <File Id="faceitlocate.dll" Name="FaceItLocate.dll" ShortName="FACEIT~1.DLL" Source="!(loc.XCANONFACEIT_FILES)\FaceItLocate.dll" />
+    </Component>
+    <Component Id="FaceItMedia.dll" Guid="aa88f889-e94e-406f-9273-2a7ba2aa5305" Directory="XCANONCAM">
+      <File Id="faceitmedia.dll" Name="FaceItMedia.dll" ShortName="FACEIT~1.DLL" Source="!(loc.XCANONFACEIT_FILES)\FaceItMedia.dll" />
+    </Component>
+    <Component Id="FacialQual.dll" Guid="534ce79e-1a54-45ec-b37d-43380b8c3791" Directory="ACTIVEX">
+      <File Id="facialqual.dll" Name="FacialQual.dll" Source="!(loc.BioWinActiveXRelease)\FacialQual.dll" />
+    </Component>
+    <Component Id="FacialQual.dll1" Guid="626648d1-0352-470e-92d7-30d5690e12e0" Directory="SCANPROCESS">
+      <File Id="facialqual.dll1" Name="FacialQual.dll" Source="!(loc.ScanProcessRelease)\FacialQual.dll" />
+    </Component>
+    <Component Id="IEShims.dll" Guid="267edd18-31a7-4b3a-a3ae-c9ae80b69e47" Directory="CSD_SCAN">
+      <File Id="ieshims.dll" Name="IEShims.dll" Source="!(loc.PATH_TO_MICROSOFT_FILES)\IEShims.dll" />
+    </Component>
+    <Component Id="ISRegistryComponent" Guid="be07e75d-6bcb-4f12-997d-2e5912150e5b" Directory="INSTALLDIR">
+      <CreateFolder Directory="INSTALLDIR" />
+    </Component>
+    <Component Guid="166fc1fc-c473-40e5-b17f-8e8965864378">
+      <CreateFolder Directory="SystemFolder" />
+    </Component>
+    <Component Id="IWrap.dll1" Guid="c2748e22-d5aa-484f-9429-f80b4a65046e" Directory="XCANONCAM">
+      <File Id="iwrap.dll" Name="IWrap.dll" Source="!(loc.XCANON_SHARED_FILES)\IWrap.dll" />
+    </Component>
+    <Component Id="Interop.Biohand3.dll" Guid="92b478f1-a6df-4ef9-b865-78fdd4d41aae" Directory="ACTIVEX">
+      <File Id="interop.biohand3.dll" Name="Interop.Biohand3.dll" Source="!(loc.BioWinActiveXRelease)\Interop.Biohand3.dll" />
+    </Component>
+    <Component Id="Interop.XCANONCAMLib.dll" Guid="90b491d1-673f-4dad-a11e-aabb845d73e2" Directory="ACTIVEX">
+      <File Id="interop.xcanoncamlib.dll" Name="Interop.XCANONCAMLib.dll" Source="!(loc.BioWinActiveXRelease)\Interop.XCANONCAMLib.dll" />
+    </Component>
+    <Component Id="Interop.XIMAGEDISPLib.dll" Guid="dd483ab7-bf86-4d71-9ae1-c02453dcd73d" Directory="ACTIVEX">
+      <File Id="interop.ximagedisplib.dll" Name="Interop.XIMAGEDISPLib.dll" Source="!(loc.BioWinActiveXRelease)\Interop.XIMAGEDISPLib.dll" />
+    </Component>
+    <Component Id="Interop.XSCANLib.dll" Guid="1e08738e-e6cf-4ac4-bdcd-cad835b0ac38" Directory="SCANPROCESS">
+      <File Id="interop.xscanlib.dll" Name="Interop.XSCANLib.dll" Source="!(loc.ScanProcessRelease)\Interop.XSCANLib.dll" />
+    </Component>
+    <Component Id="LeadToolsWrapper.dll" Guid="f667cfe1-4565-433a-bbf6-b17903edde3d" Directory="SystemFolder">
+      <File Id="leadtoolswrapper.dll" Name="LeadToolsWrapper.dll" ShortName="LEADTO~1.DLL" Source="!(loc.LeadToolsWrapperRelease)\LeadToolsWrapper.dll" />
+    </Component>
+    <Component Id="Lfcmpu.dll" Guid="f6fca637-c273-4f1b-ad91-812323fc84dd" Directory="SystemFolder">
+      <File Id="lfcmpu.dll" Name="Lfcmpu.dll" Source="!(loc.SHARED_FILES)\Lfcmpu.dll" />
+    </Component>
+    <Component Id="Lffaxu.dll" Guid="e6c513ee-152c-431c-936a-58293e53c1cc" Directory="SystemFolder">
+      <File Id="lffaxu.dll" Name="Lffaxu.dll" Source="!(loc.SHARED_FILES)\Lffaxu.dll" />
+    </Component>
+    <Component Id="Lfpngu.dll" Guid="f98570d2-ff58-4916-8bf4-5646fe7881cc" Directory="SystemFolder">
+      <File Id="lfpngu.dll" Name="Lfpngu.dll" Source="!(loc.SHARED_FILES)\Lfpngu.dll" />
+    </Component>
+    <Component Id="Lftifu.dll" Guid="1aa86d22-070a-4c4a-8472-f503632cf0bc" Directory="SystemFolder">
+      <File Id="lftifu.dll" Name="Lftifu.dll" Source="!(loc.SHARED_FILES)\Lftifu.dll" />
+    </Component>
+    <Component Id="Ltdisu.dll" Guid="ee7b2e93-79f5-4852-a478-587f88a7fc1d" Directory="SystemFolder">
+      <File Id="ltdisu.dll" Name="Ltdisu.dll" Source="!(loc.SHARED_FILES)\Ltdisu.dll" />
+    </Component>
+    <Component Id="Ltfilu.dll" Guid="5e863281-c438-487f-ad1e-26952c1255c1" Directory="SystemFolder">
+      <File Id="ltfilu.dll" Name="Ltfilu.dll" Source="!(loc.SHARED_FILES)\Ltfilu.dll" />
+    </Component>
+    <Component Id="Ltimgclru.dll" Guid="505b0d4c-55c0-4513-9477-67075bf2e918" Directory="SystemFolder">
+      <File Id="ltimgclru.dll" Name="Ltimgclru.dll" ShortName="LTIMGC~1.DLL" Source="!(loc.SHARED_FILES)\Ltimgclru.dll" />
+    </Component>
+    <Component Id="Ltimgcoru.dll" Guid="bbeff7ba-6924-451c-9c8b-5fd520f0d3b2" Directory="SystemFolder">
+      <File Id="ltimgcoru.dll" Name="Ltimgcoru.dll" ShortName="LTIMGC~1.DLL" Source="!(loc.SHARED_FILES)\Ltimgcoru.dll" />
+    </Component>
+    <Component Id="Ltimgsfxu.dll" Guid="fa6a30e9-978e-4936-97ff-ec790ca8426c" Directory="SystemFolder">
+      <File Id="ltimgsfxu.dll" Name="Ltimgsfxu.dll" ShortName="LTIMGS~1.DLL" Source="!(loc.SHARED_FILES)\Ltimgsfxu.dll" />
+    </Component>
+    <Component Id="Ltimgutlu.dll" Guid="d7df480a-5b71-4b6a-859b-0803816e4912" Directory="SystemFolder">
+      <File Id="ltimgutlu.dll" Name="Ltimgutlu.dll" ShortName="LTIMGU~1.DLL" Source="!(loc.SHARED_FILES)\Ltimgutlu.dll" />
+    </Component>
+    <Component Id="Ltkrnu.dll" Guid="79d6a69f-5602-43e8-a76e-727bbadf37ca" Directory="SystemFolder">
+      <File Id="ltkrnu.dll" Name="Ltkrnu.dll" Source="!(loc.SHARED_FILES)\Ltkrnu.dll" />
+    </Component>
+    <Component Id="Ltwvcu.dll" Guid="359aef5d-8bf0-43a1-ab30-2fffaa7c5358" Directory="SystemFolder">
+      <File Id="ltwvcu.dll" Name="Ltwvcu.dll" Source="!(loc.SHARED_FILES)\Ltwvcu.dll" />
+    </Component>
+    <Component Guid="464b56e7-1aa8-49d7-940a-0452eb5379fc">
+      <File Id="mlib.dll" Name="MLib.dll" Source="!(loc.XCANON2_FILES)\MLib.dll" />
+    </Component>
+    <Component Id="MSCOMCT2.OCX" Guid="60b0e3b4-b25a-43c4-9e72-a026274df3f0" Directory="CSD_SCAN">
+      <CreateFolder Directory="CSD_SCAN" />
+    </Component>
+    <Component Id="MSCOMCT2.OCX1" Guid="980461a5-912d-442d-b393-66eddf6375b6" Directory="SystemFolder">
+      <File Id="mscomct2.ocx" Name="MSCOMCT2.OCX" Source="!(loc.SHARED_FILES)\MSCOMCT2.OCX" />
+    </Component>
+    <Component Id="MSCOMCTL.OCX" Guid="7c6459e0-e389-4d27-acc5-5e39a7a71f3a" Directory="BIOWIN">
+      <CreateFolder Directory="BIOWIN" />
+    </Component>
+    <Component Id="MSCOMCTL.OCX1" Guid="c1bb2ce4-b26f-4881-b9f4-28eaec1c4a28" Directory="SystemFolder">
+      <File Id="mscomctl.ocx" Name="MSCOMCTL.OCX" Source="!(loc.SHARED_FILES)\MSCOMCTL.OCX" />
+    </Component>
+    <Component Guid="8d0b9c00-58bf-4409-bfee-44404a6f1a1b">
+      <File Id="prlib.dll" Name="PRLIB.dll" Source="!(loc.XCANON2_FILES)\PRLIB.dll" />
+    </Component>
+    <Component Guid="5a710573-0230-4e96-8f00-f4e10307dec9">
+      <File Id="prsdk.dll" Name="PRSDK.dll" Source="!(loc.XCANON2_FILES)\PRSDK.dll" />
+    </Component>
+    <Component Id="ScanProcessClient.dll" Guid="feca4ad3-083f-47b9-b4c9-72c6932b9591" Directory="ACTIVEX">
+      <File Id="scanprocessclient.dll" Name="ScanProcessClient.dll" Source="!(loc.BioWinActiveXRelease)\ScanProcessClient.dll" />
+    </Component>
+    <Component Id="ScanProcessClient.dll1" Guid="9c53054c-46ea-408c-8d54-06690bae73a4" Directory="SCANPROCESS">
+      <File Id="scanprocessclient.dll1" Name="ScanProcessClient.dll" Source="!(loc.ScanProcessRelease)\ScanProcessClient.dll" />
+    </Component>
+    <Component Guid="d9a8bc0b-03fc-4ca0-aaaa-7ef8776779a2">
+      <File Id="ucs32p.dll" Name="Ucs32P.dll" Source="!(loc.XCANON2_FILES)\Ucs32P.dll" />
+    </Component>
+    <Component Guid="15d5cf74-7d3c-4f28-9576-bf00f12e1a17">
+      <File Id="vic32.dll" Name="VIC32.DLL" Source="!(loc.SHARED_FILES)\VIC32.DLL" />
+    </Component>
+    <Component Id="XCanonCam.ocx" Guid="cdf0e30c-5a27-4a3e-b5bb-bf3771546977" Directory="XCANONCAM">
+      <File Id="xcanoncam.ocx" Name="XCanonCam.ocx" ShortName="XCANON~1.OCX" Source="!(loc.XCanonCamRelease)\XCanonCam.ocx" />
+    </Component>
+    <Component Id="XCanonCam2.ocx" Guid="7af7406a-0c88-47ec-8f68-151e6fb5f34c" Directory="XCANONCAM">
+      <File Id="xcanoncam2.ocx" Name="XCanonCam2.ocx" ShortName="XCANON~1.OCX" Source="!(loc.XCanonCam2Release)\XCanonCam2.ocx" />
+    </Component>
+    <Component Id="XCanonCamUI.ocx" Guid="6368ac39-5625-441d-98a9-a64e2eb6dadb" Directory="XCANONCAM">
+      <File Id="xcanoncamui.ocx" Name="XCanonCamUI.ocx" ShortName="XCANON~1.OCX" Source="!(loc.XCANONCAMUI_FILES)\XCanonCamUI.ocx" />
+    </Component>
+    <Component Id="XCanonCamUI2.dll" Guid="47a18692-0bc5-4f87-b488-061b9b4d3ed7" Directory="ACTIVEX">
+      <File Id="xcanoncamui2.dll" Name="XCanonCamUI2.dll" Source="!(loc.BioWinActiveXRelease)\XCanonCamUI2.dll" />
+    </Component>
+    <Component Id="XCanonCamUI2.ocx" Guid="c8f84a1e-953c-403b-a668-8d9181264cd8" Directory="XCANONCAM">
+      <File Id="xcanoncamui2.ocx" Name="XCanonCamUI2.ocx" ShortName="XCANON~1.OCX" Source="!(loc.XCANONCAMUI2_FILES)\XCanonCamUI2.ocx" />
+    </Component>
+    <Component Id="XImageDisp.ocx" Guid="ba22e60e-60a9-422d-8573-ffddf1f36565" Directory="BIOWIN">
+      <File Id="ximagedisp.ocx" Name="XImageDisp.ocx" ShortName="XIMAGE~1.OCX" Source="!(loc.XImageDispRelease)\XImageDisp.ocx" />
+    </Component>
+    <Component Id="XScan.ocx" Guid="c5b18cc8-efa1-42e1-8cc0-6685e45483b6" Directory="CSD_SCAN">
+      <File Id="xscan.ocx" Name="XScan.ocx" Source="!(loc.XScanRelease)\XScan.ocx" />
+    </Component>
+    <Component Guid="496e7fb1-dcc5-4143-afb6-77484511e46e">
+      <File Id="xscanui.ocx" Name="XScanUI.ocx" Source="!(loc.XSCAN_FILES)\XScanUI.ocx" />
+    </Component>
+    <Component Id="XScanUIFQ.ocx" Guid="c08ade03-75bb-4f93-af85-417a296c3a9a" Directory="CSD_SCAN">
+      <File Id="xscanuifq.ocx" Name="XScanUIFQ.ocx" ShortName="XSCANU~1.OCX" Source="!(loc.XSCANUIFQ_FILES)\XScanUIFQ.ocx" />
+    </Component>
+    <Component Id="XScanUIProcess.exe" Guid="254a4f30-011d-4b3a-8964-1eff66d064aa" Directory="SCANPROCESS">
+      <File Id="xscanuiprocess.exe" Name="XScanUIProcess.exe" Source="!(loc.ScanProcessRelease)\XScanUIProcess.exe" />
+    </Component>
+    <Component Id="cdDcd.dll" Guid="9e0d0771-f909-4b5e-b616-8deb5f0d01da" Directory="XCANONCAM">
+      <File Id="cddcd.dll" Name="cdDcd.dll" Source="!(loc.XCANON_SHARED_FILES)\cdDcd.dll" />
+    </Component>
+    <Component Id="cdDvlp.dll" Guid="ea96eddd-d039-4e24-9e0e-22857f29df3c" Directory="XCANONCAM">
+      <File Id="cddvlp.dll" Name="cdDvlp.dll" Source="!(loc.XCANON_SHARED_FILES)\cdDvlp.dll" />
+    </Component>
+    <Component Id="cdParse.dll" Guid="69b10493-7145-4223-a8f4-5a98770eb993" Directory="XCANONCAM">
+      <File Id="cdparse.dll" Name="cdParse.dll" Source="!(loc.XCANON_SHARED_FILES)\cdParse.dll" />
+    </Component>
+    <Component Id="gpsvc.dll" Guid="791bf524-fd59-4c42-82f5-8c45d7182e43" Directory="CSD_SCAN">
+      <File Id="gpsvc.dll" Name="gpsvc.dll" Source="!(loc.PATH_TO_MICROSOFT_FILES)\gpsvc.dll" />
+    </Component>
+    <Component Id="msstdfmt.dll" Guid="d236b88a-4b17-484c-9d77-3a2ec485314c" Directory="CSD_SCAN">
+      <File Id="msstdfmt.dll" Name="msstdfmt.dll" Source="!(loc.PATH_TO_MICROSOFT_FILES)\msstdfmt.dll" />
+    </Component>
+    <Component Id="psCamDat.dll" Guid="8c7caa2f-e05d-419d-94dc-9a09596ea4fa" Directory="XCANONCAM">
+      <File Id="pscamdat.dll" Name="psCamDat.dll" Source="!(loc.XCANON_SHARED_FILES)\psCamDat.dll" />
+    </Component>
+    <Component Id="stdole.dll" Guid="f98f8bac-8b69-422b-8773-4d4295e5ec1b" Directory="SCANPROCESS">
+      <File Id="stdole.dll" Name="stdole.dll" Source="!(loc.ScanProcessRelease)\stdole.dll" />
+    </Component>
+    <Component Id="sysntfy.dll" Guid="a23991ab-d16d-42a4-b079-6c1fef542f71" Directory="CSD_SCAN">
+      <File Id="sysntfy.dll" Name="sysntfy.dll" Source="!(loc.PATH_TO_MICROSOFT_FILES)\sysntfy.dll" />
+    </Component>
+  </Fragment>
+  <Fragment>
+    <Binary Id="ISSELFREG.DLL" SourceFile="!(loc.ISRedistPlatformDependentFolder)\isregsvr.dll" />
+    <Binary Id="ISSetup.dll" SourceFile="!(loc.ISProductFolder)\redist\language independent\i386\ISSetup.dll" />
+    <Binary Id="InteriorBin1" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\IsDialogBanner.ibd" />
+    <Binary Id="NewBinary1" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\IsDialogBanner.ibd" />
+    <Binary Id="NewBinary10" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\CompleteSetupIco.ibd" />
+    <Binary Id="NewBinary11" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\CustomSetupIco.ibd" />
+    <Binary Id="NewBinary12" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\DestIcon.ibd" />
+    <Binary Id="NewBinary13" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\NetworkInstall.ico" />
+    <Binary Id="NewBinary14" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\DontInstall.ico" />
+    <Binary Id="NewBinary15" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\Install.ico" />
+    <Binary Id="NewBinary16" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\InstallFirstUse.ico" />
+    <Binary Id="NewBinary17" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\InstallPartial.ico" />
+    <Binary Id="NewBinary18" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\InstallStateMenu.ico" />
+    <Binary Id="NewBinary2" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\New.ibd" />
+    <Binary Id="NewBinary3" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\Up.ibd" />
+    <Binary Id="NewBinary4" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\WarningIcon.ibd" />
+    <Binary Id="NewBinary5" SourceFile="!(loc.ISProductFolder)\Redist\Language Indepeendent\OS Independent\IsDialogBitmap.ibd" />
+    <Binary Id="NewBinary6" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\CustomSetupIco.ibd" />
+    <Binary Id="NewBinary7" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\ReinstIco.ibd" />
+    <Binary Id="NewBinary8" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\RemoveIco.ibd" />
+    <Binary Id="NewBinary9" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\SetupIcon.ibd" />
+    <Binary Id="SetAllUsers.dll" SourceFile="!(loc.ISRedistPlatformDependentFolder)\SetAllUsers.dll" />
+  </Fragment>
+  <Fragment>
+    <ComponentGroup Id="PublishedComponents">
+      <ComponentRef Id="iconFile1" />
+    </ComponentGroup>
+  </Fragment>
+</Wix>

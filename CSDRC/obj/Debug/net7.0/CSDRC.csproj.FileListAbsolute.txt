@@ -1,0 +1,14 @@
+E:\Personal\CSDRC\CSDRC\bin\Debug\net7.0\CSDRC.exe
+E:\Personal\CSDRC\CSDRC\bin\Debug\net7.0\CSDRC.deps.json
+E:\Personal\CSDRC\CSDRC\bin\Debug\net7.0\CSDRC.runtimeconfig.json
+E:\Personal\CSDRC\CSDRC\bin\Debug\net7.0\CSDRC.dll
+E:\Personal\CSDRC\CSDRC\bin\Debug\net7.0\CSDRC.pdb
+E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\CSDRC.GeneratedMSBuildEditorConfig.editorconfig
+E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\CSDRC.AssemblyInfoInputs.cache
+E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\CSDRC.AssemblyInfo.cs
+E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\CSDRC.csproj.CoreCompileInputs.cache
+E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\CSDRC.dll
+E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\refint\CSDRC.dll
+E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\CSDRC.pdb
+E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\CSDRC.genruntimeconfig.cache
+E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\ref\CSDRC.dll

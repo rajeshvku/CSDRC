@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+<?define BuildVersion = "2.1.4"?>
+    <!-- Fixed upgrade Id -->
+<?define ProductUpgradeCode="D6261B75-48C6-4A32-B9C0-5DC5B41C3980" ?>
+<?define ISRedistPlatformDependentFolder="" ?>
+<?define ISProductFolder="" ?>
+    <Product Id="66c9be59-51a7-4e24-a2e4-6b73f7af90ab"
+             Name="CSD Reusable Components"
+             Language="1033"
+             Version="$(var.BuildVersion)"
+             Manufacturer="!(loc.CompanyName)"
+             UpgradeCode="$(var.ProductUpgradeCode)">
+        <Package InstallerVersion="200"
+                 Compressed="yes"
+                 InstallScope="perMachine"
+                 Manufacturer="!(loc.CompanyName)"
+                 Description="!(loc.CompanyName)"
+                 Keywords="Installer,MSI" />
+        <!-- Downgrade error message -->
+       <!-- <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." /> -->
+        <!-- Prevent installation being installed -->
+        <MediaTemplate EmbedCab="yes" />
+        <!-- InstallExecuteSequence -->
+        <InstallExecuteSequence>
+            <AllocateRegistrySpace Sequence="1550" />
+            <AppSearch Sequence="5" />
+            <BindImage Sequence="4300" />
+            <!-- <CA1 Sequence="415"/> -->
+            <CCPSearch Sequence="420" />
+            <CostFinalize Sequence="950" />
+            <CostInitialize Sequence="700" />
+            <CreateFolders Sequence="3700" />
+            <CreateShortcuts Sequence="4500" />
+            <DeleteServices Sequence="2000" />
+            <DuplicateFiles Sequence="4210" />
+            <FileCost Sequence="800" />
+            <FindRelatedProducts Sequence="410" />
+            <!-- <ISPreventDowngrade Sequence="450"/> -->
+            <!-- <ISSelfRegisterCosting Sequence="2201"/> -->
+            <!-- <ISSelfRegisterFiles Sequence="5601"/> -->
+            <!-- <ISSelfRegisterFinalize Sequence="6601"/> -->
+            <!-- <ISSetAllUsers Sequence="10"/> -->
+            <!-- <ISUnSelfRegisterFiles Sequence="2202"/> -->
+            <InstallExecute Sequence="6411" />
+            <InstallFiles Sequence="4000" />
+            <InstallFinalize Sequence="6600" />
+            <InstallInitialize Sequence="1400" />
+            <InstallODBC Sequence="5400" />
+            <InstallServices Sequence="5800" />
+            <InstallValidate Sequence="1200" />
+            <IsolateComponents Sequence="900" />
+            <LaunchConditions Sequence="400" />
+            <MigrateFeatureStates Sequence="1100" />
+            <MoveFiles Sequence="3800" />
+            <!-- <MsiConfigureServices Sequence="5801"/> -->
+            <MsiPublishAssemblies Sequence="6250" />
+            <MsiUnpublishAssemblies Sequence="1750" />
+            <PatchFiles Sequence="4090" />
+            <ProcessComponents Sequence="1600" />
+            <PublishComponents Sequence="6200" />
+            <PublishFeatures Sequence="6300" />
+            <PublishProduct Sequence="6400" />
+            <RMCCPSearch Sequence="500" />
+            <!-- <RegisterCOMIterops Sequence="6651"/> -->
+            <RegisterClassInfo Sequence="4600" />
+            <RegisterComPlus Sequence="5700" />
+            <RegisterExtensionInfo Sequence="4700" />
+            <RegisterFonts Sequence="5300" />
+            <RegisterMIMEInfo Sequence="4900" />
+            <RegisterProduct Sequence="6100" />
+            <RegisterProgIdInfo Sequence="4800" />
+            <RegisterTypeLibraries Sequence="5500" />
+            <RegisterUser Sequence="6000" />
+            <RemoveDuplicateFiles Sequence="3400" />
+            <RemoveEnvironmentStrings Sequence="3300" />
+            <RemoveExistingProducts Sequence="1399" />
+            <RemoveFiles Sequence="3500" />
+            <RemoveFolders Sequence="3600" />
+            <RemoveIniValues Sequence="3100" />
+            <RemoveODBC Sequence="2400" />
+            <RemoveRegistryValues Sequence="2600" />
+            <RemoveShortcuts Sequence="3200" />
+            <ScheduleReboot Sequence="6410" />
+            <SelfRegModules Sequence="5600" />
+            <SelfUnregModules Sequence="2200" />
+            <!-- <SetARPINSTALLLOCATION Sequence="1000"/> -->
+            <SetODBCFolders Sequence="1010" />
+            <StartServices Sequence="5900" />
+            <StopServices Sequence="1900" />
+            <UnpublishComponents Sequence="1700" />
+            <UnpublishFeatures Sequence="1800" />
+            <UnregisterClassInfo Sequence="2700" />
+            <!-- <UnregisterComInterops Sequence="2150"/> -->
+            <UnregisterComPlus Sequence="2100" />
+            <UnregisterExtensionInfo Sequence="2800" />
+            <UnregisterFonts Sequence="2500" />
+            <UnregisterMIMEInfo Sequence="3000" />
+            <UnregisterProgIdInfo Sequence="2900" />
+            <UnregisterTypeLibraries Sequence="2300" />
+            <ValidateProductID Sequence="600" />
+            <WriteEnvironmentStrings Sequence="5200" />
+            <WriteIniValues Sequence="5100" />
+            <WriteRegistryValues Sequence="5000" />
+        </InstallExecuteSequence>
+        <!-- AdminExecuteSequence -->
+        <AdminExecuteSequence>
+            <CostFinalize Sequence="900" />
+            <CostInitialize Sequence="5" />
+            <FileCost Sequence="800" />
+            <InstallAdminPackage Sequence="3900" />
+            <InstallFiles Sequence="4000" />
+            <InstallFinalize Sequence="6600" />
+            <InstallInitialize Sequence="1400" />
+            <InstallValidate Sequence="1000" />
+            <!-- <ScheduleReboot Sequence="4010"/> -->
+        </AdminExecuteSequence>
+        <!-- AdvertiseExecuteSequence -->
+        <AdvertiseExecuteSequence>
+            <CostFinalize Sequence="1000" />
+            <CostInitialize Sequence="800" />
+            <CreateShortcuts Sequence="4500" />
+            <InstallFinalize Sequence="6600" />
+            <InstallInitialize Sequence="1500" />
+            <InstallValidate Sequence="1400" />
+            <MsiPublishAssemblies Sequence="6250" />
+            <PublishComponents Sequence="6200" />
+            <PublishFeatures Sequence="6300" />
+            <PublishProduct Sequence="6400" />
+            <RegisterClassInfo Sequence="4600" />
+            <RegisterExtensionInfo Sequence="4700" />
+            <RegisterMIMEInfo Sequence="4900" />
+            <RegisterProgIdInfo Sequence="4800" />
+            <!-- <RegisterTypeLibraries Sequence="4910"/> -->
+            <!-- <ScheduleReboot Sequence="6410"/> -->
+        </AdvertiseExecuteSequence>
+        <!-- Binaries -->
+        <Binary Id="ISSELFREG.DLL"
+                SourceFile="!(loc.ISRedistPlatformDependentFolder)\isregsvr.dll" />
+        <Binary Id="ISSetup.dll"
+                SourceFile="!(loc.ISProductFolder)\redist\language independent\i386\ISSetup.dll" />
+        <Binary Id="InteriorBin1"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\IsDialogBanner.ibd" />
+        <Binary Id="NewBinary1"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\IsDialogBanner.ibd" />
+        <Binary Id="NewBinary10"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\CompleteSetupIco.ibd" />
+        <Binary Id="NewBinary11"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\CustomSetupIco.ibd" />
+        <Binary Id="NewBinary12"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\DestIcon.ibd" />
+        <Binary Id="NewBinary13"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\NetworkInstall.ico" />
+        <Binary Id="NewBinary14"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\DontInstall.ico" />
+        <Binary Id="NewBinary15"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\Install.ico" />
+        <Binary Id="NewBinary16"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\InstallFirstUse.ico" />
+        <Binary Id="NewBinary17"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\InstallPartial.ico" />
+        <Binary Id="NewBinary18"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\InstallStateMenu.ico" />
+        <Binary Id="NewBinary2"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\New.ibd" />
+        <Binary Id="NewBinary3"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\Up.ibd" />
+        <Binary Id="NewBinary4"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\WarningIcon.ibd" />
+        <Binary Id="NewBinary5"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Indepeendent\OS Independent\IsDialogBitmap.ibd" />
+        <Binary Id="NewBinary6"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\CustomSetupIco.ibd" />
+        <Binary Id="NewBinary7"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\ReinstIco.ibd" />
+        <Binary Id="NewBinary8"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\RemoveIco.ibd" />
+        <Binary Id="NewBinary9"
+                SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\SetupIcon.ibd" />
+        <Binary Id="SetAllUsers.dll"
+                SourceFile="!(loc.ISRedistPlatformDependentFolder)\SetAllUsers.dll" />
+        <Feature Id="ProductFeature"
+                 Title="Csd Reusable Components"
+                 Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+			<ComponentGroupRef Id="PublishedComponents" />
+		</Feature>
+    </Product>
+   
+    
+	<Fragment>
+		<Feature Id="BioHand" Title="!(loc.IdString51)" Description="!(loc.ID_STRING16)" Display="19"
+			Level="1" ConfigurableDirectory="BIOHAND" />
+		<Feature Id="BioWin" Title="!(loc.IdString50)" Description="!(loc.ID_STRING20)" Display="3"
+			Level="1" ConfigurableDirectory="BIOWIN" />
+		<Feature Id="XCanonCam" Title="!(loc.IdString52)" Description="!(loc.ID_STRING21)" Display="21"
+			Level="1" ConfigurableDirectory="XCANONCAM" />
+	</Fragment>
+	
+    
+</Wix>

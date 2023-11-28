@@ -1,0 +1,12 @@
+<UI>
+    <Property Id="ApplicationUsers">AllUsers</Property>
+    <RadioButtonGroup Property="ApplicationUsers">0</RadioButtonGroup>
+    <Property Id="IS_SQLSERVER_AUTHENTICATION">0</Property>
+    <RadioButtonGroup Property="IS_SQLSERVER_AUTHENTICATION">0</RadioButtonGroup>
+    <Property Id="RestartManagerOption">CloseRestart</Property>
+    <RadioButtonGroup Property="RestartManagerOption">0</RadioButtonGroup>
+    <Property Id="_IsMaintenance">Change</Property>
+    <RadioButtonGroup Property="_IsMaintenance">0</RadioButtonGroup>
+    <Property Id="_IsSetupTypeMin">Typical</Property>
+    <RadioButtonGroup Property="_IsSetupTypeMin">0</RadioButtonGroup>
+</UI>

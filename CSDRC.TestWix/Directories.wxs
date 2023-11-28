@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLDIR">
+            <Directory Id="ACCOUNTABLE_ITEMS"
+                       Name="Accountable Items" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="BIOWIN">
+            <Directory Id="ACTIVEX"
+                       Name="ActiveX" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="ALLUSERSPROFILE"
+                       ShortName="ALLUSE~1"
+                       Name="All Users" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="AdminToolsFolder"
+                       ShortName="Admint~1"
+                       Name="AdminTools" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="AppDataFolder"
+                       ShortName="APPLIC~1"
+                       Name="Application Data" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="INSTALLDIR">
+            <Directory Id="BIOHAND"
+                       Name="BioHand" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="INSTALLDIR">
+            <Directory Id="BIOMETRIC"
+                       Name="Biometric" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="INSTALLDIR">
+            <Directory Id="BIOWIN"
+                       Name="BioWin" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="ProgramFilesFolder">
+            <Directory Id="CSD_SCAN"
+                       Name="CSD_Scan" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="CommonAppDataFolder"
+                       ShortName="Common~1"
+                       Name="CommonAppData" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="CommonFiles64Folder"
+                       Name="Common64" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="CommonFilesFolder"
+                       Name="Common" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="ISYourDataBaseDir">
+            <Directory Id="DATABASEDIR"
+                       Name="." />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="ProgramFilesFolder">
+            <Directory Id="DEPARTMENT_OF_STATE"
+                       Name="Department of State" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="DesktopFolder"
+                       Name="Desktop" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="FavoritesFolder"
+                       ShortName="FAVORI~1"
+                       Name="Favorites" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="FontsFolder"
+                       Name="Fonts" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="GlobalAssemblyCache"
+                       ShortName="Global~1"
+                       Name="GlobalAssemblyCache" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="MY_PRODUCT_NAME">
+            <Directory Id="INSTALLDIR"
+                       Name="." />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="CommonFilesFolder">
+            <Directory Id="ISCommonFilesFolder"
+                       Name="InstallShield" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="ProgramFilesFolder">
+            <Directory Id="ISMyCompanyDir"
+                       Name="My Company Name" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="ISMyCompanyDir">
+            <Directory Id="ISMyProductDir"
+                       Name="My Product Name" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="ISCommonFilesFolder">
+            <Directory Id="ISUpdateServiceFolder"
+                       Name="UpdateService" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="INSTALLDIR">
+            <Directory Id="ISYourDataBaseDir"
+                       Name="Database" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="LocalAppDataFolder"
+                       ShortName="LocalA~1"
+                       Name="LocalAppData" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="ProgramFilesFolder">
+            <Directory Id="MY_PRODUCT_NAME"
+                       Name="CSD Reusable Components" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="MyPicturesFolder"
+                       ShortName="MyPict~1"
+                       Name="MyPictures" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY1"
+                       Name="NEW_DIRECTORY1" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY10"
+                       Name="NEW_DIRECTORY10" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY11"
+                       Name="NEW_DIRECTORY11" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY12"
+                       Name="NEW_DIRECTORY12" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY13"
+                       Name="NEW_DIRECTORY13" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY14"
+                       Name="NEW_DIRECTORY14" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY15"
+                       Name="NEW_DIRECTORY15" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY16"
+                       Name="NEW_DIRECTORY16" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY17"
+                       Name="NEW_DIRECTORY17" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY18"
+                       Name="NEW_DIRECTORY18" />
+        </DirectoryRef>
+		
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY19"
+                       Name="NEW_DIRECTORY19" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY2"
+                       Name="NEW_DIRECTORY2" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY20"
+                       Name="NEW_DIRECTORY20" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY21"
+                       Name="NEW_DIRECTORY21" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY22"
+                       Name="NEW_DIRECTORY22" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY23"
+                       Name="NEW_DIRECTORY23" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY3"
+                       Name="NEW_DIRECTORY3" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY4"
+                       Name="NEW_DIRECTORY4" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY5"
+                       Name="NEW_DIRECTORY5" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY6"
+                       Name="NEW_DIRECTORY6" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY7"
+                       Name="NEW_DIRECTORY7" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY8"
+                       Name="NEW_DIRECTORY8" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NEW_DIRECTORY9"
+                       Name="NEW_DIRECTORY9" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="NIV"
+                       Name="niv" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="PersonalFolder"
+                       Name="Personal" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="PrimaryVolumePath"
+                       ShortName="Primar~1"
+                       Name="PrimaryVolumePath" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="ProgramFiles64Folder"
+                       ShortName="Prog64~1"
+                       Name="Program Files 64" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="ProgramFilesFolder"
+                       ShortName="PROGRA~1"
+                       Name="program files" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="ProgramMenuFolder"
+                       Name="Programs" />
+        </DirectoryRef>
+        <DirectoryRef Id="CSD_SCAN">
+            <Directory Id="SCANPROCESS"
+                       Name="ScanProcess" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="SendToFolder"
+                       Name="SendTo" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="StartMenuFolder"
+                       ShortName="STARTM~1"
+                       Name="Start Menu" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="StartupFolder"
+                       Name="StartUp" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="System16Folder"
+                       Name="System" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="System64Folder"
+                       Name="System64" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="SystemFolder"
+                       Name="System32" />
+        </DirectoryRef>
+        <Directory Id="TARGETDIR"
+                   Name="SourceDir" />
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="TempFolder"
+                       Name="Temp" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="TemplateFolder"
+                       Name="ShellNew" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="USERPROFILE"
+                       ShortName="USERPR~1"
+                       Name="UserProfile" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="WindowsFolder"
+                       Name="Windows" />
+        </DirectoryRef>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="WindowsVolume"
+                       Name="WinRoot" />
+        </DirectoryRef>
+        <DirectoryRef Id="INSTALLDIR">
+            <Directory Id="XCANONCAM"
+                       Name="XCanonCam" />
+        </DirectoryRef>
+        <DirectoryRef Id="depart_1_department_of_state">
+            <Directory Id="csdreu_1_csd_reusable_components"
+                       Name="CSD Reusable Components" />
+        </DirectoryRef>
+        <DirectoryRef Id="ProgramMenuFolder">
+            <Directory Id="depart_1_department_of_state"
+                       Name="Department of State" />
+        </DirectoryRef>
+    </Fragment>
+</Wix>

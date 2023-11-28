@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <CustomAction Id="CA1"
+                      Error="A newer version of this software is already installed." />
+        <CustomAction Id="ISPreventDowngrade"
+                      Error="[IS_PREVENT_DOWNGRADE_EXIT]" />
+        <CustomAction Id="ISPrint"
+                      DllEntry="PrintScrollableText"
+                      BinaryKey="SetAllUsers.dll" />
+        <CustomAction Id="ISSelfRegisterCosting"
+                      DllEntry="ISSelfRegisterCosting"
+                      BinaryKey="ISSELFREG.DLL" />
+        <CustomAction Id="ISSelfRegisterFiles"
+                      ExeCommand="ISSelfRegisterFiles"
+                      Directory="ISSELFREG.DLL" />
+        <CustomAction Id="ISSelfRegisterFinalize"
+                      DllEntry="ISSelfRegisterFinalize"
+                      BinaryKey="ISSELFREG.DLL" />
+        <CustomAction Id="ISSetAllUsers"
+                      ExeCommand="SetAllUsers"
+                      Directory="SetAllUsers.dll" />
+        <CustomAction Id="ISUnSelfRegisterFiles"
+                      ExeCommand="ISUnSelfRegisterFiles"
+                      Directory="ISSELFREG.DLL" />
+        <CustomAction Id="RegisterCOMIterops"
+                      DllEntry="f1"
+                      BinaryKey="ISSetup.dll" />
+        <CustomAction Id="SetARPINSTALLLOCATION"
+                      Property="ARPINSTALLLOCATION"
+                      Value="[INSTALLDIR]" />
+        <CustomAction Id="SetAllUsersProfileNT"
+                      Property="ALLUSERSPROFILE"
+                      Value="[%SystemRoot]\Profiles\All Users" />
+        <CustomAction Id="UnregisterComInterops"
+                      DllEntry="f2"
+                      BinaryKey="ISSetup.dll" />
+        <CustomAction Id="setAllUsersProfile2K"
+                      Property="ALLUSERSPROFILE"
+                      Value="[%ALLUSERSPROFILE]" />
+        <CustomAction Id="setUserProfileNT"
+                      Property="USERPROFILE"
+                      Value="[%USERPROFILE]" />
+    </Fragment>
+</Wix>

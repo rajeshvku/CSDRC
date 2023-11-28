@@ -1,0 +1,186 @@
+<Fragment>
+    <DirectoryRef Id="INSTALLDIR">
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="CropMode"
+                               Value="#0" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="CameraAngle"
+                               Value="#0" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name=""
+                               Value="" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="OutPixelWidth"
+                               Value="#252" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="OutPixelHeight"
+                               Value="#300" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="CameraName"
+                               Value="Canon PowerShot S60" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="PhotoAV"
+                               Value="6.3" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="PhotoTV"
+                               Value="1/4" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="LiveAV"
+                               Value="6.3" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="LiveTV"
+                               Value="1/125" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="FlashMode"
+                               Value="#0" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="MacroMode"
+                               Value="#1" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="CaptureMode"
+                               Value="#1" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="ZoomPos"
+                               Value="#5" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="ISOSpeed"
+                               Value="#100" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="WhiteMean"
+                               Value="#0" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="FlashQuantity"
+                               Value="#0" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="ExposureComp"
+                               Value="#24" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="CropBoxHeight"
+                               Value="1.39" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="CropBoxWidth"
+                               Value="1.17" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="LastConfig"
+                               Value="NEVER" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="PhotoLightMeterMode"
+                               Value="#1" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="LiveLightMeterMode"
+                               Value="#0" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="PhotoFocusPoint"
+                               Value="#1" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD\XCanonCam">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD\XCanonCam">
+                <RegistryValue Name="LiveFocusPoint"
+                               Value="#12291" />
+            </RegistryKey>
+        </Component>
+        <Component Id="SOFTWARE\CA/EX/CSD">
+            <RegistryKey Root="HKLM"
+                         Key="SOFTWARE\CA/EX/CSD">
+                <RegistryValue Name=""
+                               Value="" />
+            </RegistryKey>
+        </Component>
+    </DirectoryRef>
+</Fragment>

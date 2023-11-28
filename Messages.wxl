@@ -1,0 +1,3470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-us"
+                 xmlns="http://schemas.microsoft.com/wix/2006/localization">
+    <String Id="CompanyName">
+		US Department of State
+	</String>
+    <String Id="DnAlwaysinstall">
+		Always Install
+	</String>
+    <String Id="IdpropExpressLaunchConditionColor">
+		The color settings of your system are not adequate for running [ProductName].
+	</String>
+    <String Id="IdpropExpressLaunchConditionOs">
+		[ProductName] requires that your computer is running Windows XP or Windows 2003 Server
+	</String>
+    <String Id="IdpropExpressLaunchConditionProcessor">
+		The processor is not adequate for running [ProductName].
+	</String>
+    <String Id="IdpropExpressLaunchConditionRam">
+		The amount of RAM is not adequate for running [ProductName].
+	</String>
+    <String Id="IdpropExpressLaunchConditionScreen">
+		The screen resolution is not adequate for running [ProductName].
+	</String>
+    <String Id="IdpropSetuptypeCompact">
+		Compact
+	</String>
+    <String Id="IdpropSetuptypeCompactDesc">
+		Compact Description
+	</String>
+    <String Id="IdpropSetuptypeComplete">
+		Complete
+	</String>
+    <String Id="IdpropSetuptypeCompleteDesc">
+		Complete
+	</String>
+    <String Id="IdpropSetuptypeCustom">
+		Custom
+	</String>
+    <String Id="IdpropSetuptypeCustomDesc">
+		Custom Description
+	</String>
+    <String Id="IdpropSetuptypeCustomDescPro">
+		Custom
+	</String>
+    <String Id="IdpropSetuptypeTypical">
+		Typical
+	</String>
+    <String Id="IdpropSetuptypeTypicalDesc">
+		Typical Description
+	</String>
+    <String Id="IdsActiontext1">
+		[1]
+	</String>
+    <String Id="IdsActiontext1B">
+		[1]
+	</String>
+    <String Id="IdsActiontext1C">
+		[1]
+	</String>
+    <String Id="IdsActiontext1D">
+		[1]
+	</String>
+    <String Id="IdsActiontextAdvertising">
+		Advertising application
+	</String>
+    <String Id="IdsActiontextAllocatingregistry">
+		Allocating registry space
+	</String>
+    <String Id="IdsActiontextAppcommandline">
+		Application: [1], Command line: [2]
+	</String>
+    <String Id="IdsActiontextAppid">
+		AppId: [1]{{, AppType: [2]}}
+	</String>
+    <String Id="IdsActiontextAppidapptypersn">
+		AppId: [1]{{, AppType: [2], Users: [3], RSN: [4]}}
+	</String>
+    <String Id="IdsActiontextApplication">
+		Application: [1]
+	</String>
+    <String Id="IdsActiontextBindingexes">
+		Binding executables
+	</String>
+    <String Id="IdsActiontextClassid">
+		Class ID: [1]
+	</String>
+    <String Id="IdsActiontextClsid">
+		Class ID: [1]
+	</String>
+    <String Id="IdsActiontextComponentidqualifier">
+		Component ID: [1], Qualifier: [2]
+	</String>
+    <String Id="IdsActiontextComponentidqualifier2">
+		Component ID: [1], Qualifier: [2]
+	</String>
+    <String Id="IdsActiontextComputingspace">
+		Computing space requirements
+	</String>
+    <String Id="IdsActiontextComputingspace2">
+		Computing space requirements
+	</String>
+    <String Id="IdsActiontextComputingspace3">
+		Computing space requirements
+	</String>
+    <String Id="IdsActiontextContenttypeextension">
+		MIME Content Type: [1], Extension: [2]
+	</String>
+    <String Id="IdsActiontextContenttypeextension2">
+		MIME Content Type: [1], Extension: [2]
+	</String>
+    <String Id="IdsActiontextCopyingnetworkfiles">
+		Copying files to the network
+	</String>
+    <String Id="IdsActiontextCopyingnewfiles">
+		Copying new files
+	</String>
+    <String Id="IdsActiontextCreatingduplicate">
+		Creating duplicate files
+	</String>
+    <String Id="IdsActiontextCreatingfolders">
+		Creating folders
+	</String>
+    <String Id="IdsActiontextCreatingiisroots">
+		Creating IIS Virtual Roots...
+	</String>
+    <String Id="IdsActiontextCreatingshortcuts">
+		Creating shortcuts
+	</String>
+    <String Id="IdsActiontextDeletingservices">
+		Deleting services
+	</String>
+    <String Id="IdsActiontextEnvironmentstrings">
+		Updating environment strings
+	</String>
+    <String Id="IdsActiontextEvaluatelaunchconditions">
+		Evaluating launch conditions
+	</String>
+    <String Id="IdsActiontextExtension">
+		Extension: [1]
+	</String>
+    <String Id="IdsActiontextExtension2">
+		Extension: [1]
+	</String>
+    <String Id="IdsActiontextFeature">
+		Feature: [1]
+	</String>
+    <String Id="IdsActiontextFeaturecolon">
+		Feature: [1]
+	</String>
+    <String Id="IdsActiontextFile">
+		File: [1]
+	</String>
+    <String Id="IdsActiontextFile2">
+		File: [1]
+	</String>
+    <String Id="IdsActiontextFiledependencies">
+		File: [1],  Dependencies: [2]
+	</String>
+    <String Id="IdsActiontextFiledir">
+		File: [1], Directory: [9]
+	</String>
+    <String Id="IdsActiontextFiledir2">
+		File: [1], Directory: [9]
+	</String>
+    <String Id="IdsActiontextFiledir3">
+		File: [1], Directory: [9]
+	</String>
+    <String Id="IdsActiontextFiledirsize">
+		File: [1], Directory: [9], Size: [6]
+	</String>
+    <String Id="IdsActiontextFiledirsize2">
+		File: [1],  Directory: [9],  Size: [6]
+	</String>
+    <String Id="IdsActiontextFiledirsize3">
+		File: [1],  Directory: [9],  Size: [6]
+	</String>
+    <String Id="IdsActiontextFiledirsize4">
+		File: [1],  Directory: [2],  Size: [3]
+	</String>
+    <String Id="IdsActiontextFiledirectorysize">
+		File: [1],  Directory: [9],  Size: [6]
+	</String>
+    <String Id="IdsActiontextFilefolder">
+		File: [1], Folder: [2]
+	</String>
+    <String Id="IdsActiontextFilefolder2">
+		File: [1], Folder: [2]
+	</String>
+    <String Id="IdsActiontextFilesectionkeyvalue">
+		File: [1],  Section: [2],  Key: [3], Value: [4]
+	</String>
+    <String Id="IdsActiontextFilesectionkeyvalue2">
+		File: [1],  Section: [2],  Key: [3], Value: [4]
+	</String>
+    <String Id="IdsActiontextFolder">
+		Folder: [1]
+	</String>
+    <String Id="IdsActiontextFolder1">
+		Folder: [1]
+	</String>
+    <String Id="IdsActiontextFont">
+		Font: [1]
+	</String>
+    <String Id="IdsActiontextFont2">
+		Font: [1]
+	</String>
+    <String Id="IdsActiontextFoundapp">
+		Found application: [1]
+	</String>
+    <String Id="IdsActiontextFreespace">
+		Free space: [1]
+	</String>
+    <String Id="IdsActiontextGeneratingscript">
+		Generating script operations for action:
+	</String>
+    <String Id="IdsActiontextInitializeodbcdirs">
+		Initializing ODBC directories
+	</String>
+    <String Id="IdsActiontextInstallodbc">
+		Installing ODBC components
+	</String>
+    <String Id="IdsActiontextInstallservices">
+		Installing new services
+	</String>
+    <String Id="IdsActiontextInstallingsystemcatalog">
+		Installing system catalog
+	</String>
+    <String Id="IdsActiontextKeyname">
+		Key: [1], Name: [2]
+	</String>
+    <String Id="IdsActiontextKeynamevalue">
+		Key: [1], Name: [2], Value: [3]
+	</String>
+    <String Id="IdsActiontextLibid">
+		LibID: [1]
+	</String>
+    <String Id="IdsActiontextLibid2">
+		LibID: [1]
+	</String>
+    <String Id="IdsActiontextMigratingfeaturestates">
+		Migrating feature states from related applications
+	</String>
+    <String Id="IdsActiontextMovingfiles">
+		Moving files
+	</String>
+    <String Id="IdsActiontextNamevalueaction">
+		Name: [1], Value: [2], Action [3]
+	</String>
+    <String Id="IdsActiontextNamevalueaction2">
+		Name: [1], Value: [2], Action [3]
+	</String>
+    <String Id="IdsActiontextPatchingfiles">
+		Patching files
+	</String>
+    <String Id="IdsActiontextProgid">
+		ProgID: [1]
+	</String>
+    <String Id="IdsActiontextProgid2">
+		ProgID: [1]
+	</String>
+    <String Id="IdsActiontextPropertysignature">
+		Property: [1], Signature: [2]
+	</String>
+    <String Id="IdsActiontextPublishproductfeatures">
+		Publishing product features
+	</String>
+    <String Id="IdsActiontextPublishproductinfo">
+		Publishing product information
+	</String>
+    <String Id="IdsActiontextPublishingqualifiedcomponents">
+		Publishing qualified components
+	</String>
+    <String Id="IdsActiontextReguser">
+		Registering user
+	</String>
+    <String Id="IdsActiontextRegisterclassserver">
+		Registering class servers
+	</String>
+    <String Id="IdsActiontextRegisterextensionservers">
+		Registering extension servers
+	</String>
+    <String Id="IdsActiontextRegisterfonts">
+		Registering fonts
+	</String>
+    <String Id="IdsActiontextRegistermimeinfo">
+		Registering MIME info
+	</String>
+    <String Id="IdsActiontextRegistertypelibs">
+		Registering type libraries
+	</String>
+    <String Id="IdsActiontextRegisteringcomplus">
+		Registering COM+ Applications and Components
+	</String>
+    <String Id="IdsActiontextRegisteringmodules">
+		Registering modules
+	</String>
+    <String Id="IdsActiontextRegisteringproduct">
+		Registering product
+	</String>
+    <String Id="IdsActiontextRegisteringprogidentifiers">
+		Registering program identifiers
+	</String>
+    <String Id="IdsActiontextRemoveapps">
+		Removing applications
+	</String>
+    <String Id="IdsActiontextRemovingbackup">
+		Removing backup files
+	</String>
+    <String Id="IdsActiontextRemovingduplicates">
+		Removing duplicated files
+	</String>
+    <String Id="IdsActiontextRemovingfiles">
+		Removing files
+	</String>
+    <String Id="IdsActiontextRemovingfolders">
+		Removing folders
+	</String>
+    <String Id="IdsActiontextRemovingiisroots">
+		Removing IIS Virtual Roots...
+	</String>
+    <String Id="IdsActiontextRemovingini">
+		Removing INI file entries
+	</String>
+    <String Id="IdsActiontextRemovingmoved">
+		Removing moved files
+	</String>
+    <String Id="IdsActiontextRemovingodbc">
+		Removing ODBC components
+	</String>
+    <String Id="IdsActiontextRemovingregistry">
+		Removing system registry values
+	</String>
+    <String Id="IdsActiontextRemovingshortcuts">
+		Removing shortcuts
+	</String>
+    <String Id="IdsActiontextRollingback">
+		Rolling back action:
+	</String>
+    <String Id="IdsActiontextSearchforrelated">
+		Searching for related applications
+	</String>
+    <String Id="IdsActiontextSearchinstalled">
+		Searching for installed applications
+	</String>
+    <String Id="IdsActiontextSearchingqualifyingproducts">
+		Searching for qualifying products
+	</String>
+    <String Id="IdsActiontextSearchingqualifyingproducts2">
+		Searching for qualifying products
+	</String>
+    <String Id="IdsActiontextService">
+		Service: [1]
+	</String>
+    <String Id="IdsActiontextService2">
+		Service: [2]
+	</String>
+    <String Id="IdsActiontextService3">
+		Service: [1]
+	</String>
+    <String Id="IdsActiontextService4">
+		Service: [1]
+	</String>
+    <String Id="IdsActiontextShortcut">
+		Shortcut: [1]
+	</String>
+    <String Id="IdsActiontextShortcut1">
+		Shortcut: [1]
+	</String>
+    <String Id="IdsActiontextStartingservices">
+		Starting services
+	</String>
+    <String Id="IdsActiontextStoppingservices">
+		Stopping services
+	</String>
+    <String Id="IdsActiontextUnpublishproductfeatures">
+		Unpublishing product features
+	</String>
+    <String Id="IdsActiontextUnpublishqualified">
+		Unpublishing Qualified Components
+	</String>
+    <String Id="IdsActiontextUnpublishingproductinfo">
+		Unpublishing product information
+	</String>
+    <String Id="IdsActiontextUnregtypelibs">
+		Unregistering type libraries
+	</String>
+    <String Id="IdsActiontextUnregisterclassservers">
+		Unregister class servers
+	</String>
+    <String Id="IdsActiontextUnregisterextensionservers">
+		Unregistering extension servers
+	</String>
+    <String Id="IdsActiontextUnregistermodules">
+		Unregistering modules
+	</String>
+    <String Id="IdsActiontextUnregisteringcomplus">
+		Unregistering COM+ Applications and Components
+	</String>
+    <String Id="IdsActiontextUnregisteringfonts">
+		Unregistering fonts
+	</String>
+    <String Id="IdsActiontextUnregisteringmimeinfo">
+		Unregistering MIME info
+	</String>
+    <String Id="IdsActiontextUnregisteringprogramids">
+		Unregistering program identifiers
+	</String>
+    <String Id="IdsActiontextUpdatecomponentregistration">
+		Updating component registration
+	</String>
+    <String Id="IdsActiontextUpdateenvironmentstrings">
+		Updating environment strings
+	</String>
+    <String Id="IdsActiontextValidating">
+		Validating install
+	</String>
+    <String Id="IdsActiontextWritingini">
+		Writing INI file values
+	</String>
+    <String Id="IdsActiontextWritingregistry">
+		Writing system registry values
+	</String>
+    <String Id="IdsBack">
+		Back
+	</String>
+    <String Id="IdsCancel">
+		Cancel
+	</String>
+    <String Id="IdsCancel2">
+		Cancel
+	</String>
+    <String Id="IdsChange">
+		Change...
+	</String>
+    <String Id="IdsComplusProgresstextCost">
+		Costing COM+ application: [1]
+	</String>
+    <String Id="IdsComplusProgresstextInstall">
+		Installing COM+ application: [1]
+	</String>
+    <String Id="IdsComplusProgresstextUninstall">
+		Uninstalling COM+ application: [1]
+	</String>
+    <String Id="IdsDatabasefolderInstalldatabaseto">
+		Install [ProductName] database to:
+	</String>
+    <String Id="IdsError0">
+		{{Fatal error: }}
+	</String>
+    <String Id="IdsError1">
+		Error [1].
+	</String>
+    <String Id="IdsError10" />
+    <String Id="IdsError100">
+		Could not remove shortcut [2]. Verify that the shortcut file exists and that you can access it.
+	</String>
+    <String Id="IdsError101">
+		Could not register type library for file [2].  Contact your support personnel.
+	</String>
+    <String Id="IdsError102">
+		Could not unregister type library for file [2].  Contact your support personnel.
+	</String>
+    <String Id="IdsError103">
+		Could not update the INI file [2][3].  Verify that the file exists and that you can access it.
+	</String>
+    <String Id="IdsError104">
+		Could not schedule file [2] to replace file [3] on reboot.  Verify that you have write permissions to file [3].
+	</String>
+    <String Id="IdsError105">
+		Error removing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel.
+	</String>
+    <String Id="IdsError106">
+		Error installing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel.
+	</String>
+    <String Id="IdsError107">
+		Error removing ODBC driver [4], ODBC error [2]: [3]. Verify that you have sufficient privileges to remove ODBC drivers.
+	</String>
+    <String Id="IdsError108">
+		Error installing ODBC driver [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it.
+	</String>
+    <String Id="IdsError109">
+		Error configuring ODBC data source [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it.
+	</String>
+    <String Id="IdsError11" />
+    <String Id="IdsError110">
+		Service [2] ([3]) failed to start.  Verify that you have sufficient privileges to start system services.
+	</String>
+    <String Id="IdsError111">
+		Service [2] ([3]) could not be stopped.  Verify that you have sufficient privileges to stop system services.
+	</String>
+    <String Id="IdsError112">
+		Service [2] ([3]) could not be deleted.  Verify that you have sufficient privileges to remove system services.
+	</String>
+    <String Id="IdsError113">
+		Service [2] ([3]) could not be installed.  Verify that you have sufficient privileges to install system services.
+	</String>
+    <String Id="IdsError114">
+		Could not update environment variable [2].  Verify that you have sufficient privileges to modify environment variables.
+	</String>
+    <String Id="IdsError115">
+		You do not have sufficient privileges to complete this installation for all users of the machine.  Log on as an administrator and then retry this installation.
+	</String>
+    <String Id="IdsError116">
+		Could not set file security for file [3]. Error: [2].  Verify that you have sufficient privileges to modify the security permissions for this file.
+	</String>
+    <String Id="IdsError117">
+		Component Services (COM+ 1.0) are not installed on this computer.  This installation requires Component Services in order to complete successfully.  Component Services are available on Windows 2000.
+	</String>
+    <String Id="IdsError118">
+		Error registering COM+ application.  Contact your support personnel for more information.
+	</String>
+    <String Id="IdsError119">
+		Error unregistering COM+ application.  Contact your support personnel for more information.
+	</String>
+    <String Id="IdsError12">
+		Action start [Time]: [1].
+	</String>
+    <String Id="IdsError120">
+		Removing older versions of this application
+	</String>
+    <String Id="IdsError121">
+		Preparing to remove older versions of this application
+	</String>
+    <String Id="IdsError122">
+		Error applying patch to file [2].  It has probably been updated by other means, and can no longer be modified by this patch.  For more information contact your patch vendor.  {{System Error: [3]}}
+	</String>
+    <String Id="IdsError123">
+		[2] cannot install one of its required products. Contact your technical support group.  {{System Error: [3].}}
+	</String>
+    <String Id="IdsError124">
+		The older version of [2] cannot be removed.  Contact your technical support group.  {{System Error [3].}}
+	</String>
+    <String Id="IdsError125">
+		The description for service '[2]' ([3]) could not be changed.
+	</String>
+    <String Id="IdsError126">
+		The Windows Installer service cannot update the system file [2] because the file is protected by Windows.  You may need to update your operating system for this program to work correctly. {{Package version: [3], OS Protected version: [4]}}
+	</String>
+    <String Id="IdsError127">
+		The Windows Installer service cannot update the protected Windows file [2]. {{Package version: [3], OS Protected version: [4], SFP Error: [5]}}
+	</String>
+    <String Id="IdsError128">
+		The Windows Installer service cannot update one or more protected Windows files. SFP Error: [2]. List of protected files: [3]
+	</String>
+    <String Id="IdsError129">
+		User installations are disabled via policy on the machine.
+	</String>
+    <String Id="IdsError13">
+		Action ended [Time]: [1]. Return value [2].
+	</String>
+    <String Id="IdsError130">
+		This setup requires Internet Information Server 4.0 or higher for configuring IIS Virtual Roots. Please make sure that you have IIS 4.0 or higher.
+	</String>
+    <String Id="IdsError131">
+		This setup requires Administrator privileges for configuring IIS Virtual Roots.
+	</String>
+    <String Id="IdsError1329">
+		A file that is required cannot be installed because the cabinet file [2] is not digitally signed. This may indicate that the cabinet file is corrupt.
+	</String>
+    <String Id="IdsError1330">
+		A file that is required cannot be installed because the cabinet file [2] has an invalid digital signature. This may indicate that the cabinet file is corrupt.{ Error [3] was returned by WinVerifyTrust.}
+	</String>
+    <String Id="IdsError1331">
+		Failed to correctly copy [2] file: CRC error.
+	</String>
+    <String Id="IdsError1332">
+		Failed to correctly patch [2] file: CRC error.
+	</String>
+    <String Id="IdsError1333">
+		Failed to correctly patch [2] file: CRC error.
+	</String>
+    <String Id="IdsError1334">
+		The file '[2]' cannot be installed because the file cannot be found in cabinet file '[3]'. This could indicate a network error, an error reading from the CD-ROM, or a problem with this package.
+	</String>
+    <String Id="IdsError1335">
+		The cabinet file '[2]' required for this installation is corrupt and cannot be used. This could indicate a network error, an error reading from the CD-ROM, or a problem with this package.
+	</String>
+    <String Id="IdsError1336">
+		There was an error creating a temporary file that is needed to complete this installation. Folder: [3]. System error code: [2]
+	</String>
+    <String Id="IdsError14">
+		Time remaining: {[1] minutes }{[2] seconds}
+	</String>
+    <String Id="IdsError15">
+		Out of memory. Shut down other applications before retrying.
+	</String>
+    <String Id="IdsError16">
+		Installer is no longer responding.
+	</String>
+    <String Id="IdsError1609">
+		An error occurred while applying security settings. [2] is not a valid user or group. This could be a problem with the package, or a problem connecting to a domain controller on the network. Check your network connection and click Retry, or Cancel to end the install. Unable to locate the user's SID, system error [3]
+	</String>
+    <String Id="IdsError1651">
+		Admin user failed to apply patch for a per-user managed or a per-machine application which is in advertise state.
+	</String>
+    <String Id="IdsError17">
+		Installer terminated prematurely.
+	</String>
+    <String Id="IdsError1715">
+		Installed [2].
+	</String>
+    <String Id="IdsError1716">
+		Configured [2].
+	</String>
+    <String Id="IdsError1717">
+		Removed [2].
+	</String>
+    <String Id="IdsError1718">
+		File [2] was rejected by digital signature policy.
+	</String>
+    <String Id="IdsError1719">
+		Windows Installer service could not be accessed. Contact your support personnel to verify that it is properly registered and enabled.
+	</String>
+    <String Id="IdsError1720">
+		There is a problem with this Windows Installer package. A script required for this install to complete could not be run. Contact your support personnel or package vendor. Custom action [2] script error [3], [4]: [5] Line [6], Column [7], [8]
+	</String>
+    <String Id="IdsError1721">
+		There is a problem with this Windows Installer package. A program required for this install to complete could not be run. Contact your support personnel or package vendor. Action: [2], location: [3], command: [4]
+	</String>
+    <String Id="IdsError1722">
+		There is a problem with this Windows Installer package. A program run as part of the setup did not finish as expected. Contact your support personnel or package vendor. Action [2], location: [3], command: [4]
+	</String>
+    <String Id="IdsError1723">
+		There is a problem with this Windows Installer package. A DLL required for this install to complete could not be run. Contact your support personnel or package vendor. Action [2], entry: [3], library: [4]
+	</String>
+    <String Id="IdsError1724">
+		Removal completed successfully.
+	</String>
+    <String Id="IdsError1725">
+		Removal failed.
+	</String>
+    <String Id="IdsError1726">
+		Advertisement completed successfully.
+	</String>
+    <String Id="IdsError1727">
+		Advertisement failed.
+	</String>
+    <String Id="IdsError1728">
+		Configuration completed successfully.
+	</String>
+    <String Id="IdsError1729">
+		Configuration failed.
+	</String>
+    <String Id="IdsError1730">
+		You must be an Administrator to remove this application. To remove this application, you can log on as an administrator, or contact your technical support group for assistance.
+	</String>
+    <String Id="IdsError1731">
+		The source installation package for the product [2] is out of sync with the client package. Try the installation again using a valid copy of the installation package '[3]'.
+	</String>
+    <String Id="IdsError1732">
+		In order to complete the installation of [2], you must restart the computer. Other users are currently logged on to this computer, and restarting may cause them to lose their work. Do you want to restart now?
+	</String>
+    <String Id="IdsError18">
+		Please wait while Windows configures [ProductName]
+	</String>
+    <String Id="IdsError19">
+		Gathering required information...
+	</String>
+    <String Id="IdsError1935">
+		An error occurred during the installation of assembly component [2]. HRESULT: [3]. {{assembly interface: [4], function: [5], assembly name: [6]}}
+	</String>
+    <String Id="IdsError1936">
+		An error occurred during the installation of assembly '[6]'. The assembly is not strongly named or is not signed with the minimal key length. HRESULT: [3]. {{assembly interface: [4], function: [5], component: [2]}}
+	</String>
+    <String Id="IdsError1937">
+		An error occurred during the installation of assembly '[6]'. The signature or catalog could not be verified or is not valid. HRESULT: [3]. {{assembly interface: [4], function: [5], component: [2]}}
+	</String>
+    <String Id="IdsError1938">
+		An error occurred during the installation of assembly '[6]'. One or more modules of the assembly could not be found. HRESULT: [3]. {{assembly interface: [4], function: [5], component: [2]}}
+	</String>
+    <String Id="IdsError2">
+		Warning [1].
+	</String>
+    <String Id="IdsError20">
+		{[ProductName] }Setup completed successfully.
+	</String>
+    <String Id="IdsError21">
+		{[ProductName] }Setup failed.
+	</String>
+    <String Id="IdsError2101">
+		Shortcuts not supported by the operating system.
+	</String>
+    <String Id="IdsError2102">
+		Invalid .ini action: [2]
+	</String>
+    <String Id="IdsError2103">
+		Could not resolve path for shell folder [2].
+	</String>
+    <String Id="IdsError2104">
+		Writing .ini file: [3]: System error: [2].
+	</String>
+    <String Id="IdsError2105">
+		Shortcut Creation [3] Failed. System error: [2].
+	</String>
+    <String Id="IdsError2106">
+		Shortcut Deletion [3] Failed. System error: [2].
+	</String>
+    <String Id="IdsError2107">
+		Error [3] registering type library [2].
+	</String>
+    <String Id="IdsError2108">
+		Error [3] unregistering type library [2].
+	</String>
+    <String Id="IdsError2109">
+		Section missing for .ini action.
+	</String>
+    <String Id="IdsError2110">
+		Key missing for .ini action.
+	</String>
+    <String Id="IdsError2111">
+		Detection of running applications failed, could not get performance data. Registered operation returned : [2].
+	</String>
+    <String Id="IdsError2112">
+		Detection of running applications failed, could not get performance index. Registered operation returned : [2].
+	</String>
+    <String Id="IdsError2113">
+		Detection of running applications failed.
+	</String>
+    <String Id="IdsError22">
+		Error reading from file: [2]. {{ System error [3].}}  Verify that the file exists and that you can access it.
+	</String>
+    <String Id="IdsError2200">
+		Database: [2]. Database object creation failed, mode
+	</String>
+    <String Id="IdsError2201">
+		Database: [2]. Initialization failed, out of memory.
+	</String>
+    <String Id="IdsError2202">
+		Database: [2]. Data access failed, out of memory.
+	</String>
+    <String Id="IdsError2203">
+		Database: [2]. Cannot open database file. System error [3].
+	</String>
+    <String Id="IdsError2204">
+		Database: [2]. Table already exists: [3].
+	</String>
+    <String Id="IdsError2205">
+		Database: [2]. Table does not exist: [3].
+	</String>
+    <String Id="IdsError2206">
+		Database: [2]. Table could not be dropped: [3].
+	</String>
+    <String Id="IdsError2207">
+		Database: [2]. Intent violation.
+	</String>
+    <String Id="IdsError2208">
+		Database: [2]. Insufficient parameters for Execute.
+	</String>
+    <String Id="IdsError2209">
+		Database: [2]. Cursor in invalid state.
+	</String>
+    <String Id="IdsError2210">
+		Database: [2]. Invalid update data type in column [3].
+	</String>
+    <String Id="IdsError2211">
+		Database: [2]. Could not create database table [3].
+	</String>
+    <String Id="IdsError2212">
+		Database: [2]. Database not in writable state.
+	</String>
+    <String Id="IdsError2213">
+		Database: [2]. Error saving database tables.
+	</String>
+    <String Id="IdsError2214">
+		Database: [2]. Error writing export file: [3].
+	</String>
+    <String Id="IdsError2215">
+		Database: [2]. Cannot open import file: [3].
+	</String>
+    <String Id="IdsError2216">
+		Database: [2]. Import file format error: [3], Line [4].
+	</String>
+    <String Id="IdsError2217">
+		Database: [2]. Wrong state to CreateOutputDatabase [3].
+	</String>
+    <String Id="IdsError2218">
+		Database: [2]. Table name not supplied.
+	</String>
+    <String Id="IdsError2219">
+		Database: [2]. Invalid Installer database format.
+	</String>
+    <String Id="IdsError2220">
+		Database: [2]. Invalid row/field data.
+	</String>
+    <String Id="IdsError2221">
+		Database: [2]. Code page conflict in import file: [3].
+	</String>
+    <String Id="IdsError2222">
+		Database: [2]. Transform or merge code page [3] differs from database code page [4].
+	</String>
+    <String Id="IdsError2223">
+		Database: [2]. Databases are the same. No transform generated.
+	</String>
+    <String Id="IdsError2224">
+		Database: [2]. GenerateTransform: Database corrupt. Table: [3].
+	</String>
+    <String Id="IdsError2225">
+		Database: [2]. Transform: Cannot transform a temporary table. Table: [3].
+	</String>
+    <String Id="IdsError2226">
+		Database: [2]. Transform failed.
+	</String>
+    <String Id="IdsError2227">
+		Database: [2]. Invalid identifier '[3]' in SQL query: [4].
+	</String>
+    <String Id="IdsError2228">
+		Database: [2]. Unknown table '[3]' in SQL query: [4].
+	</String>
+    <String Id="IdsError2229">
+		Database: [2]. Could not load table '[3]' in SQL query: [4].
+	</String>
+    <String Id="IdsError2230">
+		Database: [2]. Repeated table '[3]' in SQL query: [4].
+	</String>
+    <String Id="IdsError2231">
+		Database: [2]. Missing ')' in SQL query: [3].
+	</String>
+    <String Id="IdsError2232">
+		Database: [2]. Unexpected token '[3]' in SQL query: [4].
+	</String>
+    <String Id="IdsError2233">
+		Database: [2]. No columns in SELECT clause in SQL query: [3].
+	</String>
+    <String Id="IdsError2234">
+		Database: [2]. No columns in ORDER BY clause in SQL query: [3].
+	</String>
+    <String Id="IdsError2235">
+		Database: [2]. Column '[3]' not present or ambiguous in SQL query: [4].
+	</String>
+    <String Id="IdsError2236">
+		Database: [2]. Invalid operator '[3]' in SQL query: [4].
+	</String>
+    <String Id="IdsError2237">
+		Database: [2]. Invalid or missing query string: [3].
+	</String>
+    <String Id="IdsError2238">
+		Database: [2]. Missing FROM clause in SQL query: [3].
+	</String>
+    <String Id="IdsError2239">
+		Database: [2]. Insufficient values in INSERT SQL statement.
+	</String>
+    <String Id="IdsError2240">
+		Database: [2]. Missing update columns in UPDATE SQL statement.
+	</String>
+    <String Id="IdsError2241">
+		Database: [2]. Missing insert columns in INSERT SQL statement.
+	</String>
+    <String Id="IdsError2242">
+		Database: [2]. Column '[3]' repeated.
+	</String>
+    <String Id="IdsError2243">
+		Database: [2]. No primary columns defined for table creation.
+	</String>
+    <String Id="IdsError2244">
+		Database: [2]. Invalid type specifier '[3]' in SQL query [4].
+	</String>
+    <String Id="IdsError2245">
+		IStorage::Stat failed with error [3].
+	</String>
+    <String Id="IdsError2246">
+		Database: [2]. Invalid Installer transform format.
+	</String>
+    <String Id="IdsError2247">
+		Database: [2] Transform stream read/write failure.
+	</String>
+    <String Id="IdsError2248">
+		Database: [2] GenerateTransform/Merge: Column type in base table does not match reference table. Table: [3] Col #: [4].
+	</String>
+    <String Id="IdsError2249">
+		Database: [2] GenerateTransform: More columns in base table than in reference table. Table: [3].
+	</String>
+    <String Id="IdsError2250">
+		Database: [2] Transform: Cannot add existing row. Table: [3].
+	</String>
+    <String Id="IdsError2251">
+		Database: [2] Transform: Cannot delete row that does not exist. Table: [3].
+	</String>
+    <String Id="IdsError2252">
+		Database: [2] Transform: Cannot add existing table. Table: [3].
+	</String>
+    <String Id="IdsError2253">
+		Database: [2] Transform: Cannot delete table that does not exist. Table: [3].
+	</String>
+    <String Id="IdsError2254">
+		Database: [2] Transform: Cannot update row that does not exist. Table: [3].
+	</String>
+    <String Id="IdsError2255">
+		Database: [2] Transform: Column with this name already exists. Table: [3] Col: [4].
+	</String>
+    <String Id="IdsError2256">
+		Database: [2] GenerateTransform/Merge: Number of primary keys in base table does not match reference table. Table: [3].
+	</String>
+    <String Id="IdsError2257">
+		Database: [2]. Intent to modify read only table: [3].
+	</String>
+    <String Id="IdsError2258">
+		Database: [2]. Type mismatch in parameter: [3].
+	</String>
+    <String Id="IdsError2259">
+		Database: [2] Table(s) Update failed
+	</String>
+    <String Id="IdsError2260">
+		Storage CopyTo failed. System error: [3].
+	</String>
+    <String Id="IdsError2261">
+		Could not remove stream [2]. System error: [3].
+	</String>
+    <String Id="IdsError2262">
+		Stream does not exist: [2]. System error: [3].
+	</String>
+    <String Id="IdsError2263">
+		Could not open stream [2]. System error: [3].
+	</String>
+    <String Id="IdsError2264">
+		Could not remove stream [2]. System error: [3].
+	</String>
+    <String Id="IdsError2265">
+		Could not commit storage. System error: [3].
+	</String>
+    <String Id="IdsError2266">
+		Could not rollback storage. System error: [3].
+	</String>
+    <String Id="IdsError2267">
+		Could not delete storage [2]. System error: [3].
+	</String>
+    <String Id="IdsError2268">
+		Database: [2]. Merge: There were merge conflicts reported in [3] tables.
+	</String>
+    <String Id="IdsError2269">
+		Database: [2]. Merge: The column count differed in the '[3]' table of the two databases.
+	</String>
+    <String Id="IdsError2270">
+		Database: [2]. GenerateTransform/Merge: Column name in base table does not match reference table. Table: [3] Col #: [4].
+	</String>
+    <String Id="IdsError2271">
+		SummaryInformation write for transform failed.
+	</String>
+    <String Id="IdsError2272">
+		Database: [2]. MergeDatabase will not write any changes because the database is open read-only.
+	</String>
+    <String Id="IdsError2273">
+		Database: [2]. MergeDatabase: A reference to the base database was passed as the reference database.
+	</String>
+    <String Id="IdsError2274">
+		Database: [2]. MergeDatabase: Unable to write errors to Error table. Could be due to a non-nullable column in a predefined Error table.
+	</String>
+    <String Id="IdsError2275">
+		Database: [2]. Specified Modify [3] operation invalid for table joins.
+	</String>
+    <String Id="IdsError2276">
+		Database: [2]. Code page [3] not supported by the system.
+	</String>
+    <String Id="IdsError2277">
+		Database: [2]. Failed to save table [3].
+	</String>
+    <String Id="IdsError2278">
+		Database: [2]. Exceeded number of expressions limit of 32 in WHERE clause of SQL query: [3].
+	</String>
+    <String Id="IdsError2279">
+		Database: [2] Transform: Too many columns in base table [3].
+	</String>
+    <String Id="IdsError2280">
+		Database: [2]. Could not create column [3] for table [4].
+	</String>
+    <String Id="IdsError2281">
+		Could not rename stream [2]. System error: [3].
+	</String>
+    <String Id="IdsError2282">
+		Stream name invalid [2].
+	</String>
+    <String Id="IdsError23">
+		Cannot create the file [3].  A directory with this name already exists.  Cancel the installation and try installing to a different location.
+	</String>
+    <String Id="IdsError2302">
+		Patch notify: [2] bytes patched to far.
+	</String>
+    <String Id="IdsError2303">
+		Error getting volume info. GetLastError: [2].
+	</String>
+    <String Id="IdsError2304">
+		Error getting disk free space. GetLastError: [2]. Volume: [3].
+	</String>
+    <String Id="IdsError2305">
+		Error waiting for patch thread. GetLastError: [2].
+	</String>
+    <String Id="IdsError2306">
+		Could not create thread for patch application. GetLastError: [2].
+	</String>
+    <String Id="IdsError2307">
+		Source file key name is null.
+	</String>
+    <String Id="IdsError2308">
+		Destination file name is null.
+	</String>
+    <String Id="IdsError2309">
+		Attempting to patch file [2] when patch already in progress.
+	</String>
+    <String Id="IdsError2310">
+		Attempting to continue patch when no patch is in progress.
+	</String>
+    <String Id="IdsError2315">
+		Missing path separator: [2].
+	</String>
+    <String Id="IdsError2318">
+		File does not exist: [2].
+	</String>
+    <String Id="IdsError2319">
+		Error setting file attribute: [3] GetLastError: [2].
+	</String>
+    <String Id="IdsError2320">
+		File not writable: [2].
+	</String>
+    <String Id="IdsError2321">
+		Error creating file: [2].
+	</String>
+    <String Id="IdsError2322">
+		User canceled.
+	</String>
+    <String Id="IdsError2323">
+		Invalid file attribute.
+	</String>
+    <String Id="IdsError2324">
+		Could not open file: [3] GetLastError: [2].
+	</String>
+    <String Id="IdsError2325">
+		Could not get file time for file: [3] GetLastError: [2].
+	</String>
+    <String Id="IdsError2326">
+		Error in FileToDosDateTime.
+	</String>
+    <String Id="IdsError2327">
+		Could not remove directory: [3] GetLastError: [2].
+	</String>
+    <String Id="IdsError2328">
+		Error getting file version info for file: [2].
+	</String>
+    <String Id="IdsError2329">
+		Error deleting file: [3]. GetLastError: [2].
+	</String>
+    <String Id="IdsError2330">
+		Error getting file attributes: [3]. GetLastError: [2].
+	</String>
+    <String Id="IdsError2331">
+		Error loading library [2] or finding entry point [3].
+	</String>
+    <String Id="IdsError2332">
+		Error getting file attributes. GetLastError: [2].
+	</String>
+    <String Id="IdsError2333">
+		Error setting file attributes. GetLastError: [2].
+	</String>
+    <String Id="IdsError2334">
+		Error converting file time to local time for file: [3]. GetLastError: [2].
+	</String>
+    <String Id="IdsError2335">
+		Path: [2] is not a parent of [3].
+	</String>
+    <String Id="IdsError2336">
+		Error creating temp file on path: [3]. GetLastError: [2].
+	</String>
+    <String Id="IdsError2337">
+		Could not close file: [3] GetLastError: [2].
+	</String>
+    <String Id="IdsError2338">
+		Could not update resource for file: [3] GetLastError: [2].
+	</String>
+    <String Id="IdsError2339">
+		Could not set file time for file: [3] GetLastError: [2].
+	</String>
+    <String Id="IdsError2340">
+		Could not update resource for file: [3], Missing resource.
+	</String>
+    <String Id="IdsError2341">
+		Could not update resource for file: [3], Resource too large.
+	</String>
+    <String Id="IdsError2342">
+		Could not update resource for file: [3] GetLastError: [2].
+	</String>
+    <String Id="IdsError2343">
+		Specified path is empty.
+	</String>
+    <String Id="IdsError2344">
+		Could not find required file IMAGEHLP.DLL to validate file:[2].
+	</String>
+    <String Id="IdsError2345">
+		[2]: File does not contain a valid checksum value.
+	</String>
+    <String Id="IdsError2347">
+		User ignore.
+	</String>
+    <String Id="IdsError2348">
+		Error attempting to read from cabinet stream.
+	</String>
+    <String Id="IdsError2349">
+		Copy resumed with different info.
+	</String>
+    <String Id="IdsError2350">
+		FDI server error
+	</String>
+    <String Id="IdsError2351">
+		File key '[2]' not found in cabinet '[3]'. The installation cannot continue.
+	</String>
+    <String Id="IdsError2352">
+		Could not initialize cabinet file server. The required file 'CABINET.DLL' may be missing.
+	</String>
+    <String Id="IdsError2353">
+		Not a cabinet.
+	</String>
+    <String Id="IdsError2354">
+		Cannot handle cabinet.
+	</String>
+    <String Id="IdsError2355">
+		Corrupt cabinet.
+	</String>
+    <String Id="IdsError2356">
+		Could not locate cabinet in stream: [2].
+	</String>
+    <String Id="IdsError2357">
+		Cannot set attributes.
+	</String>
+    <String Id="IdsError2358">
+		Error determining whether file is in-use: [3]. GetLastError: [2].
+	</String>
+    <String Id="IdsError2359">
+		Unable to create the target file - file may be in use.
+	</String>
+    <String Id="IdsError2360">
+		Progress tick.
+	</String>
+    <String Id="IdsError2361">
+		Need next cabinet.
+	</String>
+    <String Id="IdsError2362">
+		Folder not found: [2].
+	</String>
+    <String Id="IdsError2363">
+		Could not enumerate subfolders for folder: [2].
+	</String>
+    <String Id="IdsError2364">
+		Bad enumeration constant in CreateCopier call.
+	</String>
+    <String Id="IdsError2365">
+		Could not BindImage exe file [2].
+	</String>
+    <String Id="IdsError2366">
+		User failure.
+	</String>
+    <String Id="IdsError2367">
+		User abort.
+	</String>
+    <String Id="IdsError2368">
+		Failed to get network resource information. Error [2], network path [3]. Extended error: network provider [5], error code [4], error description [6].
+	</String>
+    <String Id="IdsError2370">
+		Invalid CRC checksum value for [2] file.{ Its header says [3] for checksum, its computed value is [4].}
+	</String>
+    <String Id="IdsError2371">
+		Could not apply patch to file [2]. GetLastError: [3].
+	</String>
+    <String Id="IdsError2372">
+		Patch file [2] is corrupt or of an invalid format. Attempting to patch file [3]. GetLastError: [4].
+	</String>
+    <String Id="IdsError2373">
+		File [2] is not a valid patch file.
+	</String>
+    <String Id="IdsError2374">
+		File [2] is not a valid destination file for patch file [3].
+	</String>
+    <String Id="IdsError2375">
+		Unknown patching error: [2].
+	</String>
+    <String Id="IdsError2376">
+		Cabinet not found.
+	</String>
+    <String Id="IdsError2379">
+		Error opening file for read: [3] GetLastError: [2].
+	</String>
+    <String Id="IdsError2380">
+		Error opening file for write: [3]. GetLastError: [2].
+	</String>
+    <String Id="IdsError2381">
+		Directory does not exist: [2].
+	</String>
+    <String Id="IdsError2382">
+		Drive not ready: [2].
+	</String>
+    <String Id="IdsError24">
+		Please insert the disk: [2]
+	</String>
+    <String Id="IdsError2401">
+		64-bit registry operation attempted on 32-bit operating system for key [2].
+	</String>
+    <String Id="IdsError2402">
+		Out of memory.
+	</String>
+    <String Id="IdsError25">
+		The installer has insufficient privileges to access this directory: [2].  The installation cannot continue.  Log on as an administrator or contact your system administrator.
+	</String>
+    <String Id=" IdsError2501">
+		Could not create rollback script enumerator.
+	</String>
+    <String Id="IdsError2502">
+		Called InstallFinalize when no install in progress.
+	</String>
+    <String Id="IdsError2503">
+		Called RunScript when not marked in progress.
+	</String>
+    <String Id="IdsError26">
+		Error writing to file [2].  Verify that you have access to that directory.
+	</String>
+    <String Id="IdsError2601">
+		Invalid value for property [2]: '[3]'
+	</String>
+    <String Id="IdsError2602">
+		The [2] table entry '[3]' has no associated entry in the Media table.
+	</String>
+    <String Id="IdsError2603">
+		Duplicate table name [2].
+	</String>
+    <String Id="IdsError2604">
+		[2] Property undefined.
+	</String>
+    <String Id="IdsError2605">
+		Could not find server [2] in [3] or [4].
+	</String>
+    <String Id="IdsError2606">
+		Value of property [2] is not a valid full path: '[3]'.
+	</String>
+    <String Id="IdsError2607">
+		Media table not found or empty (required for installation of files).
+	</String>
+    <String Id="IdsError2608">
+		Could not create security descriptor for object. Error: '[2]'.
+	</String>
+    <String Id="IdsError2609">
+		Attempt to migrate product settings before initialization.
+	</String>
+    <String Id="IdsError2611">
+		The file [2] is marked as compressed, but the associated media entry does not specify a cabinet.
+	</String>
+    <String Id="IdsError2612">
+		Stream not found in '[2]' column. Primary key: '[3]'.
+	</String>
+    <String Id="IdsError2613">
+		RemoveExistingProducts action sequenced incorrectly.
+	</String>
+    <String Id="IdsError2614">
+		Could not access IStorage object from installation package.
+	</String>
+    <String Id="IdsError2615">
+		Skipped unregistration of Module [2] due to source resolution failure.
+	</String>
+    <String Id="IdsError2616">
+		Companion file [2] parent missing.
+	</String>
+    <String Id="IdsError2617">
+		Shared component [2] not found in Component table.
+	</String>
+    <String Id="IdsError2618">
+		Isolated application component [2] not found in Component table.
+	</String>
+    <String Id="IdsError2619">
+		Isolated components [2], [3] not part of same feature.
+	</String>
+    <String Id="IdsError2620">
+		Key file of isolated application component [2] not in File table.
+	</String>
+    <String Id="IdsError2621">
+		Resource DLL or Resource ID information for shortcut [2] set incorrectly.
+	</String>
+    <String Id="IdsError27">
+		Error reading from file [2].  Verify that the file exists and that you can access it.
+	</String>
+    <String Id="IdsError2701">
+		The depth of a feature exceeds the acceptable tree depth of [2] levels.
+	</String>
+    <String Id="IdsError2702">
+		A Feature table record ([2]) references a non-existent parent in the Attributes field.
+	</String>
+    <String Id="IdsError2703">
+		Property name for root source path not defined: [2]
+	</String>
+    <String Id="IdsError2704">
+		Root directory property undefined: [2]
+	</String>
+    <String Id="IdsError2705">
+		Invalid table: [2]; Could not be linked as tree.
+	</String>
+    <String Id="IdsError2706">
+		Source paths not created. No path exists for entry [2] in Directory table.
+	</String>
+    <String Id="IdsError2707">
+		Target paths not created. No path exists for entry [2] in Directory table.
+	</String>
+    <String Id="IdsError2708">
+		No entries found in the file table.
+	</String>
+    <String Id="IdsError2709">
+		The specified Component name ('[2]') not found in Component table.
+	</String>
+    <String Id="IdsError2710">
+		The requested 'Select' state is illegal for this Component.
+	</String>
+    <String Id="IdsError2711">
+		The specified Feature name ('[2]') not found in Feature table.
+	</String>
+    <String Id="IdsError2712">
+		Invalid return from modeless dialog: [3], in action [2].
+	</String>
+    <String Id="IdsError2713">
+		Null value in a non-nullable column ('[2]' in '[3]' column of the '[4]' table.
+	</String>
+    <String Id="IdsError2714">
+		Invalid value for default folder name: [2].
+	</String>
+    <String Id="IdsError2715">
+		The specified File key ('[2]') not found in the File table.
+	</String>
+    <String Id="IdsError2716">
+		Could not create a random subcomponent name for component '[2]'.
+	</String>
+    <String Id="IdsError2717">
+		Bad action condition or error calling custom action '[2]'.
+	</String>
+    <String Id="IdsError2718">
+		Missing package name for product code '[2]'.
+	</String>
+    <String Id="IdsError2719">
+		Neither UNC nor drive letter path found in source '[2]'.
+	</String>
+    <String Id="IdsError2720">
+		Error opening source list key. Error: '[2]'
+	</String>
+    <String Id="IdsError2721">
+		Custom action [2] not found in Binary table stream.
+	</String>
+    <String Id="IdsError2722">
+		Custom action [2] not found in File table.
+	</String>
+    <String Id="IdsError2723">
+		Custom action [2] specifies unsupported type.
+	</String>
+    <String Id="IdsError2724">
+		The volume label '[2]' on the media you're running from does not match the label '[3]' given in the Media table. This is allowed only if you have only 1 entry in your Media table.
+	</String>
+    <String Id="IdsError2725">
+		Invalid database tables
+	</String>
+    <String Id="IdsError2726">
+		Action not found: [2].
+	</String>
+    <String Id="IdsError2727">
+		The directory entry '[2]' does not exist in the Directory table.
+	</String>
+    <String Id="IdsError2728">
+		Table definition error: [2]
+	</String>
+    <String Id="IdsError2729">
+		Install engine not initialized.
+	</String>
+    <String Id="IdsError2730">
+		Bad value in database. Table: '[2]'; Primary key: '[3]'; Column: '[4]'
+	</String>
+    <String Id="IdsError2731">
+		Selection Manager not initialized.
+	</String>
+    <String Id="IdsError2732">
+		Directory Manager not initialized.
+	</String>
+    <String Id="IdsError2733">
+		Bad foreign key ('[2]') in '[3]' column of the '[4]' table.
+	</String>
+    <String Id="IdsError2734">
+		Invalid reinstall mode character.
+	</String>
+    <String Id="IdsError2735">
+		Custom action '[2]' has caused an unhandled exception and has been stopped. This may be the result of an internal error in the custom action, such as an access violation.
+	</String>
+    <String Id="IdsError2736">
+		Generation of custom action temp file failed: [2].
+	</String>
+    <String Id="IdsError2737">
+		Could not access custom action [2], entry [3], library [4]
+	</String>
+    <String Id="IdsError2738">
+		Could not access VBScript run time for custom action [2].
+	</String>
+    <String Id="IdsError2739">
+		Could not access JavaScript run time for custom action [2].
+	</String>
+    <String Id="IdsError2740">
+		Custom action [2] script error [3], [4]: [5] Line [6], Column [7], [8].
+	</String>
+    <String Id="IdsError2741">
+		Configuration information for product [2] is corrupt. Invalid info: [2].
+	</String>
+    <String Id="IdsError2742">
+		Marshaling to Server failed: [2].
+	</String>
+    <String Id="IdsError2743">
+		Could not execute custom action [2], location: [3], command: [4].
+	</String>
+    <String Id="IdsError2744">
+		EXE failed called by custom action [2], location: [3], command: [4].
+	</String>
+    <String Id="IdsError2745">
+		Transform [2] invalid for package [3]. Expected language [4], found language [5].
+	</String>
+    <String Id="IdsError2746">
+		Transform [2] invalid for package [3]. Expected product [4], found product [5].
+	</String>
+    <String Id="IdsError2747">
+		Transform [2] invalid for package [3]. Expected product version [4], found product version [5].
+	</String>
+    <String Id="IdsError2748">
+		Transform [2] invalid for package [3]. Expected product version
+	</String>
+    <String Id="IdsError2749">
+		Transform [2] invalid for package [3]. Expected product version
+	</String>
+    <String Id="IdsError2750">
+		Transform [2] invalid for package [3]. Expected product version &gt;
+	</String>
+    <String Id="IdsError27502">
+		Could not connect to [2] '[3]'. [4]
+	</String>
+    <String Id="IdsError27503">
+		Error retrieving version string from [2] '[3]'. [4]
+	</String>
+    <String Id="IdsError27504">
+		SQL version requirements not met: [3]. This installation requires [2] [4] or later.
+	</String>
+    <String Id="IdsError27505">
+		Could not open SQL script file [2].
+	</String>
+    <String Id="IdsError27506">
+		Error executing SQL script [2]. Line [3]. [4]
+	</String>
+    <String Id="IdsError27507">
+		Connection or browsing for database servers requires that MDAC be installed.
+	</String>
+    <String Id="IdsError27508">
+		Error installing COM+ application [2]. [3]
+	</String>
+    <String Id="IdsError27509">
+		Error uninstalling COM+ application [2]. [3]
+	</String>
+    <String Id="IdsError2751">
+		Transform [2] invalid for package [3]. Expected product version &gt; [4], found product version [5].
+	</String>
+    <String Id="IdsError27510">
+		Error installing COM+ application [2].  Could not load Microsoft(R) .NET class libraries. Registering .NET serviced components requires that Microsoft(R) .NET Framework be installed.
+	</String>
+    <String Id="IdsError27511">
+		Could not execute SQL script file [2]. Connection not open: [3]
+	</String>
+    <String Id="IdsError27512">
+		Error beginning transactions for [2] '[3]'. Database [4]. [5]
+	</String>
+    <String Id="IdsError27513">
+		Error committing transactions for [2] '[3]'. Database [4]. [5]
+	</String>
+    <String Id="IdsError27514">
+		This installation requires a Microsoft SQL Server. The specified server '[3]' is a Microsoft SQL Server Desktop Engine (MSDE).
+	</String>
+    <String Id="IdsError27515">
+		Error retrieving schema version from [2] '[3]'. Database: '[4]'. [5]
+	</String>
+    <String Id="IdsError27516">
+		Error writing schema version to [2] '[3]'. Database: '[4]'. [5]
+	</String>
+    <String Id="IdsError27517">
+		This installation requires Administrator privileges for installing COM+ applications. Log on as an administrator and then retry this installation.
+	</String>
+    <String Id="IdsError27518">
+		The COM+ application "[2]" is configured to run as an NT service; this requires COM+ 1.5 or later on the system. Since your system has COM+ 1.0, this application will not be installed.
+	</String>
+    <String Id="IdsError27519">
+		Error updating XML file [2]. [3]
+	</String>
+    <String Id="IdsError2752">
+		Could not open transform [2] stored as child storage of package [4].
+	</String>
+    <String Id="IdsError27520">
+		Error opening XML file [2]. [3]
+	</String>
+    <String Id="IdsError27521">
+		This setup requires MSXML 3.0 or higher for configuring XML files. Please make sure that you have version 3.0 or higher.
+	</String>
+    <String Id="IdsError27522">
+		Error creating XML file [2]. [3]
+	</String>
+    <String Id="IdsError27523">
+		Error loading servers.
+	</String>
+    <String Id="IdsError27524">
+		Error loading NetApi32.DLL. The ISNetApi.dll needs to have NetApi32.DLL properly loaded and requires an NT based operating system.
+	</String>
+    <String Id="IdsError27525">
+		Server not found. Verify that the specified server exists. The server name can not be empty.
+	</String>
+    <String Id="IdsError27526">
+		Unspecified error from ISNetApi.dll.
+	</String>
+    <String Id="IdsError27527">
+		The buffer is too small.
+	</String>
+    <String Id="IdsError27528">
+		Access denied. Check administrative rights.
+	</String>
+    <String Id="IdsError27529">
+		Invalid computer.
+	</String>
+    <String Id="IdsError2753">
+		The File '[2]' is not marked for installation.
+	</String>
+    <String Id="IdsError27530">
+		Unknown error returned from NetAPI. System error: [2]
+	</String>
+    <String Id="IdsError27531">
+		Unhandled exception.
+	</String>
+    <String Id="IdsError27532">
+		Invalid user name for this server or domain.
+	</String>
+    <String Id="IdsError27533">
+		The case-sensitive passwords do not match.
+	</String>
+    <String Id="IdsError27534">
+		The list is empty.
+	</String>
+    <String Id="IdsError27535">
+		Access violation.
+	</String>
+    <String Id="IdsError27536">
+		Error getting group.
+	</String>
+    <String Id="IdsError27537">
+		Error adding user to group. Verify that the group exists for this domain or server.
+	</String>
+    <String Id="IdsError27538">
+		Error creating user.
+	</String>
+    <String Id="IdsError27539">
+		ERROR_NETAPI_ERROR_NOT_PRIMARY returned from NetAPI.
+	</String>
+    <String Id="IdsError2754">
+		The File '[2]' is not a valid patch file.
+	</String>
+    <String Id="IdsError27540">
+		The specified user already exists.
+	</String>
+    <String Id="IdsError27541">
+		The specified group already exists.
+	</String>
+    <String Id="IdsError27542">
+		Invalid password. Verify that the password is in accordance with your network password policy.
+	</String>
+    <String Id="IdsError27543">
+		Invalid name.
+	</String>
+    <String Id="IdsError27544">
+		Invalid group.
+	</String>
+    <String Id="IdsError27545">
+		The user name can not be empty and must be in the format DOMAIN\Username.
+	</String>
+    <String Id="IdsError27546">
+		Error loading or creating INI file in the user TEMP directory.
+	</String>
+    <String Id="IdsError27547">
+		ISNetAPI.dll is not loaded or there was an error loading the dll. This dll needs to be loaded for this operation. Verify that the dll is in the SUPPORTDIR directory.
+	</String>
+    <String Id="IdsError27548">
+		Error deleting INI file containing new user information from the user's TEMP directory.
+	</String>
+    <String Id="IdsError27549">
+		Error getting the primary domain controller (PDC).
+	</String>
+    <String Id="IdsError2755">
+		Server returned unexpected error [2] attempting to install package [3].
+	</String>
+    <String Id="IdsError27550">
+		Every field must have a value in order to create a user.
+	</String>
+    <String Id="IdsError27551">
+		ODBC driver for [2] not found. This is required to connect to [2] database servers.
+	</String>
+    <String Id="IdsError27552">
+		Error creating database [4]. Server: [2] [3]. [5]
+	</String>
+    <String Id="IdsError27553">
+		Error connecting to database [4]. Server: [2] [3]. [5]
+	</String>
+    <String Id="IdsError27554">
+		Error attempting to open connection [2]. No valid database metadata associated with this connection.
+	</String>
+    <String Id="IdsError2756">
+		The property '[2]' was used as a directory property in one or more tables, but no value was ever assigned.
+	</String>
+    <String Id="IdsError2757">
+		Could not create summary info for transform [2].
+	</String>
+    <String Id="IdsError2758">
+		Transform [2] does not contain an MSI version.
+	</String>
+    <String Id="IdsError2759">
+		Transform [2] version [3] incompatible with engine; Min: [4], Max: [5].
+	</String>
+    <String Id="IdsError2760">
+		Transform [2] invalid for package [3]. Expected upgrade code [4], found [5].
+	</String>
+    <String Id="IdsError2761">
+		Cannot begin transaction. Global mutex not properly initialized.
+	</String>
+    <String Id="IdsError2762">
+		Cannot write script record. Transaction not started.
+	</String>
+    <String Id="IdsError2763">
+		Cannot run script. Transaction not started.
+	</String>
+    <String Id="IdsError2765">
+		Assembly name missing from AssemblyName table : Component: [4].
+	</String>
+    <String Id="IdsError2766">
+		The file [2] is an invalid MSI storage file.
+	</String>
+    <String Id="IdsError2767">
+		No more data{ while enumerating [2]}.
+	</String>
+    <String Id="IdsError2768">
+		Transform in patch package is invalid.
+	</String>
+    <String Id="IdsError2769">
+		Custom Action [2] did not close [3] MSIHANDLEs.
+	</String>
+    <String Id="IdsError2770">
+		Cached folder [2] not defined in internal cache folder table.
+	</String>
+    <String Id="IdsError2771">
+		Upgrade of feature [2] has a missing component.
+	</String>
+    <String Id="IdsError2772">
+		New upgrade feature [2] must be a leaf feature.
+	</String>
+    <String Id="IdsError28">
+		Another application has exclusive access to the file [2].  Please shut down all other applications, then click Retry.
+	</String>
+    <String Id="IdsError2801">
+		Unknown Message -- Type [2]. No action is taken.
+	</String>
+    <String Id="IdsError2802">
+		No publisher is found for the event [2].
+	</String>
+    <String Id="IdsError2803">
+		Dialog View did not find a record for the dialog [2].
+	</String>
+    <String Id="IdsError2804">
+		On activation of the control [3] on dialog [2] CMsiDialog failed to evaluate the condition [3].
+	</String>
+    <String Id="IdsError2806">
+		The dialog [2] failed to evaluate the condition [3].
+	</String>
+    <String Id="IdsError2807">
+		The action [2] is not recognized.
+	</String>
+    <String Id="IdsError2808">
+		Default button is ill-defined on dialog [2].
+	</String>
+    <String Id="IdsError2809">
+		On the dialog [2] the next control pointers do not form a cycle. There is a pointer from [3] to [4], but there is no further pointer.
+	</String>
+    <String Id="IdsError2810">
+		On the dialog [2] the next control pointers do not form a cycle. There is a pointer from both [3] and [5] to [4].
+	</String>
+    <String Id="IdsError2811">
+		On dialog [2] control [3] has to take focus, but it is unable to do so.
+	</String>
+    <String Id="IdsError2812">
+		The event [2] is not recognized.
+	</String>
+    <String Id="IdsError2813">
+		The EndDialog event was called with the argument [2], but the dialog has a parent.
+	</String>
+    <String Id="IdsError2814">
+		On the dialog [2] the control [3] names a nonexistent control [4] as the next control.
+	</String>
+    <String Id="IdsError2815">
+		ControlCondition table has a row without condition for the dialog [2].
+	</String>
+    <String Id="IdsError2816">
+		The EventMapping table refers to an invalid control [4] on dialog [2] for the event [3].
+	</String>
+    <String Id="IdsError2817">
+		The event [2] failed to set the attribute for the control [4] on dialog [3].
+	</String>
+    <String Id="IdsError2818">
+		In the ControlEvent table EndDialog has an unrecognized argument [2].
+	</String>
+    <String Id="IdsError2819">
+		Control [3] on dialog [2] needs a property linked to it.
+	</String>
+    <String Id="IdsError2820">
+		Attempted to initialize an already initialized handler.
+	</String>
+    <String Id="IdsError2821">
+		Attempted to initialize an already initialized dialog: [2].
+	</String>
+    <String Id="IdsError2822">
+		No other method can be called on dialog [2] until all the controls are added.
+	</String>
+    <String Id="IdsError2823">
+		Attempted to initialize an already initialized control: [3] on dialog [2].
+	</String>
+    <String Id="IdsError2824">
+		The dialog attribute [3] needs a record of at least [2] field(s).
+	</String>
+    <String Id="IdsError2825">
+		The control attribute [3] needs a record of at least [2] field(s).
+	</String>
+    <String Id="IdsError2826">
+		Control [3] on dialog [2] extends beyond the boundaries of the dialog [4] by [5] pixels.
+	</String>
+    <String Id="IdsError2827">
+		The button [4] on the radio button group [3] on dialog [2] extends beyond the boundaries of the group [5] by [6] pixels.
+	</String>
+    <String Id="IdsError2828">
+		Tried to remove control [3] from dialog [2], but the control is not part of the dialog.
+	</String>
+    <String Id="IdsError2829">
+		Attempt to use an uninitialized dialog.
+	</String>
+    <String Id="IdsError2830">
+		Attempt to use an uninitialized control on dialog [2].
+	</String>
+    <String Id="IdsError2831">
+		The control [3] on dialog [2] does not support [5] the attribute [4].
+	</String>
+    <String Id="IdsError2832">
+		The dialog [2] does not support the attribute [3].
+	</String>
+    <String Id="IdsError2833">
+		Control [4] on dialog [3] ignored the message [2].
+	</String>
+    <String Id="IdsError2834">
+		The next pointers on the dialog [2] do not form a single loop.
+	</String>
+    <String Id="IdsError2835">
+		The control [2] was not found on dialog [3].
+	</String>
+    <String Id="IdsError2836">
+		The control [3] on the dialog [2] cannot take focus.
+	</String>
+    <String Id="IdsError2837">
+		The control [3] on dialog [2] wants the winproc to return [4].
+	</String>
+    <String Id="IdsError2838">
+		The item [2] in the selection table has itself as a parent.
+	</String>
+    <String Id="IdsError2839">
+		Setting the property [2] failed.
+	</String>
+    <String Id="IdsError2840">
+		Error dialog name mismatch.
+	</String>
+    <String Id="IdsError2841">
+		No OK button was found on the error dialog.
+	</String>
+    <String Id="IdsError2842">
+		No text field was found on the error dialog.
+	</String>
+    <String Id="IdsError2843">
+		The ErrorString attribute is not supported for standard dialogs.
+	</String>
+    <String Id="IdsError2844">
+		Cannot execute an error dialog if the Errorstring is not set.
+	</String>
+    <String Id="IdsError2845">
+		The total width of the buttons exceeds the size of the error dialog.
+	</String>
+    <String Id="IdsError2846">
+		SetFocus did not find the required control on the error dialog.
+	</String>
+    <String Id="IdsError2847">
+		The control [3] on dialog [2] has both the icon and the bitmap style set.
+	</String>
+    <String Id="IdsError2848">
+		Tried to set control [3] as the default button on dialog [2], but the control does not exist.
+	</String>
+    <String Id="IdsError2849">
+		The control [3] on dialog [2] is of a type, that cannot be integer valued.
+	</String>
+    <String Id="IdsError2850">
+		Unrecognized volume type.
+	</String>
+    <String Id="IdsError2851">
+		The data for the icon [2] is not valid.
+	</String>
+    <String Id="IdsError2852">
+		At least one control has to be added to dialog [2] before it is used.
+	</String>
+    <String Id="IdsError2853">
+		Dialog [2] is a modeless dialog. The execute method should not be called on it.
+	</String>
+    <String Id="IdsError2854">
+		On the dialog [2] the control [3] is designated as first active control, but there is no such control.
+	</String>
+    <String Id="IdsError2855">
+		The radio button group [3] on dialog [2] has fewer than 2 buttons.
+	</String>
+    <String Id="IdsError2856">
+		Creating a second copy of the dialog [2].
+	</String>
+    <String Id="IdsError2857">
+		The directory [2] is mentioned in the selection table but not found.
+	</String>
+    <String Id="IdsError2858">
+		The data for the bitmap [2] is not valid.
+	</String>
+    <String Id="IdsError2859">
+		Test error message.
+	</String>
+    <String Id="IdsError2860">
+		Cancel button is ill-defined on dialog [2].
+	</String>
+    <String Id="IdsError2861">
+		The next pointers for the radio buttons on dialog [2] control [3] do not form a cycle.
+	</String>
+    <String Id="IdsError2862">
+		The attributes for the control [3] on dialog [2] do not define a valid icon size. Setting the size to 16.
+	</String>
+    <String Id="IdsError2863">
+		The control [3] on dialog [2] needs the icon [4] in size [5]x[5], but that size is not available. Loading the first available size.
+	</String>
+    <String Id="IdsError2864">
+		The control [3] on dialog [2] received a browse event, but there is no configurable directory for the present selection. Likely cause: browse button is not authored correctly.
+	</String>
+    <String Id="IdsError2865">
+		Control [3] on billboard [2] extends beyond the boundaries of the billboard [4] by [5] pixels.
+	</String>
+    <String Id="IdsError2866">
+		The dialog [2] is not allowed to return the argument [3].
+	</String>
+    <String Id="IdsError2867">
+		The error dialog property is not set.
+	</String>
+    <String Id="IdsError2868">
+		The error dialog [2] does not have the error style bit set.
+	</String>
+    <String Id="IdsError2869">
+		The dialog [2] has the error style bit set, but is not an error dialog.
+	</String>
+    <String Id="IdsError2870">
+		The help string [4] for control [3] on dialog [2] does not contain the separator character.
+	</String>
+    <String Id="IdsError2871">
+		The [2] table is out of date: [3].
+	</String>
+    <String Id="IdsError2872">
+		The argument of the CheckPath control event on dialog [2] is invalid.
+	</String>
+    <String Id="IdsError2873">
+		On the dialog [2] the control [3] has an invalid string length limit: [4].
+	</String>
+    <String Id="IdsError2874">
+		Changing the text font to [2] failed.
+	</String>
+    <String Id="IdsError2875">
+		Changing the text color to [2] failed.
+	</String>
+    <String Id="IdsError2876">
+		The control [3] on dialog [2] had to truncate the string: [4].
+	</String>
+    <String Id="IdsError2877">
+		The binary data [2] was not found
+	</String>
+    <String Id="IdsError2878">
+		On the dialog [2] the control [3] has a possible value: [4]. This is an invalid or duplicate value.
+	</String>
+    <String Id="IdsError2879">
+		The control [3] on dialog [2] cannot parse the mask string: [4].
+	</String>
+    <String Id="IdsError2880">
+		Do not perform the remaining control events.
+	</String>
+    <String Id="IdsError2881">
+		CMsiHandler initialization failed.
+	</String>
+    <String Id="IdsError2882">
+		Dialog window class registration failed.
+	</String>
+    <String Id="IdsError2883">
+		CreateNewDialog failed for the dialog [2].
+	</String>
+    <String Id="IdsError2884">
+		Failed to create a window for the dialog [2].
+	</String>
+    <String Id="IdsError2885">
+		Failed to create the control [3] on the dialog [2].
+	</String>
+    <String Id="IdsError2886">
+		Creating the [2] table failed.
+	</String>
+    <String Id="IdsError2887">
+		Creating a cursor to the [2] table failed.
+	</String>
+    <String Id="IdsError2888">
+		Executing the [2] view failed.
+	</String>
+    <String Id="IdsError2889">
+		Creating the window for the control [3] on dialog [2] failed.
+	</String>
+    <String Id="IdsError2890">
+		The handler failed in creating an initialized dialog.
+	</String>
+    <String Id="IdsError2891">
+		Failed to destroy window for dialog [2].
+	</String>
+    <String Id="IdsError2892">
+		[2] is an integer only control, [3] is not a valid integer value.
+	</String>
+    <String Id="IdsError2893">
+		The control [3] on dialog [2] can accept property values that are at most [5] characters long. The value [4] exceeds this limit, and has been truncated.
+	</String>
+    <String Id="IdsError2894">
+		Loading RICHED20.DLL failed. GetLastError() returned: [2].
+	</String>
+    <String Id="IdsError2895">
+		Freeing RICHED20.DLL failed. GetLastError() returned: [2].
+	</String>
+    <String Id="IdsError2896">
+		Executing action [2] failed.
+	</String>
+    <String Id="IdsError2897">
+		Failed to create any [2] font on this system.
+	</String>
+    <String Id="IdsError2898">
+		For [2] textstyle, the system created a '[3]' font, in [4] character set.
+	</String>
+    <String Id="IdsError2899">
+		Failed to create [2] textstyle. GetLastError() returned: [3].
+	</String>
+    <String Id="IdsError29">
+		There is not enough disk space to install the file [2].  Free some disk space and click Retry, or click Cancel to exit.
+	</String>
+    <String Id="IdsError2901">
+		Invalid parameter to operation [2]: Parameter [3].
+	</String>
+    <String Id="IdsError2902">
+		Operation [2] called out of sequence.
+	</String>
+    <String Id="IdsError2903">
+		The file [2] is missing.
+	</String>
+    <String Id="IdsError2904">
+		Could not BindImage file [2].
+	</String>
+    <String Id="IdsError2905">
+		Could not read record from script file [2].
+	</String>
+    <String Id="IdsError2906">
+		Missing header in script file [2].
+	</String>
+    <String Id="IdsError2907">
+		Could not create secure security descriptor. Error: [2].
+	</String>
+    <String Id="IdsError2908">
+		Could not register component [2].
+	</String>
+    <String Id="IdsError2909">
+		Could not unregister component [2].
+	</String>
+    <String Id="IdsError2910">
+		Could not determine user's security ID.
+	</String>
+    <String Id="IdsError2911">
+		Could not remove the folder [2].
+	</String>
+    <String Id="IdsError2912">
+		Could not schedule file [2] for removal on restart.
+	</String>
+    <String Id="IdsError2919">
+		No cabinet specified for compressed file: [2].
+	</String>
+    <String Id="IdsError2920">
+		Source directory not specified for file [2].
+	</String>
+    <String Id="IdsError2924">
+		Script [2] version unsupported. Script version: [3], minimum version: [4], maximum version: [5].
+	</String>
+    <String Id="IdsError2927">
+		ShellFolder id [2] is invalid.
+	</String>
+    <String Id="IdsError2928">
+		Exceeded maximum number of sources. Skipping source '[2]'.
+	</String>
+    <String Id="IdsError2929">
+		Could not determine publishing root. Error: [2].
+	</String>
+    <String Id="IdsError2932">
+		Could not create file [2] from script data. Error: [3].
+	</String>
+    <String Id="IdsError2933">
+		Could not initialize rollback script [2].
+	</String>
+    <String Id="IdsError2934">
+		Could not secure transform [2]. Error [3].
+	</String>
+    <String Id="IdsError2935">
+		Could not unsecure transform [2]. Error [3].
+	</String>
+    <String Id="IdsError2936">
+		Could not find transform [2].
+	</String>
+    <String Id="IdsError2937">
+		Windows Installer cannot install a system file protection catalog. Catalog: [2], Error: [3].
+	</String>
+    <String Id="IdsError2938">
+		Windows Installer cannot retrieve a system file protection catalog from the cache. Catalog: [2], Error: [3].
+	</String>
+    <String Id="IdsError2939">
+		Windows Installer cannot delete a system file protection catalog from the cache. Catalog: [2], Error: [3].
+	</String>
+    <String Id="IdsError2940">
+		Directory Manager not supplied for source resolution.
+	</String>
+    <String Id="IdsError2941">
+		Unable to compute the CRC for file [2].
+	</String>
+    <String Id="IdsError2942">
+		BindImage action has not been executed on [2] file.
+	</String>
+    <String Id="IdsError2943">
+		This version of Windows does not support deploying 64-bit packages. The script [2] is for a 64-bit package.
+	</String>
+    <String Id="IdsError2944">
+		GetProductAssignmentType failed.
+	</String>
+    <String Id="IdsError2945">
+		Installation of ComPlus App [2] failed with error [3].
+	</String>
+    <String Id="IdsError3">
+		Info [1].
+	</String>
+    <String Id="IdsError30">
+		Source file not found: [2].  Verify that the file exists and that you can access it.
+	</String>
+    <String Id="IdsError3001">
+		The patches in this list contain incorrect sequencing information: [2][3][4][5][6][7][8][9][10][11][12][13][14][15][16].
+	</String>
+    <String Id="IdsError3002">
+		Patch [2] contains invalid sequencing information.
+	</String>
+    <String Id="IdsError31">
+		Error reading from file: [3]. {{ System error [2].}}  Verify that the file exists and that you can access it.
+	</String>
+    <String Id="IdsError32">
+		Error writing to file: [3]. {{ System error [2].}}  Verify that you have access to that directory.
+	</String>
+    <String Id="IdsError33">
+		Source file not found{{(cabinet)}}: [2].  Verify that the file exists and that you can access it.
+	</String>
+    <String Id="IdsError34">
+		Cannot create the directory [2].  A file with this name already exists.  Please rename or remove the file and click Retry, or click Cancel to exit.
+	</String>
+    <String Id="IdsError35">
+		The volume [2] is currently unavailable.  Please select another.
+	</String>
+    <String Id="IdsError36">
+		The specified path [2] is unavailable.
+	</String>
+    <String Id="IdsError37">
+		Unable to write to the specified folder [2].
+	</String>
+    <String Id="IdsError38">
+		A network error occurred while attempting to read from the file [2]
+	</String>
+    <String Id="IdsError39">
+		An error occurred while attempting to create the directory [2]
+	</String>
+    <String Id="IdsError4">
+		Internal Error [1]. [2]{, [3]}{, [4]}
+	</String>
+    <String Id="IdsError40">
+		A network error occurred while attempting to create the directory [2]
+	</String>
+    <String Id="IdsError41">
+		A network error occurred while attempting to open the source file cabinet [2].
+	</String>
+    <String Id="IdsError42">
+		The specified path is too long [2].
+	</String>
+    <String Id="IdsError43">
+		The Installer has insufficient privileges to modify the file [2].
+	</String>
+    <String Id="IdsError44">
+		A portion of the path [2] exceeds the length allowed by the system.
+	</String>
+    <String Id="IdsError45">
+		The path [2] contains words that are not valid in folders.
+	</String>
+    <String Id="IdsError46">
+		The path [2] contains an invalid character.
+	</String>
+    <String Id="IdsError47">
+		[2] is not a valid short file name.
+	</String>
+    <String Id="IdsError48">
+		Error getting file security: [3] GetLastError: [2]
+	</String>
+    <String Id="IdsError49">
+		Invalid Drive: [2]
+	</String>
+    <String Id="IdsError5">
+		{{Disk full: }}
+	</String>
+    <String Id="IdsError50">
+		Could not create key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel.
+	</String>
+    <String Id="IdsError51">
+		Could not open key: [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel.
+	</String>
+    <String Id="IdsError52">
+		Could not delete value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel.
+	</String>
+    <String Id="IdsError53">
+		Could not delete key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel.
+	</String>
+    <String Id="IdsError54">
+		Could not read value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel.
+	</String>
+    <String Id="IdsError55">
+		Could not write value [2] to key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel.
+	</String>
+    <String Id="IdsError56">
+		Could not get value names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel.
+	</String>
+    <String Id="IdsError57">
+		Could not get sub key names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel.
+	</String>
+    <String Id="IdsError58">
+		Could not read security information for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel.
+	</String>
+    <String Id="IdsError59">
+		Could not increase the available registry space. [2] KB of free registry space is required for the installation of this application.
+	</String>
+    <String Id="IdsError6">
+		Action [Time]: [1]. [2]
+	</String>
+    <String Id="IdsError60">
+		Another installation is in progress. You must complete that installation before continuing this one.
+	</String>
+    <String Id="IdsError61">
+		Error accessing secured data. Please make sure the Windows Installer is configured properly and try the installation again.
+	</String>
+    <String Id="IdsError62">
+		User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product.  Your current installation will now continue.
+	</String>
+    <String Id="IdsError63">
+		User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product.
+	</String>
+    <String Id="IdsError64">
+		Out of disk space -- Volume: '[2]'; required space: [3] KB; available space: [4] KB.  Free some disk space and retry.
+	</String>
+    <String Id="IdsError65">
+		Are you sure you want to cancel?
+	</String>
+    <String Id="IdsError66">
+		The file [2][3] is being held in use{ by the following process: Name: [4], ID: [5], Window Title: [6]}.  Close that application and retry.
+	</String>
+    <String Id="IdsError67">
+		The product [2] is already installed, preventing the installation of this product.  The two products are incompatible.
+	</String>
+    <String Id="IdsError68">
+		Out of disk space -- Volume: [2]; required space: [3] KB; available space: [4] KB.  If rollback is disabled, enough space is available. Click Cancel to quit, Retry to check available disk space again, or Ignore to continue without rollback.
+	</String>
+    <String Id="IdsError69">
+		Could not access network location [2].
+	</String>
+    <String Id="IdsError7">
+		[ProductName]
+	</String>
+    <String Id="IdsError70">
+		The following applications should be closed before continuing the installation:
+	</String>
+    <String Id="IdsError71">
+		Could not find any previously installed compliant products on the machine for installing this product.
+	</String>
+    <String Id="IdsError72">
+		The key [2] is not valid.  Verify that you entered the correct key.
+	</String>
+    <String Id="IdsError73">
+		The installer must restart your system before configuration of [2] can continue.  Click Yes to restart now or No if you plan to restart later.
+	</String>
+    <String Id="IdsError74">
+		You must restart your system for the configuration changes made to [2] to take effect. Click Yes to restart now or No if you plan to restart later.
+	</String>
+    <String Id="IdsError75">
+		An installation for [2] is currently suspended.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?
+	</String>
+    <String Id="IdsError76">
+		A previous installation for this product is in progress.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?
+	</String>
+    <String Id="IdsError77">
+		No valid source could be found for product [2].  The Windows Installer cannot continue.
+	</String>
+    <String Id="IdsError78">
+		Installation operation completed successfully.
+	</String>
+    <String Id="IdsError79">
+		Installation operation failed.
+	</String>
+    <String Id="IdsError8">
+		{[2]}{, [3]}{, [4]}
+	</String>
+    <String Id="IdsError80">
+		Product: [2] -- [3]
+	</String>
+    <String Id="IdsError81">
+		You may either restore your computer to its previous state or continue the installation later. Would you like to restore?
+	</String>
+    <String Id="IdsError82">
+		An error occurred while writing installation information to disk.  Check to make sure enough disk space is available, and click Retry, or Cancel to end the installation.
+	</String>
+    <String Id="IdsError83">
+		One or more of the files required to restore your computer to its previous state could not be found.  Restoration will not be possible.
+	</String>
+    <String Id="IdsError84">
+		The path [2] is not valid.  Please specify a valid path.
+	</String>
+    <String Id="IdsError85">
+		Out of memory. Shut down other applications before retrying.
+	</String>
+    <String Id="IdsError86">
+		There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to go back to the previously selected volume.
+	</String>
+    <String Id="IdsError87">
+		There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to return to the browse dialog and select a different volume.
+	</String>
+    <String Id="IdsError88">
+		The folder [2] does not exist.  Please enter a path to an existing folder.
+	</String>
+    <String Id="IdsError89">
+		You have insufficient privileges to read this folder.
+	</String>
+    <String Id="IdsError9">
+		Message type: [1], Argument: [2]
+	</String>
+    <String Id="IdsError90">
+		A valid destination folder for the installation could not be determined.
+	</String>
+    <String Id="IdsError91">
+		Error attempting to read from the source installation database: [2].
+	</String>
+    <String Id="IdsError92">
+		Scheduling reboot operation: Renaming file [2] to [3]. Must reboot to complete operation.
+	</String>
+    <String Id="IdsError93">
+		Scheduling reboot operation: Deleting file [2]. Must reboot to complete operation.
+	</String>
+    <String Id="IdsError94">
+		Module [2] failed to register.  HRESULT [3].  Contact your support personnel.
+	</String>
+    <String Id="IdsError95">
+		Module [2] failed to unregister.  HRESULT [3].  Contact your support personnel.
+	</String>
+    <String Id="IdsError96">
+		Failed to cache package [2]. Error: [3]. Contact your support personnel.
+	</String>
+    <String Id="IdsError97">
+		Could not register font [2].  Verify that you have sufficient permissions to install fonts, and that the system supports this font.
+	</String>
+    <String Id="IdsError98">
+		Could not unregister font [2]. Verify that you have sufficient permissions to remove fonts.
+	</String>
+    <String Id="IdsError99">
+		Could not create shortcut [2]. Verify that the destination folder exists and that you can access it.
+	</String>
+    <String Id="IdsFeatureDisplayDescription1">
+		Installs Fingerprint and Photo Capture Components
+	</String>
+    <String Id="IdsFeatureDisplayDescription2">
+		Installs Document Scanning Components
+	</String>
+    <String Id="IdsFeatureDisplayName1">
+		Biometrics
+	</String>
+    <String Id="IdsFeatureDisplayName2">
+		XScan
+	</String>
+    <String Id="IdsInstalldir">
+		[INSTALLDIR]
+	</String>
+    <String Id="IdsInstallshield">
+		InstallShield
+	</String>
+    <String Id="IdsInstallshieldFormatted">
+		{MSSWhiteSerif8}InstallShield
+	</String>
+    <String Id="IdsIsscriptVersionMissing">
+		The InstallScript engine is missing from this machine.  If available, please run ISScript.msi, or contact your support personnel for further assistance.
+	</String>
+    <String Id="IdsIsscriptVersionOld">
+		The InstallScript engine on this machine is older than the version required to run this setup.  If available, please install the latest version of ISScript.msi, or contact your support personnel for further assistance.
+	</String>
+    <String Id="IdsNext">
+		Next &gt;
+	</String>
+    <String Id="IdsOk">
+		OK
+	</String>
+    <String Id="IdsPrerequisiteSetupBrowse">
+		Open [ProductName]'s original [SETUPEXENAME]
+	</String>
+    <String Id="IdsPrerequisiteSetupInvalid">
+		This executable file does not appear to be the original executable file for [ProductName]. Without using the original [SETUPEXENAME] to install additional dependencies, [ProductName] may not work correctly. Would you like to find the original [SETUPEXENAME]?
+	</String>
+    <String Id="IdsPrerequisiteSetupSearch">
+		This installation may require additional dependencies. Without its dependencies, [ProductName] may not work correctly. Would you like to find the original [SETUPEXENAME]?
+	</String>
+    <String Id="IdsPrintButton">
+		Print
+	</String>
+    <String Id="IdsProductnameInstallshield">
+		[ProductName] - InstallShield Wizard
+	</String>
+    <String Id="IdsProgmsgIisCreateapppool">
+		Creating application pool %s
+	</String>
+    <String Id="IdsProgmsgIisCreateapppools">
+		Creating application Pools...
+	</String>
+    <String Id="IdsProgmsgIisCreatevroot">
+		Creating IIS virtual directory %s
+	</String>
+    <String Id="IdsProgmsgIisCreatevroots">
+		Creating IIS virtual directories...
+	</String>
+    <String Id="IdsProgmsgIisCreatewebserviceextension">
+		Creating web service extension
+	</String>
+    <String Id="IdsProgmsgIisCreatewebserviceextensions">
+		Creating web service extensions...
+	</String>
+    <String Id="IdsProgmsgIisCreatewebsite">
+		Creating IIS website %s
+	</String>
+    <String Id="IdsProgmsgIisCreatewebsites">
+		Creating IIS websites...
+	</String>
+    <String Id="IdsProgmsgIisExtract">
+		Extracting information for IIS virtual directories...
+	</String>
+    <String Id="IdsProgmsgIisExtractdone">
+		Extracted information for IIS virtual directories...
+	</String>
+    <String Id="IdsProgmsgIisRemoveapppool">
+		Removing application pool
+	</String>
+    <String Id="IdsProgmsgIisRemoveapppools">
+		Removing application pools...
+	</String>
+    <String Id="IdsProgmsgIisRemovesite">
+		Removing web site at port %d
+	</String>
+    <String Id="IdsProgmsgIisRemovevroot">
+		Removing IIS virtual directory %s
+	</String>
+    <String Id="IdsProgmsgIisRemovevroots">
+		Removing IIS virtual directories...
+	</String>
+    <String Id="IdsProgmsgIisRemovewebserviceextension">
+		Removing web service extension
+	</String>
+    <String Id="IdsProgmsgIisRemovewebserviceextensions">
+		Removing web service extensions...
+	</String>
+    <String Id="IdsProgmsgIisRemovewebsites">
+		Removing IIS websites...
+	</String>
+    <String Id="IdsProgmsgIisRollbackapppools">
+		Rolling back application pools...
+	</String>
+    <String Id="IdsProgmsgIisRollbackvroots">
+		Rolling back virtual directory and web site changes...
+	</String>
+    <String Id="IdsProgmsgIisRollbackwebserviceextensions">
+		Rolling back web service extensions...
+	</String>
+    <String Id="IdsProgmsgTextfilechangsReplace">
+		Replacing %s with %s in %s...
+	</String>
+    <String Id="IdsProgmsgXmlCosting">
+		Costing XML files...
+	</String>
+    <String Id="IdsProgmsgXmlCreateFile">
+		Creating XML file %s...
+	</String>
+    <String Id="IdsProgmsgXmlFiles">
+		Performing XML file changes...
+	</String>
+    <String Id="IdsProgmsgXmlRemoveFile">
+		Removing XML file %s...
+	</String>
+    <String Id="IdsProgmsgXmlRollbackFiles">
+		Rolling back XML file changes...
+	</String>
+    <String Id="IdsProgmsgXmlUpdateFile">
+		Updating XML file %s...
+	</String>
+    <String Id="IdsSetupexeExpireMsg">
+		This setup works until %s. The setup will now exit.
+	</String>
+    <String Id="IdsShortcutDisplayName6">
+		LAUNCH~1.EXE|Launch CDPROC.exe
+	</String>
+    <String Id="IdsShortcutDisplayName7">
+		LAUNCH~1.EXE|Launch CDPROCMN.exe
+	</String>
+    <String Id="IdsShortcutDisplayName8">
+		LAUNCH~1.EXE|Launch EWatch.exe
+	</String>
+    <String Id="IdsSqlbrowseIntro">
+		From the list of servers below, select the database server you would like to target.
+	</String>
+    <String Id="IdsSqlbrowseIntroDb">
+		From the list of catalog names below, select the database catalog you would like to target.
+	</String>
+    <String Id="IdsSqlbrowseIntroTemplate">
+		[IS_SQLBROWSE_INTRO]
+	</String>
+    <String Id="IdsSqlloginBrowse">
+		Browse...
+	</String>
+    <String Id="IdsSqlloginBrowseDb">
+		Browse...
+	</String>
+    <String Id="IdsSqlloginCatalog">
+		Name of database catalog:
+	</String>
+    <String Id="IdsSqlloginConnect">
+		Connect using:
+	</String>
+    <String Id="IdsSqlloginDesc">
+		Select database server and authentication method
+	</String>
+    <String Id="IdsSqlloginId">
+		Login ID:
+	</String>
+    <String Id="IdsSqlloginIntro">
+		Select the database server to install to from the list below or click Browse to see a list of all database servers. You can also specify the way to authenticate your login using your current credentials or a SQL Login ID and Password.
+	</String>
+    <String Id="IdsSqlloginPswd">
+		Password:
+	</String>
+    <String Id="IdsSqlloginServer">
+		Database Server:
+	</String>
+    <String Id="IdsSqlloginServer2">
+		Database server that you are installing to:
+	</String>
+    <String Id="IdsSqlloginSql">
+		Server authentication using the Login ID and password below
+	</String>
+    <String Id="IdsSqlloginTitle">
+		{MSSansBold8}Database Server
+	</String>
+    <String Id="IdsSqlloginWin">
+		Windows authentication credentials of current user
+	</String>
+    <String Id="IdsSqlscriptInstalling">
+		Executing SQL Install Script...
+	</String>
+    <String Id="IdsSqlscriptUninstalling">
+		Executing SQL Uninstall Script...
+	</String>
+    <String Id="IdsStandardUseSetupexe">
+		This installation cannot be run by directly launching the MSI package. You must run setup.exe.
+	</String>
+    <String Id="IdsSetuptipsAdvertise">
+		Will be installed on first use. (Available only if the feature supports this option.)
+	</String>
+    <String Id="IdsSetuptipsAllinstalledlocal">
+		Will be completely installed to the local hard drive.
+	</String>
+    <String Id="IdsSetuptipsCustomsetup">
+		{MSSansBold8}Custom Setup Tips
+	</String>
+    <String Id="IdsSetuptipsCustomsetupdescription">
+		Custom Setup allows you to selectively install program features.
+	</String>
+    <String Id="IdsSetuptipsIconinstallstate">
+		The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature.
+	</String>
+    <String Id="IdsSetuptipsInstallstate">
+		This install state means the feature...
+	</String>
+    <String Id="IdsSetuptipsNetwork">
+		Will be installed to run from the network. (Available only if the feature supports this option.)
+	</String>
+    <String Id="IdsSetuptipsOk">
+		OK
+	</String>
+    <String Id="IdsSetuptipsSubfeaturesinstalledlocal">
+		Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)
+	</String>
+    <String Id="IdsSetuptipsWillnotbeinstalled">
+		Will not be installed.
+	</String>
+    <String Id="IdsUitextAvailable">
+		Available
+	</String>
+    <String Id="IdsUitextBytes">
+		bytes
+	</String>
+    <String Id="IdsUitextCompilingfeaturescost">
+		Compiling cost for this feature...
+	</String>
+    <String Id="IdsUitextDifferences">
+		Differences
+	</String>
+    <String Id="IdsUitextDisksize">
+		Disk Size
+	</String>
+    <String Id="IdsUitextFeaturecompletelyremoved">
+		This feature will be completely removed.
+	</String>
+    <String Id="IdsUitextFeaturecontinuenetwork">
+		This feature will continue to be run from the network
+	</String>
+    <String Id="IdsUitextFeaturefreespace">
+		This feature frees up [1] on your hard drive.
+	</String>
+    <String Id="IdsUitextFeatureinstalledcd">
+		This feature, and all subfeatures, will be installed to run from the CD.
+	</String>
+    <String Id="IdsUitextFeatureinstalledcd2">
+		This feature will be installed to run from CD.
+	</String>
+    <String Id="IdsUitextFeatureinstalledlocal">
+		This feature, and all subfeatures, will be installed on local hard drive.
+	</String>
+    <String Id="IdsUitextFeatureinstalledlocal2">
+		This feature will be installed on local hard drive.
+	</String>
+    <String Id="IdsUitextFeatureinstallednetwork">
+		This feature, and all subfeatures, will be installed to run from the network.
+	</String>
+    <String Id="IdsUitextFeatureinstallednetwork2">
+		This feature will be installed to run from network.
+	</String>
+    <String Id="IdsUitextFeatureinstalledrequired">
+		Will be installed when required.
+	</String>
+    <String Id="IdsUitextFeatureinstalledwhenrequired">
+		This feature will be set to be installed when required.
+	</String>
+    <String Id="IdsUitextFeatureinstalledwhenrequired2">
+		This feature will be installed when required.
+	</String>
+    <String Id="IdsUitextFeaturelocal">
+		This feature will be installed on the local hard drive.
+	</String>
+    <String Id="IdsUitextFeaturelocal2">
+		This feature will be installed on your local hard drive.
+	</String>
+    <String Id="IdsUitextFeaturenetwork">
+		This feature will be installed to run from the network.
+	</String>
+    <String Id="IdsUitextFeaturenetwork2">
+		This feature will be available to run from the network.
+	</String>
+    <String Id="IdsUitextFeaturenotavailable">
+		This feature will not be available.
+	</String>
+    <String Id="IdsUitextFeatureoncd">
+		This feature will be installed to run from CD.
+	</String>
+    <String Id="IdsUitextFeatureoncd2">
+		This feature will be available to run from CD.
+	</String>
+    <String Id="IdsUitextFeatureremainlocal">
+		This feature will remain on your local hard drive.
+	</String>
+    <String Id="IdsUitextFeatureremovenetwork">
+		This feature will be removed from your local hard drive, but will be still available to run from the network.
+	</String>
+    <String Id="IdsUitextFeatureremovedcd">
+		This feature will be removed from your local hard drive but will still be available to run from CD.
+	</String>
+    <String Id="IdsUitextFeatureremovedunlessrequired">
+		This feature will be removed from your local hard drive but will be set to be installed when required.
+	</String>
+    <String Id="IdsUitextFeaturerequiredspace">
+		This feature requires [1] on your hard drive.
+	</String>
+    <String Id="IdsUitextFeaturerunfromcd">
+		This feature will continue to be run from the CD
+	</String>
+    <String Id="IdsUitextFeaturespacefree">
+		This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive.
+	</String>
+    <String Id="IdsUitextFeaturespacefree2">
+		This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive.
+	</String>
+    <String Id="IdsUitextFeaturespacefree3">
+		This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive.
+	</String>
+    <String Id="IdsUitextFeaturespacefree4">
+		This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive.
+	</String>
+    <String Id="IdsUitextFeatureunavailable">
+		This feature will become unavailable.
+	</String>
+    <String Id="IdsUitextFeatureuninstallnonetwork">
+		This feature will be uninstalled completely, and you won't be able to run it from the network.
+	</String>
+    <String Id="IdsUitextFeatureuninstalled">
+		This feature will remain uninstalled.
+	</String>
+    <String Id="IdsUitextFeaturewascd">
+		This feature was run from the CD but will be set to be installed when required.
+	</String>
+    <String Id="IdsUitextFeaturewascdlocal">
+		This feature was run from the CD but will be installed on the local hard drive.
+	</String>
+    <String Id="IdsUitextFeaturewasonnetworkinstalled">
+		This feature was run from the network but will be installed when required.
+	</String>
+    <String Id="IdsUitextFeaturewasonnetworklocal">
+		This feature was run from the network but will be installed on the local hard drive.
+	</String>
+    <String Id="IdsUitextFeaturewillbeuninstalled">
+		This feature will be uninstalled completely, and you won't be able to run it from CD.
+	</String>
+    <String Id="IdsUitextFolder">
+		Fldr|New Folder
+	</String>
+    <String Id="IdsUitextGb">
+		GB
+	</String>
+    <String Id="IdsUitextKb">
+		KB
+	</String>
+    <String Id="IdsUitextMb">
+		MB
+	</String>
+    <String Id="IdsUitextRequired">
+		Required
+	</String>
+    <String Id="IdsUitextTimeremaining">
+		Time remaining: {[1] min }[2] sec
+	</String>
+    <String Id="IdsUitextVolume">
+		Volume
+	</String>
+    <String Id="IdsAgreetolicense0">
+		I do not accept the terms in the license agreement
+	</String>
+    <String Id="IdsAgreetolicense1">
+		I accept the terms in the license agreement
+	</String>
+    <String Id="IdsDatabasefolderChangefolder">
+		Click Next to install to this folder, or click Change to install to a different folder.
+	</String>
+    <String Id="IdsDatabasefolderDatabasedir">
+		[DATABASEDIR]
+	</String>
+    <String Id="IdsDatabasefolderDatabasefolder">
+		{MSSansBold8}Database Folder
+	</String>
+    <String Id="IdsDestinationfolderChange">
+		Change...
+	</String>
+    <String Id="IdsDestinationfolderChangefolder">
+		Click Next to install to this folder, or click Change to install to a different folder.
+	</String>
+    <String Id="IdsDestinationfolderDestinationfolder">
+		{MSSansBold8}Destination Folder
+	</String>
+    <String Id="IdsDestinationfolderInstallto">
+		Install [ProductName] to:
+	</String>
+    <String Id="IdsDisplaynameCustom">
+		Custom
+	</String>
+    <String Id="IdsDisplaynameMinimal">
+		Minimal
+	</String>
+    <String Id="IdsDisplaynameTypical">
+		Typical
+	</String>
+    <String Id="IdsIsadmininstallbrowse11" />
+    <String Id="IdsIsadmininstallbrowse4" />
+    <String Id="IdsIsadmininstallbrowse8" />
+    <String Id="IdsIsadmininstallbrowseBrowsedestination">
+		Browse to the destination folder.
+	</String>
+    <String Id="IdsIsadmininstallbrowseChangedestination">
+		{MSSansBold8}Change Current Destination Folder
+	</String>
+    <String Id="IdsIsadmininstallbrowseCreatefolder">
+		Create new folder|
+	</String>
+    <String Id="IdsIsadmininstallbrowseFoldername">
+		Folder name:
+	</String>
+    <String Id="IdsIsadmininstallbrowseLookin">
+		Look in:
+	</String>
+    <String Id="IdsIsadmininstallbrowseUponelevel">
+		Up one level|
+	</String>
+    <String Id="IdsIsadmininstallpointwelcomeServerimage">
+		The InstallShield(R) Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next.
+	</String>
+    <String Id="IdsIsadmininstallpointwelcomeWizard">
+		{TahomaBold10}Welcome to the InstallShield Wizard for [ProductName]
+	</String>
+    <String Id="IdsIsadmininstallpointChange">
+		Change...
+	</String>
+    <String Id="IdsIsadmininstallpointEnternetworklocation">
+		Enter the network location or click Change to browse to a location.  Click Install to create a server image of [ProductName] at the specified network location or click Cancel to exit the wizard.
+	</String>
+    <String Id="IdsIsadmininstallpointInstall">
+		Install
+	</String>
+    <String Id="IdsIsadmininstallpointNetworklocation">
+		Network location:
+	</String>
+    <String Id="IdsIsadmininstallpointNetworklocationformatted">
+		{MSSansBold8}Network Location
+	</String>
+    <String Id="IdsIsadmininstallpointSpecifynetworklocation">
+		Specify a network location for the server image of the product.
+	</String>
+    <String Id="IdsIsbrowsebutton">
+		Browse...
+	</String>
+    <String Id="IdsIsbrowsefolderdlg11" />
+    <String Id="IdsIsbrowsefolderdlg4" />
+    <String Id="IdsIsbrowsefolderdlg8" />
+    <String Id="IdsIsbrowsefolderdlgBrowsedestfolder">
+		Browse to the destination folder.
+	</String>
+    <String Id="IdsIsbrowsefolderdlgChangecurrentfolder">
+		{MSSansBold8}Change Current Destination Folder
+	</String>
+    <String Id="IdsIsbrowsefolderdlgCreatefolder">
+		Create New Folder|
+	</String>
+    <String Id="IdsIsbrowsefolderdlgFoldername">
+		Folder name:
+	</String>
+    <String Id="IdsIsbrowsefolderdlgLookin">
+		Look in:
+	</String>
+    <String Id="IdsIsbrowsefolderdlgOk">
+		OK
+	</String>
+    <String Id="IdsIsbrowsefolderdlgUponelevel">
+		Up One Level|
+	</String>
+    <String Id="IdsIsbrowseforaccount">
+		Browse for a User Account
+	</String>
+    <String Id="IdsIsbrowsegroup">
+		Select a Group
+	</String>
+    <String Id="IdsIsbrowseusernametitle">
+		Select a User Name
+	</String>
+    <String Id="IdsIscanceldlgConfirmcancel">
+		Are you sure you want to cancel [ProductName] installation?
+	</String>
+    <String Id="IdsIscanceldlgNo">
+		No
+	</String>
+    <String Id="IdsIscanceldlgYes">
+		Yes
+	</String>
+    <String Id="IdsIsconfirmpassword">
+		Confirm password:
+	</String>
+    <String Id="IdsIscreatenewusertitle">
+		New User Information
+	</String>
+    <String Id="IdsIscreateuserbrowse">
+		New User Information...
+	</String>
+    <String Id="IdsIscustomselectiondlgChange">
+		Change...
+	</String>
+    <String Id="IdsIscustomselectiondlgClickfeatureicon">
+		Click on an icon in the list below to change how a feature is installed.
+	</String>
+    <String Id="IdsIscustomselectiondlgCustomsetup">
+		{MSSansBold8}Custom Setup
+	</String>
+    <String Id="IdsIscustomselectiondlgFeaturedescription">
+		Feature Description
+	</String>
+    <String Id="IdsIscustomselectiondlgFeaturepath" />
+    <String Id="IdsIscustomselectiondlgFeaturesize">
+		Feature size
+	</String>
+    <String Id="IdsIscustomselectiondlgHelp">
+		Help
+	</String>
+    <String Id="IdsIscustomselectiondlgInstallto">
+		Install to:
+	</String>
+    <String Id="IdsIscustomselectiondlgMultilinedescription">
+		Multiline description of the currently selected item
+	</String>
+    <String Id="IdsIscustomselectiondlgSelectfeatures">
+		Select the program features you want installed.
+	</String>
+    <String Id="IdsIscustomselectiondlgSpace">
+		Space
+	</String>
+    <String Id="IdsIsdiskspacedlgDiskspace">
+		Disk space required for the installation exceeds available disk space.
+	</String>
+    <String Id="IdsIsdiskspacedlgHighlightedvolumes">
+		The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install fewer features onto local drives, or select different destination drives.
+	</String>
+    <String Id="IdsIsdiskspacedlgNumbers">
+		{120}{70}{70}{70}{70}
+	</String>
+    <String Id="IdsIsdiskspacedlgOk">
+		OK
+	</String>
+    <String Id="IdsIsdiskspacedlgOutofdiskspace">
+		{MSSansBold8}Out of Disk Space
+	</String>
+    <String Id="IdsIsdomainorserver">
+		Domain or server:
+	</String>
+    <String Id="IdsIserrordlgAbort">
+		Abort
+	</String>
+    <String Id="IdsIserrordlgErrortext" />
+    <String Id="IdsIserrordlgIgnore">
+		Ignore
+	</String>
+    <String Id="IdsIserrordlgInstallerinfo">
+		[ProductName] Installer Information
+	</String>
+    <String Id="IdsIserrordlgNo">
+		No
+	</String>
+    <String Id="IdsIserrordlgOk">
+		OK
+	</String>
+    <String Id="IdsIserrordlgRetry">
+		Retry
+	</String>
+    <String Id="IdsIserrordlgYes">
+		Yes
+	</String>
+    <String Id="IdsIsexitdialogFinish">
+		Finish
+	</String>
+    <String Id="IdsIsexitdialogInstallsuccess">
+		The InstallShield Wizard has successfully installed [ProductName]. Click Finish to exit the wizard.
+	</String>
+    <String Id="IdsIsexitdialogLaunchprogram">
+		Launch the program
+	</String>
+    <String Id="IdsIsexitdialogShowreadme">
+		Show the readme file
+	</String>
+    <String Id="IdsIsexitdialogUninstallsuccess">
+		The InstallShield Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard.
+	</String>
+    <String Id="IdsIsexitdialogUpdateInternetconnection">
+		Your Internet connection can be used to make sure that you have the latest updates.
+	</String>
+    <String Id="IdsIsexitdialogUpdatePossibleupdates">
+		Some program files might have been updated since you purchased your copy of [ProductName].
+	</String>
+    <String Id="IdsIsexitdialogUpdateSetupfinished">
+		Setup has finished installing [ProductName].
+	</String>
+    <String Id="IdsIsexitdialogUpdateYescheckforupdates">
+		Yes, check for program updates (Recommended) after the setup completes.
+	</String>
+    <String Id="IdsIsexitdialogWizardcompleted">
+		{TahomaBold10}InstallShield Wizard Completed
+	</String>
+    <String Id="IdsIsfatalerrorClickfinish">
+		Click Finish to exit the wizard.
+	</String>
+    <String Id="IdsIsfatalerrorFinish">
+		Finish
+	</String>
+    <String Id="IdsIsfatalerrorKeeporrestore">
+		You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation.
+	</String>
+    <String Id="IdsIsfatalerrorNotmodified">
+		Your system has not been modified. To complete installation at another time, please run setup again.
+	</String>
+    <String Id="IdsIsfatalerrorRestoreorcontinuelater">
+		Click Restore or Continue Later to exit the wizard.
+	</String>
+    <String Id="IdsIsfatalerrorWizardcompleted">
+		{TahomaBold10}InstallShield Wizard Completed
+	</String>
+    <String Id="IdsIsfatalerrorWizardinterrupted">
+		The wizard was interrupted before [ProductName] could be completely installed.
+	</String>
+    <String Id="IdsIsfeaturedetailsdlgDiskspacerequirements">
+		{MSSansBold8}Disk Space Requirements
+	</String>
+    <String Id="IdsIsfeaturedetailsdlgNumbers">
+		{120}{70}{70}{70}{70}
+	</String>
+    <String Id="IdsIsfeaturedetailsdlgOk">
+		OK
+	</String>
+    <String Id="IdsIsfeaturedetailsdlgSpacerequired">
+		The disk space required for the installation of the selected features.
+	</String>
+    <String Id="IdsIsfeaturedetailsdlgVolumestoosmall">
+		The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install fewer features onto local drives, or select different destination drives.
+	</String>
+    <String Id="IdsIsfilesinuseApplicationsusingfiles">
+		The following applications are using files that need to be updated by this setup. Close these applications and click Retry to continue.
+	</String>
+    <String Id="IdsIsfilesinuseExit">
+		Exit
+	</String>
+    <String Id="IdsIsfilesinuseFilesinuse">
+		{MSSansBold8}Files in Use
+	</String>
+    <String Id="IdsIsfilesinuseFilesinusemessage">
+		Some files that need to be updated are currently in use.
+	</String>
+    <String Id="IdsIsfilesinuseIgnore">
+		Ignore
+	</String>
+    <String Id="IdsIsfilesinuseRetry">
+		Retry
+	</String>
+    <String Id="IdsIsgroup">
+		Group:
+	</String>
+    <String Id="IdsIsgrouplabel">
+		Group:
+	</String>
+    <String Id="IdsIsinitdlg1" />
+    <String Id="IdsIsinitdlg2" />
+    <String Id="IdsIsinitdlgPreparingwizard">
+		[ProductName] Setup is preparing the InstallShield Wizard which will guide you through the program setup process.  Please wait.
+	</String>
+    <String Id="IdsIsinitdlgWelcomewizard">
+		{TahomaBold10}Welcome to the InstallShield Wizard for [ProductName]
+	</String>
+    <String Id="IdsIslicensedlgLicenseagreement">
+		{MSSansBold8}License Agreement
+	</String>
+    <String Id="IdsIslicensedlgReadlicenseagreement">
+		Please read the following license agreement carefully.
+	</String>
+    <String Id="IdsIslogoninfodescription">
+		Specify the user name and password of the user account that will logon to use this application. The user account must be in the form DOMAIN\Username.
+	</String>
+    <String Id="IdsIslogoninfotitle">
+		{MSSansBold8}Logon Information
+	</String>
+    <String Id="IdsIslogoninfotitledescription">
+		Specify a user name and password
+	</String>
+    <String Id="IdsIslogonnewuserdescription">
+		Select the button below to specify information about a new user that will be created during the installation.
+	</String>
+    <String Id="IdsIsmaintenancedlg11" />
+    <String Id="IdsIsmaintenancedlgChangefeatures">
+		Change which program features are installed. This option displays the Custom Selection dialog in which you can change the way features are installed.
+	</String>
+    <String Id="IdsIsmaintenancedlgMaitenanceoptions">
+		Modify, repair, or remove the program.
+	</String>
+    <String Id="IdsIsmaintenancedlgModify">
+		{MSSansBold8}Modify
+	</String>
+    <String Id="IdsIsmaintenancedlgProgrammaintenance">
+		{MSSansBold8}Program Maintenance
+	</String>
+    <String Id="IdsIsmaintenancedlgRemove">
+		{MSSansBold8}Remove
+	</String>
+    <String Id="IdsIsmaintenancedlgRemoveproductname">
+		Remove [ProductName] from your computer.
+	</String>
+    <String Id="IdsIsmaintenancedlgRepair">
+		MSSansBold8}Repair
+	</String>
+    <String Id="IdsIsmaintenancedlgRepairmessage">
+		Repair installation errors in the program. This option fixes missing or corrupt files, shortcuts, and registry entries.
+	</String>
+    <String Id="IdsIsmaintenancewelcomeMaintenanceoptionsdescription">
+		The InstallShield(R) Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next.
+	</String>
+    <String Id="IdsIsmaintenancewelcomeWizardwelcome">
+		{TahomaBold10}Welcome to the InstallShield Wizard for [ProductName]
+	</String>
+    <String Id="IdsIsmsirmfilesinuseApplicationsusingfiles">
+		The following applications are using files that need to be updated by this setup.
+	</String>
+    <String Id="IdsIsmsirmfilesinuseCloserestart">
+		Automatically close and attempt to restart applications.
+	</String>
+    <String Id="IdsIsmsirmfilesinuseRebootafter">
+		Do not close applications. (A reboot will be required.)
+	</String>
+    <String Id="IdsIspatchdlgPatchclickupdate">
+		The InstallShield(R) Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update.
+	</String>
+    <String Id="IdsIspatchdlgPatchwizard">
+		[ProductName] Patch - InstallShield Wizard
+	</String>
+    <String Id="IdsIspatchdlgUpdate">
+		Update &gt;
+	</String>
+    <String Id="IdsIspatchdlgWelcomepatchwizard">
+		{TahomaBold10}Welcome to the Patch for [ProductName]
+	</String>
+    <String Id="IdsIsprogressdlg2" />
+    <String Id="IdsIsprogressdlgHidden">
+		(Hidden for now)
+	</String>
+    <String Id="IdsIsprogressdlgHiddentimeremaining">
+		)Hidden for now)Estimated time remaining:
+	</String>
+    <String Id="IdsIsprogressdlgInstallingproductname">
+		{MSSansBold8}Installing [ProductName]
+	</String>
+    <String Id="IdsIsprogressdlgProgressdone">
+		Progress done
+	</String>
+    <String Id="IdsIsprogressdlgSechidden">
+		(Hidden for now)Sec.
+	</String>
+    <String Id="IdsIsprogressdlgStatus">
+		Status:
+	</String>
+    <String Id="IdsIsprogressdlgUninstalling">
+		{MSSansBold8}Uninstalling [ProductName]
+	</String>
+    <String Id="IdsIsprogressdlgUninstallingfeatures">
+		The program features you selected are being uninstalled.
+	</String>
+    <String Id="IdsIsprogressdlgUninstallingfeatures2">
+		The program features you selected are being installed.
+	</String>
+    <String Id="IdsIsprogressdlgWaituninstall">
+		Please wait while the InstallShield Wizard uninstalls [ProductName]. This may take several minutes.
+	</String>
+    <String Id="IdsIsprogressdlgWaituninstall2">
+		Please wait while the InstallShield Wizard installs [ProductName]. This may take several minutes.
+	</String>
+    <String Id="IdsIsreadmedlgCancel">
+		Cancel
+	</String>
+    <String Id="IdsIsreadmedlgPleasereadinfo">
+		Please read the following readme information carefully.
+	</String>
+    <String Id="IdsIsreadmedlgReadmeinfo">
+		{MSSansBold8}Readme Information
+	</String>
+    <String Id="IdsIsregisteruserdlg16" />
+    <String Id="IdsIsregisteruserdlgAnyone">
+		Anyone who uses this computer (all users)
+	</String>
+    <String Id="IdsIsregisteruserdlgCustomerinformation">
+		{MSSansBold8}Customer Information
+	</String>
+    <String Id="IdsIsregisteruserdlgInstallfor">
+		Install this application for:
+	</String>
+    <String Id="IdsIsregisteruserdlgOnlyme">
+		Only for me ([USERNAME])
+	</String>
+    <String Id="IdsIsregisteruserdlgOrganization">
+		Organization:
+	</String>
+    <String Id="IdsIsregisteruserdlgPleaseenterinfo">
+		Please enter your information.
+	</String>
+    <String Id="IdsIsregisteruserdlgSerialnumber">
+		Serial Number:
+	</String>
+    <String Id="IdsIsregisteruserdlgTahoma50">
+		{\Tahoma8}{50}
+	</String>
+    <String Id="IdsIsregisteruserdlgTahoma80">
+		{\Tahoma8}{80}
+	</String>
+    <String Id="IdsIsregisteruserdlgUsername">
+		User Name:
+	</String>
+    <String Id="IdsIsresumedlgResumesuspended">
+		The InstallShield(R) Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next.
+	</String>
+    <String Id="IdsIsresumedlgResuming">
+		{TahomaBold10}Resuming the InstallShield Wizard for [ProductName]
+	</String>
+    <String Id="IdsIsresumedlgWizardresume">
+		The InstallShield(R) Wizard will complete the installation of [ProductName] on your computer. To continue, click Next.
+	</String>
+    <String Id="IdsIsselectdomainorserver">
+		Select a Domain or Server
+	</String>
+    <String Id="IdsIsselectdomainuserinstructions">
+		Use the browse buttons to select a domain\server and a user name.
+	</String>
+    <String Id="IdsIssetuptypemindlg13" />
+    <String Id="IdsIssetuptypemindlgAllfeatures">
+		All program features will be installed. (Requires the most disk space.)
+	</String>
+    <String Id="IdsIssetuptypemindlgChoosefeatures">
+		Choose which program features you want installed and where they will be installed. Recommended for advanced users.
+	</String>
+    <String Id="IdsIssetuptypemindlgChoosesetuptype">
+		Choose the setup type that best suits your needs.
+	</String>
+    <String Id="IdsIssetuptypemindlgComplete">
+		{MSSansBold8}Complete
+	</String>
+    <String Id="IdsIssetuptypemindlgCustom">
+		{MSSansBold8}Custom
+	</String>
+    <String Id="IdsIssetuptypemindlgMinimal">
+		{MSSansBold8}Minimal
+	</String>
+    <String Id="IdsIssetuptypemindlgMinimumfeatures">
+		Minimum required features will be installed.
+	</String>
+    <String Id="IdsIssetuptypemindlgSelectsetuptype">
+		Please select a setup type.
+	</String>
+    <String Id="IdsIssetuptypemindlgSetuptype">
+		{MSSansBold8}Setup Type
+	</String>
+    <String Id="IdsIssetuptypemindlgTypical">
+		{MSSansBold8}Typical
+	</String>
+    <String Id="IdsIsuserexitClickfinish">
+		Click Finish to exit the wizard.
+	</String>
+    <String Id="IdsIsuserexitFinish">
+		Finish
+	</String>
+    <String Id="IdsIsuserexitKeeporrestore">
+		You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation.
+	</String>
+    <String Id="IdsIsuserexitNotmodified">
+		Your system has not been modified. To install this program at a later time, please run the installation again.
+	</String>
+    <String Id="IdsIsuserexitRestoreorcontinue">
+		Click Restore or Continue Later to exit the wizard.
+	</String>
+    <String Id="IdsIsuserexitWizardcompleted">
+		{TahomaBold10}InstallShield Wizard Completed
+	</String>
+    <String Id="IdsIsuserexitWizardinterrupted">
+		The wizard was interrupted before [ProductName] could be completely installed.
+	</String>
+    <String Id="IdsIsusernamelabel">
+		User name:
+	</String>
+    <String Id="IdsIsverifyreadydlgBackorcancel">
+		If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard.
+	</String>
+    <String Id="IdsIsverifyreadydlgClickinstall">
+		Click Install to begin the installation.
+	</String>
+    <String Id="IdsIsverifyreadydlgCompany">
+		Company: [COMPANYNAME]
+	</String>
+    <String Id="IdsIsverifyreadydlgCurrentsettings">
+		Current Settings:
+	</String>
+    <String Id="IdsIsverifyreadydlgDestfolder">
+		Destination Folder:
+	</String>
+    <String Id="IdsIsverifyreadydlgInstall">
+		Install
+	</String>
+    <String Id="IdsIsverifyreadydlgInstalldir">
+		[INSTALLDIR]
+	</String>
+    <String Id="IdsIsverifyreadydlgModifyready">
+		{MSSansBold8}Ready to Modify the Program
+	</String>
+    <String Id="IdsIsverifyreadydlgReadyinstall">
+		{MSSansBold8}Ready to Install the Program
+	</String>
+    <String Id="IdsIsverifyreadydlgReadyrepair">
+		{MSSansBold8}Ready to Repair the Program
+	</String>
+    <String Id="IdsIsverifyreadydlgSelectedsetuptype">
+		[SelectedSetupType]
+	</String>
+    <String Id="IdsIsverifyreadydlgSerial">
+		Serial: [ISX_SERIALNUM]
+	</String>
+    <String Id="IdsIsverifyreadydlgSetuptype">
+		Setup Type:
+	</String>
+    <String Id="IdsIsverifyreadydlgUserinfo">
+		User Information:
+	</String>
+    <String Id="IdsIsverifyreadydlgUsername">
+		Name: [USERNAME]
+	</String>
+    <String Id="IdsIsverifyreadydlgWizardready">
+		The wizard is ready to begin installation.
+	</String>
+    <String Id="IdsIsverifyremovealldlgChoseremoveprogram">
+		You have chosen to remove the program from your system.
+	</String>
+    <String Id="IdsIsverifyremovealldlgClickback">
+		If you want to review or change any settings, click Back.
+	</String>
+    <String Id="IdsIsverifyremovealldlgClickremove">
+		Click Remove to remove [ProductName] from your computer. After removal, this program will no longer be available for use.
+	</String>
+    <String Id="IdsIsverifyremovealldlgRemove">
+		Remove
+	</String>
+    <String Id="IdsIsverifyremovealldlgRemoveprogram">
+		{MSSansBold8}Remove the Program
+	</String>
+    <String Id="IdsIswelcomedlgInstallproductname">
+		The InstallShield(R) Wizard will install [ProductName] on your computer. To continue, click Next.
+	</String>
+    <String Id="IdsIswelcomedlgWarningcopyright">
+		WARNING: This program is protected by copyright law and international treaties.
+	</String>
+    <String Id="IdsIswelcomedlgWelcomeproductname">
+		{TahomaBold10}Welcome to the InstallShield Wizard for [ProductName]
+	</String>
+    <String Id="IdsTargetreqDescColor">
+		The color settings of your system are not adequate for running [ProductName].
+	</String>
+    <String Id="IdsTargetreqDescOs">
+		The operating system is not adequate for running [ProductName].
+	</String>
+    <String Id="IdsTargetreqDescProcessor">
+		The processor is not adequate for running [ProductName].
+	</String>
+    <String Id="IdsTargetreqDescRam">
+		The amount of RAM is not adequate for running [ProductName].
+	</String>
+    <String Id="IdsTargetreqDescResolution">
+		The screen resolution is not adequate for running [ProductName].
+	</String>
+    <String Id="IdString1">
+		http://www.DepartmentofState.com
+	</String>
+    <String Id="IdString10">
+		{MSSWhiteSerif8}InstallShield
+	</String>
+    <String Id="IdString11">
+		{Tahoma8}InstallShield
+	</String>
+    <String Id="IdString12">
+		Accountable Items
+	</String>
+    <String Id="IdString13">
+		Installs the Accountable Items components
+	</String>
+    <String Id="IdString14">
+		IniFile1.ini
+	</String>
+    <String Id="IdString145">
+		AccountableItems.exe.config
+	</String>
+    <String Id="IdString146">
+		configuration
+	</String>
+    <String Id="IdString147">
+		appSettings
+	</String>
+    <String Id="IdString148">
+		add
+	</String>
+    <String Id="IdString149">
+		key
+	</String>
+    <String Id="IdString15">
+		niv_ver.ini
+	</String>
+    <String Id="IdString150">
+		DataSource
+	</String>
+    <String Id="IdString151">
+		value
+	</String>
+    <String Id="IdString152">
+		[TNSNAME]
+	</String>
+    <String Id="IdString16">
+		Installs the fingerprint capture status display interface.
+	</String>
+    <String Id="IdString17">
+		Attribute
+	</String>
+    <String Id="IdString18">
+		Attribute Value
+	</String>
+    <String Id="IdString19">
+		Attribute
+	</String>
+    <String Id="IdString2">
+		CSD Reusable Components
+	</String>
+    <String Id="IdString20">
+		Installs the photo capture interface.
+	</String>
+    <String Id="IdString21">
+		Installs the Canon Digital Camera interface.
+	</String>
+    <String Id="IdString22">
+		Reg
+	</String>
+    <String Id="IdString23">
+		Attribute Value
+	</String>
+    <String Id="IdString24">
+		Next &gt;
+	</String>
+    <String Id="IdString25">
+		configuration
+	</String>
+    <String Id="IdString26">
+		appSettings
+	</String>
+    <String Id="IdString27">
+		add[@key
+	</String>
+    <String Id="IdString28">
+		key
+	</String>
+    <String Id="IdString29">
+		DataSource
+	</String>
+    <String Id="IdString3">
+		Back
+	</String>
+    <String Id="IdString30">
+		value
+	</String>
+    <String Id="IdString31">
+		CADEVKWT
+	</String>
+    <String Id="IdString32">
+		Back
+	</String>
+    <String Id="IdString33">
+		Cancel
+	</String>
+    <String Id="IdString34">
+		configuration
+	</String>
+    <String Id="IdString35">
+		appSettings
+	</String>
+    <String Id="IdString36">
+		add[@key
+	</String>
+    <String Id="IdString37">
+		key
+	</String>
+    <String Id="IdString38">
+		DataSource
+	</String>
+    <String Id="IdString39">
+		value
+	</String>
+    <String Id="IdString4">
+		Cancel
+	</String>
+    <String Id="IdString40">
+		CADEVKWT
+	</String>
+    <String Id="IdString41">
+		{MSSansBold8}Database Server Information
+	</String>
+    <String Id="IdString42">
+		configuration
+	</String>
+    <String Id="IdString43">
+		appSettings
+	</String>
+    <String Id="IdString44">
+		add[@key
+	</String>
+    <String Id="IdString45">
+		key
+	</String>
+    <String Id="IdString46">
+		DataSource
+	</String>
+    <String Id="IdString47">
+		value
+	</String>
+    <String Id="IdString48">
+		CADEVKWT
+	</String>
+    <String Id="IdString49">
+		Specify Database TNS name.
+	</String>
+    <String Id="IdString5">
+		{\MSSansBold8}Dialog Bold Title
+	</String>
+    <String Id="IdString50">
+		BioWin
+	</String>
+    <String Id="IdString51">
+		BioHand
+	</String>
+    <String Id="IdString52">
+		XCanonCam
+	</String>
+    <String Id="IdString53">
+		[ProductName] - InstallShield Wizard
+	</String>
+    <String Id="IdString6">
+		Dialog Normal Description
+	</String>
+    <String Id="IdString65">
+		TestB
+	</String>
+    <String Id="IdString7">
+		Required Files
+	</String>
+    <String Id="IdString8">
+		Installs required files that are shared by the options above
+	</String>
+    <String Id="IdString84">
+		configuration
+	</String>
+    <String Id="IdString85">
+		appSettings
+	</String>
+    <String Id="IdString86">
+		DataSource
+	</String>
+    <String Id="IdString87">
+		value
+	</String>
+    <String Id="IdString88">
+		[COMPANYNAME]
+	</String>
+    <String Id="IdString9">
+		CSD Reusable Components
+	</String>
+    <String Id="IdString92">
+		[ID_STRING14]
+	</String>
+    <String Id="NewString1">
+		Please enter or verify the Oracle server database TNS name below.
+	</String>
+</WixLocalization>

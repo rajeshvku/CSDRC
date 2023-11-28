@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?define BuildVersion = "2.1.4"?>
+    <Product Id="66c9be59-51a7-4e24-a2e4-6b73f7af90ab"
+             Name="CSD Reusable Components"
+             Language="1033"
+             Version="$(var.BuildVersion)"
+             Manufacturer="US Department of State"
+             UpgradeCode="bd16248f-68af-4782-b0c8-10c6e569a986">
+		
+        <Package InstallerVersion="200"
+                 Compressed="yes"
+                 InstallScope="perMachine" />
+		
+        <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+        <MediaTemplate />
+        <Feature Id="ProductFeature"
+                 Title="CSDRC.TestWix"
+                 Level="1">
+            <ComponentGroupRef Id="ProductComponents" />
+        </Feature>
+    </Product>
+    <Fragment>
+        <Directory Id="TARGETDIR"
+                   Name="SourceDir">
+            <Directory Id="ProgramFilesFolder">
+                <Directory Id="INSTALLFOLDER"
+                           Name="CSDRC.TestWix" />
+            </Directory>
+        </Directory>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="ProductComponents"
+                        Directory="INSTALLFOLDER">
+            <!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+            <!-- <Component Id="ProductComponent"> -->
+            <!-- TODO: Insert files, registry keys, and other resources here. -->
+            <!-- </Component> -->
+        </ComponentGroup>
+    </Fragment>
+</Wix>
