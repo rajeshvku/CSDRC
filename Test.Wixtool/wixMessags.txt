@@ -223,3 +223,6 @@
     - Source\CSDRC.WixInstallerSetup\CSDRC.WixInstallerSetup\wix314-binaries\sdk\vs2017\lib\x86\deputil.lib -> .
     - Source\CSDRC.WixInstallerSetup\CSDRC.WixInstallerSetup\wix314-binaries\sdk\vs2017\lib\x86\dutil.lib -> .
     - Source\CSDRC.WixInstallerSetup\CSDRC.WixInstallerSetup\wix314-binaries\sdk\vs2017\lib\x86\wcautil.lib -> .
+
+
+    candle.exe -dCulture=en-us -out MyObjectFiles.wixobj -loc ..\Messages.wxl ..\PathVariables.wxl  ..\Product.wxs ..\Directories.wxs ..\Components.wxs ..\ComponentsGenerated.wxs ..\UiComponents.wxs
