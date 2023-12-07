@@ -40,6 +40,18 @@
     <String Id="XscanFiles">F:\APPS\REUsable_Components\XScan\Release</String>
     <String Id="XScanRelease">D:\0_Projects\csd-rc\Source\7.XScan\Release</String>
 	<String Id="ISRedistPlatformDependentFolder" >F:\Personal\CSDRC\ReleaseDir\Binaries</String>
+	
+	<String Id="XScanJen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\XScan\Release</String>
+	<String Id="XCanonCamJen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\XCanonCam\Release</String>
+	<String Id="XCanonCamSharedJen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\XCanonCam\Shared Files</String>
+	<String Id="XCanonCam2Jen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\XCanonCam2\Release</String>
+	<String Id="BioWinJen">D:\Jenkins \workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\BioWin\Release</String>
+	<String Id="BioWin2Jen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\BioWin2\Release</String>
+	<String Id="BioWin3Jen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\BioWin3\Release</String>
+	<String Id="BioHandJen">D:\Jenkins \workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\BioHand\Release</String>
+	<String Id="BioHand2Jen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\BioHand2\Release</String>
+	<String Id="BioHand3Jen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\BioHand3\Release</String>
+	<String Id="SharedFilesJen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\Shared Files</String>
 
 
 		
