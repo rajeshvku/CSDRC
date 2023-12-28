@@ -14,4 +14,9 @@ public class Directory
      public string ISAttributes {get;set;}
      [XmlAttribute("ISFolderName")]
      public string ISFolderName {get;set;}
+
+    public string GetDirectory { get { return $"<Directory Id=\"{Directorys}\"\r\nName=\"{DefaultDir}\">"; } }
+    public string EndDirectory = "</Directory>";
+    public string GetDirectoryRef { get { return $"<DirectoryRef Id=\"{Directorys}\">"; } }
+    public string EndDirectoryRef = "</DirectoryRef>";
 }

@@ -1,0 +1,2625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	
+	<!-- Fixed upgrade Id -->
+	<?define BuildVersion="2.1.4"?>
+	<?define ProductUpgradeCode="D6261B75-48C6-4A32-B9C0-5DC5B41C3980"?>
+	<?define ISRedistPlatformDependentFolder=""?>
+	<?define ISProductFolder=""?>
+	
+	<Product Id="66c9be59-51a7-4e24-a2e4-6b73f7af90ab" 
+			 Name="CSD Reusable Components" 
+			 Language="1033" 
+			 Version="$(var.BuildVersion)" Manufacturer="!(loc.CompanyName)" UpgradeCode="$(var.ProductUpgradeCode)">
+		
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Manufacturer="!(loc.CompanyName)" Description="!(loc.CompanyName)" Keywords="Installer,MSI" />
+		<!-- Downgrade error message -->
+		<!-- <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." /> -->
+		<!-- Prevent installation being installed -->
+		<MediaTemplate EmbedCab="yes" />
+		<InstallUISequence>
+			<AppSearch Sequence="400" />
+			<CCPSearch Sequence="427" />
+			<CostFinalize Sequence="980" />
+			<CostInitialize Sequence="600" />
+			<ExecuteAction Sequence="1300" />
+			<FileCost Sequence="700" />
+			<FindRelatedProducts Sequence="425" />
+			<!--
+			<Custom Action="ISPreventDowngrade"
+			Sequence="450">&lt;![CDATA[ISFOUNDNEWERPRODUCTVERSION]]&gt;</Custom>
+			<Custom Action="ISSetAllUsers"
+			Sequence="10">&lt;![CDATA[Not Installed]]&gt;</Custom>
+			-->
+			<IsolateComponents Sequence="800" />
+			<LaunchConditions Sequence="410" />
+			<MigrateFeatureStates Sequence="990" />
+			<RMCCPSearch Sequence="430" />
+			<ResolveSource Sequence="970" />
+			<!--
+			<Custom Action="SetAllUsersProfileNT"
+			Sequence="950">&lt;![CDATA[VersionNT = 400]]&gt;</Custom>
+			-->
+			<ValidateProductID Sequence="500" />
+			<!--
+			<Custom Action="setAllUsersProfile2K"
+			Sequence="960">&lt;![CDATA[VersionNT &gt;= 500]]&gt;</Custom>
+			<Custom Action="setUserProfileNT"
+			Sequence="900">&lt;![CDATA[VersionNT]]&gt;</Custom>
+			-->
+		</InstallUISequence>
+		<!-- InstallExecuteSequence -->
+		<InstallExecuteSequence>
+			<AllocateRegistrySpace Sequence="1550" />
+			<AppSearch Sequence="5" />
+			<BindImage Sequence="4300" />
+			<!-- <CA1 Sequence="415"/> -->
+			<CCPSearch Sequence="420" />
+			<CostFinalize Sequence="950" />
+			<CostInitialize Sequence="700" />
+			<CreateFolders Sequence="3700" />
+			<CreateShortcuts Sequence="4500" />
+			<DeleteServices Sequence="2000" />
+			<DuplicateFiles Sequence="4210" />
+			<FileCost Sequence="800" />
+			<FindRelatedProducts Sequence="410" />
+			<!-- <ISPreventDowngrade Sequence="450"/> -->
+			<!-- <ISSelfRegisterCosting Sequence="2201"/> -->
+			<!-- <ISSelfRegisterFiles Sequence="5601"/> -->
+			<!-- <ISSelfRegisterFinalize Sequence="6601"/> -->
+			<!-- <ISSetAllUsers Sequence="10"/> -->
+			<!-- <ISUnSelfRegisterFiles Sequence="2202"/> -->
+			<InstallExecute Sequence="6411" />
+			<InstallFiles Sequence="4000" />
+			<InstallFinalize Sequence="6600" />
+			<InstallInitialize Sequence="1400" />
+			<InstallODBC Sequence="5400" />
+			<InstallServices Sequence="5800" />
+			<InstallValidate Sequence="1200" />
+			<IsolateComponents Sequence="900" />
+			<LaunchConditions Sequence="400" />
+			<MigrateFeatureStates Sequence="1100" />
+			<MoveFiles Sequence="3800" />
+			<!-- <MsiConfigureServices Sequence="5801"/> -->
+			<MsiPublishAssemblies Sequence="6250" />
+			<MsiUnpublishAssemblies Sequence="1750" />
+			<PatchFiles Sequence="4090" />
+			<ProcessComponents Sequence="1600" />
+			<PublishComponents Sequence="6200" />
+			<PublishFeatures Sequence="6300" />
+			<PublishProduct Sequence="6400" />
+			<RMCCPSearch Sequence="500" />
+			<!-- <RegisterCOMIterops Sequence="6651"/> -->
+			<RegisterClassInfo Sequence="4600" />
+			<RegisterComPlus Sequence="5700" />
+			<RegisterExtensionInfo Sequence="4700" />
+			<RegisterFonts Sequence="5300" />
+			<RegisterMIMEInfo Sequence="4900" />
+			<RegisterProduct Sequence="6100" />
+			<RegisterProgIdInfo Sequence="4800" />
+			<RegisterTypeLibraries Sequence="5500" />
+			<RegisterUser Sequence="6000" />
+			<RemoveDuplicateFiles Sequence="3400" />
+			<RemoveEnvironmentStrings Sequence="3300" />
+			<RemoveExistingProducts Sequence="1399" />
+			<RemoveFiles Sequence="3500" />
+			<RemoveFolders Sequence="3600" />
+			<RemoveIniValues Sequence="3100" />
+			<RemoveODBC Sequence="2400" />
+			<RemoveRegistryValues Sequence="2600" />
+			<RemoveShortcuts Sequence="3200" />
+			<ScheduleReboot Sequence="6410" />
+			<SelfRegModules Sequence="5600" />
+			<SelfUnregModules Sequence="2200" />
+			<!-- <SetARPINSTALLLOCATION Sequence="1000"/> -->
+			<SetODBCFolders Sequence="1010" />
+			<StartServices Sequence="5900" />
+			<StopServices Sequence="1900" />
+			<UnpublishComponents Sequence="1700" />
+			<UnpublishFeatures Sequence="1800" />
+			<UnregisterClassInfo Sequence="2700" />
+			<!-- <UnregisterComInterops Sequence="2150"/> -->
+			<UnregisterComPlus Sequence="2100" />
+			<UnregisterExtensionInfo Sequence="2800" />
+			<UnregisterFonts Sequence="2500" />
+			<UnregisterMIMEInfo Sequence="3000" />
+			<UnregisterProgIdInfo Sequence="2900" />
+			<UnregisterTypeLibraries Sequence="2300" />
+			<ValidateProductID Sequence="600" />
+			<WriteEnvironmentStrings Sequence="5200" />
+			<WriteIniValues Sequence="5100" />
+			<WriteRegistryValues Sequence="5000" />
+		</InstallExecuteSequence>
+		<!-- AdminUISequence -->
+		<AdminUISequence>
+			<CostInitialize Sequence="800" />
+			<CostFinalize Sequence="1000" />
+			<ExecuteAction Sequence="1300" />
+			<FileCost Sequence="900" />
+			<!-- <SetupCompleteError Sequence="-3"/> -->
+			<!--<InstallInitialize Sequence="50" />-->
+			<!--<InstallFinalize Sequence="1" />-->
+			
+			<!-- <SetupInterrupted Sequence="-2"/> -->
+			<!-- <SetupProgress Sequence="1020"/> -->
+		</AdminUISequence>
+		<!-- AdminExecuteSequence -->
+		<AdminExecuteSequence>
+			<CostFinalize Sequence="900" />
+			<CostInitialize Sequence="5" />
+			<FileCost Sequence="800" />
+			<InstallAdminPackage Sequence="3900" />
+			<InstallFiles Sequence="4000" />
+			<InstallFinalize Sequence="6600" />
+			<InstallInitialize Sequence="1400" />
+			<InstallValidate Sequence="1000" />
+			<!-- <ScheduleReboot Sequence="4010"/> -->
+		</AdminExecuteSequence>
+		<!-- AdvertiseExecuteSequence -->
+		<AdvertiseExecuteSequence>
+			<CostFinalize Sequence="1000" />
+			<CostInitialize Sequence="800" />
+			<CreateShortcuts Sequence="4500" />
+			<InstallFinalize Sequence="6600" />
+			<InstallInitialize Sequence="1500" />
+			<InstallValidate Sequence="1400" />
+			<MsiPublishAssemblies Sequence="6250" />
+			<PublishComponents Sequence="6200" />
+			<PublishFeatures Sequence="6300" />
+			<PublishProduct Sequence="6400" />
+			<RegisterClassInfo Sequence="4600" />
+			<RegisterExtensionInfo Sequence="4700" />
+			<RegisterMIMEInfo Sequence="4900" />
+			<RegisterProgIdInfo Sequence="4800" />
+			<!-- <RegisterTypeLibraries Sequence="4910"/> -->
+			<!-- <ScheduleReboot Sequence="6410"/> -->
+		</AdvertiseExecuteSequence>
+		<UI Id="CSDWixUI_InstallDir">
+			<UIRef Id="WixUI_InstallDir" />
+			<UIRef Id="CsrdDlg" />
+			
+			<!-- Progress / Action Texts -->
+			<ProgressText Action="Install" Template="Installing [ProductName] ([Progress])" />
+			<!-- Radio Buttongroup -->
+			<!-- Text Styles -->
+			<TextStyle Id="Arial8" FaceName="Arial" Size="8" />
+			<TextStyle Id="Arial9" FaceName="Arial" Size="9" />
+			<TextStyle Id="ArialBlue10" FaceName="Arial" Size="10" Blue="255" Green="0" Red="0" />
+			<TextStyle Id="ArialBlueStrike10" FaceName="Arial" Size="10" Blue="255" Green="0" Red="0" Strike="yes" />
+			<TextStyle Id="CourierNew8" FaceName="Courier New" Size="8" />
+			<TextStyle Id="CourierNew9" FaceName="Courier New" Size="9" />
+			<TextStyle Id="MSGothic9" FaceName="MS Gothic" Size="9" />
+			<TextStyle Id="MSSGreySerif8" FaceName="MS Sans Serif" Size="8" Blue="128" Green="128" Red="128" />
+			<TextStyle Id="MSSWhiteSerif8" FaceName="Tahoma" Size="8" Blue="255" Green="255" Red="255" />
+			<TextStyle Id="MSSansBold8" FaceName="Tahoma" Size="8" Bold="yes" />
+			<TextStyle Id="MSSansSerif8" FaceName="MS Sans Serif" Size="8" />
+			<TextStyle Id="MSSansSerif9" FaceName="MS Sans Serif" Size="9" />
+			<TextStyle Id="Tahoma10" FaceName="Tahoma" Size="10" />
+			<TextStyle Id="Tahoma8" FaceName="Tahoma" Size="8" />
+			<TextStyle Id="Tahoma9" FaceName="Tahoma" Size="9" />
+			<TextStyle Id="TahomaBold10" FaceName="Tahoma" Size="10" Bold="yes" />
+			<TextStyle Id="TahomaBold8" FaceName="Tahoma" Size="8" Bold="yes" />
+			<TextStyle Id="Times8" FaceName="Times New Roman" Size="8" />
+			<TextStyle Id="Times9" FaceName="Times New Roman" Size="9" />
+			<TextStyle Id="TimesItalic12" FaceName="Times New Roman" Size="12" Italic="yes" />
+			<TextStyle Id="TimesItalicBlue10" FaceName="Times New Roman" Size="10" Blue="255" Green="0" Red="0" Italic="yes" />
+			<TextStyle Id="TimesRed16" FaceName="Times New Roman" Size="16" Blue="0" Green="0" Red="255" />
+			<!-- Publish Elements -->
+			<Publish Dialog="AdminChangeFolderDlg" Control="Cancel" Event="EndDialog" Value="Return" Order="2">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="AdminChangeFolderDlg" Control="Cancel" Event="Reset" Value="0" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="AdminChangeFolderDlg" Control="NewFolder" Event="DirectoryListNew" Value="0" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="AdminChangeFolderDlg" Control="OK" Event="EndDialog" Value="Return" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="AdminChangeFolderDlg" Control="OK" Event="SetTargetPath" Value="TARGETDIR" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="AdminChangeFolderDlg" Control="Up" Event="DirectoryListUp" Value="0" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="AdminNetworkLocationDlg" Control="Back" Event="NewDialog" Value="AdminWelcomeDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="AdminNetworkLocationDlg" Control="Browse" Event="SpawnDialog" Value="AdminChangeFolderDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="AdminNetworkLocationDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="AdminChangeFolderDlg" Control="OK" Event="EndDialog" Value="Return" Order="3">
+				<![CDATA[OutOfNoRbDiskSpace <> 1]]>
+			</Publish>
+			<Publish Dialog="AdminNetworkLocationDlg" Control="InstallNow" Event="NewDialog" Value="OutOfSpaceDlg" Order="2">
+				<![CDATA[OutOfNoRbDiskSpace = 1]]>
+			</Publish>
+			<Publish Dialog="AdminChangeFolderDlg" Control="Tail" Event="SetTargetPath" Value="TARGETDIR" Order="1">
+				1
+			</Publish>
+			<Publish Dialog="AdminWelcomeDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="AdminWelcomeDlg" Control="Next" Event="NewDialog" Value="AdminChangeFolderDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="CancelSetupDlg" Control="No" Event="EndDialog" Value="Return" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="CancelSetupDlg" Control="Yes" Event="EndDialog" Value="Exit" Order="2">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="CustomSetupDlg" Control="Back" Event="NewDialog" Value="MaintenanceTypesDlg" Order="1">
+				<![CDATA[Installed]]>
+			</Publish>
+			<Publish Dialog="CustomSetupDlg" Control="Back" Event="NewDialog" Value="SetupTypesDlg" Order="2">
+				<![CDATA[NOT Installed]]>
+			</Publish>
+			<Publish Dialog="CustomSetupDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="CustomSetupDlg" Control="ChangeFolder" Event="SelectionBrowse" Value="InstallChangeFolderDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="CustomSetupDlg" Control="Details" Event="SelectionBrowse" Value="DiskSpaceRequirementsDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="CustomSetupDlg" Control="Help" Event="SpawnDialog" Value="CustomSetupTipsDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="CustomSetupDlg" Control="Next" Event="NewDialog" Value="OutOfSpaceDlg" Order="1">
+				<![CDATA[OutOfNoRbDiskSpace = 1]]>
+			</Publish>
+			<Publish Dialog="CustomSetupDlg" Control="Next" Event="NewDialog" Value="ReadyToInstallDlg" Order="2">
+				<![CDATA[OutOfNoRbDiskSpace <> 1]]>
+			</Publish>
+			<Publish Dialog="CustomSetupDlg" Control="Next" Event="[_IsSetupTypeMin]" Value="Custom" Order="3">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="CustomSetupTipsDlg" Control="OK" Event="EndDialog" Value="Return" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="CustomerInformationDlg" Control="Back" Event="NewDialog" Value="InstallWelcomeDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="CustomerInformationDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="CustomerInformationDlg" Control="Next" Event="EndDialog" Value="Exit" Order="3">
+				<![CDATA[(SERIALNUMVALRETRYLIMIT) And (SERIALNUMVALRETRYLIMIT<0) And (SERIALNUMVALRETURN<>SERIALNUMVALSUCCESSRETVAL)]]>
+			</Publish>
+			<Publish Dialog="CustomerInformationDlg" Control="Next" Event="NewDialog" Value="SetupTypesDlg" Order="4">
+				<![CDATA[(Not SERIALNUMVALRETURN) OR (SERIALNUMVALRETURN=SERIALNUMVALSUCCESSRETVAL)]]>
+			</Publish>
+			<Publish Dialog="CustomerInformationDlg" Control="Next" Event="[ALLUSERS]" Value="1" Order="1">
+				<![CDATA[ApplicationUsers = "AllUsers" And Privileged]]>
+			</Publish>
+			<Publish Dialog="CustomerInformationDlg" Control="Next" Event="[ALLUSERS]" Value="{}" Order="2">
+				<![CDATA[ApplicationUsers = "OnlyCurrentUser" And Privileged]]>
+			</Publish>
+			<Publish Dialog="DatabaseFolderDlg" Control="Back" Event="NewDialog" Value="CustomerInformationDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="DatabaseFolderDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="DatabaseFolderDlg" Control="ChangeFolder" Event="SpawnDialog" Value="InstallChangeFolderDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="DatabaseFolderDlg" Control="ChangeFolder" Event="[_BrowseProperty]" Value="DATABASEDIR" Order="2">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="DatabaseFolderDlg" Control="Next" Event="NewDialog" Value="SetupTypesDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="DestinationFolderDlg" Control="Back" Event="NewDialog" Value="CustomerInformationDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="DestinationFolderDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="DestinationFolderDlg" Control="ChangeFolder" Event="SpawnDialog" Value="InstallChangeFolderDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="DestinationFolderDlg" Control="ChangeFolder" Event="[_BrowseProperty]" Value="INSTALLDIR" Order="2">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="DestinationFolderDlg" Control="Next" Event="NewDialog" Value="SetupTypesDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="DiskSpaceRequirementsDlg" Control="OK" Event="EndDialog" Value="Return" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="FilesInUseDlg" Control="Exit" Event="EndDialog" Value="Exit" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="FilesInUseDlg" Control="Ignore" Event="EndDialog" Value="Ignore" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="FilesInUseDlg" Control="Retry" Event="EndDialog" Value="Retry" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="GetServerNameDlg" Control="Back" Event="NewDialog" Value="InstallWelcomeDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="GetServerNameDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="GetServerNameDlg" Control="Next" Event="NewDialog" Value="SetupTypesDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="InstallChangeFolderDlg" Control="Cancel" Event="EndDialog" Value="Return" Order="2">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="InstallChangeFolderDlg" Control="Cancel" Event="Reset" Value="0" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="InstallChangeFolderDlg" Control="NewFolder" Event="DirectoryListNew" Value="0" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="InstallChangeFolderDlg" Control="OK" Event="EndDialog" Value="Return" Order="3">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="InstallChangeFolderDlg" Control="OK" Event="SetTargetPath" Value="[_BrowseProperty]" Order="2">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="InstallChangeFolderDlg" Control="Up" Event="DirectoryListUp" Value="0" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="InstallWelcomeDlg" Control="Back" Event="NewDialog" Value="SplashBitmapDlg" Order="1">
+				<![CDATA[Display_IsBitmapDlg]]>
+			</Publish>
+			<Publish Dialog="InstallWelcomeDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="InstallWelcomeDlg" Control="Next" Event="NewDialog" Value="SetupTypesDlg">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="LicenseAgreementsDlg" Control="Back" Event="NewDialog" Value="InstallWelcomeDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="LicenseAgreementsDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<!--
+			<Publish Dialog="LicenseAgreementsDlg"
+			Control="ISPrintButton"
+			Event="DoAction"
+			Value="ISPrint"
+			Order="0"><![CDATA[1]]></Publish>
+			-->
+			<Publish Dialog="LicenseAgreementsDlg" Control="Next" Event="NewDialog" Value="CustomerInformationDlg" Order="0">
+				<![CDATA[AgreeToLicense = "Yes"]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Back" Event="NewDialog" Value="MaintenanceWelcomesDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Next" Event="NewDialog" Value="CustomSetupDlg" Order="12">
+				<![CDATA[_IsMaintenance = "Change"]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Next" Event="NewDialog" Value="ReadyToInstallDlg" Order="13">
+				<![CDATA[_IsMaintenance = "Reinstall"]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Next" Event="NewDialog" Value="ReadyToRemoveDlg" Order="11">
+				<![CDATA[_IsMaintenance = "Remove"]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Next" Event="Reinstall" Value="ALL" Order="10">
+				<![CDATA[_IsMaintenance = "Reinstall"]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Next" Event="ReinstallMode" Value="[ReinstallModeText]" Order="9">
+				<![CDATA[_IsMaintenance = "Reinstall"]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Next" Event="[ProgressType0]" Value="Modify" Order="2">
+				<![CDATA[_IsMaintenance = "Change"]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Next" Event="[ProgressType0]" Value="Repair" Order="1">
+				<![CDATA[_IsMaintenance = "Reinstall"]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Next" Event="[ProgressType1]" Value="Modifying" Order="3">
+				<![CDATA[_IsMaintenance = "Change"]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Next" Event="[ProgressType1]" Value="Repairing" Order="4">
+				<![CDATA[_IsMaintenance = "Reinstall"]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Next" Event="[ProgressType2]" Value="modified" Order="6">
+				<![CDATA[_IsMaintenance = "Change"]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Next" Event="[ProgressType2]" Value="repairs" Order="5">
+				<![CDATA[_IsMaintenance = "Reinstall"]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Next" Event="[ProgressType3]" Value="modifies" Order="7">
+				<![CDATA[_IsMaintenance = "Change"]]>
+			</Publish>
+			<Publish Dialog="MaintenanceTypesDlg" Control="Next" Event="[ProgressType3]" Value="repairs" Order="8">
+				<![CDATA[_IsMaintenance = "Reinstall"]]>
+			</Publish>
+			<Publish Dialog="MaintenanceWelcomesDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="MaintenanceWelcomesDlg" Control="Next" Event="NewDialog" Value="MaintenanceTypesDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="MsiRMFilesInUseDlg" Control="Cancel" Event="EndDialog" Value="Exit" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="MsiRMFilesInUseDlg" Control="OK" Event="EndDialog" Value="Return" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="MsiRMFilesInUseDlg" Control="OK" Event="RMShutdownAndRestart" Value="0" Order="2">
+				<![CDATA[RestartManagerOption="CloseRestart"]]>
+			</Publish>
+			<Publish Dialog="OutOfSpaceDlg" Control="Resume" Event="NewDialog" Value="AdminChangeFolderDlg" Order="0">
+				<![CDATA[ACTION = "ADMIN"]]>
+			</Publish>
+			<Publish Dialog="OutOfSpaceDlg" Control="Resume" Event="NewDialog" Value="CustomSetupDlg" Order="0">
+				<![CDATA[ACTION <> "ADMIN"]]>
+			</Publish>
+			<Publish Dialog="PatchWelcomeDlg" Control="Back" Event="NewDialog" Value="SplashBitmapDlg" Order="1">
+				<![CDATA[Display_IsBitmapDlg]]>
+			</Publish>
+			<Publish Dialog="PatchWelcomeDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="PatchWelcomeDlg" Control="Next" Event="EndDialog" Value="Return" Order="3">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="PatchWelcomeDlg" Control="Next" Event="Reinstall" Value="ALL" Order="1">
+				<![CDATA[PATCH And REINSTALL=""]]>
+			</Publish>
+			<Publish Dialog="PatchWelcomeDlg" Control="Next" Event="ReinstallMode" Value="omus" Order="2">
+				<![CDATA[PATCH And REINSTALLMODE=""]]>
+			</Publish>
+			<Publish Dialog="ReadyToInstallDlg" Control="Back" Event="NewDialog" Value="CustomSetupDlg" Order="2">
+				<![CDATA[Installed OR _IsSetupTypeMin = "Custom"]]>
+			</Publish>
+			<Publish Dialog="ReadyToInstallDlg" Control="Back" Event="NewDialog" Value="MaintenanceTypesDlg" Order="3">
+				<![CDATA[Installed AND _IsMaintenance = "Reinstall"]]>
+			</Publish>
+			<Publish Dialog="ReadyToInstallDlg" Control="Back" Event="NewDialog" Value="SetupTypesDlg" Order="1">
+				<![CDATA[NOT Installed AND _IsSetupTypeMin <> "Custom"]]>
+			</Publish>
+			<Publish Dialog="ReadyToInstallDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="ReadyToInstallDlg" Control="InstallNow" Event="EndDialog" Value="Return" Order="1">
+				<![CDATA[OutOfNoRbDiskSpace <> 1]]>
+			</Publish>
+			<Publish Dialog="ReadyToInstallDlg" Control="InstallNow" Event="NewDialog" Value="OutOfSpaceDlg" Order="2">
+				<![CDATA[OutOfNoRbDiskSpace = 1]]>
+			</Publish>
+			<Publish Dialog="ReadyToInstallDlg" Control="InstallNow" Event="[ProgressType1]" Value="Installing" Order="3">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="ReadyToInstallDlg" Control="InstallNow" Event="[ProgressType2]" Value="installed" Order="4">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="ReadyToInstallDlg" Control="InstallNow" Event="[ProgressType3]" Value="installs" Order="5">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="ReadyToRemoveDlg" Control="Back" Event="NewDialog" Value="MaintenanceTypesDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="ReadyToRemoveDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="ReadyToRemoveDlg" Control="RemoveNow" Event="EndDialog" Value="Return" Order="2">
+				<![CDATA[OutOfNoRbDiskSpace <> 1]]>
+			</Publish>
+			<Publish Dialog="ReadyToRemoveDlg" Control="RemoveNow" Event="NewDialog" Value="OutOfSpaceDlg" Order="2">
+				<![CDATA[OutOfNoRbDiskSpace = 1]]>
+			</Publish>
+			<Publish Dialog="ReadyToRemoveDlg" Control="RemoveNow" Event="Remove" Value="ALL" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="ReadyToRemoveDlg" Control="RemoveNow" Event="[ProgressType1]" Value="Uninstalling" Order="3">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="ReadyToRemoveDlg" Control="RemoveNow" Event="[ProgressType2]" Value="uninstalled" Order="4">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="ReadyToRemoveDlg" Control="RemoveNow" Event="[ProgressType3]" Value="uninstalls" Order="5">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SQLBrowseDlg" Control="Cancel" Event="EndDialog" Value="Return" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SQLBrowseDlg" Control="OK" Event="EndDialog" Value="Return" Order="2">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SQLBrowseDlg" Control="OK" Event="[IS_SQLSERVER_SERVER]" Value="[IS_SQLSERVER_LIST]" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SQLLoginDlg" Control="Back" Event="NewDialog" Value="CustomerInformationDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<!--
+			<Publish Dialog="SQLLoginDlg"
+			Control="BtnSQLBrowse"
+			Event="DoAction"
+			Value="ISSQLServerList"
+			Order="2"><![CDATA[1]]></Publish>
+			-->
+			<Publish Dialog="SQLLoginDlg" Control="BtnSQLBrowse" Event="SpawnDialog" Value="SQLBrowseDlg" Order="3">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SQLLoginDlg" Control="BtnSQLBrowse" Event="[IS_SQLSERVER_LIST]" Value="[IS_SQLSERVER_SERVER]" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SQLLoginDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<!--
+			<Publish Dialog="SQLLoginDlg"
+			Control="Next"
+			Event="DoAction"
+			Value="ISSQLServerValidate"
+			Order="3"><![CDATA[1]]></Publish>
+			-->
+			<Publish Dialog="SQLLoginDlg" Control="Next" Event="NewDialog" Value="SetupTypesDlg" Order="4">
+				<![CDATA[IS_SQLSERVER_STATUS=0]]>
+			</Publish>
+			<Publish Dialog="SetupCompleteErrorDlg" Control="Back" Event="EndDialog" Value="Return" Order="2">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupCompleteErrorDlg" Control="Back" Event="[Suspend]" Value="{}" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupCompleteErrorDlg" Control="Cancel" Event="EndDialog" Value="Return" Order="2">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupCompleteErrorDlg" Control="Cancel" Event="[Suspend]" Value="1" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupCompleteErrorDlg" Control="Finish" Event="EndDialog" Value="Exit" Order="2">
+				<![CDATA[1]]>
+			</Publish>
+			<!--
+			<Publish Dialog="SetupCompleteSuccessDlg"
+			Control="OK"
+			Event="DoAction"
+			Value="IS_LAUNCH_MY_PROGRAM_PLEASE"><![CDATA[LAUNCHPROGRAM]]></Publish>
+			-->
+			<Publish Dialog="SetupCompleteSuccessDlg" Control="OK" Event="EndDialog" Value="Exit" Order="2">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupErrorDlg" Control="A" Event="EndDialog" Value="ErrorAbort" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupErrorDlg" Control="C" Event="EndDialog" Value="ErrorCancel" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupErrorDlg" Control="I" Event="EndDialog" Value="ErrorIgnore" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupErrorDlg" Control="N" Event="EndDialog" Value="ErrorNo" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupErrorDlg" Control="O" Event="EndDialog" Value="ErrorOk" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupErrorDlg" Control="R" Event="EndDialog" Value="ErrorRetry" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupErrorDlg" Control="Y" Event="EndDialog" Value="ErrorYes" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupInitializationDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<!--
+			<Publish Dialog="SetupInitializationDlg"
+			Control="Next"
+			Event="NewDialog"
+			Value="NoDialog"
+			Order="1"><![CDATA[1]]></Publish>
+			-->
+			<Publish Dialog="SetupInterruptedDlg" Control="Back" Event="EndDialog" Value="Exit" Order="2">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupInterruptedDlg" Control="Back" Event="[Suspend]" Value="{}" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupInterruptedDlg" Control="Cancel" Event="EndDialog" Value="Exit" Order="2">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupInterruptedDlg" Control="Cancel" Event="[Suspend]" Value="1" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupInterruptedDlg" Control="Finish" Event="EndDialog" Value="Exit" Order="2">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupProgressDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupResumeDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupResumeDlg" Control="Next" Event="EndDialog" Value="Return" Order="0">
+				<![CDATA[OutOfNoRbDiskSpace <> 1]]>
+			</Publish>
+			<Publish Dialog="SetupResumeDlg" Control="Next" Event="NewDialog" Value="OutOfSpaceDlg" Order="0">
+				<![CDATA[OutOfNoRbDiskSpace = 1]]>
+			</Publish>
+			<Publish Dialog="SetupTypesDlg" Control="Back" Event="NewDialog" Value="GetServerNameDlg" Order="1">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupTypesDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SetupTypesDlg" Control="Next" Event="AddLocal" Value="ALL" Order="0">
+				<![CDATA[_IsSetupTypeMin = "Typical"]]>
+			</Publish>
+			<Publish Dialog="SetupTypesDlg" Control="Next" Event="NewDialog" Value="CustomSetupDlg" Order="2">
+				<![CDATA[_IsSetupTypeMin = "Custom"]]>
+			</Publish>
+			<Publish Dialog="SetupTypesDlg" Control="Next" Event="NewDialog" Value="ReadyToInstallDlg" Order="1">
+				<![CDATA[_IsSetupTypeMin <> "Custom"]]>
+			</Publish>
+			<Publish Dialog="SplashBitmapDlg" Control="Cancel" Event="SpawnDialog" Value="CancelSetupDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="SplashBitmapDlg" Control="Next" Event="NewDialog" Value="InstallWelcomeDlg" Order="0">
+				<![CDATA[1]]>
+			</Publish>
+			<!-- Errors -->
+			<Error Id="0">
+				!(loc.IdsError0)
+			</Error>
+			<Error Id="1">
+				!(loc.IdsError1)
+			</Error>
+			<Error Id="10">
+				!(loc.IdsError8)
+			</Error>
+			<Error Id="11">
+				!(loc.IdsError9)
+			</Error>
+			<Error Id="1101">
+				!(loc.IdsError22)
+			</Error>
+			<Error Id="12">
+				!(loc.IdsError10)
+			</Error>
+			<Error Id="13">
+				!(loc.IdsError11)
+			</Error>
+			<Error Id="1301">
+				!(loc.IdsError23)
+			</Error>
+			<Error Id="1302">
+				!(loc.IdsError24)
+			</Error>
+			<Error Id="1303">
+				!(loc.IdsError25)
+			</Error>
+			<Error Id="1304">
+				!(loc.IdsError26)
+			</Error>
+			<Error Id="1305">
+				!(loc.IdsError27)
+			</Error>
+			<Error Id="1306">
+				!(loc.IdsError28)
+			</Error>
+			<Error Id="1307">
+				!(loc.IdsError29)
+			</Error>
+			<Error Id="1308">
+				!(loc.IdsError30)
+			</Error>
+			<Error Id="1309">
+				!(loc.IdsError31)
+			</Error>
+			<Error Id="1310">
+				!(loc.IdsError32)
+			</Error>
+			<Error Id="1311">
+				!(loc.IdsError33)
+			</Error>
+			<Error Id="1312">
+				!(loc.IdsError34)
+			</Error>
+			<Error Id="1313">
+				!(loc.IdsError35)
+			</Error>
+			<Error Id="1314">
+				!(loc.IdsError36)
+			</Error>
+			<Error Id="1315">
+				!(loc.IdsError37)
+			</Error>
+			<Error Id="1316">
+				!(loc.IdsError38)
+			</Error>
+			<Error Id="1317">
+				!(loc.IdsError39)
+			</Error>
+			<Error Id="1318">
+				!(loc.IdsError40)
+			</Error>
+			<Error Id="1319">
+				!(loc.IdsError41)
+			</Error>
+			<Error Id="1320">
+				!(loc.IdsError42)
+			</Error>
+			<Error Id="1321">
+				!(loc.IdsError43)
+			</Error>
+			<Error Id="1322">
+				!(loc.IdsError44)
+			</Error>
+			<Error Id="1323">
+				!(loc.IdsError45)
+			</Error>
+			<Error Id="1324">
+				!(loc.IdsError46)
+			</Error>
+			<Error Id="1325">
+				!(loc.IdsError47)
+			</Error>
+			<Error Id="1326">
+				!(loc.IdsError48)
+			</Error>
+			<Error Id="1327">
+				!(loc.IdsError49)
+			</Error>
+			<Error Id="1328">
+				!(loc.IdsError122)
+			</Error>
+			<Error Id="1329">
+				!(loc.IdsError1329)
+			</Error>
+			<Error Id="1330">
+				!(loc.IdsError1330)
+			</Error>
+			<Error Id="1331">
+				!(loc.IdsError1331)
+			</Error>
+			<Error Id="1332">
+				!(loc.IdsError1332)
+			</Error>
+			<Error Id="1333">
+				!(loc.IdsError1333)
+			</Error>
+			<Error Id="1334">
+				!(loc.IdsError1334)
+			</Error>
+			<Error Id="1335">
+				!(loc.IdsError1335)
+			</Error>
+			<Error Id="1336">
+				!(loc.IdsError1336)
+			</Error>
+			<Error Id="14">
+				!(loc.IdsError12)
+			</Error>
+			<Error Id="1401">
+				!(loc.IdsError50)
+			</Error>
+			<Error Id="1402">
+				!(loc.IdsError51)
+			</Error>
+			<Error Id="1403">
+				!(loc.IdsError52)
+			</Error>
+			<Error Id="1404">
+				!(loc.IdsError53)
+			</Error>
+			<Error Id="1405">
+				!(loc.IdsError54)
+			</Error>
+			<Error Id="1406">
+				!(loc.IdsError55)
+			</Error>
+			<Error Id="1407">
+				!(loc.IdsError56)
+			</Error>
+			<Error Id="1408">
+				!(loc.IdsError57)
+			</Error>
+			<Error Id="1409">
+				!(loc.IdsError58)
+			</Error>
+			<Error Id="1410">
+				!(loc.IdsError59)
+			</Error>
+			<Error Id="15">
+				!(loc.IdsError13)
+			</Error>
+			<Error Id="1500">
+				!(loc.IdsError60)
+			</Error>
+			<Error Id="1501">
+				!(loc.IdsError61)
+			</Error>
+			<Error Id="1502">
+				!(loc.IdsError62)
+			</Error>
+			<Error Id="1503">
+				!(loc.IdsError63)
+			</Error>
+			<Error Id="16">
+				!(loc.IdsError14)
+			</Error>
+			<Error Id="1601">
+				!(loc.IdsError64)
+			</Error>
+			<Error Id="1602">
+				!(loc.IdsError65)
+			</Error>
+			<Error Id="1603">
+				!(loc.IdsError66)
+			</Error>
+			<Error Id="1604">
+				!(loc.IdsError67)
+			</Error>
+			<Error Id="1605">
+				!(loc.IdsError68)
+			</Error>
+			<Error Id="1606">
+				!(loc.IdsError69)
+			</Error>
+			<Error Id="1607">
+				!(loc.IdsError70)
+			</Error>
+			<Error Id="1608">
+				!(loc.IdsError71)
+			</Error>
+			<Error Id="1609">
+				!(loc.IdsError1609)
+			</Error>
+			<Error Id="1651">
+				!(loc.IdsError1651)
+			</Error>
+			<Error Id="17">
+				!(loc.IdsError15)
+			</Error>
+			<Error Id="1701">
+				!(loc.IdsError72)
+			</Error>
+			<Error Id="1702">
+				!(loc.IdsError73)
+			</Error>
+			<Error Id="1703">
+				!(loc.IdsError74)
+			</Error>
+			<Error Id="1704">
+				!(loc.IdsError75)
+			</Error>
+			<Error Id="1705">
+				!(loc.IdsError76)
+			</Error>
+			<Error Id="1706">
+				!(loc.IdsError77)
+			</Error>
+			<Error Id="1707">
+				!(loc.IdsError78)
+			</Error>
+			<Error Id="1708">
+				!(loc.IdsError79)
+			</Error>
+			<Error Id="1709">
+				!(loc.IdsError80)
+			</Error>
+			<Error Id="1710">
+				!(loc.IdsError81)
+			</Error>
+			<Error Id="1711">
+				!(loc.IdsError82)
+			</Error>
+			<Error Id="1712">
+				!(loc.IdsError83)
+			</Error>
+			<Error Id="1713">
+				!(loc.IdsError123)
+			</Error>
+			<Error Id="1714">
+				!(loc.IdsError124)
+			</Error>
+			<Error Id="1715">
+				!(loc.IdsError1715)
+			</Error>
+			<Error Id="1716">
+				!(loc.IdsError1716)
+			</Error>
+			<Error Id="1717">
+				!(loc.IdsError1717)
+			</Error>
+			<Error Id="1718">
+				!(loc.IdsError1718)
+			</Error>
+			<Error Id="1719">
+				!(loc.IdsError1719)
+			</Error>
+			<Error Id="1720">
+				!(loc.IdsError1720)
+			</Error>
+			<Error Id="1721">
+				!(loc.IdsError1721)
+			</Error>
+			<Error Id="1722">
+				!(loc.IdsError1722)
+			</Error>
+			<Error Id="1723">
+				!(loc.IdsError1723)
+			</Error>
+			<Error Id="1724">
+				!(loc.IdsError1724)
+			</Error>
+			<Error Id="1725">
+				!(loc.IdsError1725)
+			</Error>
+			<Error Id="1726">
+				!(loc.IdsError1726)
+			</Error>
+			<Error Id="1727">
+				!(loc.IdsError1727)
+			</Error>
+			<Error Id="1728">
+				!(loc.IdsError1728)
+			</Error>
+			<Error Id="1729">
+				!(loc.IdsError1729)
+			</Error>
+			<Error Id="1730">
+				!(loc.IdsError1730)
+			</Error>
+			<Error Id="1731">
+				!(loc.IdsError1731)
+			</Error>
+			<Error Id="1732">
+				!(loc.IdsError1732)
+			</Error>
+			<Error Id="18">
+				!(loc.IdsError16)
+			</Error>
+			<Error Id="1801">
+				!(loc.IdsError84)
+			</Error>
+			<Error Id="1802">
+				!(loc.IdsError85)
+			</Error>
+			<Error Id="1803">
+				!(loc.IdsError86)
+			</Error>
+			<Error Id="1804">
+				!(loc.IdsError87)
+			</Error>
+			<Error Id="1805">
+				!(loc.IdsError88)
+			</Error>
+			<Error Id="1806">
+				!(loc.IdsError89)
+			</Error>
+			<Error Id="1807">
+				!(loc.IdsError90)
+			</Error>
+			<Error Id="19">
+				!(loc.IdsError17)
+			</Error>
+			<Error Id="1901">
+				!(loc.IdsError91)
+			</Error>
+			<Error Id="1902">
+				!(loc.IdsError92)
+			</Error>
+			<Error Id="1903">
+				!(loc.IdsError93)
+			</Error>
+			<Error Id="1904">
+				!(loc.IdsError94)
+			</Error>
+			<Error Id="1905">
+				!(loc.IdsError95)
+			</Error>
+			<Error Id="1906">
+				!(loc.IdsError96)
+			</Error>
+			<Error Id="1907">
+				!(loc.IdsError97)
+			</Error>
+			<Error Id="1908">
+				!(loc.IdsError98)
+			</Error>
+			<Error Id="1909">
+				!(loc.IdsError99)
+			</Error>
+			<Error Id="1910">
+				!(loc.IdsError100)
+			</Error>
+			<Error Id="1911">
+				!(loc.IdsError101)
+			</Error>
+			<Error Id="1912">
+				!(loc.IdsError102)
+			</Error>
+			<Error Id="1913">
+				!(loc.IdsError103)
+			</Error>
+			<Error Id="1914">
+				!(loc.IdsError104)
+			</Error>
+			<Error Id="1915">
+				!(loc.IdsError105)
+			</Error>
+			<Error Id="1916">
+				!(loc.IdsError106)
+			</Error>
+			<Error Id="1917">
+				!(loc.IdsError107)
+			</Error>
+			<Error Id="1918">
+				!(loc.IdsError108)
+			</Error>
+			<Error Id="1919">
+				!(loc.IdsError109)
+			</Error>
+			<Error Id="1920">
+				!(loc.IdsError110)
+			</Error>
+			<Error Id="1921">
+				!(loc.IdsError111)
+			</Error>
+			<Error Id="1922">
+				!(loc.IdsError112)
+			</Error>
+			<Error Id="1923">
+				!(loc.IdsError113)
+			</Error>
+			<Error Id="1924">
+				!(loc.IdsError114)
+			</Error>
+			<Error Id="1925">
+				!(loc.IdsError115)
+			</Error>
+			<Error Id="1926">
+				!(loc.IdsError116)
+			</Error>
+			<Error Id="1927">
+				!(loc.IdsError117)
+			</Error>
+			<Error Id="1928">
+				!(loc.IdsError118)
+			</Error>
+			<Error Id="1929">
+				!(loc.IdsError119)
+			</Error>
+			<Error Id="1930">
+				!(loc.IdsError125)
+			</Error>
+			<Error Id="1931">
+				!(loc.IdsError126)
+			</Error>
+			<Error Id="1932">
+				!(loc.IdsError127)
+			</Error>
+			<Error Id="1933">
+				!(loc.IdsError128)
+			</Error>
+			<Error Id="1934">
+				!(loc.IdsError129)
+			</Error>
+			<Error Id="1935">
+				!(loc.IdsError1935)
+			</Error>
+			<Error Id="1936">
+				!(loc.IdsError1936)
+			</Error>
+			<Error Id="1937">
+				!(loc.IdsError1937)
+			</Error>
+			<Error Id="1938">
+				!(loc.IdsError1938)
+			</Error>
+			<Error Id="2">
+				!(loc.IdsError2)
+			</Error>
+			<Error Id="20">
+				!(loc.IdsError18)
+			</Error>
+			<Error Id="21">
+				!(loc.IdsError19)
+			</Error>
+			<Error Id="2101">
+				!(loc.IdsError2101)
+			</Error>
+			<Error Id="2102">
+				!(loc.IdsError2102)
+			</Error>
+			<Error Id="2103">
+				!(loc.IdsError2103)
+			</Error>
+			<Error Id="2104">
+				!(loc.IdsError2104)
+			</Error>
+			<Error Id="2105">
+				!(loc.IdsError2105)
+			</Error>
+			<Error Id="2106">
+				!(loc.IdsError2106)
+			</Error>
+			<Error Id="2107">
+				!(loc.IdsError2107)
+			</Error>
+			<Error Id="2108">
+				!(loc.IdsError2108)
+			</Error>
+			<Error Id="2109">
+				!(loc.IdsError2109)
+			</Error>
+			<Error Id="2110">
+				!(loc.IdsError2110)
+			</Error>
+			<Error Id="2111">
+				!(loc.IdsError2111)
+			</Error>
+			<Error Id="2112">
+				!(loc.IdsError2112)
+			</Error>
+			<Error Id="2113">
+				!(loc.IdsError2113)
+			</Error>
+			<Error Id="22">
+				!(loc.IdsError120)
+			</Error>
+			<Error Id="2200">
+				!(loc.IdsError2200)
+			</Error>
+			<Error Id="2201">
+				!(loc.IdsError2201)
+			</Error>
+			<Error Id="2202">
+				!(loc.IdsError2202)
+			</Error>
+			<Error Id="2203">
+				!(loc.IdsError2203)
+			</Error>
+			<Error Id="2204">
+				!(loc.IdsError2204)
+			</Error>
+			<Error Id="2205">
+				!(loc.IdsError2205)
+			</Error>
+			<Error Id="2206">
+				!(loc.IdsError2206)
+			</Error>
+			<Error Id="2207">
+				!(loc.IdsError2207)
+			</Error>
+			<Error Id="2208">
+				!(loc.IdsError2208)
+			</Error>
+			<Error Id="2209">
+				!(loc.IdsError2209)
+			</Error>
+			<Error Id="2210">
+				!(loc.IdsError2210)
+			</Error>
+			<Error Id="2211">
+				!(loc.IdsError2211)
+			</Error>
+			<Error Id="2212">
+				!(loc.IdsError2212)
+			</Error>
+			<Error Id="2213">
+				!(loc.IdsError2213)
+			</Error>
+			<Error Id="2214">
+				!(loc.IdsError2214)
+			</Error>
+			<Error Id="2215">
+				!(loc.IdsError2215)
+			</Error>
+			<Error Id="2216">
+				!(loc.IdsError2216)
+			</Error>
+			<Error Id="2217">
+				!(loc.IdsError2217)
+			</Error>
+			<Error Id="2218">
+				!(loc.IdsError2218)
+			</Error>
+			<Error Id="2219">
+				!(loc.IdsError2219)
+			</Error>
+			<Error Id="2220">
+				!(loc.IdsError2220)
+			</Error>
+			<Error Id="2221">
+				!(loc.IdsError2221)
+			</Error>
+			<Error Id="2222">
+				!(loc.IdsError2222)
+			</Error>
+			<Error Id="2223">
+				!(loc.IdsError2223)
+			</Error>
+			<Error Id="2224">
+				!(loc.IdsError2224)
+			</Error>
+			<Error Id="2225">
+				!(loc.IdsError2225)
+			</Error>
+			<Error Id="2226">
+				!(loc.IdsError2226)
+			</Error>
+			<Error Id="2227">
+				!(loc.IdsError2227)
+			</Error>
+			<Error Id="2228">
+				!(loc.IdsError2228)
+			</Error>
+			<Error Id="2229">
+				!(loc.IdsError2229)
+			</Error>
+			<Error Id="2230">
+				!(loc.IdsError2230)
+			</Error>
+			<Error Id="2231">
+				!(loc.IdsError2231)
+			</Error>
+			<Error Id="2232">
+				!(loc.IdsError2232)
+			</Error>
+			<Error Id="2233">
+				!(loc.IdsError2233)
+			</Error>
+			<Error Id="2234">
+				!(loc.IdsError2234)
+			</Error>
+			<Error Id="2235">
+				!(loc.IdsError2235)
+			</Error>
+			<Error Id="2236">
+				!(loc.IdsError2236)
+			</Error>
+			<Error Id="2237">
+				!(loc.IdsError2237)
+			</Error>
+			<Error Id="2238">
+				!(loc.IdsError2238)
+			</Error>
+			<Error Id="2239">
+				!(loc.IdsError2239)
+			</Error>
+			<Error Id="2240">
+				!(loc.IdsError2240)
+			</Error>
+			<Error Id="2241">
+				!(loc.IdsError2241)
+			</Error>
+			<Error Id="2242">
+				!(loc.IdsError2242)
+			</Error>
+			<Error Id="2243">
+				!(loc.IdsError2243)
+			</Error>
+			<Error Id="2244">
+				!(loc.IdsError2244)
+			</Error>
+			<Error Id="2245">
+				!(loc.IdsError2245)
+			</Error>
+			<Error Id="2246">
+				!(loc.IdsError2246)
+			</Error>
+			<Error Id="2247">
+				!(loc.IdsError2247)
+			</Error>
+			<Error Id="2248">
+				!(loc.IdsError2248)
+			</Error>
+			<Error Id="2249">
+				!(loc.IdsError2249)
+			</Error>
+			<Error Id="2250">
+				!(loc.IdsError2250)
+			</Error>
+			<Error Id="2251">
+				!(loc.IdsError2251)
+			</Error>
+			<Error Id="2252">
+				!(loc.IdsError2252)
+			</Error>
+			<Error Id="2253">
+				!(loc.IdsError2253)
+			</Error>
+			<Error Id="2254">
+				!(loc.IdsError2254)
+			</Error>
+			<Error Id="2255">
+				!(loc.IdsError2255)
+			</Error>
+			<Error Id="2256">
+				!(loc.IdsError2256)
+			</Error>
+			<Error Id="2257">
+				!(loc.IdsError2257)
+			</Error>
+			<Error Id="2258">
+				!(loc.IdsError2258)
+			</Error>
+			<Error Id="2259">
+				!(loc.IdsError2259)
+			</Error>
+			<Error Id="2260">
+				!(loc.IdsError2260)
+			</Error>
+			<Error Id="2261">
+				!(loc.IdsError2261)
+			</Error>
+			<Error Id="2262">
+				!(loc.IdsError2262)
+			</Error>
+			<Error Id="2263">
+				!(loc.IdsError2263)
+			</Error>
+			<Error Id="2264">
+				!(loc.IdsError2264)
+			</Error>
+			<Error Id="2265">
+				!(loc.IdsError2265)
+			</Error>
+			<Error Id="2266">
+				!(loc.IdsError2266)
+			</Error>
+			<Error Id="2267">
+				!(loc.IdsError2267)
+			</Error>
+			<Error Id="2268">
+				!(loc.IdsError2268)
+			</Error>
+			<Error Id="2269">
+				!(loc.IdsError2269)
+			</Error>
+			<Error Id="2270">
+				!(loc.IdsError2270)
+			</Error>
+			<Error Id="2271">
+				!(loc.IdsError2271)
+			</Error>
+			<Error Id="2272">
+				!(loc.IdsError2272)
+			</Error>
+			<Error Id="2273">
+				!(loc.IdsError2273)
+			</Error>
+			<Error Id="2274">
+				!(loc.IdsError2274)
+			</Error>
+			<Error Id="2275">
+				!(loc.IdsError2275)
+			</Error>
+			<Error Id="2276">
+				!(loc.IdsError2276)
+			</Error>
+			<Error Id="2277">
+				!(loc.IdsError2277)
+			</Error>
+			<Error Id="2278">
+				!(loc.IdsError2278)
+			</Error>
+			<Error Id="2279">
+				!(loc.IdsError2279)
+			</Error>
+			<Error Id="2280">
+				!(loc.IdsError2280)
+			</Error>
+			<Error Id="2281">
+				!(loc.IdsError2281)
+			</Error>
+			<Error Id="2282">
+				!(loc.IdsError2282)
+			</Error>
+			<Error Id="23">
+				!(loc.IdsError121)
+			</Error>
+			<Error Id="2302">
+				!(loc.IdsError2302)
+			</Error>
+			<Error Id="2303">
+				!(loc.IdsError2303)
+			</Error>
+			<Error Id="2304">
+				!(loc.IdsError2304)
+			</Error>
+			<Error Id="2305">
+				!(loc.IdsError2305)
+			</Error>
+			<Error Id="2306">
+				!(loc.IdsError2306)
+			</Error>
+			<Error Id="2307">
+				!(loc.IdsError2307)
+			</Error>
+			<Error Id="2308">
+				!(loc.IdsError2308)
+			</Error>
+			<Error Id="2309">
+				!(loc.IdsError2309)
+			</Error>
+			<Error Id="2310">
+				!(loc.IdsError2310)
+			</Error>
+			<Error Id="2315">
+				!(loc.IdsError2315)
+			</Error>
+			<Error Id="2318">
+				!(loc.IdsError2318)
+			</Error>
+			<Error Id="2319">
+				!(loc.IdsError2319)
+			</Error>
+			<Error Id="2320">
+				!(loc.IdsError2320)
+			</Error>
+			<Error Id="2321">
+				!(loc.IdsError2321)
+			</Error>
+			<Error Id="2322">
+				!(loc.IdsError2322)
+			</Error>
+			<Error Id="2323">
+				!(loc.IdsError2323)
+			</Error>
+			<Error Id="2324">
+				!(loc.IdsError2324)
+			</Error>
+			<Error Id="2325">
+				!(loc.IdsError2325)
+			</Error>
+			<Error Id="2326">
+				!(loc.IdsError2326)
+			</Error>
+			<Error Id="2327">
+				!(loc.IdsError2327)
+			</Error>
+			<Error Id="2328">
+				!(loc.IdsError2328)
+			</Error>
+			<Error Id="2329">
+				!(loc.IdsError2329)
+			</Error>
+			<Error Id="2330">
+				!(loc.IdsError2330)
+			</Error>
+			<Error Id="2331">
+				!(loc.IdsError2331)
+			</Error>
+			<Error Id="2332">
+				!(loc.IdsError2332)
+			</Error>
+			<Error Id="2333">
+				!(loc.IdsError2333)
+			</Error>
+			<Error Id="2334">
+				!(loc.IdsError2334)
+			</Error>
+			<Error Id="2335">
+				!(loc.IdsError2335)
+			</Error>
+			<Error Id="2336">
+				!(loc.IdsError2336)
+			</Error>
+			<Error Id="2337">
+				!(loc.IdsError2337)
+			</Error>
+			<Error Id="2338">
+				!(loc.IdsError2338)
+			</Error>
+			<Error Id="2339">
+				!(loc.IdsError2339)
+			</Error>
+			<Error Id="2340">
+				!(loc.IdsError2340)
+			</Error>
+			<Error Id="2341">
+				!(loc.IdsError2341)
+			</Error>
+			<Error Id="2342">
+				!(loc.IdsError2342)
+			</Error>
+			<Error Id="2343">
+				!(loc.IdsError2343)
+			</Error>
+			<Error Id="2344">
+				!(loc.IdsError2344)
+			</Error>
+			<Error Id="2345">
+				!(loc.IdsError2345)
+			</Error>
+			<Error Id="2347">
+				!(loc.IdsError2347)
+			</Error>
+			<Error Id="2348">
+				!(loc.IdsError2348)
+			</Error>
+			<Error Id="2349">
+				!(loc.IdsError2349)
+			</Error>
+			<Error Id="2350">
+				!(loc.IdsError2350)
+			</Error>
+			<Error Id="2351">
+				!(loc.IdsError2351)
+			</Error>
+			<Error Id="2352">
+				!(loc.IdsError2352)
+			</Error>
+			<Error Id="2353">
+				!(loc.IdsError2353)
+			</Error>
+			<Error Id="2354">
+				!(loc.IdsError2354)
+			</Error>
+			<Error Id="2355">
+				!(loc.IdsError2355)
+			</Error>
+			<Error Id="2356">
+				!(loc.IdsError2356)
+			</Error>
+			<Error Id="2357">
+				!(loc.IdsError2357)
+			</Error>
+			<Error Id="2358">
+				!(loc.IdsError2358)
+			</Error>
+			<Error Id="2359">
+				!(loc.IdsError2359)
+			</Error>
+			<Error Id="2360">
+				!(loc.IdsError2360)
+			</Error>
+			<Error Id="2361">
+				!(loc.IdsError2361)
+			</Error>
+			<Error Id="2362">
+				!(loc.IdsError2362)
+			</Error>
+			<Error Id="2363">
+				!(loc.IdsError2363)
+			</Error>
+			<Error Id="2364">
+				!(loc.IdsError2364)
+			</Error>
+			<Error Id="2365">
+				!(loc.IdsError2365)
+			</Error>
+			<Error Id="2366">
+				!(loc.IdsError2366)
+			</Error>
+			<Error Id="2367">
+				!(loc.IdsError2367)
+			</Error>
+			<Error Id="2368">
+				!(loc.IdsError2368)
+			</Error>
+			<Error Id="2370">
+				!(loc.IdsError2370)
+			</Error>
+			<Error Id="2371">
+				!(loc.IdsError2371)
+			</Error>
+			<Error Id="2372">
+				!(loc.IdsError2372)
+			</Error>
+			<Error Id="2373">
+				!(loc.IdsError2373)
+			</Error>
+			<Error Id="2374">
+				!(loc.IdsError2374)
+			</Error>
+			<Error Id="2375">
+				!(loc.IdsError2375)
+			</Error>
+			<Error Id="2376">
+				!(loc.IdsError2376)
+			</Error>
+			<Error Id="2379">
+				!(loc.IdsError2379)
+			</Error>
+			<Error Id="2380">
+				!(loc.IdsError2380)
+			</Error>
+			<Error Id="2381">
+				!(loc.IdsError2381)
+			</Error>
+			<Error Id="2382">
+				!(loc.IdsError2382)
+			</Error>
+			<Error Id="2401">
+				!(loc.IdsError2401)
+			</Error>
+			<Error Id="2402">
+				!(loc.IdsError2402)
+			</Error>
+			<Error Id="2501">
+				!(loc.IdsError2501)
+			</Error>
+			<Error Id="2502">
+				!(loc.IdsError2502)
+			</Error>
+			<Error Id="2503">
+				!(loc.IdsError2503)
+			</Error>
+			<Error Id="2601">
+				!(loc.IdsError2601)
+			</Error>
+			<Error Id="2602">
+				!(loc.IdsError2602)
+			</Error>
+			<Error Id="2603">
+				!(loc.IdsError2603)
+			</Error>
+			<Error Id="2604">
+				!(loc.IdsError2604)
+			</Error>
+			<Error Id="2605">
+				!(loc.IdsError2605)
+			</Error>
+			<Error Id="2606">
+				!(loc.IdsError2606)
+			</Error>
+			<Error Id="2607">
+				!(loc.IdsError2607)
+			</Error>
+			<Error Id="2608">
+				!(loc.IdsError2608)
+			</Error>
+			<Error Id="2609">
+				!(loc.IdsError2609)
+			</Error>
+			<Error Id="2611">
+				!(loc.IdsError2611)
+			</Error>
+			<Error Id="2612">
+				!(loc.IdsError2612)
+			</Error>
+			<Error Id="2613">
+				!(loc.IdsError2613)
+			</Error>
+			<Error Id="2614">
+				!(loc.IdsError2614)
+			</Error>
+			<Error Id="2615">
+				!(loc.IdsError2615)
+			</Error>
+			<Error Id="2616">
+				!(loc.IdsError2616)
+			</Error>
+			<Error Id="2617">
+				!(loc.IdsError2617)
+			</Error>
+			<Error Id="2618">
+				!(loc.IdsError2618)
+			</Error>
+			<Error Id="2619">
+				!(loc.IdsError2619)
+			</Error>
+			<Error Id="2620">
+				!(loc.IdsError2620)
+			</Error>
+			<Error Id="2621">
+				!(loc.IdsError2621)
+			</Error>
+			<Error Id="2701">
+				!(loc.IdsError2701)
+			</Error>
+			<Error Id="2702">
+				!(loc.IdsError2702)
+			</Error>
+			<Error Id="2703">
+				!(loc.IdsError2703)
+			</Error>
+			<Error Id="2704">
+				!(loc.IdsError2704)
+			</Error>
+			<Error Id="2705">
+				!(loc.IdsError2705)
+			</Error>
+			<Error Id="2706">
+				!(loc.IdsError2706)
+			</Error>
+			<Error Id="2707">
+				!(loc.IdsError2707)
+			</Error>
+			<Error Id="2708">
+				!(loc.IdsError2708)
+			</Error>
+			<Error Id="2709">
+				!(loc.IdsError2709)
+			</Error>
+			<Error Id="2710">
+				!(loc.IdsError2710)
+			</Error>
+			<Error Id="2711">
+				!(loc.IdsError2711)
+			</Error>
+			<Error Id="2712">
+				!(loc.IdsError2712)
+			</Error>
+			<Error Id="2713">
+				!(loc.IdsError2713)
+			</Error>
+			<Error Id="2714">
+				!(loc.IdsError2714)
+			</Error>
+			<Error Id="2715">
+				!(loc.IdsError2715)
+			</Error>
+			<Error Id="2716">
+				!(loc.IdsError2716)
+			</Error>
+			<Error Id="2717">
+				!(loc.IdsError2717)
+			</Error>
+			<Error Id="2718">
+				!(loc.IdsError2718)
+			</Error>
+			<Error Id="2719">
+				!(loc.IdsError2719)
+			</Error>
+			<Error Id="2720">
+				!(loc.IdsError2720)
+			</Error>
+			<Error Id="2721">
+				!(loc.IdsError2721)
+			</Error>
+			<Error Id="2722">
+				!(loc.IdsError2722)
+			</Error>
+			<Error Id="2723">
+				!(loc.IdsError2723)
+			</Error>
+			<Error Id="2724">
+				!(loc.IdsError2724)
+			</Error>
+			<Error Id="2725">
+				!(loc.IdsError2725)
+			</Error>
+			<Error Id="2726">
+				!(loc.IdsError2726)
+			</Error>
+			<Error Id="2727">
+				!(loc.IdsError2727)
+			</Error>
+			<Error Id="2728">
+				!(loc.IdsError2728)
+			</Error>
+			<Error Id="2729">
+				!(loc.IdsError2729)
+			</Error>
+			<Error Id="2730">
+				!(loc.IdsError2730)
+			</Error>
+			<Error Id="2731">
+				!(loc.IdsError2731)
+			</Error>
+			<Error Id="2732">
+				!(loc.IdsError2732)
+			</Error>
+			<Error Id="2733">
+				!(loc.IdsError2733)
+			</Error>
+			<Error Id="2734">
+				!(loc.IdsError2734)
+			</Error>
+			<Error Id="2735">
+				!(loc.IdsError2735)
+			</Error>
+			<Error Id="2736">
+				!(loc.IdsError2736)
+			</Error>
+			<Error Id="2737">
+				!(loc.IdsError2737)
+			</Error>
+			<Error Id="2738">
+				!(loc.IdsError2738)
+			</Error>
+			<Error Id="2739">
+				!(loc.IdsError2739)
+			</Error>
+			<Error Id="2740">
+				!(loc.IdsError2740)
+			</Error>
+			<Error Id="2741">
+				!(loc.IdsError2741)
+			</Error>
+			<Error Id="2742">
+				!(loc.IdsError2742)
+			</Error>
+			<Error Id="2743">
+				!(loc.IdsError2743)
+			</Error>
+			<Error Id="2744">
+				!(loc.IdsError2744)
+			</Error>
+			<Error Id="2745">
+				!(loc.IdsError2745)
+			</Error>
+			<Error Id="2746">
+				!(loc.IdsError2746)
+			</Error>
+			<Error Id="2747">
+				!(loc.IdsError2747)
+			</Error>
+			<Error Id="2748">
+				!(loc.IdsError2748)
+			</Error>
+			<Error Id="2749">
+				!(loc.IdsError2749)
+			</Error>
+			<Error Id="2750">
+				!(loc.IdsError2750)
+			</Error>
+			<Error Id="27500">
+				!(loc.IdsError130)
+			</Error>
+			<Error Id="27501">
+				!(loc.IdsError131)
+			</Error>
+			<Error Id="27502">
+				!(loc.IdsError27502)
+			</Error>
+			<Error Id="27503">
+				!(loc.IdsError27503)
+			</Error>
+			<Error Id="27504">
+				!(loc.IdsError27504)
+			</Error>
+			<Error Id="27505">
+				!(loc.IdsError27505)
+			</Error>
+			<Error Id="27506">
+				!(loc.IdsError27506)
+			</Error>
+			<Error Id="27507">
+				!(loc.IdsError27507)
+			</Error>
+			<Error Id="27508">
+				!(loc.IdsError27508)
+			</Error>
+			<Error Id="27509">
+				!(loc.IdsError27509)
+			</Error>
+			<Error Id="2751">
+				!(loc.IdsError2751)
+			</Error>
+			<Error Id="27510">
+				!(loc.IdsError27510)
+			</Error>
+			<Error Id="27511">
+				!(loc.IdsError27511)
+			</Error>
+			<Error Id="27512">
+				!(loc.IdsError27512)
+			</Error>
+			<Error Id="27513">
+				!(loc.IdsError27513)
+			</Error>
+			<Error Id="27514">
+				!(loc.IdsError27514)
+			</Error>
+			<Error Id="27515">
+				!(loc.IdsError27515)
+			</Error>
+			<Error Id="27516">
+				!(loc.IdsError27516)
+			</Error>
+			<Error Id="27517">
+				!(loc.IdsError27517)
+			</Error>
+			<Error Id="27518">
+				!(loc.IdsError27518)
+			</Error>
+			<Error Id="27519">
+				!(loc.IdsError27519)
+			</Error>
+			<Error Id="2752">
+				!(loc.IdsError2752)
+			</Error>
+			<Error Id="27520">
+				!(loc.IdsError27520)
+			</Error>
+			<Error Id="27521">
+				!(loc.IdsError27521)
+			</Error>
+			<Error Id="27522">
+				!(loc.IdsError27522)
+			</Error>
+			<Error Id="27523">
+				!(loc.IdsError27523)
+			</Error>
+			<Error Id="27524">
+				!(loc.IdsError27524)
+			</Error>
+			<Error Id="27525">
+				!(loc.IdsError27525)
+			</Error>
+			<Error Id="27526">
+				!(loc.IdsError27526)
+			</Error>
+			<Error Id="27527">
+				!(loc.IdsError27527)
+			</Error>
+			<Error Id="27528">
+				!(loc.IdsError27528)
+			</Error>
+			<Error Id="27529">
+				!(loc.IdsError27529)
+			</Error>
+			<Error Id="2753">
+				!(loc.IdsError2753)
+			</Error>
+			<Error Id="27530">
+				!(loc.IdsError27530)
+			</Error>
+			<Error Id="27531">
+				!(loc.IdsError27531)
+			</Error>
+			<Error Id="27532">
+				!(loc.IdsError27532)
+			</Error>
+			<Error Id="27533">
+				!(loc.IdsError27533)
+			</Error>
+			<Error Id="27534">
+				!(loc.IdsError27534)
+			</Error>
+			<Error Id="27535">
+				!(loc.IdsError27535)
+			</Error>
+			<Error Id="27536">
+				!(loc.IdsError27536)
+			</Error>
+			<Error Id="27537">
+				!(loc.IdsError27537)
+			</Error>
+			<Error Id="27538">
+				!(loc.IdsError27538)
+			</Error>
+			<Error Id="27539">
+				!(loc.IdsError27539)
+			</Error>
+			<Error Id="2754">
+				!(loc.IdsError2754)
+			</Error>
+			<Error Id="27540">
+				!(loc.IdsError27540)
+			</Error>
+			<Error Id="27541">
+				!(loc.IdsError27541)
+			</Error>
+			<Error Id="27542">
+				!(loc.IdsError27542)
+			</Error>
+			<Error Id="27543">
+				!(loc.IdsError27543)
+			</Error>
+			<Error Id="27544">
+				!(loc.IdsError27544)
+			</Error>
+			<Error Id="27545">
+				!(loc.IdsError27545)
+			</Error>
+			<Error Id="27546">
+				!(loc.IdsError27546)
+			</Error>
+			<Error Id="27547">
+				!(loc.IdsError27547)
+			</Error>
+			<Error Id="27548">
+				!(loc.IdsError27548)
+			</Error>
+			<Error Id="27549">
+				!(loc.IdsError27549)
+			</Error>
+			<Error Id="2755">
+				!(loc.IdsError2755)
+			</Error>
+			<Error Id="27550">
+				!(loc.IdsError27550)
+			</Error>
+			<Error Id="27551">
+				!(loc.IdsError27551)
+			</Error>
+			<Error Id="27552">
+				!(loc.IdsError27552)
+			</Error>
+			<Error Id="27553">
+				!(loc.IdsError27553)
+			</Error>
+			<Error Id="27554">
+				!(loc.IdsError27554)
+			</Error>
+			<Error Id="2756">
+				!(loc.IdsError2756)
+			</Error>
+			<Error Id="2757">
+				!(loc.IdsError2757)
+			</Error>
+			<Error Id="2758">
+				!(loc.IdsError2758)
+			</Error>
+			<Error Id="2759">
+				!(loc.IdsError2759)
+			</Error>
+			<Error Id="2760">
+				!(loc.IdsError2760)
+			</Error>
+			<Error Id="2761">
+				!(loc.IdsError2761)
+			</Error>
+			<Error Id="2762">
+				!(loc.IdsError2762)
+			</Error>
+			<Error Id="2763">
+				!(loc.IdsError2763)
+			</Error>
+			<Error Id="2765">
+				!(loc.IdsError2765)
+			</Error>
+			<Error Id="2766">
+				!(loc.IdsError2766)
+			</Error>
+			<Error Id="2767">
+				!(loc.IdsError2767)
+			</Error>
+			<Error Id="2768">
+				!(loc.IdsError2768)
+			</Error>
+			<Error Id="2769">
+				!(loc.IdsError2769)
+			</Error>
+			<Error Id="2770">
+				!(loc.IdsError2770)
+			</Error>
+			<Error Id="2771">
+				!(loc.IdsError2771)
+			</Error>
+			<Error Id="2772">
+				!(loc.IdsError2772)
+			</Error>
+			<Error Id="2801">
+				!(loc.IdsError2801)
+			</Error>
+			<Error Id="2802">
+				!(loc.IdsError2802)
+			</Error>
+			<Error Id="2803">
+				!(loc.IdsError2803)
+			</Error>
+			<Error Id="2804">
+				!(loc.IdsError2804)
+			</Error>
+			<Error Id="2806">
+				!(loc.IdsError2806)
+			</Error>
+			<Error Id="2807">
+				!(loc.IdsError2807)
+			</Error>
+			<Error Id="2808">
+				!(loc.IdsError2808)
+			</Error>
+			<Error Id="2809">
+				!(loc.IdsError2809)
+			</Error>
+			<Error Id="2810">
+				!(loc.IdsError2810)
+			</Error>
+			<Error Id="2811">
+				!(loc.IdsError2811)
+			</Error>
+			<Error Id="2812">
+				!(loc.IdsError2812)
+			</Error>
+			<Error Id="2813">
+				!(loc.IdsError2813)
+			</Error>
+			<Error Id="2814">
+				!(loc.IdsError2814)
+			</Error>
+			<Error Id="2815">
+				!(loc.IdsError2815)
+			</Error>
+			<Error Id="2816">
+				!(loc.IdsError2816)
+			</Error>
+			<Error Id="2817">
+				!(loc.IdsError2817)
+			</Error>
+			<Error Id="2818">
+				!(loc.IdsError2818)
+			</Error>
+			<Error Id="2819">
+				!(loc.IdsError2819)
+			</Error>
+			<Error Id="2820">
+				!(loc.IdsError2820)
+			</Error>
+			<Error Id="2821">
+				!(loc.IdsError2821)
+			</Error>
+			<Error Id="2822">
+				!(loc.IdsError2822)
+			</Error>
+			<Error Id="2823">
+				!(loc.IdsError2823)
+			</Error>
+			<Error Id="2824">
+				!(loc.IdsError2824)
+			</Error>
+			<Error Id="2825">
+				!(loc.IdsError2825)
+			</Error>
+			<Error Id="2826">
+				!(loc.IdsError2826)
+			</Error>
+			<Error Id="2827">
+				!(loc.IdsError2827)
+			</Error>
+			<Error Id="2828">
+				!(loc.IdsError2828)
+			</Error>
+			<Error Id="2829">
+				!(loc.IdsError2829)
+			</Error>
+			<Error Id="2830">
+				!(loc.IdsError2830)
+			</Error>
+			<Error Id="2831">
+				!(loc.IdsError2831)
+			</Error>
+			<Error Id="2832">
+				!(loc.IdsError2832)
+			</Error>
+			<Error Id="2833">
+				!(loc.IdsError2833)
+			</Error>
+			<Error Id="2834">
+				!(loc.IdsError2834)
+			</Error>
+			<Error Id="2835">
+				!(loc.IdsError2835)
+			</Error>
+			<Error Id="2836">
+				!(loc.IdsError2836)
+			</Error>
+			<Error Id="2837">
+				!(loc.IdsError2837)
+			</Error>
+			<Error Id="2838">
+				!(loc.IdsError2838)
+			</Error>
+			<Error Id="2839">
+				!(loc.IdsError2839)
+			</Error>
+			<Error Id="2840">
+				!(loc.IdsError2840)
+			</Error>
+			<Error Id="2841">
+				!(loc.IdsError2841)
+			</Error>
+			<Error Id="2842">
+				!(loc.IdsError2842)
+			</Error>
+			<Error Id="2843">
+				!(loc.IdsError2843)
+			</Error>
+			<Error Id="2844">
+				!(loc.IdsError2844)
+			</Error>
+			<Error Id="2845">
+				!(loc.IdsError2845)
+			</Error>
+			<Error Id="2846">
+				!(loc.IdsError2846)
+			</Error>
+			<Error Id="2847">
+				!(loc.IdsError2847)
+			</Error>
+			<Error Id="2848">
+				!(loc.IdsError2848)
+			</Error>
+			<Error Id="2849">
+				!(loc.IdsError2849)
+			</Error>
+			<Error Id="2850">
+				!(loc.IdsError2850)
+			</Error>
+			<Error Id="2851">
+				!(loc.IdsError2851)
+			</Error>
+			<Error Id="2852">
+				!(loc.IdsError2852)
+			</Error>
+			<Error Id="2853">
+				!(loc.IdsError2853)
+			</Error>
+			<Error Id="2854">
+				!(loc.IdsError2854)
+			</Error>
+			<Error Id="2855">
+				!(loc.IdsError2855)
+			</Error>
+			<Error Id="2856">
+				!(loc.IdsError2856)
+			</Error>
+			<Error Id="2857">
+				!(loc.IdsError2857)
+			</Error>
+			<Error Id="2858">
+				!(loc.IdsError2858)
+			</Error>
+			<Error Id="2859">
+				!(loc.IdsError2859)
+			</Error>
+			<Error Id="2860">
+				!(loc.IdsError2860)
+			</Error>
+			<Error Id="2861">
+				!(loc.IdsError2861)
+			</Error>
+			<Error Id="2862">
+				!(loc.IdsError2862)
+			</Error>
+			<Error Id="2863">
+				!(loc.IdsError2863)
+			</Error>
+			<Error Id="2864">
+				!(loc.IdsError2864)
+			</Error>
+			<Error Id="2865">
+				!(loc.IdsError2865)
+			</Error>
+			<Error Id="2866">
+				!(loc.IdsError2866)
+			</Error>
+			<Error Id="2867">
+				!(loc.IdsError2867)
+			</Error>
+			<Error Id="2868">
+				!(loc.IdsError2868)
+			</Error>
+			<Error Id="2869">
+				!(loc.IdsError2869)
+			</Error>
+			<Error Id="2870">
+				!(loc.IdsError2870)
+			</Error>
+			<Error Id="2871">
+				!(loc.IdsError2871)
+			</Error>
+			<Error Id="2872">
+				!(loc.IdsError2872)
+			</Error>
+			<Error Id="2873">
+				!(loc.IdsError2873)
+			</Error>
+			<Error Id="2874">
+				!(loc.IdsError2874)
+			</Error>
+			<Error Id="2875">
+				!(loc.IdsError2875)
+			</Error>
+			<Error Id="2876">
+				!(loc.IdsError2876)
+			</Error>
+			<Error Id="2877">
+				!(loc.IdsError2877)
+			</Error>
+			<Error Id="2878">
+				!(loc.IdsError2878)
+			</Error>
+			<Error Id="2879">
+				!(loc.IdsError2879)
+			</Error>
+			<Error Id="2880">
+				!(loc.IdsError2880)
+			</Error>
+			<Error Id="2881">
+				!(loc.IdsError2881)
+			</Error>
+			<Error Id="2882">
+				!(loc.IdsError2882)
+			</Error>
+			<Error Id="2883">
+				!(loc.IdsError2883)
+			</Error>
+			<Error Id="2884">
+				!(loc.IdsError2884)
+			</Error>
+			<Error Id="2885">
+				!(loc.IdsError2885)
+			</Error>
+			<Error Id="2886">
+				!(loc.IdsError2886)
+			</Error>
+			<Error Id="2887">
+				!(loc.IdsError2887)
+			</Error>
+			<Error Id="2888">
+				!(loc.IdsError2888)
+			</Error>
+			<Error Id="2889">
+				!(loc.IdsError2889)
+			</Error>
+			<Error Id="2890">
+				!(loc.IdsError2890)
+			</Error>
+			<Error Id="2891">
+				!(loc.IdsError2891)
+			</Error>
+			<Error Id="2892">
+				!(loc.IdsError2892)
+			</Error>
+			<Error Id="2893">
+				!(loc.IdsError2893)
+			</Error>
+			<Error Id="2894">
+				!(loc.IdsError2894)
+			</Error>
+			<Error Id="2895">
+				!(loc.IdsError2895)
+			</Error>
+			<Error Id="2896">
+				!(loc.IdsError2896)
+			</Error>
+			<Error Id="2897">
+				!(loc.IdsError2897)
+			</Error>
+			<Error Id="2898">
+				!(loc.IdsError2898)
+			</Error>
+			<Error Id="2899">
+				!(loc.IdsError2899)
+			</Error>
+			<Error Id="2901">
+				!(loc.IdsError2901)
+			</Error>
+			<Error Id="2902">
+				!(loc.IdsError2902)
+			</Error>
+			<Error Id="2903">
+				!(loc.IdsError2903)
+			</Error>
+			<Error Id="2904">
+				!(loc.IdsError2904)
+			</Error>
+			<Error Id="2905">
+				!(loc.IdsError2905)
+			</Error>
+			<Error Id="2906">
+				!(loc.IdsError2906)
+			</Error>
+			<Error Id="2907">
+				!(loc.IdsError2907)
+			</Error>
+			<Error Id="2908">
+				!(loc.IdsError2908)
+			</Error>
+			<Error Id="2909">
+				!(loc.IdsError2909)
+			</Error>
+			<Error Id="2910">
+				!(loc.IdsError2910)
+			</Error>
+			<Error Id="2911">
+				!(loc.IdsError2911)
+			</Error>
+			<Error Id="2912">
+				!(loc.IdsError2912)
+			</Error>
+			<Error Id="2919">
+				!(loc.IdsError2919)
+			</Error>
+			<Error Id="2920">
+				!(loc.IdsError2920)
+			</Error>
+			<Error Id="2924">
+				!(loc.IdsError2924)
+			</Error>
+			<Error Id="2927">
+				!(loc.IdsError2927)
+			</Error>
+			<Error Id="2928">
+				!(loc.IdsError2928)
+			</Error>
+			<Error Id="2929">
+				!(loc.IdsError2929)
+			</Error>
+			<Error Id="2932">
+				!(loc.IdsError2932)
+			</Error>
+			<Error Id="2933">
+				!(loc.IdsError2933)
+			</Error>
+			<Error Id="2934">
+				!(loc.IdsError2934)
+			</Error>
+			<Error Id="2935">
+				!(loc.IdsError2935)
+			</Error>
+			<Error Id="2936">
+				!(loc.IdsError2936)
+			</Error>
+			<Error Id="2937">
+				!(loc.IdsError2937)
+			</Error>
+			<Error Id="2938">
+				!(loc.IdsError2938)
+			</Error>
+			<Error Id="2939">
+				!(loc.IdsError2939)
+			</Error>
+			<Error Id="2940">
+				!(loc.IdsError2940)
+			</Error>
+			<Error Id="2941">
+				!(loc.IdsError2941)
+			</Error>
+			<Error Id="2942">
+				!(loc.IdsError2942)
+			</Error>
+			<Error Id="2943">
+				!(loc.IdsError2943)
+			</Error>
+			<Error Id="2944">
+				!(loc.IdsError2944)
+			</Error>
+			<Error Id="2945">
+				!(loc.IdsError2945)
+			</Error>
+			<Error Id="3001">
+				!(loc.IdsError3001)
+			</Error>
+			<Error Id="3002">
+				!(loc.IdsError3002)
+			</Error>
+			<Error Id="32">
+				!(loc.IdsError20)
+			</Error>
+			<Error Id="33">
+				!(loc.IdsError21)
+			</Error>
+			<Error Id="4">
+				!(loc.IdsError3)
+			</Error>
+			<Error Id="5">
+				!(loc.IdsError4)
+			</Error>
+			<Error Id="7">
+				!(loc.IdsError5)
+			</Error>
+			<Error Id="8">
+				!(loc.IdsError6)
+			</Error>
+			<Error Id="9">
+				!(loc.IdsError7)
+			</Error>
+		</UI>
+		
+		<!--<Property Id="ARPNOMODIFY">1</Property>-->
+    <Property Id="ARPNOREPAIR">1</Property>
+    <Property Id="ARPPRODUCTICON">ARPPRODUCTICON.exe</Property>
+    <Property Id="ARPURLINFOABOUT">!(loc.ID_STRING1)</Property>
+    
+    <Property Id="DWUSINTERVAL">30</Property>
+    <Property Id="DWUSLINK">CEEC808FB93B67AF69AC67A8C9AC978FFEEC978FCEFC80B8CE9CC0EF9E1CE07FDEFBE78F19AC</Property>
+    <!--<Property Id="DefaultUIFont">Tahoma8</Property>-->
+    <Property Id="DialogCaption">InstallShield for Windows Installer</Property>
+    <Property Id="DiskPrompt">[1]</Property>
+    <Property Id="DisplayNameCustom">!(loc.IDS__DisplayName_Custom)</Property>
+    <Property Id="DisplayNameMinimal">!(loc.IDS__DisplayName_Minimal)</Property>
+    <Property Id="DisplayNameTypical">!(loc.IDS__DisplayName_Typical)</Property>
+    <Property Id="Display_IsBitmapDlg">1</Property>
+    <!--<Property Id="ErrorDialog">SetupError</Property>-->
+    <Property Id="INSTALLLEVEL">1</Property>
+    <Property Id="ISCHECKFORPRODUCTUPDATES">1</Property>
+    <Property Id="ISENABLEDWUSFINISHDIALOG" />
+    <Property Id="ISVROOT_PORT_NO">0</Property>
+    <Property Id="IS_COMPLUS_PROGRESSTEXT_COST">!(loc.IDS_COMPLUS_PROGRESSTEXT_COST)</Property>
+    <Property Id="IS_COMPLUS_PROGRESSTEXT_INSTALL">!(loc.IDS_COMPLUS_PROGRESSTEXT_INSTALL)</Property>
+    <Property Id="IS_COMPLUS_PROGRESSTEXT_UNINSTALL">!(loc.IDS_COMPLUS_PROGRESSTEXT_UNINSTALL)</Property>
+    <Property Id="IS_PROGMSG_TEXTFILECHANGS_REPLACE">!(loc.IDS_PROGMSG_TEXTFILECHANGS_REPLACE)</Property>
+    <Property Id="IS_PROGMSG_XML_COSTING">!(loc.IDS_PROGMSG_XML_COSTING)</Property>
+    <Property Id="IS_PROGMSG_XML_CREATE_FILE">!(loc.IDS_PROGMSG_XML_CREATE_FILE)</Property>
+    <Property Id="IS_PROGMSG_XML_FILES">!(loc.IDS_PROGMSG_XML_FILES)</Property>
+    <Property Id="IS_PROGMSG_XML_REMOVE_FILE">!(loc.IDS_PROGMSG_XML_REMOVE_FILE)</Property>
+    <Property Id="IS_PROGMSG_XML_ROLLBACK_FILES">!(loc.IDS_PROGMSG_XML_ROLLBACK_FILES)</Property>
+    <Property Id="IS_PROGMSG_XML_UPDATE_FILE">!(loc.IDS_PROGMSG_XML_UPDATE_FILE)</Property>
+    <Property Id="IS_SQLSERVER_AUTHENTICATION">0</Property>
+    <Property Id="IS_SQLSERVER_DATABASE" />
+    <Property Id="IS_SQLSERVER_PASSWORD" />
+    <Property Id="IS_SQLSERVER_SERVER" />
+    <Property Id="IS_SQLSERVER_USERNAME">sa</Property>
+    <Property Id="InstallChoice">AR</Property>
+    <!--<Property Id="Manufacturer">!(loc.COMPANY_NAME)</Property>-->
+    <Property Id="NewProperty1">0</Property>
+    <Property Id="PIDTemplate">12345&lt;###-%%%%%%%&gt;@@@@@</Property>
+    <Property Id="POSTSERVERNAME">0</Property>
+    <Property Id="PROGMSG_IIS_CREATEAPPPOOL">!(loc.IDS_PROGMSG_IIS_CREATEAPPPOOL)</Property>
+    <Property Id="PROGMSG_IIS_CREATEAPPPOOLS">!(loc.IDS_PROGMSG_IIS_CREATEAPPPOOLS)</Property>
+    <Property Id="PROGMSG_IIS_CREATEVROOT">!(loc.IDS_PROGMSG_IIS_CREATEVROOT)</Property>
+    <Property Id="PROGMSG_IIS_CREATEVROOTS">!(loc.IDS_PROGMSG_IIS_CREATEVROOTS)</Property>
+    <Property Id="PROGMSG_IIS_CREATEWEBSERVICEEXTENSION">!(loc.IDS_PROGMSG_IIS_CREATEWEBSERVICEEXTENSION)</Property>
+    <Property Id="PROGMSG_IIS_CREATEWEBSERVICEEXTENSIONS">!(loc.IDS_PROGMSG_IIS_CREATEWEBSERVICEEXTENSIONS)</Property>
+    <Property Id="PROGMSG_IIS_CREATEWEBSITE">!(loc.IDS_PROGMSG_IIS_CREATEWEBSITE)</Property>
+    <Property Id="PROGMSG_IIS_CREATEWEBSITES">!(loc.IDS_PROGMSG_IIS_CREATEWEBSITES)</Property>
+    <Property Id="PROGMSG_IIS_EXTRACT">!(loc.IDS_PROGMSG_IIS_EXTRACT)</Property>
+    <Property Id="PROGMSG_IIS_EXTRACTDONE">!(loc.IDS_PROGMSG_IIS_EXTRACTDONE)</Property>
+    <Property Id="PROGMSG_IIS_EXTRACTDONEz">!(loc.IDS_PROGMSG_IIS_EXTRACTDONE)</Property>
+    <Property Id="PROGMSG_IIS_EXTRACTzDONE">!(loc.IDS_PROGMSG_IIS_EXTRACTDONE)</Property>
+    <Property Id="PROGMSG_IIS_REMOVEAPPPOOL">!(loc.IDS_PROGMSG_IIS_REMOVEAPPPOOL)</Property>
+    <Property Id="PROGMSG_IIS_REMOVEAPPPOOLS">!(loc.IDS_PROGMSG_IIS_REMOVEAPPPOOLS)</Property>
+    <Property Id="PROGMSG_IIS_REMOVESITE">!(loc.IDS_PROGMSG_IIS_REMOVESITE)</Property>
+    <Property Id="PROGMSG_IIS_REMOVEVROOT">!(loc.IDS_PROGMSG_IIS_REMOVEVROOT)</Property>
+    <Property Id="PROGMSG_IIS_REMOVEVROOTS">!(loc.IDS_PROGMSG_IIS_REMOVEVROOTS)</Property>
+    <Property Id="PROGMSG_IIS_REMOVEWEBSERVICEEXTENSION">!(loc.IDS_PROGMSG_IIS_REMOVEWEBSERVICEEXTENSION)</Property>
+    <Property Id="PROGMSG_IIS_REMOVEWEBSERVICEEXTENSIONS">!(loc.IDS_PROGMSG_IIS_REMOVEWEBSERVICEEXTENSIONS)</Property>
+    <Property Id="PROGMSG_IIS_REMOVEWEBSITES">!(loc.IDS_PROGMSG_IIS_REMOVEWEBSITES)</Property>
+    <Property Id="PROGMSG_IIS_ROLLBACKAPPPOOLS">!(loc.IDS_PROGMSG_IIS_ROLLBACKAPPPOOLS)</Property>
+    <Property Id="PROGMSG_IIS_ROLLBACKVROOTS">!(loc.IDS_PROGMSG_IIS_ROLLBACKVROOTS)</Property>
+    <Property Id="PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS">!(loc.IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS)</Property>
+    <!--<Property Id="ProductCode">{66c9be59-51a7-4e24-a2e4-6b73f7af90ab}</Property>-->
+    <Property Id="ProductID">none</Property>
+    <!--<Property Id="ProductLanguage">1033</Property>-->
+    <!--<Property Id="ProductName">CSD Reusable Components</Property>-->
+    <Property Id="ProgressType0">install</Property>
+    <Property Id="ProgressType1">Installing</Property>
+    <Property Id="ProgressType2">installed</Property>
+    <Property Id="ProgressType3">installs</Property>
+    <Property Id="RebootYesNo">Yes</Property>
+    <Property Id="ReinstallModeText">omus</Property>
+    <Property Id="RestartManagerOption">CloseRestart</Property>
+    <Property Id="SHOWLAUNCHPROGRAM">0</Property>
+    <Property Id="ServerName">0</Property>
+    <Property Id="SetupType">Typical</Property>
+    <Property Id="Text1">0</Property>
+    <Property Id="UNINSTALL_DISPLAYNAME">{ProductName} {ProductVersion}</Property>
+    <!--<Property Id="UpgradeCode">{2A0E708C-6056-4F40-9D39-3C823BF39541}</Property>-->
+    <Property Id="_IsMaintenance">Change</Property>
+    <Property Id="_IsSetupTypeMin">Typical</Property>
+		<!-- Binaries -->
+		<Binary Id="ISSELFREG.DLL" SourceFile="!(loc.ISRedistPlatformDependentFolder)\isregsvr.dll" />
+		<Binary Id="ISSetup.dll" SourceFile="!(loc.ISProductFolder)\redist\language independent\i386\ISSetup.dll" />
+		<Binary Id="InteriorBin1" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\IsDialogBanner.ibd" />
+		<Binary Id="NewBinary1" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\IsDialogBanner.ibd" />
+		<Binary Id="NewBinary10" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\CompleteSetupIco.ibd" />
+		<Binary Id="NewBinary11" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\CustomSetupIco.ibd" />
+		<Binary Id="NewBinary12" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\DestIcon.ibd" />
+		<Binary Id="NewBinary13" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\NetworkInstall.ico" />
+		<Binary Id="NewBinary14" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\DontInstall.ico" />
+		<Binary Id="NewBinary15" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\Install.ico" />
+		<Binary Id="NewBinary16" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\InstallFirstUse.ico" />
+		<Binary Id="NewBinary17" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\InstallPartial.ico" />
+		<Binary Id="NewBinary18" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\InstallStateMenu.ico" />
+		<Binary Id="NewBinary2" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\New.ibd" />
+		<Binary Id="NewBinary3" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\Up.ibd" />
+		<Binary Id="NewBinary4" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\WarningIcon.ibd" />
+		<Binary Id="NewBinary5" SourceFile="!(loc.ISProductFolder)\Redist\Language Indepeendent\OS Independent\IsDialogBitmap.ibd" />
+		<Binary Id="NewBinary6" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\CustomSetupIco.ibd" />
+		<Binary Id="NewBinary7" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\ReinstIco.ibd" />
+		<Binary Id="NewBinary8" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\RemoveIco.ibd" />
+		<Binary Id="NewBinary9" SourceFile="!(loc.ISProductFolder)\Redist\Language Independent\OS Independent\SetupIcon.ibd" />
+		<Binary Id="SetAllUsers.dll" SourceFile="!(loc.ISRedistPlatformDependentFolder)\SetAllUsers.dll" />
+		
+
+		<Feature Id="ProductFeature" Title="Csd Reusable Components" Level="1">
+			<ComponentGroupRef Id="PublishedComponents" />
+		</Feature>
+	</Product>
+	<Fragment>
+		<Feature Id="BioHand" Title="!(loc.IdString51)" Description="!(loc.ID_STRING16)" Display="19" Level="1" ConfigurableDirectory="BIOHAND" />
+		<Feature Id="BioWin" Title="!(loc.IdString50)" Description="!(loc.ID_STRING20)" Display="3" Level="1" ConfigurableDirectory="BIOWIN" />
+		<Feature Id="XCanonCam" Title="!(loc.IdString52)" Description="!(loc.ID_STRING21)" Display="21" Level="1" ConfigurableDirectory="XCANONCAM" />
+	</Fragment>
+</Wix>

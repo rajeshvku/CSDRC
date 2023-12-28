@@ -1,0 +1,249 @@
+<Directory Id="INSTALLDIR"
+Name=".">
+<Directory Id="ACCOUNTABLE_ITEMS"
+Name="ACCOUN~1|Accountable Items">
+</Directory>
+<Directory Id="BIOHAND"
+Name="BioHand">
+</Directory>
+<Directory Id="BIOMETRIC"
+Name="BIOMET~1|Biometric">
+</Directory>
+<Directory Id="BIOWIN"
+Name="BioWin">
+</Directory>
+<Directory Id="ISYourDataBaseDir"
+Name="Database">
+</Directory>
+<Directory Id="XCANONCAM"
+Name="XCANON~1|XCanonCam">
+</Directory>
+</Directory>
+<Directory Id="BIOWIN"
+Name="BioWin">
+<Directory Id="ACTIVEX"
+Name="ActiveX">
+</Directory>
+</Directory>
+<Directory Id="TARGETDIR"
+Name="SourceDir">
+<Directory Id="ALLUSERSPROFILE"
+Name=".:ALLUSE~1|All Users">
+</Directory>
+<Directory Id="AdminToolsFolder"
+Name=".:Admint~1|AdminTools">
+</Directory>
+<Directory Id="AppDataFolder"
+Name=".:APPLIC~1|Application Data">
+</Directory>
+<Directory Id="CommonAppDataFolder"
+Name=".:Common~1|CommonAppData">
+</Directory>
+<Directory Id="CommonFiles64Folder"
+Name=".:Common64">
+</Directory>
+<Directory Id="CommonFilesFolder"
+Name=".:Common">
+</Directory>
+<Directory Id="DesktopFolder"
+Name=".:Desktop">
+</Directory>
+<Directory Id="FavoritesFolder"
+Name=".:FAVORI~1|Favorites">
+</Directory>
+<Directory Id="FontsFolder"
+Name=".:Fonts">
+</Directory>
+<Directory Id="GlobalAssemblyCache"
+Name=".:Global~1|GlobalAssemblyCache">
+</Directory>
+<Directory Id="LocalAppDataFolder"
+Name=".:LocalA~1|LocalAppData">
+</Directory>
+<Directory Id="MyPicturesFolder"
+Name=".:MyPict~1|MyPictures">
+</Directory>
+<Directory Id="NEW_DIRECTORY1"
+Name="NEW_DIRECTORY1">
+</Directory>
+<Directory Id="NEW_DIRECTORY10"
+Name="NEW_DIRECTORY10">
+</Directory>
+<Directory Id="NEW_DIRECTORY11"
+Name="NEW_DIRECTORY11">
+</Directory>
+<Directory Id="NEW_DIRECTORY12"
+Name="NEW_DIRECTORY12">
+</Directory>
+<Directory Id="NEW_DIRECTORY13"
+Name="NEW_DIRECTORY13">
+</Directory>
+<Directory Id="NEW_DIRECTORY14"
+Name="NEW_DIRECTORY14">
+</Directory>
+<Directory Id="NEW_DIRECTORY15"
+Name="NEW_DIRECTORY15">
+</Directory>
+<Directory Id="NEW_DIRECTORY16"
+Name="NEW_DIRECTORY16">
+</Directory>
+<Directory Id="NEW_DIRECTORY17"
+Name="NEW_DIRECTORY17">
+</Directory>
+<Directory Id="NEW_DIRECTORY18"
+Name="NEW_DIRECTORY18">
+</Directory>
+<Directory Id="NEW_DIRECTORY19"
+Name="NEW_DIRECTORY19">
+</Directory>
+<Directory Id="NEW_DIRECTORY2"
+Name="NEW_DIRECTORY2">
+</Directory>
+<Directory Id="NEW_DIRECTORY20"
+Name="NEW_DIRECTORY20">
+</Directory>
+<Directory Id="NEW_DIRECTORY21"
+Name="NEW_DIRECTORY21">
+</Directory>
+<Directory Id="NEW_DIRECTORY22"
+Name="NEW_DIRECTORY22">
+</Directory>
+<Directory Id="NEW_DIRECTORY23"
+Name="NEW_DIRECTORY23">
+</Directory>
+<Directory Id="NEW_DIRECTORY3"
+Name="NEW_DIRECTORY3">
+</Directory>
+<Directory Id="NEW_DIRECTORY4"
+Name="NEW_DIRECTORY4">
+</Directory>
+<Directory Id="NEW_DIRECTORY5"
+Name="NEW_DIRECTORY5">
+</Directory>
+<Directory Id="NEW_DIRECTORY6"
+Name="NEW_DIRECTORY6">
+</Directory>
+<Directory Id="NEW_DIRECTORY7"
+Name="NEW_DIRECTORY7">
+</Directory>
+<Directory Id="NEW_DIRECTORY8"
+Name="NEW_DIRECTORY8">
+</Directory>
+<Directory Id="NEW_DIRECTORY9"
+Name="NEW_DIRECTORY9">
+</Directory>
+<Directory Id="NIV"
+Name="niv">
+</Directory>
+<Directory Id="PersonalFolder"
+Name=".:Personal">
+</Directory>
+<Directory Id="PrimaryVolumePath"
+Name=".:Primar~1|PrimaryVolumePath">
+</Directory>
+<Directory Id="ProgramFiles64Folder"
+Name=".:Prog64~1|Program Files 64">
+</Directory>
+<Directory Id="ProgramFilesFolder"
+Name=".:PROGRA~1|program files">
+</Directory>
+<Directory Id="ProgramMenuFolder"
+Name=".:Programs">
+</Directory>
+<Directory Id="SendToFolder"
+Name=".:SendTo">
+</Directory>
+<Directory Id="StartMenuFolder"
+Name=".:STARTM~1|Start Menu">
+</Directory>
+<Directory Id="StartupFolder"
+Name=".:StartUp">
+</Directory>
+<Directory Id="System16Folder"
+Name=".:System">
+</Directory>
+<Directory Id="System64Folder"
+Name=".:System64">
+</Directory>
+<Directory Id="SystemFolder"
+Name=".:System32">
+</Directory>
+<Directory Id="TempFolder"
+Name=".:Temp">
+</Directory>
+<Directory Id="TemplateFolder"
+Name=".:ShellNew">
+</Directory>
+<Directory Id="USERPROFILE"
+Name=".:USERPR~1|UserProfile">
+</Directory>
+<Directory Id="WindowsFolder"
+Name=".:Windows">
+</Directory>
+<Directory Id="WindowsVolume"
+Name=".:WinRoot">
+</Directory>
+</Directory>
+<Directory Id="ProgramFilesFolder"
+Name=".:PROGRA~1|program files">
+<Directory Id="CSD_SCAN"
+Name="CSD_Scan">
+</Directory>
+<Directory Id="DEPARTMENT_OF_STATE"
+Name="DEPART~1|Department of State">
+</Directory>
+<Directory Id="ISMyCompanyDir"
+Name="MYCOMP~1|My Company Name">
+</Directory>
+<Directory Id="MY_PRODUCT_NAME"
+Name="CSDREU~1|CSD Reusable Components">
+</Directory>
+</Directory>
+<Directory Id="ISYourDataBaseDir"
+Name="Database">
+<Directory Id="DATABASEDIR"
+Name=".">
+</Directory>
+</Directory>
+<Directory Id="MY_PRODUCT_NAME"
+Name="CSDREU~1|CSD Reusable Components">
+<Directory Id="INSTALLDIR"
+Name=".">
+</Directory>
+</Directory>
+<Directory Id="CommonFilesFolder"
+Name=".:Common">
+<Directory Id="ISCommonFilesFolder"
+Name="Instal~1|InstallShield">
+</Directory>
+</Directory>
+<Directory Id="ISMyCompanyDir"
+Name="MYCOMP~1|My Company Name">
+<Directory Id="ISMyProductDir"
+Name="MYPROD~1|My Product Name">
+</Directory>
+</Directory>
+<Directory Id="ISCommonFilesFolder"
+Name="Instal~1|InstallShield">
+<Directory Id="ISUpdateServiceFolder"
+Name="UPDATE~1|UpdateService">
+</Directory>
+</Directory>
+<Directory Id="CSD_SCAN"
+Name="CSD_Scan">
+<Directory Id="SCANPROCESS"
+Name="SCANPR~1|ScanProcess">
+</Directory>
+</Directory>
+<Directory Id="depart_1_department_of_state"
+Name="DEPART~1|Department of State">
+<Directory Id="csdreu_1_csd_reusable_components"
+Name="CSDREU~1|CSD Reusable Components">
+</Directory>
+</Directory>
+<Directory Id="ProgramMenuFolder"
+Name=".:Programs">
+<Directory Id="depart_1_department_of_state"
+Name="DEPART~1|Department of State">
+</Directory>
+</Directory>

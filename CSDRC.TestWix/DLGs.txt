@@ -1,0 +1,99 @@
+<!-- DialogRef:AdminChangeFolder   --> 
+
+<DialogRef Id="AdminChangeFolderDlg"/>
+<!-- DialogRef:AdminNetworkLocation   --> 
+
+<DialogRef Id="AdminNetworkLocationDlg"/>
+<!-- DialogRef:AdminWelcome   --> 
+
+<DialogRef Id="AdminWelcomeDlg"/>
+<!-- DialogRef:CancelSetup   --> 
+
+<DialogRef Id="CancelSetupDlg"/>
+<!-- DialogRef:CustomSetup   --> 
+
+<DialogRef Id="CustomSetupDlg"/>
+<!-- DialogRef:CustomSetupTips   --> 
+
+<DialogRef Id="CustomSetupTipsDlg"/>
+<!-- DialogRef:CustomerInformation   --> 
+
+<DialogRef Id="CustomerInformationDlg"/>
+<!-- DialogRef:DatabaseFolder   --> 
+
+<DialogRef Id="DatabaseFolderDlg"/>
+<!-- DialogRef:DestinationFolder   --> 
+
+<DialogRef Id="DestinationFolderDlg"/>
+<!-- DialogRef:DiskSpaceRequirements   --> 
+
+<DialogRef Id="DiskSpaceRequirementsDlg"/>
+<!-- DialogRef:FilesInUse   --> 
+
+<DialogRef Id="FilesInUseDlg"/>
+<!-- DialogRef:GetServerName   --> 
+
+<DialogRef Id="GetServerNameDlg"/>
+<!-- DialogRef:InstallChangeFolder   --> 
+
+<DialogRef Id="InstallChangeFolderDlg"/>
+<!-- DialogRef:InstallWelcome   --> 
+
+<DialogRef Id="InstallWelcomeDlg"/>
+<!-- DialogRef:LicenseAgreement   --> 
+
+<DialogRef Id="LicenseAgreementDlg"/>
+<!-- DialogRef:MaintenanceType   --> 
+
+<DialogRef Id="MaintenanceTypeDlg"/>
+<!-- DialogRef:MaintenanceWelcome   --> 
+
+<DialogRef Id="MaintenanceWelcomeDlg"/>
+<!-- DialogRef:MsiRMFilesInUse   --> 
+
+<DialogRef Id="MsiRMFilesInUseDlg"/>
+<!-- DialogRef:OutOfSpace   --> 
+
+<DialogRef Id="OutOfSpaceDlg"/>
+<!-- DialogRef:PatchWelcome   --> 
+
+<DialogRef Id="PatchWelcomeDlg"/>
+<!-- DialogRef:ReadyToInstall   --> 
+
+<DialogRef Id="ReadyToInstallDlg"/>
+<!-- DialogRef:ReadyToRemove   --> 
+
+<DialogRef Id="ReadyToRemoveDlg"/>
+<!-- DialogRef:SQLBrowse   --> 
+
+<DialogRef Id="SQLBrowseDlg"/>
+<!-- DialogRef:SQLLogin   --> 
+
+<DialogRef Id="SQLLoginDlg"/>
+<!-- DialogRef:SetupCompleteError   --> 
+
+<DialogRef Id="SetupCompleteErrorDlg"/>
+<!-- DialogRef:SetupCompleteSuccess   --> 
+
+<DialogRef Id="SetupCompleteSuccessDlg"/>
+<!-- DialogRef:SetupError   --> 
+
+<DialogRef Id="SetupErrorDlg"/>
+<!-- DialogRef:SetupInitialization   --> 
+
+<DialogRef Id="SetupInitializationDlg"/>
+<!-- DialogRef:SetupInterrupted   --> 
+
+<DialogRef Id="SetupInterruptedDlg"/>
+<!-- DialogRef:SetupProgress   --> 
+
+<DialogRef Id="SetupProgressDlg"/>
+<!-- DialogRef:SetupResume   --> 
+
+<DialogRef Id="SetupResumeDlg"/>
+<!-- DialogRef:SetupType   --> 
+
+<DialogRef Id="SetupTypeDlg"/>
+<!-- DialogRef:SplashBitmap   --> 
+
+<DialogRef Id="SplashBitmapDlg"/>

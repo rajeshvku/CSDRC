@@ -8,11 +8,12 @@ D:\0_Projects\csd-rc_ui\Source\BiowinActiveX\Release\AxInterop.Biohand3.dll
 D:\0_Projects\csd-rc_ui\Source\BiowinActiveX\Release\AxInterop.XCANONCAMLib.dll
 D:\0_Projects\csd-rc_ui\Source\BiowinActiveX\Release\AxInterop.XIMAGEDISPLib.dll
 D:\0_Projects\csd-rc_ui\Source\XScanUIProcess\bin\Release\AxInterop.XSCANLib.dll
+E:\APPS\REUsable_Components\BioHand2\Release\Biohand2.ocx
 E:\APPS\REUsable_Components\BioHand3\Release\Biohand3.ocx
 E:\APPS\REUsable_Components\BioHand\Release\Biohand.ocx
 E:\APPS\REUsable_Components\BioWin2\Release\BioWin2.ocx
-D:\0_Projects\csd-rc_ui\Source\BiowinActiveX\Release\BioWin3.dll
 E:\Apps\REUsable_Components\BioWin3\Release\BioWin3.ocx
+D:\0_Projects\csd-rc_ui\Source\BiowinActiveX\Release\BioWin3.dll
 D:\0_Projects\csd-rc_ui\Source\BiowinActiveX\Release\BiowinActiveX.dll
 E:\APPS\REUsable_Components\BioWin\Release\BioWin.ocx
 E:\APPS\Reusable_Components\XCanonCam\Shared Files\cdDcd.dll
@@ -43,7 +44,6 @@ D:\0_Projects\csd-rc_ui\Source\BiowinActiveX\Release\FQUICS.dll
 E:\APPS\REUsable_Components\XScan\Release\FQUI.ocx
 D:\0_Projects\csd-rc_ui\Source\XScanUIProcess\bin\Release\FQUI.dll
 E:\APPS\REUsable_Components\XScan\Release\gpsvc.dll
-E:\Personal\CSDRC\ReleaseDir\Redist\Language Independent\OS Independent\setupicon.ico
 E:\APPS\REUsable_Components\XScan\Release\IEShims.dll
 D:\0_Projects\csd-rc_ui\Source\BiowinActiveX\Release\Interop.Biohand3.dll
 D:\0_Projects\csd-rc_ui\Source\BiowinActiveX\Release\Interop.XCANONCAMLib.dll
@@ -79,16 +79,16 @@ E:\APPS\REUsable_Components\XScan\Release\sysntfy.dll
 E:\APPS\REUsable_Components\XCanonCam2\Release\Ucs32P.dll
 E:\APPS\REUsable_Components\Shared Files\VIC32.DLL
 D:\0_Projects\csd-rc\Source\11.XCanonCam2\Release\XCanonCam2.ocx
-D:\0_Projects\csd-rc\Source\10.XCanonCam\Release\XCanonCam.ocx
 E:\APPS\REUsable_Components\XCanonCam2\Release\XCanonCam.reg
-D:\0_Projects\csd-rc_ui\Source\BiowinActiveX\Release\XCanonCamUI2.dll
+D:\0_Projects\csd-rc\Source\10.XCanonCam\Release\XCanonCam.ocx
 E:\APPS\REUsable_Components\XCanonCam2\Release\XCanonCamUI2.ocx
+D:\0_Projects\csd-rc_ui\Source\BiowinActiveX\Release\XCanonCamUI2.dll
 E:\APPS\REUsable_Components\XCanonCam\Release\XCanonCamUI.ocx
 D:\0_Projects\csd-rc\Source\6.XImageDisp\Release\XImageDisp.ocx
 E:\APPS\REUsable_Components\Shared Files\XScanACSPlus.ini
 E:\APPS\REUsable_Components\XScan\Release\XScanDefaults.ini
-D:\0_Projects\csd-rc\Source\7.XScan\Release\XScan.ocx
 E:\APPS\REUsable_Components\XScan\Release\XScan.ini
+D:\0_Projects\csd-rc\Source\7.XScan\Release\XScan.ocx
 E:\APPS\REUsable_Components\XScan\Release\XScanUI.ocx
 E:\APPS\REUsable_Components\XScan\Release\XScanUIFQ.ocx
 D:\0_Projects\csd-rc_ui\Source\XScanUIProcess\bin\Release\XScanUIProcess.exe.config

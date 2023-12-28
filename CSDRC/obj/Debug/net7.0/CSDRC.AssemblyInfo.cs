@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSDRC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e3fc8846012705412b3f06581e272c90947cb37")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSDRC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSDRC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

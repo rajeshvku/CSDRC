@@ -62,9 +62,9 @@ namespace CSDRC
             //                        }
             //                    }
             //                }
-                            
+
             //            }
-                       
+
 
             //            sw.WriteLine("</DirectoryRef>");
             //        }
@@ -92,78 +92,78 @@ namespace CSDRC
             //    element.SetAttributeValue("Id", id);
 
             //}
-            //string xmlString = "E:\\Personal\\CSDRC\\CSDRC.TestWix\\ComponentsGeneratedw.wxs";
-            //string tringPath = "E:\\Personal\\CSDRC\\ReleaseDir\\Binaries\\";
+            string xmlString = "E:\\Personal\\CSDRC\\CSDRC.TestWix\\ComponentsGeneratedw.wxs";
+            string tringPath = "E:\\Personal\\CSDRC\\ReleaseDir\\Binaries\\";
 
 
-            //XDocument xdoc = XDocument.Load(xmlString);
-            //// Declare the namespace of the XML document
-            //XNamespace ns = "http://schemas.microsoft.com/wix/2006/wi";
+            XDocument xdoc = XDocument.Load(xmlString);
+            // Declare the namespace of the XML document
+            XNamespace ns = "http://schemas.microsoft.com/wix/2006/wi";
 
-            //// Get all the component elements in the document
-            //var components = xdoc.Descendants(ns + "Binary");
-            //foreach (var component in components.Select((f, g) => new { f, g }))
-            //{
-            //    var instanceCount = component.g + 1;
-            //    // Add or update the Guid attribute with a new Guid value
-            //    component.f.SetAttributeValue("Guid", "{" + Guid.NewGuid().ToString() + "}");
-            //    string id = (string)component.f.Attribute("Id");
-            //    string source = (string)component.f.Attribute("SourceFile");
-            //    //string filePath = "!(loc.ISProductFolder)\\Redist\\Language Independent\\OS Independent\\setupicon.ico";
-                
-            //    string isProductFolderName = source.Substring(0, source.IndexOf('\\'));
-            //    Console.WriteLine(isProductFolderName.Replace("!(loc.","").Replace(")",""));
-            //    string trimId = isProductFolderName.Replace("!(loc.", "").Replace(")", "");
-            //    var fg = md.FirstOrDefault(f => f.Id == trimId);
-            //    if (fg != null)
-            //    {
-            //        if (!string.IsNullOrEmpty(fg.Value))
-            //        {
-            //            var dd = fg.Value.Replace("F:", "E:");
-            //            // Create the directory if it doesn't exist
-            //            if (!System.IO.Directory.Exists(dd))
-            //            {
-            //                System.IO.Directory.CreateDirectory(dd);
-            //            }
-            //            tringPath = dd+"\\";
+            // Get all the component elements in the document
+            var components = xdoc.Descendants(ns + "Binary");
+            foreach (var component in components.Select((f, g) => new { f, g }))
+            {
+                var instanceCount = component.g + 1;
+                // Add or update the Guid attribute with a new Guid value
+                component.f.SetAttributeValue("Guid", "{" + Guid.NewGuid().ToString() + "}");
+                string id = (string)component.f.Attribute("Id");
+                string source = (string)component.f.Attribute("SourceFile");
+                //string filePath = "!(loc.ISProductFolder)\\Redist\\Language Independent\\OS Independent\\setupicon.ico";
 
-            //        }
-                    
+                string isProductFolderName = source.Substring(0, source.IndexOf('\\'));
+                Console.WriteLine(isProductFolderName.Replace("!(loc.", "").Replace(")", ""));
+                string trimId = isProductFolderName.Replace("!(loc.", "").Replace(")", "");
+                var fg = md.FirstOrDefault(f => f.Id == trimId);
+                if (fg != null)
+                {
+                    if (!string.IsNullOrEmpty(fg.Value))
+                    {
+                        var dd = fg.Value.Replace("F:", "E:");
+                        // Create the directory if it doesn't exist
+                        if (!System.IO.Directory.Exists(dd))
+                        {
+                            System.IO.Directory.CreateDirectory(dd);
+                        }
+                        tringPath = dd + "\\";
 
-            //    }
-            //    // Find the index of the first backslash
-            //    int index = source.IndexOf('\\');
-                
+                    }
 
-            //    // Check if the backslash is found
-            //    if (index != -1)
-            //    {
-            //        // Get the substring starting from the character after the first backslash
-            //        string result = source.Substring(index + 1);
-            //        int lindex = result.LastIndexOf('\\');
-            //        if(lindex != -1)
-            //        {
-            //            // Use Substring to get the path without the last part
-            //            string directoryPath = result.Substring(0, lindex);
-            //            // Create the directory if it doesn't exist
-            //            if (!System.IO.Directory.Exists(tringPath + directoryPath))
-            //            {
-            //                System.IO.Directory.CreateDirectory(tringPath + directoryPath);
-            //            }
 
-            //        }
-                    
+                }
+                // Find the index of the first backslash
+                int index = source.IndexOf('\\');
 
-            //        Console.WriteLine("Result: " + result);
-            //        using StreamWriter sw = new StreamWriter(tringPath + result);
-            //        sw.Close();
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("Backslash not found in the string.");
-            //    }
 
-            //}
+                // Check if the backslash is found
+                if (index != -1)
+                {
+                    // Get the substring starting from the character after the first backslash
+                    string result = source.Substring(index + 1);
+                    int lindex = result.LastIndexOf('\\');
+                    if (lindex != -1)
+                    {
+                        // Use Substring to get the path without the last part
+                        string directoryPath = result.Substring(0, lindex);
+                        // Create the directory if it doesn't exist
+                        if (!System.IO.Directory.Exists(tringPath + directoryPath))
+                        {
+                            System.IO.Directory.CreateDirectory(tringPath + directoryPath);
+                        }
+
+                    }
+
+
+                    Console.WriteLine("Result: " + result);
+                    using StreamWriter sw = new StreamWriter(tringPath + result);
+                    sw.Close();
+                }
+                else
+                {
+                    Console.WriteLine("Backslash not found in the string.");
+                }
+
+            }
 
 
         }

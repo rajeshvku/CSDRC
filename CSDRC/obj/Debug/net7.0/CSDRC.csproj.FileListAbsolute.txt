@@ -7,6 +7,7 @@ E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\CSDRC.GeneratedMSBuildEditorConfig.edit
 E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\CSDRC.AssemblyInfoInputs.cache
 E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\CSDRC.AssemblyInfo.cs
 E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\CSDRC.csproj.CoreCompileInputs.cache
+E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\CSDRC.sourcelink.json
 E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\CSDRC.dll
 E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\refint\CSDRC.dll
 E:\Personal\CSDRC\CSDRC\obj\Debug\net7.0\CSDRC.pdb

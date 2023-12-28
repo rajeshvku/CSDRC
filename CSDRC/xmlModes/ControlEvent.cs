@@ -14,4 +14,6 @@ public class ControlEvent
      public string Condition {get;set;}
      [XmlAttribute("Ordering")]
      public string Ordering {get;set;}
+
+     public string GetControlEvent { get { return $"<Publish Event=\"{Event}\"\r\nValue=\"{Argument}\" Order=\"{Ordering}\"><![CDATA[{Condition}]]></Publish>"; } }
 }

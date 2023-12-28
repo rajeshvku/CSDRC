@@ -30,4 +30,7 @@ public class Dialog
      public string ISWindowStyle {get;set;}
      [XmlAttribute("ISResourceId")]
      public string ISResourceId {get;set;}
+    public string GetDialog { get { return $"<Dialog Id=\"{Dialogs}Dlg\"\r\nWidth=\"{Width}\"" +
+                $"\r\nHeight=\"{Height}\"\r\nTitle=\"!(loc.IDS_PRODUCTNAME)\">"; } }
+    public string EndDialog = "</Dialog>";
 }

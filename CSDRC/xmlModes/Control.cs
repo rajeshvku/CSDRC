@@ -34,4 +34,21 @@ public class Control
      public string ISBuildSourcePath {get;set;}
      [XmlAttribute("Binary_")]
      public string Binary_ {get;set;}
+     public string GetControl { get {
+            if (string.IsNullOrEmpty(Property))
+            {
+                return $"<Control Id=\"{Controls}\"\r\nType=\"{Type}\"" +
+                $"\r\nX=\"{X}\"\r\nY=\"{Y}\"\r\nWidth=\"{Width}\"\r\nHeight=\"{Height}\"\r\nText=\"{Text}\">";
+            }
+            else
+            {
+                return $"<Control Id=\"{Controls}\"\r\nType=\"{Type}\"" +
+                $"\r\nX=\"{X}\"\r\nY=\"{Y}\"\r\nWidth=\"{Width}\"\r\nHeight=\"{Height}\"\r\nText=\"{Text}\"\r\nProperty=\"{Property}\">";
+            }
+        }
+        }
+             
+    public string EndControl = "</Control>";
+
+    
 }

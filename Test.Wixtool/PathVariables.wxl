@@ -1,47 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WixLocalization Culture="en-us"
                  xmlns="http://schemas.microsoft.com/wix/2006/localization">
-    <String Id="Biohand2Files">F:\APPS\REUsable_Components\BioHand2\Release</String>
-    <String Id="Biohand3Files">F:\APPS\REUsable_Components\BioHand3\Release</String>
-    <String Id="BiohandFiles">F:\APPS\REUsable_Components\BioHand\Release</String>
-    <String Id="Biowin2Files">F:\APPS\REUsable_Components\BioWin2\Release</String>
-    <String Id="Biowin3Files">F:\Apps\REUsable_Components\BioWin3\Release</String>
-    <String Id="BiowinFiles">F:\APPS\REUsable_Components\BioWin\Release</String>
-    <String Id="Biowinactivexrelease">D:\0_Projects\csd-rc_ui\Source\BiowinActiveX\Release</String>
+    <String Id="Biohand2Files">E:\APPS\REUsable_Components\BioHand2\Release</String>
+    <String Id="Biohand3Files">E:\APPS\REUsable_Components\BioHand3\Release</String>
+    <String Id="BiohandFiles">E:\APPS\REUsable_Components\BioHand\Release</String>
+    <String Id="Biowin2Files">E:\APPS\REUsable_Components\BioWin2\Release</String>
+    <String Id="Biowin3Files">E:\Apps\REUsable_Components\BioWin3\Release</String>
+    <String Id="BiowinFiles">E:\APPS\REUsable_Components\BioWin\Release</String>
+    <String Id="BioWinActiveXRelease">D:\0_Projects\csd-rc_ui\Source\BiowinActiveX\Release</String>
     <String Id="Csdrc0100Setup">C:\InstallShield 11 Projects\CSD Reusable Components\PROJECT_ASSISTANT\SINGLE_EXE_IMAGE\DiskImages\DISK1</String>
-    <String Id="CsdrcutilFiles">F:\APPS\REUsable_Components\XCanonCam\Release</String>
+    <String Id="CsdrcutilFiles">E:\APPS\REUsable_Components\XCanonCam\Release</String>
     <String Id="Csdrcutilrelease">D:\0_Projects\csd-rc\Source\2.CSDRCUtil\Release</String>
     <String Id="Commonfilesfolder" />
-    <String Id="FquiFiles">F:\APPS\REUsable_Components\XScan\Release</String>
+    <String Id="FquiFiles">E:\APPS\REUsable_Components\XScan\Release</String>
 	<String Id="Isprojectdir" ></String>
-	<String Id="ISProductFolder" >F:\Personal\CSDRC\ReleaseDir</String>
+	<String Id="ISProductFolder" >E:\Personal\CSDRC\ReleaseDir</String>
 	<String Id="Isprojectdatafolder" ></String>
 	<String Id="Isprojectfolder" ></String>
     <String Id="LeadToolsWrapperRelease">D:\0_Projects\csd-rc\Source\17.LeadToolsWrapper\Release</String>
     <String Id="Pathred">C:\CSDRC</String>
     <String Id="PathToAccountableitemFiles">C:\CSDRC\Source\AccountableItems</String>
-    <String Id="PathToMicrosoftFiles">F:\APPS\REUsable_Components\XScan\Release</String>
-    <String Id="PathToNivFiles">F:\APPS\NIV0405\NIV</String>
-    <String Id="PathToReleaseFiles">F:\Apps\REUsable_Components\PBCOM322\Release</String>
+    <String Id="PathToMicrosoftFiles">E:\APPS\REUsable_Components\XScan\Release</String>
+    <String Id="PathToNivFiles">E:\APPS\NIV0405\NIV</String>
+    <String Id="PathToReleaseFiles">E:\Apps\REUsable_Components\PBCOM322\Release</String>
     <String Id="Pbcom322release">D:\0_Projects\csd-rc\Source\18.PBComm322\Release</String>
-    <String Id="SharedFiles">F:\APPS\REUsable_Components\Shared Files</String>
+    <String Id="SharedFiles">E:\APPS\REUsable_Components\Shared Files</String>
     <String Id="ScanProcessRelease">D:\0_Projects\csd-rc_ui\Source\XScanUIProcess\bin\Release</String>
-    <String Id="Xcanon2Files">F:\APPS\REUsable_Components\XCanonCam2\Release</String>
-    <String Id="XCanonCamUi2Files">F:\APPS\REUsable_Components\XCanonCam2\Release</String>
-    <String Id="XCanonCamUiFiles">F:\APPS\REUsable_Components\XCanonCam\Release</String>
-    <String Id="XcanonfaceitFiles">F:\APPS\REUsable_Components\XCanonCam\Release</String>
-    <String Id="XcanonFiles">F:\APPS\REUsable_Components\XCanonCam\Release</String>
-    <String Id="XcanonSharedFiles">F:\APPS\Reusable_Components\XCanonCam\Shared Files</String>
+    <String Id="Xcanon2Files">E:\APPS\REUsable_Components\XCanonCam2\Release</String>
+    <String Id="XCanonCamUi2Files">E:\APPS\REUsable_Components\XCanonCam2\Release</String>
+    <String Id="XCanonCamUiFiles">E:\APPS\REUsable_Components\XCanonCam\Release</String>
+    <String Id="XcanonfaceitFiles">E:\APPS\REUsable_Components\XCanonCam\Release</String>
+    <String Id="XcanonFiles">E:\APPS\REUsable_Components\XCanonCam\Release</String>
+    <String Id="XcanonSharedFiles">E:\APPS\Reusable_Components\XCanonCam\Shared Files</String>
     <String Id="XCanonCam2Release">D:\0_Projects\csd-rc\Source\11.XCanonCam2\Release</String>
     <String Id="XCanonCamRelease">D:\0_Projects\csd-rc\Source\10.XCanonCam\Release</String>
-    <String Id="XimageFiles">F:\APPS\REUsable_Components\XImageDisp\Release</String>
+    <String Id="XimageFiles">E:\APPS\REUsable_Components\XImageDisp\Release</String>
     <String Id="XImageDispRelease">D:\0_Projects\csd-rc\Source\6.XImageDisp\Release</String>
-    <String Id="XScanUiFqFiles">F:\APPS\REUsable_Components\XScan\Release</String>
-    <String Id="XscanFiles">F:\APPS\REUsable_Components\XScan\Release</String>
+    <String Id="XScanUiFqFiles">E:\APPS\REUsable_Components\XScan\Release</String>
+    <String Id="XscanFiles">E:\APPS\REUsable_Components\XScan\Release</String>
     <String Id="XScanRelease">D:\0_Projects\csd-rc\Source\7.XScan\Release</String>
-	<String Id="ISRedistPlatformDependentFolder" >F:\Personal\CSDRC\ReleaseDir\Binaries</String>
+	<String Id="ISRedistPlatformDependentFolder" >E:\Personal\CSDRC\ReleaseDir\Binaries</String>
+
 	
-	<String Id="XScanJen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\XScan\Release</String>
+	
+	<!--<String Id="XScanJen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\XScan\Release</String>
 	<String Id="XCanonCamJen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\XCanonCam\Release</String>
 	<String Id="XCanonCamSharedJen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\XCanonCam\Shared Files</String>
 	<String Id="XCanonCam2Jen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\XCanonCam2\Release</String>
@@ -51,7 +53,7 @@
 	<String Id="BioHandJen">D:\Jenkins \workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\BioHand\Release</String>
 	<String Id="BioHand2Jen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\BioHand2\Release</String>
 	<String Id="BioHand3Jen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\BioHand3\Release</String>
-	<String Id="SharedFilesJen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\Shared Files</String>
+	<String Id="SharedFilesJen">D:\Jenkins\workspace\OrangeTrain\NCS\csd-rc\Install\CSDRC_Shared\Shared Files</String>-->
 
 
 		

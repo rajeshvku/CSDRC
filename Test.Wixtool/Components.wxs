@@ -6,38 +6,6 @@
 			<!-- RegiseryComponent -->
 			<ComponentRef Id="RegistryXCanonCam" />
 		</ComponentGroup>
-		<!-- Installed files -->
-		<DirectoryRef Id="INSTALLDIR">
-			<Component Id="RegistryXCanonCam">
-				<RegistryKey Root="HKLM" Key="SOFTWARE\CA/EX/CSD\XCanonCam">
-					<RegistryValue Name="CropMode" Type="integer" Value="0" />
-					<RegistryValue Name="CameraAngle" Type="integer" Value="0" />
-					<RegistryValue Name="OutPixelWidth" Type="integer" Value="252" />
-					<RegistryValue Name="OutPixelHeight" Type="integer" Value="300" />
-					<RegistryValue Name="CameraName" Type="string" Value="Canon PowerShot S60" />
-					<RegistryValue Name="PhotoAV" Type="string" Value="6.3" />
-					<RegistryValue Name="PhotoTV" Type="string" Value="1/4" />
-					<RegistryValue Name="LiveAV" Type="string" Value="6.3" />
-					<RegistryValue Name="LiveTV" Type="string" Value="1/125" />
-					<RegistryValue Name="FlashMode" Type="integer" Value="0" />
-					<RegistryValue Name="MacroMode" Type="integer" Value="1" />
-					<RegistryValue Name="CaptureMode" Type="integer" Value="1" />
-					<RegistryValue Name="ZoomPos" Type="integer" Value="5" />
-					<RegistryValue Name="ISOSpeed" Type="integer" Value="100" />
-					<RegistryValue Name="WhiteMean" Type="integer" Value="0" />
-					<RegistryValue Name="FlashQuantity" Type="integer" Value="0" />
-					<RegistryValue Name="ExposureComp" Type="integer" Value="24" />
-					<RegistryValue Name="CropBoxHeight" Type="string" Value="1.39" />
-					<RegistryValue Name="CropBoxWidth" Type="string" Value="1.17" />
-					<RegistryValue Name="LastConfig" Type="string" Value="NEVER" />
-					<RegistryValue Name="PhotoLightMeterMode" Type="integer" Value="1" />
-					<RegistryValue Name="LiveLightMeterMode" Type="integer" Value="0" />
-					<RegistryValue Name="LiveFocusPoint" Type="integer" Value="12291" />
-				</RegistryKey>
-
-				<RemoveFolder Id="depart_1" Directory="depart_1_department_of_state" On="uninstall"/>
-				<RemoveFolder Id="csdreu_1" Directory="csdreu_1_csd_reusable_components" On="uninstall"/>
-			</Component>
-		</DirectoryRef>
+		
 	</Fragment>
 </Wix>

@@ -16,4 +16,6 @@ public class Registry
      public string Component_ {get;set;}
      [XmlAttribute("ISAttributes")]
      public string ISAttributes {get;set;}
+
+    public string GetRegistry { get { return $"<RegistryValue Root=\"HKCU\"\r\nKey=\"{Key}\"\r\nName=\"{Name}\"\r\nType=\"integer\"\r\nValue=\"{Value}\"\r\nKeyPath=\"yes\" />"; } }
 }

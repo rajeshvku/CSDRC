@@ -1,26 +1,1747 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Fragment>
-        <UI>
-            <UIRef Id="WixUI_InstallDir" />
-            <!-- Progress / Action Texts -->
-            <ProgressText Action="Install"
+		<UI Id="CsrdDlg">
+			<!-- AdminChangeFolder -->
+			<!-- Dialog:  AdminChangeFolder -->
+			<Dialog Id="AdminChangeFolderDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine --><!--
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>-->
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  Combo -->
+				<Control Id="Combo" Type="DirectoryCombo" X="21" Y="64" Width="277" Height="80" Text="!(loc.IDS__IsAdminInstallBrowse_4)" Property="TARGETDIR">
+				</Control>
+				<!-- Control:  ComboText -->
+				<Control Id="ComboText" Type="Text" X="21" Y="50" Width="99" Height="14" Text="!(loc.IDS__IsAdminInstallBrowse_LookIn)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsAdminInstallBrowse_BrowseDestination)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsAdminInstallBrowse_ChangeDestination)">
+				</Control>
+				<!-- Control:  List -->
+				<Control Id="List" Type="DirectoryList" X="21" Y="90" Width="332" Height="97" Text="!(loc.IDS__IsAdminInstallBrowse_8)" Property="TARGETDIR">
+				</Control>
+				<!-- Control:  NewFolder -->
+				<Control Id="NewFolder" Type="PushButton" X="335" Y="66" Width="19" Height="19">
+				</Control>
+				<!-- Control:  OK -->
+				<Control Id="OK" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_OK)">
+				</Control>
+				<!-- Control:  Tail -->
+				<Control Id="Tail" Type="PathEdit" X="21" Y="207" Width="332" Height="17" Text="!(loc.IDS__IsAdminInstallBrowse_11)" Property="TARGETDIR">
+				</Control>
+				<!-- Control:  TailText -->
+				<Control Id="TailText" Type="Text" X="21" Y="193" Width="99" Height="13" Text="!(loc.IDS__IsAdminInstallBrowse_FolderName)">
+				</Control>
+				<!-- Control:  Up -->
+				<Control Id="Up" Type="PushButton" X="310" Y="66" Width="19" Height="19">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  AdminNetworkLocation -->
+			<Dialog Id="AdminNetworkLocationDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Browse -->
+				<Control Id="Browse" Type="PushButton" X="286" Y="124" Width="66" Height="17" Text="!(loc.IDS__IsAdminInstallPoint_Change)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsAdminInstallPoint_SpecifyNetworkLocation)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgText -->
+				<Control Id="DlgText" Type="Text" X="21" Y="51" Width="326" Height="40" Text="!(loc.IDS__IsAdminInstallPoint_EnterNetworkLocation)">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsAdminInstallPoint_NetworkLocationFormatted)">
+				</Control>
+				<!-- Control:  InstallNow -->
+				<Control Id="InstallNow" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsAdminInstallPoint_Install)">
+				</Control>
+				<!-- Control:  LBBrowse -->
+				<Control Id="LBBrowse" Type="Text" X="21" Y="90" Width="100" Height="10" Text="!(loc.IDS__IsAdminInstallPoint_NetworkLocation)">
+				</Control>
+				<!-- Control:  SetupPathEdit -->
+				<Control Id="SetupPathEdit" Type="PathEdit" X="21" Y="102" Width="330" Height="17" Property="TARGETDIR">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  AdminWelcome -->
+			<Dialog Id="AdminWelcomeDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back --><!--
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>-->
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="0" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  Image -->
+				<Control Id="Image" Text="NewBinary5" Type="Bitmap" X="0" Y="0" Width="374" Height="234">
+				</Control>
+				<!-- Control:  Next -->
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+				</Control>
+				<!-- Control:  TextLine1 -->
+				<Control Id="TextLine1" Type="Text" X="135" Y="8" Width="225" Height="45" Text="!(loc.IDS__IsAdminInstallPointWelcome_Wizard)">
+				</Control>
+				<!-- Control:  TextLine2 -->
+				<Control Id="TextLine2" Type="Text" X="135" Y="55" Width="228" Height="45" Text="!(loc.IDS__IsAdminInstallPointWelcome_ServerImage)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  CancelSetup -->
+			<Dialog Id="CancelSetupDlg" Width="260" Height="85" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Icon -->
+				<Control Id="Icon" Text="NewBinary4" Type="Icon" X="15" Y="15" Width="24" Height="24">
+				</Control>
+				<!-- Control:  No -->
+				<Control Id="No" Type="PushButton" X="135" Y="57" Width="66" Height="17" Text="!(loc.IDS__IsCancelDlg_No)">
+				</Control>
+				<!-- Control:  Text -->
+				<Control Id="Text" Type="Text" X="48" Y="15" Width="194" Height="30" Text="!(loc.IDS__IsCancelDlg_ConfirmCancel)">
+				</Control>
+				<!-- Control:  Yes -->
+				<Control Id="Yes" Type="PushButton" X="62" Y="57" Width="66" Height="17" Text="!(loc.IDS__IsCancelDlg_Yes)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  CustomSetup -->
+			<Dialog Id="CustomSetupDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine --><!--
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>-->
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  ChangeFolder -->
+				<Control Id="ChangeFolder" Type="PushButton" X="301" Y="203" Width="66" Height="17" Text="!(loc.IDS__IsCustomSelectionDlg_Change)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[Installed]]>
+					</Condition>
+				</Control>
+				<!-- Control:  Details -->
+				<Control Id="Details" Type="PushButton" X="93" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsCustomSelectionDlg_Space)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[Installed]]>
+					</Condition>
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="17" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsCustomSelectionDlg_SelectFeatures)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgText -->
+				<Control Id="DlgText" Type="Text" X="9" Y="51" Width="360" Height="10" Text="!(loc.IDS__IsCustomSelectionDlg_ClickFeatureIcon)">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="9" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsCustomSelectionDlg_CustomSetup)">
+				</Control>
+				<!-- Control:  FeatureGroup -->
+				<Control Id="FeatureGroup" Type="GroupBox" X="235" Y="67" Width="131" Height="120" Text="!(loc.IDS__IsCustomSelectionDlg_FeatureDescription)">
+				</Control>
+				<!-- Control:  Help -->
+				<Control Id="Help" Type="PushButton" X="22" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsCustomSelectionDlg_Help)">
+				</Control>
+				<!-- Control:  InstallLabel -->
+				<Control Id="InstallLabel" Type="Text" X="8" Y="190" Width="360" Height="10" Text="!(loc.IDS__IsCustomSelectionDlg_InstallTo)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[Installed]]>
+					</Condition>
+				</Control>
+				<!-- Control:  ItemDescription -->
+				<Control Id="ItemDescription" Type="Text" X="241" Y="80" Width="120" Height="50" Text="!(loc.IDS__IsCustomSelectionDlg_MultilineDescription)">
+				</Control>
+				<!-- Control:  Location -->
+				<Control Id="Location" Type="Text" X="8" Y="203" Width="291" Height="20" Text="!(loc.IDS__IsCustomSelectionDlg_FeaturePath)">
+				</Control>
+				<!-- Control:  Next -->
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+				</Control>
+				<!-- Control:  Size -->
+				<Control Id="Size" Type="Text" X="241" Y="133" Width="120" Height="50" Text="!(loc.IDS__IsCustomSelectionDlg_FeatureSize)">
+				</Control>
+				<!-- Control:  Tree -->
+				<Control Id="Tree" Type="SelectionTree" X="8" Y="70" Width="220" Height="118" Property="_BrowseProperty">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  CustomSetupTips -->
+			<Dialog Id="CustomSetupTipsDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS_SetupTips_CustomSetupDescription)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS_SetupTips_CustomSetup)">
+				</Control>
+				<!-- Control:  DontInstall -->
+				<Control Id="DontInstall" Text="NewBinary14" Type="Icon" X="21" Y="155" Width="24" Height="24">
+				</Control>
+				<!-- Control:  DontInstallText -->
+				<Control Id="DontInstallText" Type="Text" X="60" Y="155" Width="300" Height="20" Text="!(loc.IDS_SetupTips_WillNotBeInstalled)">
+				</Control>
+				<!-- Control:  FirstInstallText -->
+				<Control Id="FirstInstallText" Type="Text" X="60" Y="180" Width="300" Height="20" Text="!(loc.IDS_SetupTips_Advertise)">
+				</Control>
+				<!-- Control:  Install -->
+				<Control Id="Install" Text="NewBinary15" Type="Icon" X="21" Y="105" Width="24" Height="24">
+				</Control>
+				<!-- Control:  InstallFirstUse -->
+				<Control Id="InstallFirstUse" Text="NewBinary16" Type="Icon" X="21" Y="180" Width="24" Height="24">
+				</Control>
+				<!-- Control:  InstallPartial -->
+				<Control Id="InstallPartial" Text="NewBinary17" Type="Icon" X="21" Y="130" Width="24" Height="24">
+				</Control>
+				<!-- Control:  InstallStateMenu -->
+				<Control Id="InstallStateMenu" Text="NewBinary18" Type="Icon" X="21" Y="52" Width="24" Height="24">
+				</Control>
+				<!-- Control:  InstallStateText -->
+				<Control Id="InstallStateText" Type="Text" X="21" Y="91" Width="300" Height="10" Text="!(loc.IDS_SetupTips_InstallState)">
+				</Control>
+				<!-- Control:  InstallText -->
+				<Control Id="InstallText" Type="Text" X="60" Y="105" Width="300" Height="20" Text="!(loc.IDS_SetupTips_AllInstalledLocal)">
+				</Control>
+				<!-- Control:  MenuText -->
+				<Control Id="MenuText" Type="Text" X="50" Y="52" Width="300" Height="36" Text="!(loc.IDS_SetupTips_IconInstallState)">
+				</Control>
+				<!-- Control:  NetworkInstall -->
+				<Control Id="NetworkInstall" Text="NewBinary13" Type="Icon" X="21" Y="205" Width="24" Height="24">
+				</Control>
+				<!-- Control:  NetworkInstallText -->
+				<Control Id="NetworkInstallText" Type="Text" X="60" Y="205" Width="300" Height="20" Text="!(loc.IDS_SetupTips_Network)">
+				</Control>
+				<!-- Control:  OK -->
+				<Control Id="OK" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_SetupTips_OK)">
+				</Control>
+				<!-- Control:  PartialText -->
+				<Control Id="PartialText" Type="Text" X="60" Y="130" Width="300" Height="20" Text="!(loc.IDS_SetupTips_SubFeaturesInstalledLocal)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  CustomerInformation -->
+			<Dialog Id="CustomerInformationDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  CompanyEdit -->
+				<Control Id="CompanyEdit" Type="Edit" X="21" Y="100" Width="237" Height="17" Text="!(loc.IDS__IsRegisterUserDlg_Tahoma80)" Property="COMPANYNAME">
+				</Control>
+				<!-- Control:  CompanyLabel -->
+				<Control Id="CompanyLabel" Type="Text" X="21" Y="89" Width="75" Height="10" Text="!(loc.IDS__IsRegisterUserDlg_Organization)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsRegisterUserDlg_PleaseEnterInfo)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgRadioGroupText -->
+				<Control Id="DlgRadioGroupText" Type="Text" X="21" Y="161" Width="300" Height="14" Text="!(loc.IDS__IsRegisterUserDlg_InstallFor)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[NOT Privileged]]>
+					</Condition>
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[ProductState > 0]]>
+					</Condition>
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[Version9X]]>
+					</Condition>
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsRegisterUserDlg_CustomerInformation)">
+				</Control>
+				<!-- Control:  NameEdit -->
+				<Control Id="NameEdit" Type="Edit" X="21" Y="63" Width="237" Height="17" Text="!(loc.IDS__IsRegisterUserDlg_Tahoma50)" Property="USERNAME">
+				</Control>
+				<!-- Control:  NameLabel -->
+				<Control Id="NameLabel" Type="Text" X="21" Y="52" Width="75" Height="10" Text="!(loc.IDS__IsRegisterUserDlg_UserName)">
+				</Control>
+				<!-- Control:  Next -->
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+				</Control>
+				<!-- Control:  RadioGroup -->
+				<Control Id="RadioGroup" Type="RadioButtonGroup" X="63" Y="170" Width="300" Height="50" Text="!(loc.IDS__IsRegisterUserDlg_16)" Property="ApplicationUsers">
+					<RadioButtonGroup Property="ApplicationUsers">
+						<!-- Radio Button for Property :  ApplicationUsers -->
+						<RadioButton Value="AllUsers" Text="7" Height="7" Width="7" X="1" Y="7" />
+						<!-- Radio Button for Property :  ApplicationUsers -->
+						<RadioButton Value="OnlyCurrentUser" Text="23" Height="23" Width="23" X="1" Y="23" />
+					</RadioButtonGroup>
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[NOT Privileged]]>
+					</Condition>
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[ProductState > 0]]>
+					</Condition>
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[Version9X]]>
+					</Condition>
+				</Control>
+				<!-- Control:  SerialLabel -->
+				<Control Id="SerialLabel" Type="Text" X="21" Y="127" Width="109" Height="10" Text="!(loc.IDS__IsRegisterUserDlg_SerialNumber)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[SERIALNUMSHOW]]>
+					</Condition>
+				</Control>
+				<!-- Control:  SerialNumber -->
+				<Control Id="SerialNumber" Type="MaskedEdit" X="21" Y="138" Width="237" Height="17" Property="ISX_SERIALNUM">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[SERIALNUMSHOW]]>
+					</Condition>
+				</Control>
+			</Dialog>
+			<!-- Dialog:  DatabaseFolder -->
+			<Dialog Id="DatabaseFolderDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  ChangeFolder -->
+				<Control Id="ChangeFolder" Type="PushButton" X="301" Y="65" Width="66" Height="17" Text="!(loc.IDS_CHANGE)">
+				</Control>
+				<!-- Control:  DatabaseFolder -->
+				<Control Id="DatabaseFolder" Text="NewBinary12" Type="Icon" X="21" Y="52" Width="24" Height="24">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__DatabaseFolder_ChangeFolder)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__DatabaseFolder_DatabaseFolder)">
+				</Control>
+				<!-- Control:  LocLabel -->
+				<Control Id="LocLabel" Type="Text" X="57" Y="52" Width="290" Height="10" Text="!(loc.IDS_DatabaseFolder_InstallDatabaseTo)">
+				</Control>
+				<!-- Control:  Location -->
+				<Control Id="Location" Type="Text" X="57" Y="65" Width="240" Height="40" Text="!(loc.IDS__DatabaseFolder_DatabaseDir)" Property="_BrowseProperty">
+				</Control>
+				<!-- Control:  Next -->
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  DestinationFolder -->
+			<Dialog Id="DestinationFolderDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  ChangeFolder -->
+				<Control Id="ChangeFolder" Type="PushButton" X="301" Y="65" Width="66" Height="17" Text="!(loc.IDS__DestinationFolder_Change)">
+				</Control>
+				<!-- Control:  DestFolder -->
+				<Control Id="DestFolder" Text="NewBinary12" Type="Icon" X="21" Y="52" Width="24" Height="24">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__DestinationFolder_ChangeFolder)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__DestinationFolder_DestinationFolder)">
+				</Control>
+				<!-- Control:  LocLabel -->
+				<Control Id="LocLabel" Type="Text" X="57" Y="52" Width="290" Height="10" Text="!(loc.IDS__DestinationFolder_InstallTo)">
+				</Control>
+				<!-- Control:  Location -->
+				<Control Id="Location" Type="Text" X="57" Y="65" Width="240" Height="40" Text="!(loc.IDS_INSTALLDIR)" Property="_BrowseProperty">
+				</Control>
+				<!-- Control:  Next -->
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  DiskSpaceRequirements -->
+			<Dialog Id="DiskSpaceRequirementsDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="17" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsFeatureDetailsDlg_SpaceRequired)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgText -->
+				<Control Id="DlgText" Type="Text" X="10" Y="185" Width="358" Height="41" Text="!(loc.IDS__IsFeatureDetailsDlg_VolumesTooSmall)">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="9" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsFeatureDetailsDlg_DiskSpaceRequirements)">
+				</Control>
+				<!-- Control:  List -->
+				<Control Id="List" Type="VolumeCostList" X="8" Y="55" Width="358" Height="125" Text="!(loc.IDS__IsFeatureDetailsDlg_Numbers)">
+				</Control>
+				<!-- Control:  OK -->
+				<Control Id="OK" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsFeatureDetailsDlg_OK)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  FilesInUse -->
+			<Dialog Id="FilesInUseDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsFilesInUse_FilesInUseMessage)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgText -->
+				<Control Id="DlgText" Type="Text" X="21" Y="51" Width="348" Height="29" Text="!(loc.IDS__IsFilesInUse_ApplicationsUsingFiles)">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsFilesInUse_FilesInUse)">
+				</Control>
+				<!-- Control:  Exit -->
+				<Control Id="Exit" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsFilesInUse_Exit)">
+				</Control>
+				<!-- Control:  Ignore -->
+				<Control Id="Ignore" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsFilesInUse_Ignore)">
+				</Control>
+				<!-- Control:  List -->
+				<Control Id="List" Type="ListBox" X="21" Y="87" Width="331" Height="135" Property="FileInUseProcess">
+				</Control>
+				<!-- Control:  Retry -->
+				<Control Id="Retry" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsFilesInUse_Retry)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  GetServerName -->
+			<Dialog Id="GetServerNameDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.ID_STRING32)">
+				</Control>
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="{\MSSWhiteSerif8}InstallShield">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="{\Tahoma8}InstallShield">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.ID_STRING33)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="14" Text="!(loc.ID_STRING49)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="80" Y="234" Width="294" Height="0">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="13" Text="!(loc.ID_STRING41)">
+				</Control>
+				<!-- Control:  Edit1 -->
+				<Control Id="Edit1" Type="Edit" X="21" Y="96" Width="331" Height="20" Property="TNSNAME">
+				</Control>
+				<!-- Control:  Next -->
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.ID_STRING24)">
+				</Control>
+				<!-- Control:  Text1 -->
+				<Control Id="Text1" Type="Text" X="21" Y="51" Width="283" Height="13" Text="!(loc.NEW_STRING1)" Property="Text1">
+				</Control>
+				<!-- Control:  Text2 -->
+				<Control Id="Text2" Type="Text" X="21" Y="81" Width="99" Height="13" Text="!(loc.NEW_STRING2)" Property="NewProperty1">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  InstallChangeFolder -->
+			<Dialog Id="InstallChangeFolderDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  Combo -->
+				<Control Id="Combo" Type="DirectoryCombo" X="21" Y="64" Width="277" Height="80" Text="!(loc.IDS__IsBrowseFolderDlg_4)" Property="_BrowseProperty">
+				</Control>
+				<!-- Control:  ComboText -->
+				<Control Id="ComboText" Type="Text" X="21" Y="50" Width="99" Height="14" Text="!(loc.IDS__IsBrowseFolderDlg_LookIn)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsBrowseFolderDlg_BrowseDestFolder)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsBrowseFolderDlg_ChangeCurrentFolder)">
+				</Control>
+				<!-- Control:  List -->
+				<Control Id="List" Type="DirectoryList" X="21" Y="90" Width="332" Height="97" Text="!(loc.IDS__IsBrowseFolderDlg_8)" Property="_BrowseProperty">
+				</Control>
+				<!-- Control:  NewFolder -->
+				<Control Id="NewFolder" Type="PushButton" X="335" Y="66" Width="19" Height="19">
+				</Control>
+				<!-- Control:  OK -->
+				<Control Id="OK" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsBrowseFolderDlg_OK)">
+				</Control>
+				<!-- Control:  Tail -->
+				<Control Id="Tail" Type="PathEdit" X="21" Y="207" Width="332" Height="17" Text="!(loc.IDS__IsBrowseFolderDlg_11)" Property="_BrowseProperty">
+				</Control>
+				<!-- Control:  TailText -->
+				<Control Id="TailText" Type="Text" X="21" Y="193" Width="99" Height="13" Text="!(loc.IDS__IsBrowseFolderDlg_FolderName)">
+				</Control>
+				<!-- Control:  Up -->
+				<Control Id="Up" Type="PushButton" X="310" Y="66" Width="19" Height="19">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  InstallWelcome -->
+			<Dialog Id="InstallWelcomeDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  Copyright -->
+				<Control Id="Copyright" Type="Text" X="135" Y="144" Width="228" Height="73" Text="!(loc.IDS__IsWelcomeDlg_WarningCopyright)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[SHOWCOPYRIGHT="No"]]>
+					</Condition>
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[SHOWCOPYRIGHT="Yes"]]>
+					</Condition>
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="0" Y="234" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Image -->
+				<Control Id="Image" Text="NewBinary5" Type="Bitmap" X="0" Y="0" Width="374" Height="234">
+				</Control>
+				<!-- Control:  Next -->
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+				</Control>
+				<!-- Control:  TextLine1 -->
+				<Control Id="TextLine1" Type="Text" X="135" Y="8" Width="225" Height="45" Text="!(loc.IDS__IsWelcomeDlg_WelcomeProductName)">
+				</Control>
+				<!-- Control:  TextLine2 -->
+				<Control Id="TextLine2" Type="Text" X="135" Y="55" Width="228" Height="45" Text="!(loc.IDS__IsWelcomeDlg_InstallProductName)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  LicenseAgreement -->
+			<Dialog Id="LicenseAgreementsDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Agree -->
+				<Control Id="Agree" Type="RadioButtonGroup" X="8" Y="190" Width="291" Height="40" Property="AgreeToLicense">
+					<RadioButtonGroup Property="AgreeToLicense">
+						<!-- Radio Button for Property :  AgreeToLicense -->
+						<RadioButton Value="No" Text="15" Height="15" Width="15" X="0" Y="15" />
+						<!-- Radio Button for Property :  AgreeToLicense -->
+						<RadioButton Value="Yes" Text="0" Height="0" Width="0" X="0" Y="0" />
+					</RadioButtonGroup>
+				</Control>
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsLicenseDlg_ReadLicenseAgreement)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsLicenseDlg_LicenseAgreement)">
+				</Control>
+				<!-- Control:  ISPrintButton --><!--
+				<Control Id="ISPrintButton" Type="PushButton" X="301" Y="188" Width="65" Height="17" Text="!(loc.IDS_PRINT_BUTTON)">
+				</Control>-->
+				<!-- Control:  Memo -->
+				<Control Id="Memo" Type="ScrollableText" X="8" Y="55" Width="358" Height="130">
+				</Control>
+				<!-- Control:  Next -->
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+					<!-- Control Condition:  Disable -->
+					<Condition Action="disable">
+						<![CDATA[AgreeToLicense <> "Yes"]]>
+					</Condition>
+					<!-- Control Condition:  Enable -->
+					<Condition Action="enable">
+						<![CDATA[AgreeToLicense = "Yes"]]>
+					</Condition>
+				</Control>
+			</Dialog>
+			<!-- Dialog:  MaintenanceType -->
+			<Dialog Id="MaintenanceTyesDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsMaintenanceDlg_MaitenanceOptions)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsMaintenanceDlg_ProgramMaintenance)">
+				</Control>
+				<!-- Control:  Ico1 -->
+				<Control Id="Ico1" Text="NewBinary6" Type="Icon" X="35" Y="75" Width="24" Height="24">
+				</Control>
+				<!-- Control:  Ico2 -->
+				<Control Id="Ico2" Text="NewBinary7" Type="Icon" X="35" Y="135" Width="24" Height="24">
+				</Control>
+				<!-- Control:  Ico3 -->
+				<Control Id="Ico3" Text="NewBinary8" Type="Icon" X="35" Y="195" Width="24" Height="24">
+				</Control>
+				<!-- Control:  Next -->
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+				</Control>
+				<!-- Control:  RadioGroup -->
+				<Control Id="RadioGroup" Type="RadioButtonGroup" X="21" Y="55" Width="290" Height="170" Text="!(loc.IDS__IsMaintenanceDlg_11)" Property="_IsMaintenance">
+					<RadioButtonGroup Property="_IsMaintenance">
+						<!-- Radio Button for Property :  _IsMaintenance -->
+						<RadioButton Value="Change" Text="0" Height="0" Width="0" X="0" Y="0" />
+						<!-- Radio Button for Property :  _IsMaintenance -->
+						<RadioButton Value="Reinstall" Text="60" Height="60" Width="60" X="0" Y="60" />
+						<!-- Radio Button for Property :  _IsMaintenance -->
+						<RadioButton Value="Remove" Text="120" Height="120" Width="120" X="0" Y="120" />
+					</RadioButtonGroup>
+				</Control>
+				<!-- Control:  Text1 -->
+				<Control Id="Text1" Type="Text" X="80" Y="72" Width="260" Height="35" Text="!(loc.IDS__IsMaintenanceDlg_ChangeFeatures)">
+				</Control>
+				<!-- Control:  Text2 -->
+				<Control Id="Text2" Type="Text" X="80" Y="135" Width="260" Height="35" Text="!(loc.IDS__IsMaintenanceDlg_RepairMessage)">
+				</Control>
+				<!-- Control:  Text3 -->
+				<Control Id="Text3" Type="Text" X="80" Y="192" Width="260" Height="35" Text="!(loc.IDS__IsMaintenanceDlg_RemoveProductName)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  MaintenanceWelcome -->
+			<Dialog Id="MaintenanceWelcomDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="0" Y="234" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Image -->
+					<Control Id="Image" Text="NewBinary5" Type="Bitmap" X="0" Y="0" Width="374" Height="234">
+				</Control>
+				<!-- Control:  Next --><!--
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+				</Control>-->
+				<!-- Control:  TextLine1 -->
+				<Control Id="TextLine1" Type="Text" X="135" Y="8" Width="225" Height="45" Text="!(loc.IDS__IsMaintenanceWelcome_WizardWelcome)">
+				</Control>
+				<!-- Control:  TextLine2 -->
+				<Control Id="TextLine2" Type="Text" X="135" Y="55" Width="228" Height="50" Text="!(loc.IDS__IsMaintenanceWelcome_MaintenanceOptionsDescription)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  MsiRMFilesInUse -->
+			<Dialog Id="MsiRMFilesInUseDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsFilesInUse_FilesInUseMessage)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgText -->
+				<Control Id="DlgText" Type="Text" X="21" Y="51" Width="348" Height="14" Text="!(loc.IDS__IsMsiRMFilesInUse_ApplicationsUsingFiles)">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsFilesInUse_FilesInUse)">
+				</Control>
+				<!-- Control:  List -->
+				<Control Id="List" Type="ListBox" X="21" Y="66" Width="331" Height="135" Property="FileInUseProcess">
+				</Control>
+				<!-- Control:  OK -->
+				<Control Id="OK" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_OK)">
+				</Control>
+				<!-- Control:  Restart -->
+				<Control Id="Restart" Type="RadioButtonGroup" X="19" Y="187" Width="343" Height="40" Property="RestartManagerOption">
+					<RadioButtonGroup Property="RestartManagerOption">
+						<!-- Radio Button for Property :  RestartManagerOption -->
+						<RadioButton Value="CloseRestart" Text="9" Height="9" Width="9" X="6" Y="9" />
+						<!-- Radio Button for Property :  RestartManagerOption -->
+						<RadioButton Value="Reboot" Text="21" Height="21" Width="21" X="6" Y="21" />
+					</RadioButtonGroup>
+				</Control>
+			</Dialog>
+			<!-- Dialog:  OutOfSpace -->
+			<Dialog Id="OutOfSpaceDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsDiskSpaceDlg_DiskSpace)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgText -->
+				<Control Id="DlgText" Type="Text" X="21" Y="51" Width="326" Height="43" Text="!(loc.IDS__IsDiskSpaceDlg_HighlightedVolumes)">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsDiskSpaceDlg_OutOfDiskSpace)">
+				</Control>
+				<!-- Control:  List -->
+				<Control Id="List" Type="VolumeCostList" X="21" Y="95" Width="332" Height="120" Text="!(loc.IDS__IsDiskSpaceDlg_Numbers)">
+				</Control>
+				<!-- Control:  Resume -->
+				<Control Id="Resume" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsDiskSpaceDlg_OK)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  PatchWelcome -->
+			<Dialog Id="PatchWelcomeDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="0" Y="234" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Image -->
+				<Control Id="Image" Text="NewBinary5" Type="Bitmap" X="0" Y="0" Width="374" Height="234">
+				</Control>
+				<!-- Control:  Next -->
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsPatchDlg_Update)">
+				</Control>
+				<!-- Control:  TextLine1 -->
+				<Control Id="TextLine1" Type="Text" X="135" Y="8" Width="225" Height="45" Text="!(loc.IDS__IsPatchDlg_WelcomePatchWizard)">
+				</Control>
+				<!-- Control:  TextLine2 -->
+				<Control Id="TextLine2" Type="Text" X="135" Y="54" Width="228" Height="45" Text="!(loc.IDS__IsPatchDlg_PatchClickUpdate)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  ReadyToInstall -->
+			<Dialog Id="ReadyToInstallDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsVerifyReadyDlg_WizardReady)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="374" Height="0">
+				</Control>
+				<!-- Control:  DlgText -->
+				<Control Id="DlgText" Type="Text" X="21" Y="51" Width="326" Height="20" Text="!(loc.IDS__IsVerifyReadyDlg_ClickInstall)">
+				</Control>
+				<!-- Control:  DlgText1 -->
+				<Control Id="DlgText1" Type="Text" X="21" Y="70" Width="330" Height="24" Text="!(loc.IDS__IsVerifyReadyDlg_BackOrCancel)">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsVerifyReadyDlg_ModifyReady)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ProgressType0="Modify"]]>
+					</Condition>
+				</Control>
+				<!-- Control:  DlgTitle2 -->
+				<Control Id="DlgTitle2" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsVerifyReadyDlg_ReadyRepair)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ProgressType0="Repair"]]>
+					</Condition>
+				</Control>
+				<!-- Control:  DlgTitle3 -->
+				<Control Id="DlgTitle3" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsVerifyReadyDlg_ReadyInstall)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ProgressType0="install"]]>
+					</Condition>
+				</Control>
+				<!-- Control:  InstallNow -->
+				<Control Id="InstallNow" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsVerifyReadyDlg_Install)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  ReadyToRemove -->
+			<Dialog Id="ReadyToRemoveDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsVerifyRemoveAllDlg_ChoseRemoveProgram)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgText -->
+				<Control Id="DlgText" Type="Text" X="21" Y="51" Width="326" Height="24" Text="!(loc.IDS__IsVerifyRemoveAllDlg_ClickRemove)">
+				</Control>
+				<!-- Control:  DlgText1 -->
+				<Control Id="DlgText1" Type="Text" X="21" Y="79" Width="330" Height="23" Text="!(loc.IDS__IsVerifyRemoveAllDlg_ClickBack)">
+				</Control>
+				<!-- Control:  DlgText2 -->
+				<Control Id="DlgText2" Type="Text" X="21" Y="102" Width="330" Height="24">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsVerifyRemoveAllDlg_RemoveProgram)">
+				</Control>
+				<!-- Control:  RemoveNow -->
+				<Control Id="RemoveNow" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsVerifyRemoveAllDlg_Remove)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  SQLBrowse -->
+			<Dialog Id="SQLBrowseDlg" Width="272" Height="265" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="227" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="226" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="194" Y="241" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="232" Width="224" Height="0">
+				</Control>
+				<!-- Control:  OK -->
+				<Control Id="OK" Type="PushButton" X="125" Y="241" Width="66" Height="17" Text="!(loc.IDS_OK)">
+				</Control>
+				<!-- Control:  TxtSQLBrowse -->
+				<Control Id="TxtSQLBrowse" Type="Text" X="13" Y="8" Width="245" Height="31" Text="!(loc.IDS_SQLBROWSE_INTRO)">
+				</Control>
+				<!-- Control:  lstSQLServer -->
+				<Control Id="lstSQLServer" Type="ListBox" X="14" Y="45" Width="245" Height="165" Property="IS_SQLSERVER_LIST">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  SQLLogin -->
+			<Dialog Id="SQLLoginDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  BtnSQLBrowse -->
+				<Control Id="BtnSQLBrowse" Type="PushButton" X="301" Y="106" Width="66" Height="17" Text="!(loc.IDS_SQLLOGIN_BROWSE)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS_SQLLOGIN_DESC)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="7" Width="292" Height="25" Text="!(loc.IDS_SQLLOGIN_TITLE)">
+				</Control>
+				<!-- Control:  EdtLogin -->
+				<Control Id="EdtLogin" Type="Edit" X="92" Y="184" Width="218" Height="16" Property="IS_SQLSERVER_USERNAME">
+					<!-- Control Condition:  Disable -->
+					<Condition Action="disable">
+						<![CDATA[IS_SQLSERVER_AUTHENTICATION=0]]>
+					</Condition>
+					<!-- Control Condition:  Enable -->
+					<Condition Action="enable">
+						<![CDATA[IS_SQLSERVER_AUTHENTICATION=1]]>
+					</Condition>
+				</Control>
+				<!-- Control:  EdtPswd -->
+				<Control Id="EdtPswd" Type="Edit" X="92" Y="208" Width="218" Height="16" Property="IS_SQLSERVER_PASSWORD">
+					<!-- Control Condition:  Disable -->
+					<Condition Action="disable">
+						<![CDATA[IS_SQLSERVER_AUTHENTICATION=0]]>
+					</Condition>
+					<!-- Control Condition:  Enable -->
+					<Condition Action="enable">
+						<![CDATA[IS_SQLSERVER_AUTHENTICATION=1]]>
+					</Condition>
+				</Control>
+				<!-- Control:  Next -->
+				<Control Id="Next" Type="PushButton" X="229" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+				</Control>
+				<!-- Control:  RadioButtonGroup1 -->
+				<Control Id="RadioButtonGroup1" Type="RadioButtonGroup" X="25" Y="145" Width="343" Height="34" Property="IS_SQLSERVER_AUTHENTICATION">
+					<RadioButtonGroup Property="IS_SQLSERVER_AUTHENTICATION">
+						<!-- Radio Button for Property :  IS_SQLSERVER_AUTHENTICATION -->
+						<RadioButton Value="0" Text="0" Height="0" Width="0" X="0" Y="0" />
+						<!-- Radio Button for Property :  IS_SQLSERVER_AUTHENTICATION -->
+						<RadioButton Value="1" Text="14" Height="14" Width="14" X="0" Y="14" />
+					</RadioButtonGroup>
+				</Control>
+				<!-- Control:  cboServers -->
+				<Control Id="cboServers" Type="ComboBox" X="18" Y="106" Width="278" Height="80" Property="IS_SQLSERVER_SERVER">
+				</Control>
+				<!-- Control:  lblAuthentication -->
+				<Control Id="lblAuthentication" Type="Text" X="18" Y="129" Width="334" Height="14" Text="!(loc.IDS_SQLLOGIN_CONNECT)">
+				</Control>
+				<!-- Control:  lblLoginID -->
+				<Control Id="lblLoginID" Type="Text" X="43" Y="186" Width="48" Height="13" Text="!(loc.IDS_SQLLOGIN_ID)">
+					<!-- Control Condition:  Disable -->
+					<Condition Action="disable">
+						<![CDATA[IS_SQLSERVER_AUTHENTICATION=0]]>
+					</Condition>
+					<!-- Control Condition:  Enable -->
+					<Condition Action="enable">
+						<![CDATA[IS_SQLSERVER_AUTHENTICATION=1]]>
+					</Condition>
+				</Control>
+				<!-- Control:  lblPswd -->
+				<Control Id="lblPswd" Type="Text" X="43" Y="208" Width="47" Height="13" Text="!(loc.IDS_SQLLOGIN_PSWD)">
+					<!-- Control Condition:  Disable -->
+					<Condition Action="disable">
+						<![CDATA[IS_SQLSERVER_AUTHENTICATION=0]]>
+					</Condition>
+					<!-- Control Condition:  Enable -->
+					<Condition Action="enable">
+						<![CDATA[IS_SQLSERVER_AUTHENTICATION=1]]>
+					</Condition>
+				</Control>
+				<!-- Control:  lblSQLLoginIntro -->
+				<Control Id="lblSQLLoginIntro" Type="Text" X="17" Y="50" Width="345" Height="40" Text="!(loc.IDS_SQLLOGIN_INTRO)">
+				</Control>
+				<!-- Control:  lblServer -->
+				<Control Id="lblServer" Type="Text" X="18" Y="92" Width="88" Height="14" Text="!(loc.IDS_SQLLOGIN_SERVER)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  SetupCompleteError -->
+			<Dialog Id="SetupCompleteErrorDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+					<!-- Control Condition:  Default -->
+					<Condition Action="default">
+						<![CDATA[UpdateStarted]]>
+					</Condition>
+					<!-- Control Condition:  Disable -->
+					<Condition Action="disable">
+						<![CDATA[NOT UpdateStarted]]>
+					</Condition>
+					<!-- Control Condition:  Enable -->
+					<Condition Action="enable">
+						<![CDATA[UpdateStarted]]>
+					</Condition>
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+					<!-- Control Condition:  Disable -->
+					<Condition Action="disable">
+						<![CDATA[NOT UpdateStarted]]>
+					</Condition>
+					<!-- Control Condition:  Enable -->
+					<Condition Action="enable">
+						<![CDATA[UpdateStarted]]>
+					</Condition>
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="0" Y="234" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Finish -->
+				<Control Id="Finish" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsFatalError_Finish)">
+					<!-- Control Condition:  Default -->
+					<Condition Action="default">
+						<![CDATA[NOT UpdateStarted]]>
+					</Condition>
+				</Control>
+				<!-- Control:  FinishText1 -->
+				<Control Id="FinishText1" Type="Text" X="135" Y="80" Width="228" Height="50" Text="!(loc.IDS__IsFatalError_NotModified)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[UpdateStarted]]>
+					</Condition>
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[NOT UpdateStarted]]>
+					</Condition>
+				</Control>
+				<!-- Control:  FinishText2 -->
+				<Control Id="FinishText2" Type="Text" X="135" Y="135" Width="228" Height="25" Text="!(loc.IDS__IsFatalError_ClickFinish)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[UpdateStarted]]>
+					</Condition>
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[NOT UpdateStarted]]>
+					</Condition>
+				</Control>
+				<!-- Control:  Image -->
+				<Control Id="Image" Text="NewBinary5" Type="Bitmap" X="0" Y="0" Width="374" Height="234">
+				</Control>
+				<!-- Control:  RestContText1 -->
+				<Control Id="RestContText1" Type="Text" X="135" Y="80" Width="228" Height="50" Text="!(loc.IDS__IsFatalError_KeepOrRestore)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[NOT UpdateStarted]]>
+					</Condition>
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[UpdateStarted]]>
+					</Condition>
+				</Control>
+				<!-- Control:  RestContText2 -->
+				<Control Id="RestContText2" Type="Text" X="135" Y="135" Width="228" Height="25" Text="!(loc.IDS__IsFatalError_RestoreOrContinueLater)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[NOT UpdateStarted]]>
+					</Condition>
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[UpdateStarted]]>
+					</Condition>
+				</Control>
+				<!-- Control:  TextLine1 -->
+				<Control Id="TextLine1" Type="Text" X="135" Y="8" Width="225" Height="45" Text="!(loc.IDS__IsFatalError_WizardCompleted)">
+				</Control>
+				<!-- Control:  TextLine2 -->
+				<Control Id="TextLine2" Type="Text" X="135" Y="55" Width="228" Height="25" Text="!(loc.IDS__IsFatalError_WizardInterrupted)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  SetupCompleteSuccess -->
+			<Dialog Id="SetupCompleteSuccessDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  CheckBoxUpdates -->
+				<Control Id="CheckBoxUpdates" Type="CheckBox" X="135" Y="164" Width="10" Height="9" Text="CheckBox1" Property="ISCHECKFORPRODUCTUPDATES">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ISENABLEDWUSFINISHDIALOG And NOT Installed And ACTION="INSTALL"]]>
+					</Condition>
+				</Control>
+				<!-- Control:  CheckForUpdatesText -->
+				<Control Id="CheckForUpdatesText" Type="Text" X="152" Y="162" Width="190" Height="30" Text="!(loc.IDS__IsExitDialog_Update_YesCheckForUpdates)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ISENABLEDWUSFINISHDIALOG And NOT Installed And ACTION="INSTALL"]]>
+					</Condition>
+				</Control>
+				<!-- Control:  CheckLaunchProgram -->
+				<Control Id="CheckLaunchProgram" Type="CheckBox" X="151" Y="114" Width="10" Height="9" Property="LAUNCHPROGRAM">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[SHOWLAUNCHPROGRAM="-1" And PROGRAMFILETOLAUNCHATEND <> "" And NOT Installed And NOT ISENABLEDWUSFINISHDIALOG]]>
+					</Condition>
+				</Control>
+				<!-- Control:  CheckLaunchReadme -->
+				<Control Id="CheckLaunchReadme" Type="CheckBox" X="151" Y="148" Width="10" Height="9" Property="LAUNCHREADME">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[SHOWLAUNCHREADME="-1"  And READMEFILETOLAUNCHATEND <> "" And NOT Installed And NOT ISENABLEDWUSFINISHDIALOG]]>
+					</Condition>
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="0" Y="234" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Image -->
+				<Control Id="Image" Text="NewBinary5" Type="Bitmap" X="0" Y="0" Width="374" Height="234">
+				</Control>
+				<!-- Control:  LaunchProgramText -->
+				<Control Id="LaunchProgramText" Type="Text" X="164" Y="112" Width="198" Height="15" Text="Launch [ProductName]">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[SHOWLAUNCHPROGRAM="-1" And PROGRAMFILETOLAUNCHATEND <> "" And NOT Installed And NOT ISENABLEDWUSFINISHDIALOG]]>
+					</Condition>
+				</Control>
+				<!-- Control:  LaunchReadmeText -->
+				<Control Id="LaunchReadmeText" Type="Text" X="164" Y="148" Width="198" Height="13" Text="!(loc.IDS__IsExitDialog_ShowReadMe)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[SHOWLAUNCHREADME="-1"  And READMEFILETOLAUNCHATEND <> "" And NOT Installed And NOT ISENABLEDWUSFINISHDIALOG]]>
+					</Condition>
+				</Control>
+				<!-- Control:  OK -->
+				<Control Id="OK" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsExitDialog_Finish)">
+				</Control>
+				<!-- Control:  TextLine1 -->
+				<Control Id="TextLine1" Type="Text" X="135" Y="8" Width="225" Height="45" Text="!(loc.IDS__IsExitDialog_WizardCompleted)">
+				</Control>
+				<!-- Control:  TextLine2 -->
+				<Control Id="TextLine2" Type="Text" X="135" Y="55" Width="228" Height="45" Text="!(loc.IDS__IsExitDialog_InstallSuccess)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ProgressType2="installed" And ((ACTION<>"INSTALL") OR (NOT ISENABLEDWUSFINISHDIALOG) OR (ISENABLEDWUSFINISHDIALOG And Installed))]]>
+					</Condition>
+				</Control>
+				<!-- Control:  TextLine3 -->
+				<Control Id="TextLine3" Type="Text" X="135" Y="55" Width="228" Height="45" Text="!(loc.IDS__IsExitDialog_UninstallSuccess)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ProgressType2="uninstalled" And ((ACTION<>"INSTALL") OR (NOT ISENABLEDWUSFINISHDIALOG) OR (ISENABLEDWUSFINISHDIALOG And Installed))]]>
+					</Condition>
+				</Control>
+				<!-- Control:  UpdateTextLine1 -->
+				<Control Id="UpdateTextLine1" Type="Text" X="135" Y="30" Width="228" Height="45" Text="!(loc.IDS__IsExitDialog_Update_SetupFinished)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ISENABLEDWUSFINISHDIALOG And NOT Installed And ACTION="INSTALL"]]>
+					</Condition>
+				</Control>
+				<!-- Control:  UpdateTextLine2 -->
+				<Control Id="UpdateTextLine2" Type="Text" X="135" Y="80" Width="228" Height="45" Text="!(loc.IDS__IsExitDialog_Update_PossibleUpdates)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ISENABLEDWUSFINISHDIALOG And NOT Installed And ACTION="INSTALL"]]>
+					</Condition>
+				</Control>
+				<!-- Control:  UpdateTextLine3 -->
+				<Control Id="UpdateTextLine3" Type="Text" X="135" Y="120" Width="228" Height="45" Text="!(loc.IDS__IsExitDialog_Update_InternetConnection)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ISENABLEDWUSFINISHDIALOG And NOT Installed And ACTION="INSTALL"]]>
+					</Condition>
+				</Control>
+			</Dialog>
+			<!-- Dialog:  SetupError -->
+			<Dialog Id="SetupErrorDlg" Width="270" Height="110" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  A -->
+				<Control Id="A" Type="PushButton" X="192" Y="80" Width="66" Height="17" Text="!(loc.IDS__IsErrorDlg_Abort)">
+				</Control>
+				<!-- Control:  C -->
+				<Control Id="C" Type="PushButton" X="192" Y="80" Width="66" Height="17" Text="!(loc.IDS_CANCEL2)">
+				</Control>
+				<!-- Control:  ErrorIcon -->
+				<Control Id="ErrorIcon" Text="NewBinary5" Type="Icon" X="15" Y="15" Width="24" Height="24">
+				</Control>
+				<!-- Control:  ErrorText -->
+				<Control Id="ErrorText" Type="Text" X="50" Y="15" Width="200" Height="50" Text="!(loc.IDS__IsErrorDlg_ErrorText)">
+				</Control>
+				<!-- Control:  I -->
+				<Control Id="I" Type="PushButton" X="192" Y="80" Width="66" Height="17" Text="!(loc.IDS__IsErrorDlg_Ignore)">
+				</Control>
+				<!-- Control:  N -->
+				<Control Id="N" Type="PushButton" X="192" Y="80" Width="66" Height="17" Text="!(loc.IDS__IsErrorDlg_NO)">
+				</Control>
+				<!-- Control:  O -->
+				<Control Id="O" Type="PushButton" X="192" Y="80" Width="66" Height="17" Text="!(loc.IDS__IsErrorDlg_OK)">
+				</Control>
+				<!-- Control:  R -->
+				<Control Id="R" Type="PushButton" X="192" Y="80" Width="66" Height="17" Text="!(loc.IDS__IsErrorDlg_Retry)">
+				</Control>
+				<!-- Control:  Y -->
+				<Control Id="Y" Type="PushButton" X="192" Y="80" Width="66" Height="17" Text="!(loc.IDS__IsErrorDlg_Yes)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  SetupInitialization -->
+			<Dialog Id="SetupInitializationDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  ActionData -->
+				<Control Id="ActionData" Type="Text" X="135" Y="125" Width="228" Height="12" Text="!(loc.IDS__IsInitDlg_1)">
+				</Control>
+				<!-- Control:  ActionText -->
+				<Control Id="ActionText" Type="Text" X="135" Y="109" Width="220" Height="36" Text="!(loc.IDS__IsInitDlg_2)">
+				</Control>
+				<!-- Control:  Back --><!--
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>-->
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="0" Y="234" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Image -->
+				<Control Id="Image" Text="NewBinary5" Type="Bitmap" X="0" Y="0" Width="374" Height="234">
+				</Control>
+				<!-- Control:  Next --><!--
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+				</Control>-->
+				<!-- Control:  TextLine1 -->
+				<Control Id="TextLine1" Type="Text" X="135" Y="8" Width="225" Height="45" Text="!(loc.IDS__IsInitDlg_WelcomeWizard)">
+				</Control>
+				<!-- Control:  TextLine2 -->
+				<Control Id="TextLine2" Type="Text" X="135" Y="55" Width="228" Height="30" Text="!(loc.IDS__IsInitDlg_PreparingWizard)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  SetupInterrupted -->
+			<Dialog Id="SetupInterruptedDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+					<!-- Control Condition:  Default -->
+					<Condition Action="default">
+						<![CDATA[UpdateStarted]]>
+					</Condition>
+					<!-- Control Condition:  Disable -->
+					<Condition Action="disable">
+						<![CDATA[NOT UpdateStarted]]>
+					</Condition>
+					<!-- Control Condition:  Enable -->
+					<Condition Action="enable">
+						<![CDATA[UpdateStarted]]>
+					</Condition>
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+					<!-- Control Condition:  Disable -->
+					<Condition Action="disable">
+						<![CDATA[NOT UpdateStarted]]>
+					</Condition>
+					<!-- Control Condition:  Enable -->
+					<Condition Action="enable">
+						<![CDATA[UpdateStarted]]>
+					</Condition>
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="0" Y="234" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Finish -->
+				<Control Id="Finish" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS__IsUserExit_Finish)">
+					<!-- Control Condition:  Default -->
+					<Condition Action="default">
+						<![CDATA[NOT UpdateStarted]]>
+					</Condition>
+				</Control>
+				<!-- Control:  FinishText1 -->
+				<Control Id="FinishText1" Type="Text" X="135" Y="80" Width="228" Height="50" Text="!(loc.IDS__IsUserExit_NotModified)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[UpdateStarted]]>
+					</Condition>
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[NOT UpdateStarted]]>
+					</Condition>
+				</Control>
+				<!-- Control:  FinishText2 -->
+				<Control Id="FinishText2" Type="Text" X="135" Y="135" Width="228" Height="25" Text="!(loc.IDS__IsUserExit_ClickFinish)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[UpdateStarted]]>
+					</Condition>
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[NOT UpdateStarted]]>
+					</Condition>
+				</Control>
+				<!-- Control:  Image -->
+				<Control Id="Image" Text="NewBinary5" Type="Bitmap" X="0" Y="0" Width="374" Height="234">
+				</Control>
+				<!-- Control:  RestContText1 -->
+				<Control Id="RestContText1" Type="Text" X="135" Y="80" Width="228" Height="50" Text="!(loc.IDS__IsUserExit_KeepOrRestore)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[NOT UpdateStarted]]>
+					</Condition>
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[UpdateStarted]]>
+					</Condition>
+				</Control>
+				<!-- Control:  RestContText2 -->
+				<Control Id="RestContText2" Type="Text" X="135" Y="135" Width="228" Height="25" Text="!(loc.IDS__IsUserExit_RestoreOrContinue)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[NOT UpdateStarted]]>
+					</Condition>
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[UpdateStarted]]>
+					</Condition>
+				</Control>
+				<!-- Control:  TextLine1 -->
+				<Control Id="TextLine1" Type="Text" X="135" Y="8" Width="225" Height="45" Text="!(loc.IDS__IsUserExit_WizardCompleted)">
+				</Control>
+				<!-- Control:  TextLine2 -->
+				<Control Id="TextLine2" Type="Text" X="135" Y="55" Width="228" Height="25" Text="!(loc.IDS__IsUserExit_WizardInterrupted)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  SetupProgress -->
+			<Dialog Id="SetupProgressDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  ActionProgress95 -->
+				<Control Id="ActionProgress95" Type="ProgressBar" X="59" Y="113" Width="275" Height="12" Text="!(loc.IDS__IsProgressDlg_ProgressDone)">
+				</Control>
+				<!-- Control:  ActionText -->
+				<Control Id="ActionText" Type="Text" X="59" Y="100" Width="275" Height="12" Text="!(loc.IDS__IsProgressDlg_2)">
+				</Control>
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsProgressDlg_UninstallingFeatures2)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ProgressType2="installed"]]>
+					</Condition>
+				</Control>
+				<!-- Control:  DlgDesc2 -->
+				<Control Id="DlgDesc2" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsProgressDlg_UninstallingFeatures)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ProgressType2="uninstalled"]]>
+					</Condition>
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgText -->
+				<Control Id="DlgText" Type="Text" X="59" Y="51" Width="275" Height="30" Text="!(loc.IDS__IsProgressDlg_WaitUninstall2)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ProgressType3="installs"]]>
+					</Condition>
+				</Control>
+				<!-- Control:  DlgText2 -->
+				<Control Id="DlgText2" Type="Text" X="59" Y="51" Width="275" Height="30" Text="!(loc.IDS__IsProgressDlg_WaitUninstall)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ProgressType3="uninstalls"]]>
+					</Condition>
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsProgressDlg_InstallingProductName)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ProgressType1="Installing"]]>
+					</Condition>
+				</Control>
+				<!-- Control:  DlgTitle2 -->
+				<Control Id="DlgTitle2" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsProgressDlg_Uninstalling)">
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[ProgressType1="Uninstalling"]]>
+					</Condition>
+				</Control>
+				<!-- Control:  LbSec -->
+				<Control Id="LbSec" Type="Text" X="172" Y="139" Width="32" Height="12" Text="!(loc.IDS__IsProgressDlg_SecHidden)">
+				</Control>
+				<!-- Control:  LbStatus -->
+				<Control Id="LbStatus" Type="Text" X="59" Y="85" Width="70" Height="12" Text="!(loc.IDS__IsProgressDlg_Status)">
+				</Control>
+				<!-- Control:  Next --><!--
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+				</Control>-->
+				<!-- Control:  SetupIcon -->
+				<Control Id="SetupIcon" Type="Icon" X="21" Y="51" Width="24" Height="24" Text="NewBinary9">
+				</Control>
+				<!-- Control:  ShowTime -->
+				<Control Id="ShowTime" Type="Text" X="155" Y="139" Width="17" Height="12" Text="!(loc.IDS__IsProgressDlg_Hidden)">
+				</Control>
+				<!-- Control:  TextTime -->
+				<Control Id="TextTime" Type="Text" X="59" Y="139" Width="96" Height="12" Text="!(loc.IDS__IsProgressDlg_HiddenTimeRemaining)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  SetupResume -->
+			<Dialog Id="SetupResumeDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back --><!--
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>-->
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="0" Y="234" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Image -->
+				<Control Id="Image" Text="NewBinary5" Type="Bitmap" X="0" Y="0" Width="374" Height="234">
+				</Control>
+				<!-- Control:  Next -->
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+				</Control>
+				<!-- Control:  PreselectedText -->
+				<Control Id="PreselectedText" Type="Text" X="135" Y="55" Width="228" Height="45" Text="!(loc.IDS__IsResumeDlg_WizardResume)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[RESUME]]>
+					</Condition>
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[NOT RESUME]]>
+					</Condition>
+				</Control>
+				<!-- Control:  ResumeText -->
+				<Control Id="ResumeText" Type="Text" X="135" Y="46" Width="228" Height="45" Text="!(loc.IDS__IsResumeDlg_ResumeSuspended)">
+					<!-- Control Condition:  Hide -->
+					<Condition Action="hide">
+						<![CDATA[NOT RESUME]]>
+					</Condition>
+					<!-- Control Condition:  Show -->
+					<Condition Action="show">
+						<![CDATA[RESUME]]>
+					</Condition>
+				</Control>
+				<!-- Control:  TextLine1 -->
+				<Control Id="TextLine1" Type="Text" X="135" Y="8" Width="225" Height="45" Text="!(loc.IDS__IsResumeDlg_Resuming)">
+				</Control>
+			</Dialog>
+			<!-- Dialog:  SetupType -->
+			<Dialog Id="SetupTypDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back -->
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>
+				<!-- Control:  Banner -->
+				<Control Id="Banner" Text="NewBinary1" Type="Bitmap" X="0" Y="0" Width="374" Height="44">
+				</Control>
+				<!-- Control:  BannerLine -->
+				<Control Id="BannerLine" Type="Line" X="0" Y="44" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  CompText -->
+				<Control Id="CompText" Type="Text" X="80" Y="94" Width="246" Height="35" Text="!(loc.IDS__IsSetupTypeMinDlg_AllFeatures)">
+				</Control>
+				<!-- Control:  CompleteIco -->
+				<Control Id="CompleteIco" Text="NewBinary10" Type="Icon" X="34" Y="94" Width="24" Height="24">
+				</Control>
+				<!-- Control:  CustText -->
+				<Control Id="CustText" Type="Text" X="80" Y="154" Width="246" Height="35" Text="!(loc.IDS__IsSetupTypeMinDlg_ChooseFeatures)">
+				</Control>
+				<!-- Control:  CustomIco -->
+				<Control Id="CustomIco" Text="NewBinary6" Type="Icon" X="34" Y="154" Width="24" Height="24">
+				</Control>
+				<!-- Control:  DlgDesc -->
+				<Control Id="DlgDesc" Type="Text" X="21" Y="23" Width="292" Height="25" Text="!(loc.IDS__IsSetupTypeMinDlg_ChooseSetupType)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="326" Height="0">
+				</Control>
+				<!-- Control:  DlgText -->
+				<Control Id="DlgText" Type="Text" X="21" Y="51" Width="326" Height="10" Text="!(loc.IDS__IsSetupTypeMinDlg_SelectSetupType)">
+				</Control>
+				<!-- Control:  DlgTitle -->
+				<Control Id="DlgTitle" Type="Text" X="13" Y="6" Width="292" Height="25" Text="!(loc.IDS__IsSetupTypeMinDlg_SetupType)">
+				</Control>
+				<!-- Control:  Next --><!--
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+				</Control>-->
+				<!-- Control:  RadioGroup -->
+				<Control Id="RadioGroup" Type="RadioButtonGroup" X="21" Y="79" Width="264" Height="120" Text="!(loc.IDS__IsSetupTypeMinDlg_13)" Property="_IsSetupTypeMin">
+					<RadioButtonGroup Property="_IsSetupTypeMin">
+						<!-- Radio Button for Property :  _IsSetupTypeMin -->
+						<RadioButton Value="Typical" Text="0" Height="0" Width="0" X="0" Y="0" />
+						<!-- Radio Button for Property :  _IsSetupTypeMin -->
+						<RadioButton Value="Custom" Text="60" Height="60" Width="60" X="0" Y="60" />
+					</RadioButtonGroup>
+				</Control>
+			</Dialog>
+			<!-- Dialog:  SplashBitmap -->
+			<Dialog Id="SplashBitmapDlg" Width="374" Height="266" Title="!(loc.IDS_PRODUCTNAME)">
+				<!-- Control:  Back --><!--
+				<Control Id="Back" Type="PushButton" X="164" Y="243" Width="66" Height="17" Text="!(loc.IDS_BACK)">
+				</Control>-->
+				<!-- Control:  Branding1 -->
+				<Control Id="Branding1" Type="Text" X="4" Y="229" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD_FORMATTED)">
+				</Control>
+				<!-- Control:  Branding2 -->
+				<Control Id="Branding2" Type="Text" X="3" Y="228" Width="50" Height="13" Text="!(loc.IDS_INSTALLSHIELD)">
+				</Control>
+				<!-- Control:  Cancel -->
+				<Control Id="Cancel" Type="PushButton" X="301" Y="243" Width="66" Height="17" Text="!(loc.IDS_CANCEL)">
+				</Control>
+				<!-- Control:  DlgLine -->
+				<Control Id="DlgLine" Type="Line" X="48" Y="234" Width="374" Height="0">
+				</Control>
+				<!-- Control:  Image --><!--
+				<Control Id="Image" Type="Bitmap" X="13" Y="12" Width="349" Height="211">-->
+				<!--</Control>-->
+				<!-- Control:  Next -->
+				<Control Id="Next" Type="PushButton" X="230" Y="243" Width="66" Height="17" Text="!(loc.IDS_NEXT)">
+				</Control>
+			</Dialog>
+		</UI>
+		<!--<UI Id="WixUI_InstallDir">
+			<DialogRef Id="AdminChangeFolderDlg"/>
+			<DialogRef Id="AdminNetworkLocationDlg"/>
+			<DialogRef Id="AdminWelcomeDlg"/>
+			<DialogRef Id="CancelSetupDlg"/>
+			<DialogRef Id="CustomSetupDlg"/>
+			<DialogRef Id="CustomSetupTipsDlg"/>
+			<DialogRef Id="CustomerInformationDlg"/>
+			<DialogRef Id="DatabaseFolderDlg"/>
+			<DialogRef Id="DestinationFolderDlg"/>
+			<DialogRef Id="DiskSpaceRequirementsDlg"/>
+			<DialogRef Id="FilesInUseDlg"/>
+			<DialogRef Id="GetServerNameDlg"/>
+			<DialogRef Id="InstallChangeFolderDlg"/>
+			<DialogRef Id="InstallWelcomeDlg"/>
+			<DialogRef Id="LicenseAgreementsDlg"/>
+			<DialogRef Id="MaintenanceTypesDlg"/>
+			<DialogRef Id="MaintenanceWelcomesDlg"/>
+			<DialogRef Id="MsiRMFilesInUseDlg"/>
+			<DialogRef Id="OutOfSpaceDlg"/>
+			<DialogRef Id="PatchWelcomeDlg"/>
+			<DialogRef Id="ReadyToInstallDlg"/>
+			<DialogRef Id="ReadyToRemoveDlg"/>
+			<DialogRef Id="SQLBrowseDlg"/>
+			<DialogRef Id="SQLLoginDlg"/>
+			<DialogRef Id="SetupCompleteErrorDlg"/>
+			<DialogRef Id="SetupCompleteSuccessDlg"/>
+			<DialogRef Id="SetupErrorDlg"/>
+			<DialogRef Id="SetupInitializationDlg"/>
+			<DialogRef Id="SetupInterruptedDlg"/>
+			<DialogRef Id="SetupProgressDlg"/>
+			<DialogRef Id="SetupResumeDlg"/>
+			<DialogRef Id="SetupTypesDlg"/>
+			<DialogRef Id="SplashBitmapDlg"/>
+
+			--><!-- Progress / Action Texts --><!--
+			<ProgressText Action="Install"
                           Template="Installing [ProductName] ([Progress])" />
-            <!-- AdminUISequence -->
-            <AdminUISequence>
-                <CostFinalize Sequence="1000" />
-                <CostInitialize Sequence="800" />
-                <ExecuteAction Sequence="1300" />
-                <FileCost Sequence="900" />
-                <!-- <SetupCompleteError Sequence="-3"/> -->
-                <InstallFinalize Sequence="1" />
-                <InstallInitialize Sequence="50" />
-                <!-- <SetupInterrupted Sequence="-2"/> -->
-                <!-- <SetupProgress Sequence="1020"/> -->
-            </AdminUISequence>
-			<!-- Radio Buttongroup-->
-			
-			<!-- Text Styles-->
+			--><!-- AdminUISequence --><!--
+			<AdminUISequence>
+				<CostFinalize Sequence="1000" />
+				<CostInitialize Sequence="800" />
+				<ExecuteAction Sequence="1300" />
+				<FileCost Sequence="900" />
+				--><!-- <SetupCompleteError Sequence="-3"/> --><!--
+				<InstallFinalize Sequence="1" />
+				<InstallInitialize Sequence="50" />
+				--><!-- <SetupInterrupted Sequence="-2"/> --><!--
+				--><!-- <SetupProgress Sequence="1020"/> --><!--
+			</AdminUISequence>
+			--><!-- Radio Buttongroup--><!--
+
+			--><!-- Text Styles--><!--
 			<TextStyle Id="Arial8"
                FaceName="Arial"
                Size="8" />
@@ -111,130 +1832,130 @@
 					   Blue="0"
 					   Green="0"
 					   Red="255" />
-			
-			
-			<!-- Publish Elements-->
-			<Publish Dialog="AdminChangeFolder"
+
+
+			--><!-- Publish Elements--><!--
+			<Publish Dialog="AdminChangeFolderDlg"
 					 Control="Cancel"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="2"><![CDATA[1]]></Publish>
-			<Publish Dialog="AdminChangeFolder"
+			<Publish Dialog="AdminChangeFolderDlg"
 					 Control="Cancel"
 					 Event="Reset"
 					 Value="0"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="AdminChangeFolder"
+			<Publish Dialog="AdminChangeFolderDlg"
 					 Control="NewFolder"
 					 Event="DirectoryListNew"
 					 Value="0"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="AdminChangeFolder"
+			<Publish Dialog="AdminChangeFolderDlg"
 					 Control="OK"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="AdminChangeFolder"
+			<Publish Dialog="AdminChangeFolderDlg"
 					 Control="OK"
 					 Event="SetTargetPath"
 					 Value="TARGETDIR"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="AdminChangeFolder"
+			<Publish Dialog="AdminChangeFolderDlg"
 					 Control="Up"
 					 Event="DirectoryListUp"
 					 Value="0"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="AdminNetworkLocation"
+			<Publish Dialog="AdminChangeFolderDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="AdminWelcome"
+					 Value="AdminWelcomeDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="AdminNetworkLocation"
+			<Publish Dialog="AdminChangeFolderDlg"
 					 Control="Browse"
 					 Event="SpawnDialog"
-					 Value="AdminChangeFolder"
+					 Value="AdminChangeFolderDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="AdminNetworkLocation"
+			<Publish Dialog="AdminChangeFolderDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="AdminNetworkLocation"
+			<Publish Dialog="AdminChangeFolderDlg"
 					 Control="InstallNow"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="3"><![CDATA[OutOfNoRbDiskSpace <> 1]]></Publish>
-			<Publish Dialog="AdminNetworkLocation"
+			<Publish Dialog="AdminChangeFolderDlg"
 					 Control="InstallNow"
 					 Event="NewDialog"
-					 Value="OutOfSpace"
+					 Value="OutOfSpaceDlg"
 					 Order="2"><![CDATA[OutOfNoRbDiskSpace = 1]]></Publish>
-			<Publish Dialog="AdminNetworkLocation"
+			<Publish Dialog="AdminChangeFolderDlg"
 					 Control="InstallNow"
 					 Event="SetTargetPath"
 					 Value="TARGETDIR"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="AdminWelcome"
+			<Publish Dialog="AdminWelcomeDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="AdminWelcome"
+			<Publish Dialog="AdminWelcomeDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="AdminNetworkLocation"
+					 Value="AdminChangeFolderDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="CancelSetup"
+			<Publish Dialog="CancelSetupDlg"
 					 Control="No"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="CancelSetup"
+			<Publish Dialog="CancelSetupDlg"
 					 Control="Yes"
 					 Event="EndDialog"
 					 Value="Exit"
 					 Order="2"><![CDATA[1]]></Publish>
-			<Publish Dialog="CustomSetup"
+			<Publish Dialog="CustomSetupDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="MaintenanceType"
+					 Value="MaintenanceTypesDlg"
 					 Order="1"><![CDATA[Installed]]></Publish>
-			<Publish Dialog="CustomSetup"
+			<Publish Dialog="CustomSetupDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="SetupType"
+					 Value="SetupTypesDlg"
 					 Order="2"><![CDATA[NOT Installed]]></Publish>
-			<Publish Dialog="CustomSetup"
+			<Publish Dialog="CustomSetupDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="CustomSetup"
+			<Publish Dialog="CustomSetupDlg"
 					 Control="ChangeFolder"
 					 Event="SelectionBrowse"
-					 Value="InstallChangeFolder"
+					 Value="InstallChangeFolderDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="CustomSetup"
+			<Publish Dialog="CustomSetupDlg"
 					 Control="Details"
 					 Event="SelectionBrowse"
 					 Value="DiskSpaceRequirements"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="CustomSetup"
+			<Publish Dialog="CustomSetupDlg"
 					 Control="Help"
 					 Event="SpawnDialog"
 					 Value="CustomSetupTips"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="CustomSetup"
+			<Publish Dialog="CustomSetupDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="OutOfSpace"
+					 Value="OutOfSpaceDlg"
 					 Order="1"><![CDATA[OutOfNoRbDiskSpace = 1]]></Publish>
-			<Publish Dialog="CustomSetup"
+			<Publish Dialog="CustomSetupDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="ReadyToInstall"
+					 Value="ReadyToInstallDlg"
 					 Order="2"><![CDATA[OutOfNoRbDiskSpace <> 1]]></Publish>
-			<Publish Dialog="CustomSetup"
+			<Publish Dialog="CustomSetupDlg"
 					 Control="Next"
 					 Event="[_IsSetupTypeMin]"
 					 Value="Custom"
@@ -244,32 +1965,32 @@
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="CustomerInformation"
+			<Publish Dialog="CustomerInformationDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="InstallWelcome"
+					 Value="InstallWelcomeDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="CustomerInformation"
+			<Publish Dialog="CustomerInformationDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="CustomerInformation"
+			<Publish Dialog="CustomerInformationDlg"
 					 Control="Next"
 					 Event="EndDialog"
 					 Value="Exit"
 					 Order="3"><![CDATA[(SERIALNUMVALRETRYLIMIT) And (SERIALNUMVALRETRYLIMIT<0) And (SERIALNUMVALRETURN<>SERIALNUMVALSUCCESSRETVAL)]]></Publish>
-			<Publish Dialog="CustomerInformation"
+			<Publish Dialog="CustomerInformationDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="SetupType"
+					 Value="SetupTypesDlg"
 					 Order="4"><![CDATA[(Not SERIALNUMVALRETURN) OR (SERIALNUMVALRETURN=SERIALNUMVALSUCCESSRETVAL)]]></Publish>
-			<Publish Dialog="CustomerInformation"
+			<Publish Dialog="CustomerInformationDlg"
 					 Control="Next"
 					 Event="[ALLUSERS]"
 					 Value="1"
 					 Order="1"><![CDATA[ApplicationUsers = "AllUsers" And Privileged]]></Publish>
-			<Publish Dialog="CustomerInformation"
+			<Publish Dialog="CustomerInformationDlg"
 					 Control="Next"
 					 Event="[ALLUSERS]"
 					 Value="{}"
@@ -277,17 +1998,17 @@
 			<Publish Dialog="DatabaseFolder"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="CustomerInformation"
+					 Value="CustomerInformationDlg"
 					 Order="1"><![CDATA[1]]></Publish>
 			<Publish Dialog="DatabaseFolder"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="1"><![CDATA[1]]></Publish>
 			<Publish Dialog="DatabaseFolder"
 					 Control="ChangeFolder"
 					 Event="SpawnDialog"
-					 Value="InstallChangeFolder"
+					 Value="InstallChangeFolderDlg"
 					 Order="1"><![CDATA[1]]></Publish>
 			<Publish Dialog="DatabaseFolder"
 					 Control="ChangeFolder"
@@ -297,563 +2018,563 @@
 			<Publish Dialog="DatabaseFolder"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="SetupType"
+					 Value="SetupTypesDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="DestinationFolder"
+			<Publish Dialog="DestinationFolderDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="CustomerInformation"
+					 Value="CustomerInformationDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="DestinationFolder"
+			<Publish Dialog="DestinationFolderDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="DestinationFolder"
+			<Publish Dialog="DestinationFolderDlg"
 					 Control="ChangeFolder"
 					 Event="SpawnDialog"
-					 Value="InstallChangeFolder"
+					 Value="InstallChangeFolderDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="DestinationFolder"
+			<Publish Dialog="DestinationFolderDlg"
 					 Control="ChangeFolder"
 					 Event="[_BrowseProperty]"
 					 Value="INSTALLDIR"
 					 Order="2"><![CDATA[1]]></Publish>
-			<Publish Dialog="DestinationFolder"
+			<Publish Dialog="DestinationFolderDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="SetupType"
+					 Value="SetupTypesDlg"
 					 Order="0"><![CDATA[1]]></Publish>
 			<Publish Dialog="DiskSpaceRequirements"
 					 Control="OK"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="FilesInUse"
+			<Publish Dialog="FilesInUseDlg"
 					 Control="Exit"
 					 Event="EndDialog"
 					 Value="Exit"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="FilesInUse"
+			<Publish Dialog="FilesInUseDlg"
 					 Control="Ignore"
 					 Event="EndDialog"
 					 Value="Ignore"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="FilesInUse"
+			<Publish Dialog="FilesInUseDlg"
 					 Control="Retry"
 					 Event="EndDialog"
 					 Value="Retry"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="GetServerName"
+			<Publish Dialog="GetServerNameDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="InstallWelcome"
+					 Value="InstallWelcomeDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="GetServerName"
+			<Publish Dialog="GetServerNameDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="GetServerName"
+			<Publish Dialog="GetServerNameDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="SetupType"
+					 Value="SetupTypesDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="InstallChangeFolder"
+			<Publish Dialog="InstallChangeFolderDlg"
 					 Control="Cancel"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="2"><![CDATA[1]]></Publish>
-			<Publish Dialog="InstallChangeFolder"
+			<Publish Dialog="InstallChangeFolderDlg"
 					 Control="Cancel"
 					 Event="Reset"
 					 Value="0"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="InstallChangeFolder"
+			<Publish Dialog="InstallChangeFolderDlg"
 					 Control="NewFolder"
 					 Event="DirectoryListNew"
 					 Value="0"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="InstallChangeFolder"
+			<Publish Dialog="InstallChangeFolderDlg"
 					 Control="OK"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="3"><![CDATA[1]]></Publish>
-			<Publish Dialog="InstallChangeFolder"
+			<Publish Dialog="InstallChangeFolderDlg"
 					 Control="OK"
 					 Event="SetTargetPath"
 					 Value="[_BrowseProperty]"
 					 Order="2"><![CDATA[1]]></Publish>
-			<Publish Dialog="InstallChangeFolder"
+			<Publish Dialog="InstallChangeFolderDlg"
 					 Control="Up"
 					 Event="DirectoryListUp"
 					 Value="0"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="InstallWelcome"
+			<Publish Dialog="InstallWelcomeDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="SplashBitmap"
+					 Value="SplashBitmapDlg"
 					 Order="1"><![CDATA[Display_IsBitmapDlg]]></Publish>
-			<Publish Dialog="InstallWelcome"
+			<Publish Dialog="InstallWelcomeDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="InstallWelcome"
+			<Publish Dialog="InstallWelcomeDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="SetupType"><![CDATA[1]]></Publish>
-			<Publish Dialog="LicenseAgreement"
+					 Value="SetupTypesDlg"><![CDATA[1]]></Publish>
+			<Publish Dialog="LicenseAgreementsDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="InstallWelcome"
+					 Value="InstallWelcomeDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="LicenseAgreement"
+			<Publish Dialog="LicenseAgreementsDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="LicenseAgreement"
+			<Publish Dialog="LicenseAgreementsDlg"
 					 Control="ISPrintButton"
 					 Event="DoAction"
 					 Value="ISPrint"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="LicenseAgreement"
+			<Publish Dialog="LicenseAgreementsDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="CustomerInformation"
-					 Order="0"><![CDATA[AgreeToLicense = "Yes"]]></Publish>
-			<Publish Dialog="MaintenanceType"
+					 Value="CustomerInformationDlg"
+					 Order="0"><![CDATA[AgreeToLicense = "Yes]]></Publish>
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="MaintenanceWelcome"
+					 Value="MaintenanceWelcomesDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="MaintenanceType"
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="MaintenanceType"
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="CustomSetup"
-					 Order="12"><![CDATA[_IsMaintenance = "Change"]]></Publish>
-			<Publish Dialog="MaintenanceType"
+					 Value="CustomSetupDlg"
+					 Order="12"><![CDATA[_IsMaintenance = "Change]]></Publish>
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="ReadyToInstall"
-					 Order="13"><![CDATA[_IsMaintenance = "Reinstall"]]></Publish>
-			<Publish Dialog="MaintenanceType"
+					 Value="ReadyToInstallDlg"
+					 Order="13"><![CDATA[_IsMaintenance = "Reinstall]]></Publish>
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="ReadyToRemove"
-					 Order="11"><![CDATA[_IsMaintenance = "Remove"]]></Publish>
-			<Publish Dialog="MaintenanceType"
+					 Value="ReadyToRemoveDlg"
+					 Order="11"><![CDATA[_IsMaintenance = "Remove]]></Publish>
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Next"
 					 Event="Reinstall"
 					 Value="ALL"
-					 Order="10"><![CDATA[_IsMaintenance = "Reinstall"]]></Publish>
-			<Publish Dialog="MaintenanceType"
+					 Order="10"><![CDATA[_IsMaintenance = "Reinstall]]></Publish>
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Next"
 					 Event="ReinstallMode"
 					 Value="[ReinstallModeText]"
-					 Order="9"><![CDATA[_IsMaintenance = "Reinstall"]]></Publish>
-			<Publish Dialog="MaintenanceType"
+					 Order="9"><![CDATA[_IsMaintenance = "Reinstall]]></Publish>
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Next"
 					 Event="[ProgressType0]"
 					 Value="Modify"
-					 Order="2"><![CDATA[_IsMaintenance = "Change"]]></Publish>
-			<Publish Dialog="MaintenanceType"
+					 Order="2"><![CDATA[_IsMaintenance = "Change]]></Publish>
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Next"
 					 Event="[ProgressType0]"
 					 Value="Repair"
-					 Order="1"><![CDATA[_IsMaintenance = "Reinstall"]]></Publish>
-			<Publish Dialog="MaintenanceType"
+					 Order="1"><![CDATA[_IsMaintenance = "Reinstall]]></Publish>
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Next"
 					 Event="[ProgressType1]"
 					 Value="Modifying"
-					 Order="3"><![CDATA[_IsMaintenance = "Change"]]></Publish>
-			<Publish Dialog="MaintenanceType"
+					 Order="3"><![CDATA[_IsMaintenance = "Change]]></Publish>
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Next"
 					 Event="[ProgressType1]"
 					 Value="Repairing"
-					 Order="4"><![CDATA[_IsMaintenance = "Reinstall"]]></Publish>
-			<Publish Dialog="MaintenanceType"
+					 Order="4"><![CDATA[_IsMaintenance = "Reinstall]]></Publish>
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Next"
 					 Event="[ProgressType2]"
 					 Value="modified"
-					 Order="6"><![CDATA[_IsMaintenance = "Change"]]></Publish>
-			<Publish Dialog="MaintenanceType"
+					 Order="6"><![CDATA[_IsMaintenance = "Change]]></Publish>
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Next"
 					 Event="[ProgressType2]"
 					 Value="repairs"
-					 Order="5"><![CDATA[_IsMaintenance = "Reinstall"]]></Publish>
-			<Publish Dialog="MaintenanceType"
+					 Order="5"><![CDATA[_IsMaintenance = "Reinstall]]></Publish>
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Next"
 					 Event="[ProgressType3]"
 					 Value="modifies"
-					 Order="7"><![CDATA[_IsMaintenance = "Change"]]></Publish>
-			<Publish Dialog="MaintenanceType"
+					 Order="7"><![CDATA[_IsMaintenance = "Change]]></Publish>
+			<Publish Dialog="MaintenanceTypesDlg"
 					 Control="Next"
 					 Event="[ProgressType3]"
 					 Value="repairs"
-					 Order="8"><![CDATA[_IsMaintenance = "Reinstall"]]></Publish>
-			<Publish Dialog="MaintenanceWelcome"
+					 Order="8"><![CDATA[_IsMaintenance = "Reinstall]]></Publish>
+			<Publish Dialog="MaintenanceWelcomesDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="MaintenanceWelcome"
+			<Publish Dialog="MaintenanceWelcomesDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="MaintenanceType"
+					 Value="MaintenanceTypesDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="MsiRMFilesInUse"
+			<Publish Dialog="MsiRMFilesInUseDlg"
 					 Control="Cancel"
 					 Event="EndDialog"
 					 Value="Exit"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="MsiRMFilesInUse"
+			<Publish Dialog="MsiRMFilesInUseDlg"
 					 Control="OK"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="MsiRMFilesInUse"
+			<Publish Dialog="MsiRMFilesInUseDlg"
 					 Control="OK"
 					 Event="RMShutdownAndRestart"
 					 Value="0"
-					 Order="2"><![CDATA[RestartManagerOption="CloseRestart"]]></Publish>
-			<Publish Dialog="OutOfSpace"
+					 Order="2"><![CDATA[RestartManagerOption="CloseRestart]]></Publish>
+			<Publish Dialog="OutOfSpaceDlg"
 					 Control="Resume"
 					 Event="NewDialog"
-					 Value="AdminNetworkLocation"
-					 Order="0"><![CDATA[ACTION = "ADMIN"]]></Publish>
-			<Publish Dialog="OutOfSpace"
+					 Value="AdminChangeFolderDlg"
+					 Order="0"><![CDATA[ACTION = "ADMIN]]></Publish>
+			<Publish Dialog="OutOfSpaceDlg"
 					 Control="Resume"
 					 Event="NewDialog"
-					 Value="CustomSetup"
-					 Order="0"><![CDATA[ACTION <> "ADMIN"]]></Publish>
-			<Publish Dialog="PatchWelcome"
+					 Value="CustomSetupDlg"
+					 Order="0"><![CDATA[ACTION <> "ADMIN]]></Publish>
+			<Publish Dialog="PatchWelcomeDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="SplashBitmap"
+					 Value="SplashBitmapDlg"
 					 Order="1"><![CDATA[Display_IsBitmapDlg]]></Publish>
-			<Publish Dialog="PatchWelcome"
+			<Publish Dialog="PatchWelcomeDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="PatchWelcome"
+			<Publish Dialog="PatchWelcomeDlg"
 					 Control="Next"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="3"><![CDATA[1]]></Publish>
-			<Publish Dialog="PatchWelcome"
+			<Publish Dialog="PatchWelcomeDlg"
 					 Control="Next"
 					 Event="Reinstall"
 					 Value="ALL"
-					 Order="1"><![CDATA[PATCH And REINSTALL=""]]></Publish>
-			<Publish Dialog="PatchWelcome"
+					 Order="1"><![CDATA[PATCH And REINSTALL="]]></Publish>
+			<Publish Dialog="PatchWelcomeDlg"
 					 Control="Next"
 					 Event="ReinstallMode"
 					 Value="omus"
-					 Order="2"><![CDATA[PATCH And REINSTALLMODE=""]]></Publish>
-			<Publish Dialog="ReadyToInstall"
+					 Order="2"><![CDATA[PATCH And REINSTALLMODE="]]></Publish>
+			<Publish Dialog="ReadyToInstallDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="CustomSetup"
-					 Order="2"><![CDATA[Installed OR _IsSetupTypeMin = "Custom"]]></Publish>
-			<Publish Dialog="ReadyToInstall"
+					 Value="CustomSetupDlg"
+					 Order="2"><![CDATA[Installed OR _IsSetupTypeMin = "Custom]]></Publish>
+			<Publish Dialog="ReadyToInstallDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="MaintenanceType"
-					 Order="3"><![CDATA[Installed AND _IsMaintenance = "Reinstall"]]></Publish>
-			<Publish Dialog="ReadyToInstall"
+					 Value="MaintenanceTypesDlg"
+					 Order="3"><![CDATA[Installed AND _IsMaintenance = "Reinstall]]></Publish>
+			<Publish Dialog="ReadyToInstallDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="SetupType"
-					 Order="1"><![CDATA[NOT Installed AND _IsSetupTypeMin <> "Custom"]]></Publish>
-			<Publish Dialog="ReadyToInstall"
+					 Value="SetupTypesDlg"
+					 Order="1"><![CDATA[NOT Installed AND _IsSetupTypeMin <> "Custom]]></Publish>
+			<Publish Dialog="ReadyToInstallDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="ReadyToInstall"
+			<Publish Dialog="ReadyToInstallDlg"
 					 Control="InstallNow"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="1"><![CDATA[OutOfNoRbDiskSpace <> 1]]></Publish>
-			<Publish Dialog="ReadyToInstall"
+			<Publish Dialog="ReadyToInstallDlg"
 					 Control="InstallNow"
 					 Event="NewDialog"
-					 Value="OutOfSpace"
+					 Value="OutOfSpaceDlg"
 					 Order="2"><![CDATA[OutOfNoRbDiskSpace = 1]]></Publish>
-			<Publish Dialog="ReadyToInstall"
+			<Publish Dialog="ReadyToInstallDlg"
 					 Control="InstallNow"
 					 Event="[ProgressType1]"
 					 Value="Installing"
 					 Order="3"><![CDATA[1]]></Publish>
-			<Publish Dialog="ReadyToInstall"
+			<Publish Dialog="ReadyToInstallDlg"
 					 Control="InstallNow"
 					 Event="[ProgressType2]"
 					 Value="installed"
 					 Order="4"><![CDATA[1]]></Publish>
-			<Publish Dialog="ReadyToInstall"
+			<Publish Dialog="ReadyToInstallDlg"
 					 Control="InstallNow"
 					 Event="[ProgressType3]"
 					 Value="installs"
 					 Order="5"><![CDATA[1]]></Publish>
-			<Publish Dialog="ReadyToRemove"
+			<Publish Dialog="ReadyToRemoveDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="MaintenanceType"
+					 Value="MaintenanceTypesDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="ReadyToRemove"
+			<Publish Dialog="ReadyToRemoveDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="ReadyToRemove"
+			<Publish Dialog="ReadyToRemoveDlg"
 					 Control="RemoveNow"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="2"><![CDATA[OutOfNoRbDiskSpace <> 1]]></Publish>
-			<Publish Dialog="ReadyToRemove"
+			<Publish Dialog="ReadyToRemoveDlg"
 					 Control="RemoveNow"
 					 Event="NewDialog"
-					 Value="OutOfSpace"
+					 Value="OutOfSpaceDlg"
 					 Order="2"><![CDATA[OutOfNoRbDiskSpace = 1]]></Publish>
-			<Publish Dialog="ReadyToRemove"
+			<Publish Dialog="ReadyToRemoveDlg"
 					 Control="RemoveNow"
 					 Event="Remove"
 					 Value="ALL"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="ReadyToRemove"
+			<Publish Dialog="ReadyToRemoveDlg"
 					 Control="RemoveNow"
 					 Event="[ProgressType1]"
 					 Value="Uninstalling"
 					 Order="3"><![CDATA[1]]></Publish>
-			<Publish Dialog="ReadyToRemove"
+			<Publish Dialog="ReadyToRemoveDlg"
 					 Control="RemoveNow"
 					 Event="[ProgressType2]"
 					 Value="uninstalled"
 					 Order="4"><![CDATA[1]]></Publish>
-			<Publish Dialog="ReadyToRemove"
+			<Publish Dialog="ReadyToRemoveDlg"
 					 Control="RemoveNow"
 					 Event="[ProgressType3]"
 					 Value="uninstalls"
 					 Order="5"><![CDATA[1]]></Publish>
-			<Publish Dialog="SQLBrowse"
+			<Publish Dialog="SQLBrowseDlg"
 					 Control="Cancel"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="SQLBrowse"
+			<Publish Dialog="SQLBrowseDlg"
 					 Control="OK"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="2"><![CDATA[1]]></Publish>
-			<Publish Dialog="SQLBrowse"
+			<Publish Dialog="SQLBrowseDlg"
 					 Control="OK"
 					 Event="[IS_SQLSERVER_SERVER]"
 					 Value="[IS_SQLSERVER_LIST]"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="SQLLogin"
+			<Publish Dialog="SQLLoginDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="CustomerInformation"
+					 Value="CustomerInformationDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="SQLLogin"
+			<Publish Dialog="SQLLoginDlg"
 					 Control="BtnSQLBrowse"
 					 Event="DoAction"
 					 Value="ISSQLServerList"
 					 Order="2"><![CDATA[1]]></Publish>
-			<Publish Dialog="SQLLogin"
+			<Publish Dialog="SQLLoginDlg"
 					 Control="BtnSQLBrowse"
 					 Event="SpawnDialog"
-					 Value="SQLBrowse"
+					 Value="SQLBrowseDlg"
 					 Order="3"><![CDATA[1]]></Publish>
-			<Publish Dialog="SQLLogin"
+			<Publish Dialog="SQLLoginDlg"
 					 Control="BtnSQLBrowse"
 					 Event="[IS_SQLSERVER_LIST]"
 					 Value="[IS_SQLSERVER_SERVER]"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="SQLLogin"
+			<Publish Dialog="SQLLoginDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="SQLLogin"
+			<Publish Dialog="SQLLoginDlg"
 					 Control="Next"
 					 Event="DoAction"
 					 Value="ISSQLServerValidate"
 					 Order="3"><![CDATA[1]]></Publish>
-			<Publish Dialog="SQLLogin"
+			<Publish Dialog="SQLLoginDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="SetupType"
+					 Value="SetupTypesDlg"
 					 Order="4"><![CDATA[IS_SQLSERVER_STATUS=0]]></Publish>
-			<Publish Dialog="SetupCompleteError"
+			<Publish Dialog="SetupCompleteErrorDlg"
 					 Control="Back"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="2"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupCompleteError"
+			<Publish Dialog="SetupCompleteErrorDlg"
 					 Control="Back"
 					 Event="[Suspend]"
 					 Value="{}"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupCompleteError"
+			<Publish Dialog="SetupCompleteErrorDlg"
 					 Control="Cancel"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="2"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupCompleteError"
+			<Publish Dialog="SetupCompleteErrorDlg"
 					 Control="Cancel"
 					 Event="[Suspend]"
 					 Value="1"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupCompleteError"
+			<Publish Dialog="SetupCompleteErrorDlg"
 					 Control="Finish"
 					 Event="EndDialog"
 					 Value="Exit"
 					 Order="2"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupCompleteSuccess"
+			<Publish Dialog="SetupCompleteSuccessDlg"
 					 Control="OK"
 					 Event="DoAction"
 					 Value="IS_LAUNCH_MY_PROGRAM_PLEASE"><![CDATA[LAUNCHPROGRAM]]></Publish>
-			<Publish Dialog="SetupCompleteSuccess"
+			<Publish Dialog="SetupCompleteSuccessDlg"
 					 Control="OK"
 					 Event="EndDialog"
 					 Value="Exit"
 					 Order="2"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupError"
+			<Publish Dialog="SetupErrorDlg"
 					 Control="A"
 					 Event="EndDialog"
 					 Value="ErrorAbort"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupError"
+			<Publish Dialog="SetupErrorDlg"
 					 Control="C"
 					 Event="EndDialog"
 					 Value="ErrorCancel"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupError"
+			<Publish Dialog="SetupErrorDlg"
 					 Control="I"
 					 Event="EndDialog"
 					 Value="ErrorIgnore"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupError"
+			<Publish Dialog="SetupErrorDlg"
 					 Control="N"
 					 Event="EndDialog"
 					 Value="ErrorNo"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupError"
+			<Publish Dialog="SetupErrorDlg"
 					 Control="O"
 					 Event="EndDialog"
 					 Value="ErrorOk"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupError"
+			<Publish Dialog="SetupErrorDlg"
 					 Control="R"
 					 Event="EndDialog"
 					 Value="ErrorRetry"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupError"
+			<Publish Dialog="SetupErrorDlg"
 					 Control="Y"
 					 Event="EndDialog"
 					 Value="ErrorYes"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupInitialization"
+			<Publish Dialog="SetupInitializationDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupInitialization"
+			<Publish Dialog="SetupInitializationDlg"
 					 Control="Next"
 					 Event="NewDialog"
 					 Value="NoDialog"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupInterrupted"
+			<Publish Dialog="SetupInterruptedDlg"
 					 Control="Back"
 					 Event="EndDialog"
 					 Value="Exit"
 					 Order="2"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupInterrupted"
+			<Publish Dialog="SetupInterruptedDlg"
 					 Control="Back"
 					 Event="[Suspend]"
 					 Value="{}"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupInterrupted"
+			<Publish Dialog="SetupInterruptedDlg"
 					 Control="Cancel"
 					 Event="EndDialog"
 					 Value="Exit"
 					 Order="2"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupInterrupted"
+			<Publish Dialog="SetupInterruptedDlg"
 					 Control="Cancel"
 					 Event="[Suspend]"
 					 Value="1"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupInterrupted"
+			<Publish Dialog="SetupInterruptedDlg"
 					 Control="Finish"
 					 Event="EndDialog"
 					 Value="Exit"
 					 Order="2"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupProgress"
+			<Publish Dialog="SetupProgressDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupResume"
+			<Publish Dialog="SetupResumeDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupResume"
+			<Publish Dialog="SetupResumeDlg"
 					 Control="Next"
 					 Event="EndDialog"
 					 Value="Return"
 					 Order="0"><![CDATA[OutOfNoRbDiskSpace <> 1]]></Publish>
-			<Publish Dialog="SetupResume"
+			<Publish Dialog="SetupResumeDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="OutOfSpace"
+					 Value="OutOfSpaceDlg"
 					 Order="0"><![CDATA[OutOfNoRbDiskSpace = 1]]></Publish>
-			<Publish Dialog="SetupType"
+			<Publish Dialog="SetupTypesDlg"
 					 Control="Back"
 					 Event="NewDialog"
-					 Value="GetServerName"
+					 Value="GetServerNameDlg"
 					 Order="1"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupType"
+			<Publish Dialog="SetupTypesDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="SetupType"
+			<Publish Dialog="SetupTypesDlg"
 					 Control="Next"
 					 Event="AddLocal"
 					 Value="ALL"
-					 Order="0"><![CDATA[_IsSetupTypeMin = "Typical"]]></Publish>
-			<Publish Dialog="SetupType"
+					 Order="0"><![CDATA[_IsSetupTypeMin = "Typical]]></Publish>
+			<Publish Dialog="SetupTypesDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="CustomSetup"
-					 Order="2"><![CDATA[_IsSetupTypeMin = "Custom"]]></Publish>
-			<Publish Dialog="SetupType"
+					 Value="CustomSetupDlg"
+					 Order="2"><![CDATA[_IsSetupTypeMin = "Custom]]></Publish>
+			<Publish Dialog="SetupTypesDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="ReadyToInstall"
-					 Order="1"><![CDATA[_IsSetupTypeMin <> "Custom"]]></Publish>
-			<Publish Dialog="SplashBitmap"
+					 Value="ReadyToInstallDlg"
+					 Order="1"><![CDATA[_IsSetupTypeMin <> "Custom]]></Publish>
+			<Publish Dialog="SplashBitmapDlg"
 					 Control="Cancel"
 					 Event="SpawnDialog"
-					 Value="CancelSetup"
+					 Value="CancelSetupDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			<Publish Dialog="SplashBitmap"
+			<Publish Dialog="SplashBitmapDlg"
 					 Control="Next"
 					 Event="NewDialog"
-					 Value="InstallWelcome"
+					 Value="InstallWelcomeDlg"
 					 Order="0"><![CDATA[1]]></Publish>
-			
-            <!-- Errors -->
+
+			--><!-- Errors --><!--
 			<Error Id="0">!(loc.IdsError0)</Error>
 			<Error Id="1">!(loc.IdsError1)</Error>
 			<Error Id="10">!(loc.IdsError8)</Error>
@@ -1466,6 +3187,6 @@
 			<Error Id="7">!(loc.IdsError5)</Error>
 			<Error Id="8">!(loc.IdsError6)</Error>
 			<Error Id="9">!(loc.IdsError7)</Error>
-        </UI>
+		</UI>-->
     </Fragment>
 </Wix>

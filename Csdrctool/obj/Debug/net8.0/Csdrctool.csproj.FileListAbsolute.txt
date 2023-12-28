@@ -1,0 +1,15 @@
+E:\Personal\CSDRC\Csdrctool\bin\Debug\net8.0\Csdrctool.exe
+E:\Personal\CSDRC\Csdrctool\bin\Debug\net8.0\Csdrctool.deps.json
+E:\Personal\CSDRC\Csdrctool\bin\Debug\net8.0\Csdrctool.runtimeconfig.json
+E:\Personal\CSDRC\Csdrctool\bin\Debug\net8.0\Csdrctool.dll
+E:\Personal\CSDRC\Csdrctool\bin\Debug\net8.0\Csdrctool.pdb
+E:\Personal\CSDRC\Csdrctool\obj\Debug\net8.0\Csdrctool.GeneratedMSBuildEditorConfig.editorconfig
+E:\Personal\CSDRC\Csdrctool\obj\Debug\net8.0\Csdrctool.AssemblyInfoInputs.cache
+E:\Personal\CSDRC\Csdrctool\obj\Debug\net8.0\Csdrctool.AssemblyInfo.cs
+E:\Personal\CSDRC\Csdrctool\obj\Debug\net8.0\Csdrctool.csproj.CoreCompileInputs.cache
+E:\Personal\CSDRC\Csdrctool\obj\Debug\net8.0\Csdrctool.sourcelink.json
+E:\Personal\CSDRC\Csdrctool\obj\Debug\net8.0\Csdrctool.dll
+E:\Personal\CSDRC\Csdrctool\obj\Debug\net8.0\refint\Csdrctool.dll
+E:\Personal\CSDRC\Csdrctool\obj\Debug\net8.0\Csdrctool.pdb
+E:\Personal\CSDRC\Csdrctool\obj\Debug\net8.0\Csdrctool.genruntimeconfig.cache
+E:\Personal\CSDRC\Csdrctool\obj\Debug\net8.0\ref\Csdrctool.dll

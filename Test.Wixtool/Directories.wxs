@@ -2,86 +2,144 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 	<Fragment>
 		<Directory Id="TARGETDIR" Name="SourceDir">
-			<Directory Id="ALLUSERSPROFILE" Name="All Users" />
-			<Directory Id="AdminToolsFolder" Name="AdminTools" />
-			<Directory Id="AppDataFolder" Name="Application Data" />
-			<Directory Id="CommonAppDataFolder" Name="CommonAppData" />
-			<Directory Id="CommonFiles64Folder" Name="Common64" />
+			<Directory Id="ALLUSERSPROFILE" Name="All Users">
+			</Directory>
+			<Directory Id="AdminToolsFolder" Name="AdminTools">
+			</Directory>
+			<Directory Id="AppDataFolder" Name="Application Data">
+			</Directory>
+			<Directory Id="CommonAppDataFolder" Name="CommonAppData">
+			</Directory>
+			<Directory Id="CommonFiles64Folder" Name="Common64">
+			</Directory>
 			<Directory Id="CommonFilesFolder" Name="Common">
-				<Directory Id="ISCommonFilesFolder" Name="Wix">
-					<Directory Id="ISUpdateServiceFolder" Name="UpdateService" />
+				<Directory Id="ISCommonFilesFolder" Name="InstallShield">
+					<Directory Id="ISUpdateServiceFolder" Name="UpdateService">
+					</Directory>
 				</Directory>
 			</Directory>
-			<Directory Id="DesktopFolder" Name="Desktop" />
-			<Directory Id="FavoritesFolder" Name="Favorites" />
-			<Directory Id="FontsFolder" Name="Fonts" />
-			<Directory Id="GlobalAssemblyCache" Name="GlobalAssemblyCache" />
-			<Directory Id="LocalAppDataFolder" Name="LocalAppData" />
-			<Directory Id="MyPicturesFolder" Name="MyPictures" />
-			<Directory Id="NEW_DIRECTORY1" Name="NEW_DIRECTORY1" />
-			<Directory Id="NEW_DIRECTORY10" Name="NEW_DIRECTORY10" />
-			<Directory Id="NEW_DIRECTORY11" Name="NEW_DIRECTORY11" />
-			<Directory Id="NEW_DIRECTORY12" Name="NEW_DIRECTORY12" />
-			<Directory Id="NEW_DIRECTORY13" Name="NEW_DIRECTORY13" />
-			<Directory Id="NEW_DIRECTORY14" Name="NEW_DIRECTORY14" />
-			<Directory Id="NEW_DIRECTORY15" Name="NEW_DIRECTORY15" />
-			<Directory Id="NEW_DIRECTORY16" Name="NEW_DIRECTORY16" />
-			<Directory Id="NEW_DIRECTORY17" Name="NEW_DIRECTORY17" />
-			<Directory Id="NEW_DIRECTORY18" Name="NEW_DIRECTORY18" />
-			<Directory Id="NEW_DIRECTORY19" Name="NEW_DIRECTORY19" />
-			<Directory Id="NEW_DIRECTORY2" Name="NEW_DIRECTORY2" />
-			<Directory Id="NEW_DIRECTORY20" Name="NEW_DIRECTORY20" />
-			<Directory Id="NEW_DIRECTORY21" Name="NEW_DIRECTORY21" />
-			<Directory Id="NEW_DIRECTORY22" Name="NEW_DIRECTORY22" />
-			<Directory Id="NEW_DIRECTORY23" Name="NEW_DIRECTORY23" />
-			<Directory Id="NEW_DIRECTORY3" Name="NEW_DIRECTORY3" />
-			<Directory Id="NEW_DIRECTORY4" Name="NEW_DIRECTORY4" />
-			<Directory Id="NEW_DIRECTORY5" Name="NEW_DIRECTORY5" />
-			<Directory Id="NEW_DIRECTORY6" Name="NEW_DIRECTORY6" />
-			<Directory Id="NEW_DIRECTORY7" Name="NEW_DIRECTORY7" />
-			<Directory Id="NEW_DIRECTORY8" Name="NEW_DIRECTORY8" />
-			<Directory Id="NEW_DIRECTORY9" Name="NEW_DIRECTORY9" />
-			<Directory Id="NIV" Name="niv" />
-			<Directory Id="PersonalFolder" Name="Personal" />
-			<Directory Id="ProgramFiles64Folder" Name="Program Files 64" />
+			<Directory Id="DesktopFolder" Name="Desktop">
+			</Directory>
+			<Directory Id="FavoritesFolder" Name="Favorites">
+			</Directory>
+			<Directory Id="FontsFolder" Name="Fonts">
+			</Directory>
+			<Directory Id="GlobalAssemblyCache" Name="GlobalAssemblyCache">
+			</Directory>
+			<Directory Id="LocalAppDataFolder" Name="LocalAppData">
+			</Directory>
+			<Directory Id="MyPicturesFolder" Name="MyPictures">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY1" Name="NEW_DIRECTORY1">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY10" Name="NEW_DIRECTORY10">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY11" Name="NEW_DIRECTORY11">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY12" Name="NEW_DIRECTORY12">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY13" Name="NEW_DIRECTORY13">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY14" Name="NEW_DIRECTORY14">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY15" Name="NEW_DIRECTORY15">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY16" Name="NEW_DIRECTORY16">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY17" Name="NEW_DIRECTORY17">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY18" Name="NEW_DIRECTORY18">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY19" Name="NEW_DIRECTORY19">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY2" Name="NEW_DIRECTORY2">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY20" Name="NEW_DIRECTORY20">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY21" Name="NEW_DIRECTORY21">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY22" Name="NEW_DIRECTORY22">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY23" Name="NEW_DIRECTORY23">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY3" Name="NEW_DIRECTORY3">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY4" Name="NEW_DIRECTORY4">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY5" Name="NEW_DIRECTORY5">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY6" Name="NEW_DIRECTORY6">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY7" Name="NEW_DIRECTORY7">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY8" Name="NEW_DIRECTORY8">
+			</Directory>
+			<Directory Id="NEW_DIRECTORY9" Name="NEW_DIRECTORY9">
+			</Directory>
+			<Directory Id="NIV" Name="niv">
+			</Directory>
+			<Directory Id="PersonalFolder" Name="Personal">
+			</Directory>
+			<Directory Id="ProgramFiles64Folder" Name="Program Files 64">
+			</Directory>
 			<Directory Id="ProgramFilesFolder" Name="program files">
 				<Directory Id="CSD_SCAN" Name="CSD_Scan">
-					<Directory Id="SCANPROCESS" Name="ScanProcess" />
+					<Directory Id="SCANPROCESS" Name="ScanProcess">
+					</Directory>
 				</Directory>
-				<Directory Id="DEPARTMENT_OF_STATE" Name="Department of State" />
+				<Directory Id="DEPARTMENT_OF_STATE" Name="Department of State">
+				</Directory>
 				<Directory Id="ISMyCompanyDir" Name="My Company Name">
-					<Directory Id="ISMyProductDir" Name="My Product Name" />
+					<Directory Id="ISMyProductDir" Name="My Product Name">
+					</Directory>
 				</Directory>
-				<Directory Id="MY_PRODUCTNAME" Name="CSD Reusable Components">
+				<Directory Id="MY_PRODUCT_NAME" Name="CSD Reusable Components">
 					<Directory Id="INSTALLDIR" Name=".">
-						<Directory Id="ACCOUNTABLE_ITEMS" Name="Accountable Items" />
-						<Directory Id="BIOHAND" Name="BioHand" />
-						<Directory Id="BIOMETRIC" Name="Biometric" />
+						<Directory Id="ACCOUNTABLE_ITEMS" Name="Accountable Items">
+						</Directory>
+						<Directory Id="BIOHAND" Name="BioHand">
+						</Directory>
+						<Directory Id="BIOMETRIC" Name="Biometric">
+						</Directory>
 						<Directory Id="BIOWIN" Name="BioWin">
-							<Directory Id="ACTIVEX" Name="ActiveX" />
+							<Directory Id="ACTIVEX" Name="ActiveX">
+							</Directory>
 						</Directory>
 						<Directory Id="ISYourDataBaseDir" Name="Database">
-							<Directory Id="DATABASEDIR" Name="." />
+							<Directory Id="DATABASEDIR" Name=".">
+							</Directory>
 						</Directory>
-						<Directory Id="XCANONCAM" Name="XCanonCam" />
+						<Directory Id="XCANONCAM" Name="XCanonCam">
+						</Directory>
 					</Directory>
 				</Directory>
 			</Directory>
 			<Directory Id="ProgramMenuFolder" Name="Programs">
 				<Directory Id="depart_1_department_of_state" Name="Department of State">
-					<Directory Id="csdreu_1_csd_reusable_components" Name="CSD Reusable Components" />
+					<Directory Id="csdreu_1_csd_reusable_components" Name="CSD Reusable Components">
+					</Directory>
 				</Directory>
 			</Directory>
-			<Directory Id="SendToFolder" Name="SendTo" />
-			<Directory Id="StartMenuFolder" Name="Start Menu" />
-			<Directory Id="StartupFolder" Name="StartUp" />
-			<Directory Id="System16Folder" Name="System" />
-			<Directory Id="System64Folder" Name="System64" />
-			<Directory Id="SystemFolder" Name="System32" />
-			<Directory Id="TempFolder" Name="Temp" />
-			<Directory Id="TemplateFolder" Name="ShellNew" />
-			<Directory Id="USERPROFILE" Name="UserProfile" />
-			<Directory Id="WindowsFolder" Name="Windows" />
+			<Directory Id="SendToFolder" Name="SendTo">
+			</Directory>
+			<Directory Id="StartMenuFolder" Name="Start Menu">
+			</Directory>
+			<Directory Id="StartupFolder" Name="StartUp">
+			</Directory>
+			<Directory Id="System16Folder" Name="System">
+			</Directory>
+			<Directory Id="System64Folder" Name="System64">
+			</Directory>
+			<Directory Id="SystemFolder" Name="System32">
+			</Directory>
+			<Directory Id="TempFolder" Name="Temp">
+			</Directory>
+			<Directory Id="TemplateFolder" Name="ShellNew">
+			</Directory>
+			<Directory Id="USERPROFILE" Name="UserProfile">
+			</Directory>
+			<Directory Id="WindowsFolder" Name="Windows">
+			</Directory>
 		</Directory>
 	</Fragment>
 	<!--

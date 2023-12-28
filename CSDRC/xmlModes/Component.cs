@@ -30,4 +30,18 @@ public class Component
      public string ISDotNetInstallerArgsUninstall {get;set;}
      [XmlAttribute("ISDotNetInstallerArgsRollback")]
      public string ISDotNetInstallerArgsRollback {get;set;}
+
+    public string GetComponent { get 
+    {
+        return $"<Component\r\nId=\"{Components}\"" +
+            $"\r\nGuid=\"{Guid.NewGuid()}\">";
+    }}
+    public string GetComponentRef
+    {
+        get
+        {
+            return $"<ComponentRef\r\nId=\"{Components}\">";
+        }
+    }
+    public string EndComponent = "</Component>";
 }
