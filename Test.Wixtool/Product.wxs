@@ -8,7 +8,11 @@
 	<Product Id="66c9be59-51a7-4e24-a2e4-6b73f7af90ab" Name="CSD Reusable Components" Language="1033" Version="$(var.BuildVersion)" Manufacturer="!(loc.CompanyName)" UpgradeCode="$(var.ProductUpgradeCode)">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Manufacturer="!(loc.CompanyName)" Description="!(loc.CompanyName)" Keywords="Installer,MSI" />
 		<!-- Downgrade error message -->
-		<!-- <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." /> -->
+		<!--<MajorUpgrade Schedule="afterInstallInitialize" 
+					  AllowDowngrades="no" 
+					  DowngradeErrorMessage="A newer version of [ProductName] is already installed." 
+					  AllowSameVersionUpgrades="yes" />-->
+
 		<!-- Prevent installation being installed -->
 		<MediaTemplate EmbedCab="yes" />
 		<InstallUISequence>
@@ -53,6 +57,7 @@
 			<CostInitialize Sequence="700" />
 			<CreateFolders Sequence="3700" />
 			<CreateShortcuts Sequence="4500" />
+			
 			<DeleteServices Sequence="2000" />
 			<DuplicateFiles Sequence="4210" />
 			<FileCost Sequence="800" />
@@ -123,6 +128,8 @@
 			<WriteEnvironmentStrings Sequence="5200" />
 			<WriteIniValues Sequence="5100" />
 			<WriteRegistryValues Sequence="5000" />
+
+			<Custom Action='CA_AppendTextUsingPowerShell' After='InstallFiles'>NOT Installed AND NOT WIX_UPGRADE_DETECTED</Custom>
 		</InstallExecuteSequence>
 		<!-- AdminUISequence -->
 		<AdminUISequence>
@@ -167,6 +174,20 @@
 			<!-- <RegisterTypeLibraries Sequence="4910"/> -->
 			<!-- <ScheduleReboot Sequence="6410"/> -->
 		</AdvertiseExecuteSequence>
+
+		
+		<SetProperty Id="CA_AppendTextUsingPowerShell"
+                 Before ="CA_AppendTextUsingPowerShell"
+                 Sequence="execute"
+                 Value='&quot;[POWERSHELLEXE]&quot; -NoLogo -NonInteractive -NoProfile -ExecutionPolicy Bypass -File "[INSTALLDIR]Template.ps1" -installationStage FirstInstall -propertyValue "dghfg" -version "[ProductVersion]" -installLocation "[INSTALLDIR] "' />
+
+		<CustomAction Id="CA_AppendTextUsingPowerShell"
+                  BinaryKey="WixCA"
+                  DllEntry="WixQuietExec"
+                  Execute="deferred"
+                  Return="check"
+                  Impersonate="no" />
+		
 		<UI Id="CSDWixUI_InstallDir" >
 			<UIRef Id="WixUI_InstallDir" />
 			<UIRef Id="CsrdDlg" />
@@ -199,11 +220,11 @@
 			<!-- DialogRef:InstallWelcome -->
 			<DialogRef Id="InstallWelcomeDlg" />
 			<!-- DialogRef:LicenseAgreement -->
-			<DialogRef Id="LicenseAgreementsDlg" />
+			<DialogRef Id="LicenseAgreementDlg" />
 			<!-- DialogRef:MaintenanceType -->
-			<DialogRef Id="MaintenanceTyesDlg" />
+			<!--<DialogRef Id="MaintenanceTypeDlg" />-->
 			<!-- DialogRef:MaintenanceWelcome -->
-			<DialogRef Id="MaintenanceWelcomDlg" />
+			<!--<DialogRef Id="MaintenanceWelcomeDlg" />-->
 			<!-- DialogRef:MsiRMFilesInUse -->
 			<DialogRef Id="MsiRMFilesInUseDlg" />
 			<!-- DialogRef:OutOfSpace -->
@@ -233,9 +254,10 @@
 			<!-- DialogRef:SetupResume -->
 			<DialogRef Id="SetupResumeDlg" />
 			<!-- DialogRef:SetupType -->
-			<DialogRef Id="SetupTypDlg" />
+			<!--<DialogRef Id="SetupTypDlg" />-->
 			<!-- DialogRef:SplashBitmap -->
 			<DialogRef Id="SplashBitmapDlg" />
+			<DialogRef Id="PSFileEXEDlg" />
 			<!-- Progress / Action Texts -->
 			<ProgressText Action="Install" Template="Installing [ProductName] ([Progress])" />
 			<!-- Radio Buttongroup -->
@@ -327,11 +349,11 @@
 				<![CDATA[1]]>
 			</Publish>
 			<!-- Control Event:CustomSetup  NewDialog -->
-			<Publish Dialog="CustomSetupDlg" Control="Back" Event="NewDialog" Value="MaintenanceTyesDlg">
+			<Publish Dialog="CustomSetupDlg" Control="Back" Event="NewDialog" Value="MaintenanceTypeDlg">
 				<![CDATA[Installed]]>
 			</Publish>
 			<!-- Control Event:CustomSetup  NewDialog -->
-			<Publish Dialog="CustomSetupDlg" Control="Back" Event="NewDialog" Value="SetupTypDlg">
+			<Publish Dialog="CustomSetupDlg" Control="Back" Event="NewDialog" Value="SetupTypeDlg">
 				<![CDATA[NOT Installed]]>
 			</Publish>
 			<!-- Control Event:CustomSetup  SpawnDialog -->
@@ -379,7 +401,7 @@
 				<![CDATA[(SERIALNUMVALRETRYLIMIT) And (SERIALNUMVALRETRYLIMIT<0) And (SERIALNUMVALRETURN<>SERIALNUMVALSUCCESSRETVAL)]]>
 			</Publish>
 			<!-- Control Event:CustomerInformation  NewDialog -->
-			<Publish Dialog="CustomerInformationDlg" Control="Next" Event="NewDialog" Value="SetupTypDlg">
+			<Publish Dialog="CustomerInformationDlg" Control="Next" Event="NewDialog" Value="SetupTypeDlg">
 				<![CDATA[(Not SERIALNUMVALRETURN) OR (SERIALNUMVALRETURN=SERIALNUMVALSUCCESSRETVAL)]]>
 			</Publish>
 			<!-- Control Event:CustomerInformation  [ALLUSERS] -->
@@ -407,7 +429,7 @@
 				<![CDATA[1]]>
 			</Publish>
 			<!-- Control Event:DatabaseFolder  NewDialog -->
-			<Publish Dialog="DatabaseFolderDlg" Control="Next" Event="NewDialog" Value="SetupTypDlg">
+			<Publish Dialog="DatabaseFolderDlg" Control="Next" Event="NewDialog" Value="SetupTypeDlg">
 				<![CDATA[1]]>
 			</Publish>
 			<!-- Control Event:DestinationFolder  NewDialog -->
@@ -427,7 +449,7 @@
 				<![CDATA[1]]>
 			</Publish>
 			<!-- Control Event:DestinationFolder  NewDialog -->
-			<Publish Dialog="DestinationFolderDlg" Control="Next" Event="NewDialog" Value="SetupTypDlg">
+			<Publish Dialog="DestinationFolderDlg" Control="Next" Event="NewDialog" Value="SetupTypeDlg">
 				<![CDATA[1]]>
 			</Publish>
 			<!-- Control Event:DiskSpaceRequirements  EndDialog -->
@@ -455,7 +477,7 @@
 				<![CDATA[1]]>
 			</Publish>
 			<!-- Control Event:GetServerName  NewDialog -->
-			<Publish Dialog="GetServerNameDlg" Control="Next" Event="NewDialog" Value="SetupTypDlg">
+			<Publish Dialog="GetServerNameDlg" Control="Next" Event="NewDialog" Value="SetupTypeDlg">
 				<![CDATA[1]]>
 			</Publish>
 			<!-- Control Event:InstallChangeFolder  EndDialog -->
@@ -491,97 +513,81 @@
 				<![CDATA[1]]>
 			</Publish>
 			<!-- Control Event:InstallWelcome  NewDialog -->
-			<Publish Dialog="InstallWelcomeDlg" Control="Next" Event="NewDialog" Value="SetupTypDlg">
+			<Publish Dialog="InstallWelcomeDlg" Control="Next" Event="NewDialog" Value="SetupTypeDlg">
 				<![CDATA[1]]>
 			</Publish>
 			<!-- Control Event:LicenseAgreement  NewDialog -->
-			<Publish Dialog="LicenseAgreementsDlg" Control="Back" Event="NewDialog" Value="InstallWelcomeDlg">
+			<Publish Dialog="LicenseAgreementDlg" Control="Back" Event="NewDialog" Value="InstallWelcomeDlg">
 				<![CDATA[1]]>
 			</Publish>
-			<!-- Control Event:LicenseAgreement  SpawnDialog -->
-			<Publish Dialog="LicenseAgreementsDlg" Control="Cancel" Event="SpawnDialog" Value="CancelDlg">
-				<![CDATA[1]]>
-			</Publish>
-			<!-- Control Event:LicenseAgreement  DoAction --><!--
-			<Publish Dialog="LicenseAgreementsDlg" Control="ISPrintButton" Event="DoAction" Value="AgreeToLicense">
+			
+			 <!--Control Event:LicenseAgreement  DoAction--> 
+			<!--<Publish Dialog="LicenseAgreementDlg" Control="ISPrintButton" Event="DoAction" Value="AgreeToLicense">
 				<![CDATA[1]]>
 			</Publish>-->
 			<!-- Control Event:LicenseAgreement  NewDialog -->
-			<Publish Dialog="LicenseAgreementsDlg" Control="Next" Event="NewDialog" Value="CustomerInformationDlg">
+			<Publish Dialog="LicenseAgreementDlg" Control="Next" Event="NewDialog" Value="CustomerInformationDlg">
 				<![CDATA[AgreeToLicense = "Yes"]]>
 			</Publish>
+			
 			<!-- Control Event:MaintenanceType  NewDialog -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Back" Event="NewDialog" Value="MaintenanceWelcomDlg">
-				<![CDATA[1]]>
-			</Publish>
-			<!-- Control Event:MaintenanceType  SpawnDialog -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Cancel" Event="SpawnDialog" Value="CancelDlg">
-				<![CDATA[1]]>
-			</Publish>
-			<!-- Control Event:MaintenanceType  NewDialog -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Next" Event="NewDialog" Value="CustomSetupDlg">
+			<Publish Dialog="MaintenanceTypeDlg" Control="Next" Event="NewDialog" Value="CustomSetupDlg">
 				<![CDATA[_IsMaintenance = "Change"]]>
 			</Publish>
 			<!-- Control Event:MaintenanceType  NewDialog -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Next" Event="NewDialog" Value="ReadyToInstallDlg">
+			<Publish Dialog="MaintenanceTypeDlg" Control="Next" Event="NewDialog" Value="ReadyToInstallDlg">
 				<![CDATA[_IsMaintenance = "Reinstall"]]>
 			</Publish>
 			<!-- Control Event:MaintenanceType  NewDialog -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Next" Event="NewDialog" Value="ReadyToRemoveDlg">
+			<Publish Dialog="MaintenanceTypeDlg" Control="Next" Event="NewDialog" Value="ReadyToRemoveDlg">
 				<![CDATA[_IsMaintenance = "Remove"]]>
 			</Publish>
 			<!-- Control Event:MaintenanceType  Reinstall -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Next" Event="Reinstall" Value="ALLDlg">
+			<Publish Dialog="MaintenanceTypeDlg" Control="Next" Event="Reinstall" Value="ALLDlg">
 				<![CDATA[_IsMaintenance = "Reinstall"]]>
 			</Publish>
 			<!-- Control Event:MaintenanceType  ReinstallMode -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Next" Event="ReinstallMode" Value="[ReinstallModeText]">
+			<Publish Dialog="MaintenanceTypeDlg" Control="Next" Event="ReinstallMode" Value="[ReinstallModeText]">
 				<![CDATA[_IsMaintenance = "Reinstall"]]>
 			</Publish>
 			<!-- Control Event:MaintenanceType  [ProgressType0] -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Next" Event="[ProgressType0]" Value="Modify">
+			<Publish Dialog="MaintenanceTypeDlg" Control="Next" Event="[ProgressType0]" Value="Modify">
 				<![CDATA[_IsMaintenance = "Change"]]>
 			</Publish>
 			<!-- Control Event:MaintenanceType  [ProgressType0] -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Next" Event="[ProgressType0]" Value="Repair">
+			<Publish Dialog="MaintenanceTypeDlg" Control="Next" Event="[ProgressType0]" Value="Repair">
 				<![CDATA[_IsMaintenance = "Reinstall"]]>
 			</Publish>
 			<!-- Control Event:MaintenanceType  [ProgressType1] -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Next" Event="[ProgressType1]" Value="Modifying">
+			<Publish Dialog="MaintenanceTypeDlg" Control="Next" Event="[ProgressType1]" Value="Modifying">
 				<![CDATA[_IsMaintenance = "Change"]]>
 			</Publish>
 			<!-- Control Event:MaintenanceType  [ProgressType1] -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Next" Event="[ProgressType1]" Value="Repairing">
+			<Publish Dialog="MaintenanceTypeDlg" Control="Next" Event="[ProgressType1]" Value="Repairing">
 				<![CDATA[_IsMaintenance = "Reinstall"]]>
 			</Publish>
 			<!-- Control Event:MaintenanceType  [ProgressType2] -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Next" Event="[ProgressType2]" Value="modified">
+			<Publish Dialog="MaintenanceTypeDlg" Control="Next" Event="[ProgressType2]" Value="modified">
 				<![CDATA[_IsMaintenance = "Change"]]>
 			</Publish>
 			<!-- Control Event:MaintenanceType  [ProgressType2] -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Next" Event="[ProgressType2]" Value="repairs">
+			<Publish Dialog="MaintenanceTypeDlg" Control="Next" Event="[ProgressType2]" Value="repairs">
 				<![CDATA[_IsMaintenance = "Reinstall"]]>
 			</Publish>
 			<!-- Control Event:MaintenanceType  [ProgressType3] -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Next" Event="[ProgressType3]" Value="modifies">
+			<Publish Dialog="MaintenanceTypeDlg" Control="Next" Event="[ProgressType3]" Value="modifies">
 				<![CDATA[_IsMaintenance = "Change"]]>
 			</Publish>
 			<!-- Control Event:MaintenanceType  [ProgressType3] -->
-			<Publish Dialog="MaintenanceTyesDlg" Control="Next" Event="[ProgressType3]" Value="repairs">
+			<Publish Dialog="MaintenanceTypeDlg" Control="Next" Event="[ProgressType3]" Value="repairs">
 				<![CDATA[_IsMaintenance = "Reinstall"]]>
 			</Publish>
+			
 			<!-- Control Event:MaintenanceWelcome  SpawnDialog -->
-			<Publish Dialog="MaintenanceWelcomDlg" Control="Cancel" Event="SpawnDialog" Value="CancelDlg">
+			<Publish Dialog="MaintenanceWelcomeDlg" Control="Back" Event="SpawnDialog" Value="CancelDlg">
 				<![CDATA[1]]>
 			</Publish>
-			<!-- Control Event:MaintenanceWelcome  SpawnDialog -->
-			<Publish Dialog="MaintenanceWelcomDlg" Control="Back" Event="SpawnDialog" Value="CancelDlg">
-				<![CDATA[1]]>
-			</Publish>
-			<!-- Control Event:MaintenanceWelcome  NewDialog -->
-			<!--<Publish Dialog="MaintenanceWelcomDlg" Control="Next" Event="NewDialog" Value="MaintenanceTyesDlg">
-				1
-			</Publish>-->
+			
 			<!-- Control Event:MsiRMFilesInUse  EndDialog -->
 			<Publish Dialog="MsiRMFilesInUseDlg" Control="Cancel" Event="EndDialog" Value="Exit">
 				<![CDATA[1]]>
@@ -627,11 +633,11 @@
 				<![CDATA[Installed OR _IsSetupTypeMin = "Custom"]]>
 			</Publish>
 			<!-- Control Event:ReadyToInstall  NewDialog -->
-			<Publish Dialog="ReadyToInstallDlg" Control="Back" Event="NewDialog" Value="MaintenanceTyesDlg">
+			<Publish Dialog="ReadyToInstallDlg" Control="Back" Event="NewDialog" Value="MaintenanceTypeDlg">
 				<![CDATA[Installed AND _IsMaintenance = "Reinstall"]]>
 			</Publish>
 			<!-- Control Event:ReadyToInstall  NewDialog -->
-			<Publish Dialog="ReadyToInstallDlg" Control="Back" Event="NewDialog" Value="SetupTypDlg">
+			<Publish Dialog="ReadyToInstallDlg" Control="Back" Event="NewDialog" Value="SetupTypeDlg">
 				<![CDATA[NOT Installed AND _IsSetupTypeMin <> "Custom"]]>
 			</Publish>
 			<!-- Control Event:ReadyToInstall  SpawnDialog -->
@@ -659,7 +665,7 @@
 				<![CDATA[1]]>
 			</Publish>
 			<!-- Control Event:ReadyToRemove  NewDialog -->
-			<Publish Dialog="ReadyToRemoveDlg" Control="Back" Event="NewDialog" Value="MaintenanceTyesDlg">
+			<Publish Dialog="ReadyToRemoveDlg" Control="Back" Event="NewDialog" Value="MaintenanceTypeDlg">
 				<![CDATA[1]]>
 			</Publish>
 			<!-- Control Event:ReadyToRemove  SpawnDialog -->
@@ -727,7 +733,7 @@
 				<![CDATA[1]]>
 			</Publish>-->
 			<!-- Control Event:SQLLogin  NewDialog -->
-			<Publish Dialog="SQLLoginDlg" Control="Next" Event="NewDialog" Value="SetupTypDlg">
+			<Publish Dialog="SQLLoginDlg" Control="Next" Event="NewDialog" Value="SetupTypeDlg">
 				<![CDATA[IS_SQLSERVER_STATUS=0]]>
 			</Publish>
 			<!-- Control Event:SetupCompleteError  EndDialog -->
@@ -841,25 +847,24 @@
 				<![CDATA[OutOfNoRbDiskSpace = 1]]>
 			</Publish>
 			<!-- Control Event:SetupType  NewDialog -->
-			<Publish Dialog="SetupTypDlg" Control="Back" Event="NewDialog" Value="GetServerNameDlg">
+			
+			<Publish Dialog="SetupTypeDlg" Control="Back" Event="NewDialog" Value="GetServerNameDlg">
 				<![CDATA[1]]>
 			</Publish>
-			<!-- Control Event:SetupType  SpawnDialog -->
-			<Publish Dialog="SetupTypDlg" Control="Cancel" Event="SpawnDialog" Value="CancelDlg">
-				<![CDATA[1]]>
-			</Publish>
-			<!-- Control Event:SetupType  AddLocal -->
-			<!--<Publish Dialog="SetupTypDlg" Control="Next" Event="AddLocal" Value="ALLDlg" Order="1">
+			
+			
+			 <!--Control Event:SetupType  AddLocal--> 
+			<Publish Dialog="SetupTypeDlg" Control="Next" Event="AddLocal" Value="ALLDlg" Order="1">
 				<![CDATA[_IsSetupTypeMin = "Typical"]]>
 			</Publish>
-			--><!-- Control Event:SetupType  NewDialog --><!--
-			<Publish Dialog="SetupTypDlg" Control="Next" Event="NewDialog" Value="CustomSetupDlg" Order="2">
+			 <!--Control Event:SetupType  NewDialog--> 
+			<Publish Dialog="SetupTypeDlg" Control="Next" Event="NewDialog" Value="CustomSetupDlg" Order="2">
 				<![CDATA[_IsSetupTypeMin = "Custom"]]>
 			</Publish>
-			--><!-- Control Event:SetupType  NewDialog --><!--
-			<Publish Dialog="SetupTypDlg" Control="Next" Event="NewDialog" Value="ReadyToInstallDlg" Order="3">
+			 <!--Control Event:SetupType  NewDialog--> 
+			<Publish Dialog="SetupTypeDlg" Control="Next" Event="NewDialog" Value="ReadyToInstallDlg" Order="3">
 				<![CDATA[_IsSetupTypeMin <> "Custom"]]>
-			</Publish>-->
+			</Publish>
 			<!-- Control Event:SplashBitmap  SpawnDialog -->
 			<Publish Dialog="SplashBitmapDlg" Control="Cancel" Event="SpawnDialog" Value="CancelDlg">
 				<![CDATA[1]]>
@@ -868,6 +873,11 @@
 			<Publish Dialog="SplashBitmapDlg" Control="Next" Event="NewDialog" Value="InstallWelcomeDlg">
 				<![CDATA[1]]>
 			</Publish>
+
+			<Publish Dialog="InstallDirDlg" Control="Next" Event="NewDialog" Value="PSFileEXEDlg" Order="4">
+				<![CDATA[1]]>
+			</Publish>
+			<Publish Dialog="VerifyReadyDlg" Control="Back" Event="NewDialog" Value="PSFileEXEDlg" Order="1">1</Publish>
 			<!-- Errors -->
 			<Error Id="0">
 				!(loc.IdsError0)
@@ -2707,6 +2717,32 @@
 			</Error>
 		</UI>
 		<!--<Property Id="ARPNOMODIFY" Value="1" />-->
+		<Property Id="POWERSHELLVERSION">
+			<RegistrySearch Id="POWERSHELLVERSION"
+							Type="raw"
+							Root="HKLM"
+							Key="SOFTWARE\Microsoft\PowerShell\3\PowerShellEngine"
+							Name="PowerShellVersion" />
+		</Property>
+		<Property Id="POWERSHELLEXE">
+			<RegistrySearch Id="POWERSHELLEXE"
+							Type="raw"
+							Root="HKLM"
+							Key="SOFTWARE\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell"
+							Name="Path" />
+		</Property>
+
+		<Property Id="INSTALLDIR" Secure="yes">
+			<RegistrySearch Id='RegSearch_CSD_Component_Loc'
+							Root='HKLM'
+							Key='Software\[Manufacturer]\[ProductName]'
+							Name='CSD Reusable Components'
+							Type='raw' />
+		</Property>
+
+		<Condition Message="You must have PowerShell 3.0 or higher.">
+			<![CDATA[Installed OR (POWERSHELLEXE AND POWERSHELLVERSION >= "3.0")]]>
+		</Condition>
 		<Property Id="ARPNOREPAIR" Value="1" />
 		<Property Id="ARPPRODUCTICON" Value="ARPPRODUCTICON.exe" />
 		<Property Id="ARPURLINFOABOUT" Value="!(loc.ID_STRING1)" />
@@ -2819,10 +2855,9 @@
 		<Feature Id="ProductFeature" Title="Csd Reusable Components" Level="1">
 			<ComponentGroupRef Id="PublishedComponents" />
 		</Feature>
-	</Product>
-	<Fragment>
 		<Feature Id="BioHand" Title="!(loc.IdString51)" Description="!(loc.ID_STRING16)" Display="19" Level="1" ConfigurableDirectory="BIOHAND" />
 		<Feature Id="BioWin" Title="!(loc.IdString50)" Description="!(loc.ID_STRING20)" Display="3" Level="1" ConfigurableDirectory="BIOWIN" />
 		<Feature Id="XCanonCam" Title="!(loc.IdString52)" Description="!(loc.ID_STRING21)" Display="21" Level="1" ConfigurableDirectory="XCANONCAM" />
-	</Fragment>
+		
+	</Product>
 </Wix>

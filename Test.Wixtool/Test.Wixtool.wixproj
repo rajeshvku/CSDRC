@@ -30,6 +30,7 @@
     <EmbeddedResource Include="PathVariables.wxl" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Template.ps1" />
     <Content Include="wixMessags.txt" />
   </ItemGroup>
   <ItemGroup>

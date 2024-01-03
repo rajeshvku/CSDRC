@@ -76,6 +76,7 @@ D:\0_Projects\csd-rc_ui\Source\BiowinActiveX\Release\ScanProcessClient.dll
 E:\APPS\REUsable_Components\XScan\Release\sRGB Color Space Profile.icm
 D:\0_Projects\csd-rc_ui\Source\XScanUIProcess\bin\Release\stdole.dll
 E:\APPS\REUsable_Components\XScan\Release\sysntfy.dll
+Template.ps1
 E:\APPS\REUsable_Components\XCanonCam2\Release\Ucs32P.dll
 E:\APPS\REUsable_Components\Shared Files\VIC32.DLL
 D:\0_Projects\csd-rc\Source\11.XCanonCam2\Release\XCanonCam2.ocx

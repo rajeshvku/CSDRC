@@ -117,6 +117,9 @@
 			</Component>
 		</DirectoryRef>
 		<DirectoryRef Id="INSTALLDIR">
+			<Component Id="cmp_Template_ps1">
+				<File KeyPath="yes" Source="Template.ps1"></File>
+			</Component>
 			<Component Id="ISRegistryComponent" Guid="f2a8c62c-bc16-4e4d-bada-7083f431ae5d">
 				<RegistryValue Root="HKCU" Key="SOFTWARE\CA/EX/CSD\XCanonCam" Name="CropMode" Type="integer" Value="0"  />
 				<RegistryValue Root="HKCU" Key="SOFTWARE\CA/EX/CSD\XCanonCam" Name="CameraAngle" Type="integer" Value="0"  />
@@ -325,6 +328,7 @@
 	</Fragment>
 	<Fragment>
 		<ComponentGroup Id="PublishedComponents">
+			<ComponentRef Id="cmp_Template_ps1" />
 			<ComponentRef Id="ActiveXCtrlHelper.dll" />
 			<!--<ComponentRef Id="AllOtherFiles5" />-->
 			<ComponentRef Id="AxInterop.Biohand3.dll" />

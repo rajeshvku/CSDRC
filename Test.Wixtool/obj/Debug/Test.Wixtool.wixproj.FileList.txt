@@ -1,10 +1,10 @@
+E:\Personal\CSDRC\Test.Wixtool\bin\Debug\en-us\CsdReusableComponents.msi
+E:\Personal\CSDRC\Test.Wixtool\bin\Debug\en-us\CsdReusableComponents.wixpdb
 obj\Debug\Components.wixobj
 obj\Debug\ComponentsGenerated.wixobj
 obj\Debug\Directories.wixobj
 obj\Debug\Product.wixobj
 obj\Debug\UiComponents.wixobj
-E:\Personal\CSDRC\Test.Wixtool\bin\Debug\en-us\CsdReusableComponents.msi
-E:\Personal\CSDRC\Test.Wixtool\bin\Debug\en-us\CsdReusableComponents.wixpdb
 obj\Debug\Test.Wixtool.wixproj.BindContentsFileListen-us.txt
 obj\Debug\Test.Wixtool.wixproj.BindOutputsFileListen-us.txt
 obj\Debug\Test.Wixtool.wixproj.BindBuiltOutputsFileListen-us.txt
