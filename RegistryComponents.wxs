@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+		<!--<ComponentGroup Id="COmCompoenetsFiles" Directory="INSTALLDIR">
+			<Component Id="RegisterComComponent" Guid="0967B5EA-5B51-4919-843A-39D5062F9472">
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2\0">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0">
+					<RegistryValue Type="string" Value="Aware Sequence Check Control" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS\AwSequenceControl.dll" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS\" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\AwSequenceControl.AwSequenceCtrl">
+					<RegistryValue Type="string" Value="AwSequenceCtrl Class" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\AwSequenceControl.AwSequenceCtrl\CLSID">
+					<RegistryValue Type="string" Value="{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\AwSequenceControl.AwSequenceCtrl\CurVer">
+					<RegistryValue Type="string" Value="AwSequenceControl.AwSequenceCtrl.1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\AwSequenceControl.AwSequenceCtrl.1">
+					<RegistryValue Type="string" Value="AwSequenceCtrl Class" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\AwSequenceControl.AwSequenceCtrl.1\CLSID">
+					<RegistryValue Type="string" Value="{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{0190CF1B-1169-49CE-BFF0-BEB35D1E2172}">
+					<RegistryValue Type="string" Value="TPLS.Client.Legacy.TPLSAccessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{0190CF1B-1169-49CE-BFF0-BEB35D1E2172}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{0190CF1B-1169-49CE-BFF0-BEB35D1E2172}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}">
+					<RegistryValue Type="string" Value="" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{0190CF1B-1169-49CE-BFF0-BEB35D1E2172}\InprocServer32">
+					<RegistryValue Type="string" Value="mscoree.dll" />
+					<RegistryValue Name="Class" Type="string" Value="TPLS.Client.Legacy.TPLSAccessor" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Both" />
+					<RegistryValue Name="Assembly" Type="string" Value="TPLS.Client.Legacy.Proxy, Version=!(bind.fileVersion.TPLSCLPGACFile), Culture=neutral, PublicKeyToken=20b3b6f5331c0be1" />
+					<RegistryValue Name="RuntimeVersion" Type="string" Value="v4.0.30319" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{0190CF1B-1169-49CE-BFF0-BEB35D1E2172}\InprocServer32\!(bind.fileVersion.TPLSCLPGACFile)">
+					<RegistryValue Name="RuntimeVersion" Type="string" Value="v4.0.30319" />
+					<RegistryValue Name="Class" Type="string" Value="TPLS.Client.Legacy.TPLSAccessor" />
+					<RegistryValue Name="Assembly" Type="string" Value="TPLS.Client.Legacy.Proxy, Version=!(bind.fileVersion.TPLSCLPGACFile), Culture=neutral, PublicKeyToken=20b3b6f5331c0be1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{0190CF1B-1169-49CE-BFF0-BEB35D1E2172}\ProgId">
+					<RegistryValue Type="string" Value="TPLS.Client.Legacy.TPLSAccessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}">
+					<RegistryValue Type="string" Value="ConnectionManagerEncrypter.CMEncryption" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\ConnectionManagerEncrypter.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}\ProgID">
+					<RegistryValue Type="string" Value="ConnectionManagerEncrypter.CMEncryption" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}\TypeLib">
+					<RegistryValue Type="string" Value="{0DE60305-D719-476C-8C64-74543759B09D}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}\VERSION">
+					<RegistryValue Type="string" Value="1.0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientVerifyOath1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}\ProgID">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientVerifyOath1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}\VERSION">
+					<RegistryValue Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.TPLSRespondClient1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}\ProgID">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.TPLSRespondClient1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}\VERSION">
+					<RegistryValue Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientCaptureTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}\ProgID">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientCaptureTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}\VERSION">
+					<RegistryValue Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.MessageAccessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}\ProgID">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.MessageAccessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}\VERSION">
+					<RegistryValue Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientVerifyTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}\ProgID">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientVerifyTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}\VERSION">
+					<RegistryValue Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}">
+					<RegistryValue Type="string" Value="AwSequenceCtrl Class" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\Control">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS\AwSequenceControl.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\Insertable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\MiscStatus">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\MiscStatus\1">
+					<RegistryValue Type="string" Value="132497" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\ProgID">
+					<RegistryValue Type="string" Value="AwSequenceControl.AwSequenceCtrl.1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\ToolboxBitmap32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS\AwSequenceControl.dll, 101" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\TypeLib">
+					<RegistryValue Type="string" Value="{D1B1E781-AE6E-11D4-8D54-00104B767ABD}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\Version">
+					<RegistryValue Type="string" Value="1.0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\VersionIndependentProgID">
+					<RegistryValue Type="string" Value="AwSequenceControl.AwSequenceCtrl" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientOathFromCap1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}\ProgID">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientOathFromCap1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}\VERSION">
+					<RegistryValue Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientOath1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}\ProgID">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientOath1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}\VERSION">
+					<RegistryValue Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{16CCF681-91A8-4F35-AC44-4875F6497A6F}">
+					<RegistryValue Type="string" Value="_TPLSAccessor0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{16CCF681-91A8-4F35-AC44-4875F6497A6F}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{16CCF681-91A8-4F35-AC44-4875F6497A6F}\TypeLib">
+					<RegistryValue Type="string" Value="{EA7D359B-7C70-4437-A43D-1F55DB5654FD}" />
+					<RegistryValue Name="Version" Type="string" Value="1.0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{2187E57B-ABD6-4136-8670-DB97A6E8D8DF}">
+					<RegistryValue Type="string" Value="ClientOath1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{2187E57B-ABD6-4136-8670-DB97A6E8D8DF}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{2187E57B-ABD6-4136-8670-DB97A6E8D8DF}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{2187E57B-ABD6-4136-8670-DB97A6E8D8DF}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+					<RegistryValue Name="Version" Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{598CE009-438B-420A-BB65-AFB2D618B3A0}">
+					<RegistryValue Type="string" Value="ClientCaptureTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{598CE009-438B-420A-BB65-AFB2D618B3A0}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{598CE009-438B-420A-BB65-AFB2D618B3A0}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{598CE009-438B-420A-BB65-AFB2D618B3A0}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+					<RegistryValue Name="Version" Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{6B83903A-4A6A-43EB-8FE6-367D5F60F8BA}">
+					<RegistryValue Type="string" Value="TPLSRespondClient1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{6B83903A-4A6A-43EB-8FE6-367D5F60F8BA}\Forward">
+					<RegistryValue Type="string" Value="{EBE55CE4-EE45-4719-A704-54D9E4F3F5B2}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{6B83903A-4A6A-43EB-8FE6-367D5F60F8BA}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{6B83903A-4A6A-43EB-8FE6-367D5F60F8BA}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{8639D3F7-A086-421E-8590-BA919543EFB9}">
+					<RegistryValue Type="string" Value="ClientCaptureTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{8639D3F7-A086-421E-8590-BA919543EFB9}\Forward">
+					<RegistryValue Type="string" Value="{598CE009-438B-420A-BB65-AFB2D618B3A0}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{8639D3F7-A086-421E-8590-BA919543EFB9}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{8639D3F7-A086-421E-8590-BA919543EFB9}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{96FF46FB-7E8B-4CB8-9E43-9505C4041408}">
+					<RegistryValue Type="string" Value="_TPLSClient0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{96FF46FB-7E8B-4CB8-9E43-9505C4041408}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{96FF46FB-7E8B-4CB8-9E43-9505C4041408}\TypeLib">
+					<RegistryValue Type="string" Value="{EA7D359B-7C70-4437-A43D-1F55DB5654FD}" />
+					<RegistryValue Name="Version" Type="string" Value="1.0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{9E8C016B-F2E5-4C40-968F-A99A6BA27811}">
+					<RegistryValue Type="string" Value="ClientVerifyTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{9E8C016B-F2E5-4C40-968F-A99A6BA27811}\Forward">
+					<RegistryValue Type="string" Value="{FE44FB45-E1AC-438F-B6E5-2DCA0DE7D0D7}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{9E8C016B-F2E5-4C40-968F-A99A6BA27811}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{9E8C016B-F2E5-4C40-968F-A99A6BA27811}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{9EE9951C-0B27-4214-B772-C776DBA13D2D}">
+					<RegistryValue Type="string" Value="CMEncryption" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{9EE9951C-0B27-4214-B772-C776DBA13D2D}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{9EE9951C-0B27-4214-B772-C776DBA13D2D}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{9EE9951C-0B27-4214-B772-C776DBA13D2D}\TypeLib">
+					<RegistryValue Type="string" Value="{0DE60305-D719-476C-8C64-74543759B09D}" />
+					<RegistryValue Name="Version" Type="string" Value="1.0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{B5CDBF5A-334D-40B7-8931-E3121FA2E34B}">
+					<RegistryValue Type="string" Value="ClientOathFromCap1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{B5CDBF5A-334D-40B7-8931-E3121FA2E34B}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{B5CDBF5A-334D-40B7-8931-E3121FA2E34B}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{B5CDBF5A-334D-40B7-8931-E3121FA2E34B}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+					<RegistryValue Name="Version" Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{CC67D2F7-CB61-49EB-B60F-69C887FD69B7}">
+					<RegistryValue Type="string" Value="_TPLSServer0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{CC67D2F7-CB61-49EB-B60F-69C887FD69B7}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{CC67D2F7-CB61-49EB-B60F-69C887FD69B7}\TypeLib">
+					<RegistryValue Type="string" Value="{EA7D359B-7C70-4437-A43D-1F55DB5654FD}" />
+					<RegistryValue Name="Version" Type="string" Value="1.0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{D1B1E78D-AE6E-11D4-8D54-00104B767ABD}">
+					<RegistryValue Type="string" Value="IAwSequenceCtrl" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{D1B1E78D-AE6E-11D4-8D54-00104B767ABD}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{D1B1E78D-AE6E-11D4-8D54-00104B767ABD}\TypeLib">
+					<RegistryValue Type="string" Value="{D1B1E781-AE6E-11D4-8D54-00104B767ABD}" />
+					<RegistryValue Name="Version" Type="string" Value="1.0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{E8199EB8-E42A-4F49-8633-6A92B9388807}">
+					<RegistryValue Type="string" Value="MessageAccessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{E8199EB8-E42A-4F49-8633-6A92B9388807}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{E8199EB8-E42A-4F49-8633-6A92B9388807}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{E8199EB8-E42A-4F49-8633-6A92B9388807}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+					<RegistryValue Name="Version" Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{E8B5F578-7F9B-4174-9EA5-F578701C8D92}">
+					<RegistryValue Type="string" Value="ClientVerifyOath1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{E8B5F578-7F9B-4174-9EA5-F578701C8D92}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{E8B5F578-7F9B-4174-9EA5-F578701C8D92}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{E8B5F578-7F9B-4174-9EA5-F578701C8D92}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+					<RegistryValue Name="Version" Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{EBE55CE4-EE45-4719-A704-54D9E4F3F5B2}">
+					<RegistryValue Type="string" Value="TPLSRespondClient1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{EBE55CE4-EE45-4719-A704-54D9E4F3F5B2}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{EBE55CE4-EE45-4719-A704-54D9E4F3F5B2}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{EBE55CE4-EE45-4719-A704-54D9E4F3F5B2}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+					<RegistryValue Name="Version" Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{FE44FB45-E1AC-438F-B6E5-2DCA0DE7D0D7}">
+					<RegistryValue Type="string" Value="ClientVerifyTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{FE44FB45-E1AC-438F-B6E5-2DCA0DE7D0D7}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{FE44FB45-E1AC-438F-B6E5-2DCA0DE7D0D7}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Interface\{FE44FB45-E1AC-438F-B6E5-2DCA0DE7D0D7}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+					<RegistryValue Name="Version" Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Record\{5FE43388-2232-4AAC-A3EB-E7DDC87AEA64}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Record\{5FE43388-2232-4AAC-A3EB-E7DDC87AEA64}\!(bind.fileVersion.TPLSCLPGACFile)">
+					<RegistryValue Name="Class" Type="string" Value="TPLS.Common.Types.ServerNotification" />
+					<RegistryValue Name="RuntimeVersion" Type="string" Value="v4.0.30319" />
+					<RegistryValue Name="Assembly" Type="string" Value="TPLS.Common.Types, Version=!(bind.fileVersion.TPLSCLPGACFile), Culture=neutral, PublicKeyToken=20b3b6f5331c0be1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Record\{9783CED9-8805-4915-8E1C-8924479C4048}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\Record\{9783CED9-8805-4915-8E1C-8924479C4048}\!(bind.fileVersion.TPLSCLPGACFile)">
+					<RegistryValue Name="Assembly" Type="string" Value="TPLS.Common.Types, Version=!(bind.fileVersion.TPLSCLPGACFile), Culture=neutral, PublicKeyToken=20b3b6f5331c0be1" />
+					<RegistryValue Name="Class" Type="string" Value="TPLS.Common.Types.ClientNotification" />
+					<RegistryValue Name="RuntimeVersion" Type="string" Value="v4.0.30319" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLS.Client.Legacy.TPLSAccessor">
+					<RegistryValue Type="string" Value="TPLS.Client.Legacy.TPLSAccessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLS.Client.Legacy.TPLSAccessor\CLSID">
+					<RegistryValue Type="string" Value="{0190CF1B-1169-49CE-BFF0-BEB35D1E2172}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLSPayloadProcessor.ClientCaptureTPLS1">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientCaptureTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLSPayloadProcessor.ClientCaptureTPLS1\Clsid">
+					<RegistryValue Type="string" Value="{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLSPayloadProcessor.ClientOath1">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientOath1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLSPayloadProcessor.ClientOath1\Clsid">
+					<RegistryValue Type="string" Value="{DA02102A-8545-4158-9D9C-13151EA375BB}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLSPayloadProcessor.ClientOathFromCap1">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientOathFromCap1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLSPayloadProcessor.ClientOathFromCap1\Clsid">
+					<RegistryValue Type="string" Value="{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLSPayloadProcessor.ClientVerifyOath1">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientVerifyOath1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLSPayloadProcessor.ClientVerifyOath1\Clsid">
+					<RegistryValue Type="string" Value="{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLSPayloadProcessor.ClientVerifyTPLS1">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientVerifyTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLSPayloadProcessor.ClientVerifyTPLS1\Clsid">
+					<RegistryValue Type="string" Value="{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLSPayloadProcessor.MessageAccessor">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.MessageAccessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLSPayloadProcessor.MessageAccessor\Clsid">
+					<RegistryValue Type="string" Value="{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLSPayloadProcessor.TPLSRespondClient1">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.TPLSRespondClient1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TPLSPayloadProcessor.TPLSRespondClient1\Clsid">
+					<RegistryValue Type="string" Value="{299D74DE-3E56-4AF7-A863-630126CB29DA}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0">
+					<RegistryValue Type="string" Value="ConnectionManagerEncrypter" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\ConnectionManagerEncrypter.dll" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0">
+					<RegistryValue Type="string" Value="TPLS_Client_Legacy_Proxy" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLS.Client.Legacy.Proxy.tlb" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0">
+					<RegistryValue Type="string" Value="TPLS_Common_Types" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLS.Common.Types.tlb" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2\0">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0">
+					<RegistryValue Type="string" Value="Aware Sequence Check Control" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS\AwSequenceControl.dll" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS\" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0">
+					<RegistryValue Type="string" Value="TPLS_Client_Legacy_Interface" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLS.Client.Legacy.Interface.tlb" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{0190CF1B-1169-49CE-BFF0-BEB35D1E2172}">
+					<RegistryValue Type="string" Value="TPLS.Client.Legacy.TPLSAccessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{0190CF1B-1169-49CE-BFF0-BEB35D1E2172}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{0190CF1B-1169-49CE-BFF0-BEB35D1E2172}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}">
+					<RegistryValue Type="string" Value="" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{0190CF1B-1169-49CE-BFF0-BEB35D1E2172}\InprocServer32">
+					<RegistryValue Type="string" Value="mscoree.dll" />
+					<RegistryValue Name="Class" Type="string" Value="TPLS.Client.Legacy.TPLSAccessor" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Both" />
+					<RegistryValue Name="Assembly" Type="string" Value="TPLS.Client.Legacy.Proxy, Version=!(bind.fileVersion.TPLSCLPGACFile), Culture=neutral, PublicKeyToken=20b3b6f5331c0be1" />
+					<RegistryValue Name="RuntimeVersion" Type="string" Value="v4.0.30319" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{0190CF1B-1169-49CE-BFF0-BEB35D1E2172}\InprocServer32\!(bind.fileVersion.TPLSCLPGACFile)">
+					<RegistryValue Name="RuntimeVersion" Type="string" Value="v4.0.30319" />
+					<RegistryValue Name="Class" Type="string" Value="TPLS.Client.Legacy.TPLSAccessor" />
+					<RegistryValue Name="Assembly" Type="string" Value="TPLS.Client.Legacy.Proxy, Version=!(bind.fileVersion.TPLSCLPGACFile), Culture=neutral, PublicKeyToken=20b3b6f5331c0be1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{0190CF1B-1169-49CE-BFF0-BEB35D1E2172}\ProgId">
+					<RegistryValue Type="string" Value="TPLS.Client.Legacy.TPLSAccessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}">
+					<RegistryValue Type="string" Value="ConnectionManagerEncrypter.CMEncryption" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\ConnectionManagerEncrypter.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}\ProgID">
+					<RegistryValue Type="string" Value="ConnectionManagerEncrypter.CMEncryption" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}\TypeLib">
+					<RegistryValue Type="string" Value="{0DE60305-D719-476C-8C64-74543759B09D}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{1F2D7109-673B-4217-B64C-782CB3860DC1}\VERSION">
+					<RegistryValue Type="string" Value="1.0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientVerifyOath1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}\ProgID">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientVerifyOath1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{22B0CE1D-E4A7-43F7-AB58-9E086F267F80}\VERSION">
+					<RegistryValue Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.TPLSRespondClient1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}\ProgID">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.TPLSRespondClient1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{299D74DE-3E56-4AF7-A863-630126CB29DA}\VERSION">
+					<RegistryValue Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientCaptureTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}\ProgID">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientCaptureTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{3C3E8E9C-2788-40C4-9DB1-E17F5CA244C5}\VERSION">
+					<RegistryValue Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.MessageAccessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}\ProgID">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.MessageAccessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{B97490F6-BB52-4DCB-A8D7-2DF85EF4A8FE}\VERSION">
+					<RegistryValue Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientVerifyTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}\ProgID">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientVerifyTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{BEF93215-F590-4C14-A0DD-3A5BC86EC2D9}\VERSION">
+					<RegistryValue Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}">
+					<RegistryValue Type="string" Value="AwSequenceCtrl Class" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\Control">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS\AwSequenceControl.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\Insertable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\MiscStatus">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\MiscStatus\1">
+					<RegistryValue Type="string" Value="132497" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\ProgID">
+					<RegistryValue Type="string" Value="AwSequenceControl.AwSequenceCtrl.1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\ToolboxBitmap32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS\AwSequenceControl.dll, 101" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\TypeLib">
+					<RegistryValue Type="string" Value="{D1B1E781-AE6E-11D4-8D54-00104B767ABD}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\Version">
+					<RegistryValue Type="string" Value="1.0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D1B1E78E-AE6E-11D4-8D54-00104B767ABD}\VersionIndependentProgID">
+					<RegistryValue Type="string" Value="AwSequenceControl.AwSequenceCtrl" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientOathFromCap1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}\ProgID">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientOathFromCap1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{D5BC2618-933E-4A6F-8BDF-6F13AC260D37}\VERSION">
+					<RegistryValue Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientOath1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}\Implemented Categories">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}\Implemented Categories\{40FC6ED5-2438-11CF-A3DB-080036F12502}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}\InprocServer32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+					<RegistryValue Name="ThreadingModel" Type="string" Value="Apartment" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}\ProgID">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor.ClientOath1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}\Programmable">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\CLSID\{DA02102A-8545-4158-9D9C-13151EA375BB}\VERSION">
+					<RegistryValue Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{16CCF681-91A8-4F35-AC44-4875F6497A6F}">
+					<RegistryValue Type="string" Value="_TPLSAccessor0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{16CCF681-91A8-4F35-AC44-4875F6497A6F}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{16CCF681-91A8-4F35-AC44-4875F6497A6F}\TypeLib">
+					<RegistryValue Type="string" Value="{EA7D359B-7C70-4437-A43D-1F55DB5654FD}" />
+					<RegistryValue Name="Version" Type="string" Value="1.0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{2187E57B-ABD6-4136-8670-DB97A6E8D8DF}">
+					<RegistryValue Type="string" Value="ClientOath1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{2187E57B-ABD6-4136-8670-DB97A6E8D8DF}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{2187E57B-ABD6-4136-8670-DB97A6E8D8DF}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{2187E57B-ABD6-4136-8670-DB97A6E8D8DF}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+					<RegistryValue Name="Version" Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{598CE009-438B-420A-BB65-AFB2D618B3A0}">
+					<RegistryValue Type="string" Value="ClientCaptureTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{598CE009-438B-420A-BB65-AFB2D618B3A0}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{598CE009-438B-420A-BB65-AFB2D618B3A0}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{598CE009-438B-420A-BB65-AFB2D618B3A0}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+					<RegistryValue Name="Version" Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{6B83903A-4A6A-43EB-8FE6-367D5F60F8BA}">
+					<RegistryValue Type="string" Value="TPLSRespondClient1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{6B83903A-4A6A-43EB-8FE6-367D5F60F8BA}\Forward">
+					<RegistryValue Type="string" Value="{EBE55CE4-EE45-4719-A704-54D9E4F3F5B2}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{6B83903A-4A6A-43EB-8FE6-367D5F60F8BA}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{6B83903A-4A6A-43EB-8FE6-367D5F60F8BA}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{8639D3F7-A086-421E-8590-BA919543EFB9}">
+					<RegistryValue Type="string" Value="ClientCaptureTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{8639D3F7-A086-421E-8590-BA919543EFB9}\Forward">
+					<RegistryValue Type="string" Value="{598CE009-438B-420A-BB65-AFB2D618B3A0}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{8639D3F7-A086-421E-8590-BA919543EFB9}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{8639D3F7-A086-421E-8590-BA919543EFB9}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{96FF46FB-7E8B-4CB8-9E43-9505C4041408}">
+					<RegistryValue Type="string" Value="_TPLSClient0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{96FF46FB-7E8B-4CB8-9E43-9505C4041408}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{96FF46FB-7E8B-4CB8-9E43-9505C4041408}\TypeLib">
+					<RegistryValue Type="string" Value="{EA7D359B-7C70-4437-A43D-1F55DB5654FD}" />
+					<RegistryValue Name="Version" Type="string" Value="1.0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{9E8C016B-F2E5-4C40-968F-A99A6BA27811}">
+					<RegistryValue Type="string" Value="ClientVerifyTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{9E8C016B-F2E5-4C40-968F-A99A6BA27811}\Forward">
+					<RegistryValue Type="string" Value="{FE44FB45-E1AC-438F-B6E5-2DCA0DE7D0D7}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{9E8C016B-F2E5-4C40-968F-A99A6BA27811}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{9E8C016B-F2E5-4C40-968F-A99A6BA27811}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{9EE9951C-0B27-4214-B772-C776DBA13D2D}">
+					<RegistryValue Type="string" Value="CMEncryption" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{9EE9951C-0B27-4214-B772-C776DBA13D2D}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{9EE9951C-0B27-4214-B772-C776DBA13D2D}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{9EE9951C-0B27-4214-B772-C776DBA13D2D}\TypeLib">
+					<RegistryValue Type="string" Value="{0DE60305-D719-476C-8C64-74543759B09D}" />
+					<RegistryValue Name="Version" Type="string" Value="1.0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{B5CDBF5A-334D-40B7-8931-E3121FA2E34B}">
+					<RegistryValue Type="string" Value="ClientOathFromCap1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{B5CDBF5A-334D-40B7-8931-E3121FA2E34B}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{B5CDBF5A-334D-40B7-8931-E3121FA2E34B}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{B5CDBF5A-334D-40B7-8931-E3121FA2E34B}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+					<RegistryValue Name="Version" Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{CC67D2F7-CB61-49EB-B60F-69C887FD69B7}">
+					<RegistryValue Type="string" Value="_TPLSServer0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{CC67D2F7-CB61-49EB-B60F-69C887FD69B7}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{CC67D2F7-CB61-49EB-B60F-69C887FD69B7}\TypeLib">
+					<RegistryValue Type="string" Value="{EA7D359B-7C70-4437-A43D-1F55DB5654FD}" />
+					<RegistryValue Name="Version" Type="string" Value="1.0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{D1B1E78D-AE6E-11D4-8D54-00104B767ABD}">
+					<RegistryValue Type="string" Value="IAwSequenceCtrl" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{D1B1E78D-AE6E-11D4-8D54-00104B767ABD}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{D1B1E78D-AE6E-11D4-8D54-00104B767ABD}\TypeLib">
+					<RegistryValue Type="string" Value="{D1B1E781-AE6E-11D4-8D54-00104B767ABD}" />
+					<RegistryValue Name="Version" Type="string" Value="1.0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{E8199EB8-E42A-4F49-8633-6A92B9388807}">
+					<RegistryValue Type="string" Value="MessageAccessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{E8199EB8-E42A-4F49-8633-6A92B9388807}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{E8199EB8-E42A-4F49-8633-6A92B9388807}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{E8199EB8-E42A-4F49-8633-6A92B9388807}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+					<RegistryValue Name="Version" Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{E8B5F578-7F9B-4174-9EA5-F578701C8D92}">
+					<RegistryValue Type="string" Value="ClientVerifyOath1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{E8B5F578-7F9B-4174-9EA5-F578701C8D92}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{E8B5F578-7F9B-4174-9EA5-F578701C8D92}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{E8B5F578-7F9B-4174-9EA5-F578701C8D92}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+					<RegistryValue Name="Version" Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{EBE55CE4-EE45-4719-A704-54D9E4F3F5B2}">
+					<RegistryValue Type="string" Value="TPLSRespondClient1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{EBE55CE4-EE45-4719-A704-54D9E4F3F5B2}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{EBE55CE4-EE45-4719-A704-54D9E4F3F5B2}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{EBE55CE4-EE45-4719-A704-54D9E4F3F5B2}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+					<RegistryValue Name="Version" Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{FE44FB45-E1AC-438F-B6E5-2DCA0DE7D0D7}">
+					<RegistryValue Type="string" Value="ClientVerifyTPLS1" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{FE44FB45-E1AC-438F-B6E5-2DCA0DE7D0D7}\ProxyStubClsid">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{FE44FB45-E1AC-438F-B6E5-2DCA0DE7D0D7}\ProxyStubClsid32">
+					<RegistryValue Type="string" Value="{00020424-0000-0000-C000-000000000046}" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\Interface\{FE44FB45-E1AC-438F-B6E5-2DCA0DE7D0D7}\TypeLib">
+					<RegistryValue Type="string" Value="{B9D83DEC-D744-48AC-912D-44DE16AE65B4}" />
+					<RegistryValue Name="Version" Type="string" Value="2.2" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0">
+					<RegistryValue Type="string" Value="ConnectionManagerEncrypter" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\ConnectionManagerEncrypter.dll" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0">
+					<RegistryValue Type="string" Value="TPLS_Client_Legacy_Proxy" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLS.Client.Legacy.Proxy.tlb" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0">
+					<RegistryValue Type="string" Value="TPLS_Common_Types" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLS.Common.Types.tlb" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0">
+					<RegistryValue Type="string" Value="TPLS_Client_Legacy_Interface" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLS.Client.Legacy.Interface.tlb" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\WOW6432Node\TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\ConnectionManagerEncrypter.CMEncryption">
+					<RegistryValue Type="string" Value="ConnectionManagerEncrypter.CMEncryption" />
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="SOFTWARE\Classes\ConnectionManagerEncrypter.CMEncryption\Clsid">
+					<RegistryValue Type="string" Value="{1F2D7109-673B-4217-B64C-782CB3860DC1}" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}">
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2">
+					<RegistryValue Type="string" Value="TPLSPayloadProcessor" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2\0">
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLSPayloadProcessor.dll" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{B9D83DEC-D744-48AC-912D-44DE16AE65B4}\2.2\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}">
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0">
+					<RegistryValue Type="string" Value="Aware Sequence Check Control" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS\AwSequenceControl.dll" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{D1B1E781-AE6E-11D4-8D54-00104B767ABD}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS\" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}">
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0">
+					<RegistryValue Type="string" Value="ConnectionManagerEncrypter" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\ConnectionManagerEncrypter.dll" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{0DE60305-D719-476C-8C64-74543759B09D}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}">
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0">
+					<RegistryValue Type="string" Value="TPLS_Common_Types" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLS.Common.Types.tlb" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{B9C417F1-7830-46DA-A3DB-FE5F824A3958}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}">
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0">
+					<RegistryValue Type="string" Value="TPLS_Client_Legacy_Proxy" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLS.Client.Legacy.Proxy.tlb" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{29989407-DE65-42CA-88EE-719B8D7EFDC9}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}">
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0">
+					<RegistryValue Type="string" Value="TPLS_Client_Legacy_Interface" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0\0">
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0\0\win32">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client\TPLS.Client.Legacy.Interface.tlb" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0\FLAGS">
+					<RegistryValue Type="string" Value="0" />
+				</RegistryKey>
+				<RegistryKey Root="HKCR" Key="TypeLib\{EA7D359B-7C70-4437-A43D-1F55DB5654FD}\1.0\HELPDIR">
+					<RegistryValue Type="string" Value="C:\Program Files (x86)\Department of State\TPLS_Client" />
+				</RegistryKey>
+			</Component>
+		</ComponentGroup>-->
+	</Fragment>
+</Wix>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+	 xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+	<Fragment>
+		
+		<ComponentGroup Id="InstallDirFiles" Directory="INSTALLDIR">
+			<Component Id="MicrosoftServiceComp" Guid="95BF3F99-B72C-47FB-9D97-81016C92B5B9">
+				<File Id="msvcr71File"
+					  Name="msvcr71.dll"
+					  Source="!(loc.TPLSCOREFiles)\msvcr71.dll"
+					  KeyPath="yes"/>
+			</Component>
+			
+			<Component Id="TPLSAccessorKey" Guid="FD2CEE4A-B5E6-47A3-93C5-FEF2CD58CAAE">
+				<RegistryKey Root="HKLM" Key="Software\Classes\TPLS.Client.Legacy.TPLSAccessor">
+					<RegistryValue Type="string"
+								   Value="TPLS.Client.Legacy.TPLSAccessor"/>
+				</RegistryKey>
+				<RegistryKey Root="HKLM" Key="Software\Classes\TPLS.Client.Legacy.TPLSAccessor\CLSID">
+					<RegistryValue Type="string"
+								   Value="0190CF1B-1169-49CE-BFF0-BEB35D1E2172"/>
+				</RegistryKey>
+				
+			</Component>
+			
+			
+
+			<Component Id="ImpCatgoKeys" Guid="*">
+				<RegistryKey Root="HKLM"
+							 Key="Software\Classes\CLSID\0190CF1B-1169-49CE-BFF0-BEB35D1E2172\Implemented Categories\62C8FE65-4EBB-45E7-B440-6E39B2CDBF29">
+					<RegistryValue Type="string" Value=" "/>
+				</RegistryKey>
+			</Component>
+				
+			<Component Id="ClientCommunicationsKey">
+				<RegistryKey Root="HKLM" Key="Software\Department of State\TPLS\Orchestration.ClientCommunications.Server\ExecutionPath">
+					<RegistryValue Name="!(bind.fileVersion.TPLSCLPGACFile)"
+								   Type="string"
+								   Value="[INSTALLDIR]TPLS\\TPLS.Orchestration.ClientCommunications.Server.exe"/>
+				</RegistryKey>
+			</Component>
+			
+			
+			<Component Id="Record5FEKeys">
+				<RegistryKey Root="HKLM" Key="Software\Classes\Record\5FE43388-2232-4AAC-A3EB-E7DDC87AEA64\!(bind.fileVersion.TPLSCLPGACFile)">
+					<RegistryValue Name="Class" Type="string" Value="TPLS.Common.Types.ServerNotification"/>
+					<RegistryValue Name="RuntimeVersion" Type="string" Value="v2.0.50727"/>
+					<RegistryValue Name="Assembly" Type="string" Value="TPLS.Common.Types, Version=!(bind.fileVersion.TPLSCLPGACFile), Culture=neutral, PublicKeyToken=20b3b6f5331c0be1"/>
+				</RegistryKey>
+			</Component>
+			
+			<Component Id="Record9783CKeys">
+				<RegistryKey Root="HKLM" Key="Software\Classes\Record\9783CED9-8805-4915-8E1C-8924479C4048\!(bind.fileVersion.TPLSCLPGACFile)">
+					<RegistryValue Name="Assembly" Type="string" Value="TPLS.Common.Types, Version=!(bind.fileVersion.TPLSCLPGACFile), Culture=neutral, PublicKeyToken=20b3b6f5331c0be1"/>
+					<RegistryValue Name="Class" Type="string" Value="TPLS.Common.Types.ClientNotification"/>
+					<RegistryValue Name="RuntimeVersion" Type="string" Value="v2.0.50727"/>
+				</RegistryKey>
+			</Component>
+
+			<Component Id="ConnectionMngKey" Guid="*">
+				<RegistryKey Root="HKLM"
+							 Key="Software\Department Of State\Connection Manager">
+					<RegistryValue Name="ID"
+								   Type="string"
+								   Value="ThisisTheKey"/>
+				</RegistryKey>
+			</Component>
+
+			<Component Id="TNSPOSTDBRegKey">
+				<RegistryKey Root="HKLM" Key="Software\Department of State\General Configuration">
+					<RegistryValue Name="TNSName"  Type="string" Value="[VPOSTDBTNS]"/>
+				</RegistryKey>
+			</Component>
+			<Component Id="CLICOMKeys">
+				<RegistryKey Root="HKLM" Key="Software\Department of State\TPLS\Client.Legacy.Proxy\CommunicationPath">
+					<RegistryValue Name="!(bind.fileVersion.TPLSCLPGACFile)" Type="string" Value="[INSTALLDIR]TPLS\TPLS.Orchestration.ClientCommunications.dll"/>
+				</RegistryKey>
+			</Component>
+			
+			
+		</ComponentGroup>
+		<ComponentGroup Id="GacComponents" Directory="GAC">
+			<Component Id="Acogent_Gac" Guid="2c455870-d9d0-4138-a6bd-9bf435bfbf75">
+				<File Id="strongName.Interop.ACogentGac"
+					  Name="StrongName.Interop.ACogent.dll"
+					  Source="!(loc.TPLSPAYLOADPKGFiles)\StrongName.Interop.ACogent.dll"
+					  KeyPath="yes"
+					  Assembly=".net"/>
+			</Component>
+			<Component Id="ConnectionManagerEncrypterGACComp" Guid="cbc8c63f-fca2-4f7a-8525-c2adf4d2d313">
+				<File Id="ConnectionManagerEncrypterGACFile"
+					  Name="StrongName.Interop.ConnectionManagerEncrypter.dll"
+					  Source="!(loc.TPLSPAYLOADPKGFiles)\StrongName.Interop.ConnectionManagerEncrypter.dll"
+					  KeyPath="yes"
+					  ProcessorArchitecture="msil"
+					  Assembly=".net" />
+			</Component>
+			<Component Id="IObjectSafetyTLBGACComp" Guid="9b7ab825-098b-4139-b039-0f085f5df439" >
+				<File Id="iObjectSafetyTLBGACFile"
+					  Name="IObjectSafetyTLB.dll"
+					  Source="!(loc.TPLSPAYLOADPKGFiles)\IObjectSafetyTLB.dll"
+					  KeyPath="yes"
+					  ProcessorArchitecture="msil"
+					  Assembly=".net"/>
+			</Component>
+			<Component Id="TPLSCIGACComp" Guid="f1fa4ba9-2b8d-48ed-8bac-b113b8082c67">
+				<File Id="TPLSCIGACFile"
+					  Name="TPLS.Client.Interfaces.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Client.Interfaces.dll"
+					  KeyPath="yes" 
+					  Assembly=".net" />
+			</Component>
+			<Component Id="TPLSCLIGACComp" Guid="5f46c42d-f9b6-4558-8ba2-ce9ecf27f030">
+				<File Id="TPLSCLIGACFile"
+					  Name="TPLS.Client.Legacy.Interface.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Client.Legacy.Interface.dll"
+					  KeyPath="yes"
+					  Assembly=".net" />
+			</Component>
+			<Component Id="TPLSCLPGACComp" Guid="8368170b-e8f3-4d58-9266-ce6c14367e98">
+				<File Id="TPLSCLPGACFile"
+					  Name="TPLS.Client.Legacy.Proxy.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Client.Legacy.Proxy.dll"
+					  KeyPath="yes"
+					  Assembly=".net"
+					  ProcessorArchitecture="msil">
+
+				</File>
+			</Component>
+			
+			<Component Id="TPLSCDIGACComp" Guid="34025238-9128-42cf-9161-6c9dc38e78ae">
+				<File Id="TPLSCDIGACFile"
+					  Name="TPLS.Common.Data.Interfaces.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Common.Data.Interfaces.dll"
+					  KeyPath="yes"
+					  Assembly=".net" />
+			</Component>
+			<Component Id="TPLS.Common.Data.Types.dll" Guid="e68f804e-64d0-4ad3-b22b-d9474091afc3">
+				<File Id="tPLS.Common.Data.Types"
+					  Name="TPLS.Common.Data.Types.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Common.Data.Types.dll"
+					  KeyPath="yes" 
+					  Assembly=".net"  />
+			</Component>
+			<Component Id="TPLS.Common.Exceptions.Types.dll" Guid="636639ef-58bb-4482-86f6-a1da856693db">
+				<File Id="tPLS.Common.Exceptions.Types"
+					  Name="TPLS.Common.Exceptions.Types.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Common.Exceptions.Types.dll" 
+					  KeyPath="yes"
+					  Assembly=".net" />
+			</Component>
+			<Component Id="TPLSCTGACComp" Guid="a1b2a1e7-269f-4aca-b93e-948f5baa4c00">
+				<File Id="TPLSCTGACFile" 
+					  Name="TPLS.Common.Types.dll" 
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Common.Types.dll"
+					  KeyPath="yes" 
+					  Assembly=".net" />
+			</Component>
+			<Component Id="TPLS.Common.Utilities.dll" Guid="27d25c74-570a-422f-b7d0-213fd4d55a12">
+				<File Id="tPLS.Common.Utilities"
+					  Name="TPLS.Common.Utilities.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Common.Utilities.dll"
+					  KeyPath="yes" 
+					  Assembly=".net"/>
+			</Component>
+			<Component Id="TPLS.DataAccess.DataSets.dll" Guid="fbeffa89-a0c9-48b5-9baf-48e5071dee19">
+				<File Id="tPLS.DataAccess.DataSets"
+					  Name="TPLS.DataAccess.DataSets.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.DataAccess.DataSets.dll"
+					 
+					  KeyPath="yes" Assembly=".net" />
+			</Component>
+			<Component Id="TPLS.Hardware.FingerScanners.Interfaces.dll" Guid="29a50464-1a36-44d8-ad35-4ab17da754ec">
+				<File Id="tPLS.Hardware.FingerScanners.Interfaces" Name="TPLS.Hardware.FingerScanners.Interfaces.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Hardware.FingerScanners.Interfaces.dll"
+					 
+					  KeyPath="yes" Assembly=".net" />
+			</Component>
+			<Component Id="TPLS.Orchestration.ClientCommunications.Interfaces.dll" Guid="384663d2-7581-491e-b354-4997853a42db">
+				<File Id="tPLS.Orchestration.ClientCommunications.Interfaces" Name="TPLS.Orchestration.ClientCommunications.Interfaces.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Orchestration.ClientCommunications.Interfaces.dll"
+					 
+					  KeyPath="yes" Assembly=".net" />
+			</Component>
+			<Component Id="TPLS.Orchestration.Driver.Interfaces.dll" Guid="3c91adaf-db08-483e-a424-50fb764632c5">
+				<File Id="tPLS.Orchestration.Driver.Interfaces" Name="TPLS.Orchestration.Driver.Interfaces.dll"
+					 
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Orchestration.Driver.Interfaces.dll" 
+					  KeyPath="yes" Assembly=".net" />
+			</Component>
+			<Component Id="StrongName.Interop.TPLSPayloadProcessor.dll" Guid="1a0941f7-1a38-4bd6-a7e4-ac3856eb26f1">
+				<File Id="strongName.Interop.TPLSPayloadProcessor"
+					 
+					  Name="StrongName.Interop.TPLSPayloadProcessor.dll"
+					  Source="!(loc.TPLSPAYLOADPKGFiles)\StrongName.Interop.TPLSPayloadProcessor.dll" KeyPath="yes"
+					  ProcessorArchitecture="msil"
+					  Assembly=".net" />
+			</Component>
+		</ComponentGroup>
+		<!-- TPLS CLient Files -->
+		<ComponentGroup Id="TPLSClientComponents" Directory="TPLSCLIENTDIR">
+			<Component Id="ClientCaptureTPLS1.xsd" Guid="032c1076-b71c-4d87-a834-c2565800df39">
+				<File Id="clientCaptureTPLS1" Name="ClientCaptureTPLS1.xsd" Source="!(loc.TPLSPAYLOADPKGFiles)\ClientCaptureTPLS1.xsd" KeyPath="yes" />
+			</Component>
+			<Component Id="ClientOathFromCaptureTPLS1.xsd" Guid="29807e34-f8b3-4846-bd72-a393a18261f1">
+				<File Id="clientOathFromCaptureTPLS1" Name="ClientOathFromCaptureTPLS1.xsd" Source="!(loc.TPLSPAYLOADPKGFiles)\ClientOathFromCaptureTPLS1.xsd" KeyPath="yes" />
+			</Component>
+			<Component Id="ClientOathTPLS1.xsd" Guid="1aed434a-a635-4757-b3c0-bd1786b6b1a5">
+				<File Id="clientOathTPLS1" Name="ClientOathTPLS1.xsd" Source="!(loc.TPLSPAYLOADPKGFiles)\ClientOathTPLS1.xsd" KeyPath="yes" />
+			</Component>
+			<Component Id="ClientVerifyOathTPLS1.xsd" Guid="289f76a8-b895-476d-bf37-9539b79a0925">
+				<File Id="clientVerifyOathTPLS1" Name="ClientVerifyOathTPLS1.xsd" Source="!(loc.TPLSPAYLOADPKGFiles)\ClientVerifyOathTPLS1.xsd" KeyPath="yes" />
+			</Component>
+			<Component Id="ClientVerifyTPLS1.xsd" Guid="267e51b7-9be3-4b16-beae-8ee91877a422">
+				<File Id="clientVerifyTPLS1" Name="ClientVerifyTPLS1.xsd" Source="!(loc.TPLSPAYLOADPKGFiles)\ClientVerifyTPLS1.xsd" KeyPath="yes" />
+			</Component>
+			<Component Id="TPLS.Common.Data.dll" Guid="7e443a66-b5cc-493e-8306-8841b72b67e8">
+				<File Id="tPLS.Common.Data" Name="TPLS.Common.Data.dll" Source="!(loc.CLIENTLEGACYFiles)\TPLS.Common.Data.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="Interop.ACogent_File" Guid="27837322-c590-48ea-9f42-4aea88140dbc">
+				<File Id="ACogentFil" Name="StrongName.Interop.ACogent.dll"
+					  Source="!(loc.TPLSPAYLOADPKGFiles)\StrongName.Interop.ACogent.dll" />
+			</Component>
+			<Component Id="ConnectionManagerEncrypter_File" Guid="5953f8c9-db1b-4d4a-81d0-85b7c1e81633">
+				<File Id="ConnectionManagerEncrypterFil" 
+					  Name="StrongName.Interop.ConnectionManagerEncrypter.dll" 
+					  Source="!(loc.TPLSPAYLOADPKGFiles)\StrongName.Interop.ConnectionManagerEncrypter.dll" />
+			</Component>
+			<Component Id="CompStrongName.Interop.TPLSPayloadProcessor.dll" Guid="15dfd2c6-676e-4bd9-b9a4-e16e3aa95040">
+				<File Id="FilstrongName.Interop.TPLSPayloadProcessor" 
+					  Name="StrongName.Interop.TPLSPayloadProcessor.dll" 
+					  Source="!(loc.TPLSPAYLOADPKGFiles)\StrongName.Interop.TPLSPayloadProcessor.dll" />
+			</Component>
+			<Component Id="CompTPLS.Client.Interfaces.dll" Guid="53e28eca-dfae-4319-9178-c856b0193f1c">
+				<File Id="FiletPLS.Client.Interfaces" Name="TPLS.Client.Interfaces.dll" Source="!(loc.CLIENTLEGACYFiles)\TPLS.Client.Interfaces.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CompTPLS.Common.Data.Interfaces.dll" Guid="c34a48fa-6ab0-4f39-8449-1ada675eb9cd">
+				<File Id="FiletPLS.Common.Data.Interfaces"
+					  Name="TPLS.Common.Data.Interfaces.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Common.Data.Interfaces.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CompTPLS.Common.Data.Types.dll" Guid="fea083f0-2367-413b-a2c9-f0f97c03f712">
+				<File Id="FiletPLS.Common.Data.Types" Name="TPLS.Common.Data.Types.dll" Source="!(loc.CLIENTLEGACYFiles)\TPLS.Common.Data.Types.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CompTPLS.Common.Exceptions.Types.dll" Guid="1cb833c2-e389-4bd6-a433-9731d5ee3801">
+				<File Id="FiletPLS.Common.Exceptions.Types" Name="TPLS.Common.Exceptions.Types.dll" Source="!(loc.CLIENTLEGACYFiles)\TPLS.Common.Exceptions.Types.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CompTPLS.Common.Utilities.dll" Guid="7dfd0fc9-af02-4e0a-b8ce-be01e8031cfa">
+				<File Id="FiletPLS.Common.Utilities" Name="TPLS.Common.Utilities.dll" Source="!(loc.CLIENTLEGACYFiles)\TPLS.Common.Utilities.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CompTPLS.DataAccess.DataSets.dll" Guid="18c5ad9d-1c3d-47ed-b801-005c8b5b45d8">
+				<File Id="FiletPLS.DataAccess.DataSets"
+					  Name="TPLS.DataAccess.DataSets.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.DataAccess.DataSets.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CompTPLS.Hardware.FingerScanners.Interfaces.dll" Guid="c77666de-69ae-48af-9770-24d4cbe77f7b">
+				<File Id="FiletPLS.Hardware.FingerScanners.Interfaces" Name="TPLS.Hardware.FingerScanners.Interfaces.dll" Source="!(loc.CLIENTLEGACYFiles)\TPLS.Hardware.FingerScanners.Interfaces.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CompTPLS.Orchestration.ClientCommunications.Interfaces.dll" Guid="ea698fc9-e75d-4417-a7e9-2654fe47cafd">
+				<File Id="FiletPLS.Orchestration.ClientCommunications.Interfaces" Name="TPLS.Orchestration.ClientCommunications.Interfaces.dll" Source="!(loc.CLIENTLEGACYFiles)\TPLS.Orchestration.ClientCommunications.Interfaces.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CompTPLS.Orchestration.Driver.Interfaces.dll" Guid="4a671beb-b2d0-472e-bb95-296d2059ab88">
+				<File Id="FiletPLS.Orchestration.Driver.Interfaces" 
+					  Name="TPLS.Orchestration.Driver.Interfaces.dll" 
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Orchestration.Driver.Interfaces.dll" />
+			</Component>
+			<Component Id="TPLSRespondClient1.xsd" Guid="bb4d83bc-3fad-44e5-a746-27060c8cee68">
+				<File Id="tPLSRespondClient1" Name="TPLSRespondClient1.xsd" Source="!(loc.TPLSPAYLOADPKGFiles)\TPLSRespondClient1.xsd" KeyPath="yes" />
+			</Component>
+			<Component Id="CompTlbFiles" Guid="5d054f04-1dac-4f33-b72b-77a63e78af06">
+				<File Id="tCLItlb" Name="TPLS.Client.Legacy.Interface.tlb" Source="!(loc.TPLSCOREFiles)\TPLS.Client.Legacy.Interface.tlb" />
+				<File Id="tCLPtlb" Name="TPLS.Client.Legacy.Proxy.tlb" Source="!(loc.TPLSCOREFiles)\TPLS.Client.Legacy.Proxy.tlb"/>
+				<File Id="tCTtlb" Name="TPLS.Common.Types.tlb" Source="!(loc.TPLSCOREFiles)\TPLS.Common.Types.tlb"/>
+			</Component>
+			
+		</ComponentGroup>
+		<ComponentGroup Id="AssemblyTPLSCLientFiles" Directory="TPLSCLIENTDIR">
+			<Component Id="ConnectionManagerEncrypter.dll" Guid="0b90a565-697a-4b3b-b124-7618e5177f5b">
+				<File Id="connectionManagerEncrypter"
+					  Name="ConnectionManagerEncrypter.dll"
+					  Source="!(loc.TPLSPAYLOADPKGFiles)\ConnectionManagerEncrypter.dll"
+					  KeyPath="yes" SelfRegCost="1"  />
+				
+			</Component>
+			<Component Id="CompIObjectSafetyTLB.dll" Guid="88b54acf-79b6-42d2-955d-a8f5fbf28508" >
+				<File Id="FileiObjectSafetyTLB"
+					  Name="IObjectSafetyTLB.dll"
+					  Source="!(loc.TPLSPAYLOADPKGFiles)\IObjectSafetyTLB.dll" />
+			</Component>
+			<Component Id="CompTPLS.Client.Legacy.Interfaces.dll" Guid="06cce6b8-3c0e-44db-829d-0c71b0ac21e9">
+				<File Id="FiletPLS.Client.Legacy.Interfaces" Name="TPLS.Client.Legacy.Interface.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Client.Legacy.Interface.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CompTPLS.Client.Legacy.Proxy.dll" Guid="ed7c31cf-7758-4bce-9136-5a729f65a481">
+				<File Id="FiletPLS.Client.Legacy.Proxy" Name="TPLS.Client.Legacy.Proxy.dll" Source="!(loc.CLIENTLEGACYFiles)\TPLS.Client.Legacy.Proxy.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CompTPLS.Common.Types.dll" Guid="381d85ab-3414-423d-8b9c-e20539a11c81">
+				<File Id="FiletPLS.Common.Types" Name="TPLS.Common.Types.dll" Source="!(loc.CLIENTLEGACYFiles)\TPLS.Common.Types.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="TPLS.Orchestration.ClientCommunications.dll" Guid="ae220086-7377-47a5-a141-20f8a97bf0dd">
+				<File Id="tPLS.Orchestration.ClientCommunications"
+					  Name="TPLS.Orchestration.ClientCommunications.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Orchestration.ClientCommunications.dll"
+					  KeyPath="yes" />
+				
+			</Component>
+			<Component Id="TPLSPayloadProcessor.dll" Guid="50a9667a-1213-45ec-8e14-2ab13c726c45">
+				<File Id="tPLSPayloadProcessor" Name="TPLSPayloadProcessor.dll" Source="!(loc.TPLSPAYLOADPKGFiles)\TPLSPayloadProcessor.dll" KeyPath="yes" SelfRegCost="1" />
+			</Component>
+			
+		</ComponentGroup>
+		<!-- Scan Control Binary  Components SCANCTRLPKGFiles -->
+		<ComponentGroup Id="SCANCTRLComponents" Directory="SCANCTRLBINARIESDIR">
+			<Component Id="AdvButton.DLL" Guid="d1df0ff6-5e78-49b9-b09d-100052fafb0f">
+				<File Id="AdvButtonFile" Name="AdvButton.DLL" Source="!(loc.SCANCTRLPKGFiles)\AdvButton.DLL" KeyPath="yes" />
+			</Component>
+			<Component Id="CM_F2S_Sequencer.dll" Guid="e12ecec3-d7aa-406b-8d5e-05aa053be2ba">
+				<File Id="CM_F2S_SequencerFile" Name="CM_F2S_Sequencer.dll" Source="!(loc.SCANCTRLPKGFiles)\CM_F2S_Sequencer.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="CM_F2S_Services.dll" Guid="4827c5db-a487-455a-bd7d-2a356acf45f5">
+				<File Id="CM_F2S_ServicesFile" Name="CM_F2S_Services.dll" Source="!(loc.SCANCTRLPKGFiles)\CM_F2S_Services.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="Java_EventSink.dll" Guid="4939b58e-46c2-4851-8c6a-db07bb0b0e98">
+				<File Id="Java_EventSinkFile" Name="Java_EventSink.dll" Source="!(loc.SCANCTRLPKGFiles)\Java_EventSink.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="ls2.info" Guid="109dd535-bd6a-4063-8d81-15c9ef0bb579">
+				<File Id="ls2File" Name="ls2.info" Source="!(loc.SCANCTRLPKGFiles)\ls2.info" KeyPath="yes" />
+			</Component>
+		</ComponentGroup>
+		<!-- Platforms Files  Components PLATFORMSPKGFiles -->
+		<ComponentGroup Id="PLATFORMComponents" Directory="PLATFORMSDIR">
+			<Component Id="qwindows.dll" Guid="32751eb4-5a73-40aa-89d9-b567f7bc2947">
+				<File Id="qwindowsFile" Name="qwindows.dll" Source="!(loc.PLATFORMSPKGFiles)\qwindows.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="qwindowsd.dll" Guid="fe8f4a37-c106-41ed-ac3a-2b142b1dc11b">
+				<File Id="qwindowsdFile" Name="qwindowsd.dll" Source="!(loc.PLATFORMSPKGFiles)\qwindowsd.dll" KeyPath="yes" />
+			</Component>
+		</ComponentGroup>
+		<!-- CMT442 File  Components CMT442PKGFiles -->
+		<ComponentGroup Id="CMT442Components" Directory="CMT442DIR">
+			<Component Id="CM_F2SControl.dll" Guid="dc733864-1547-47e3-bd2e-49fc5012c6ed">
+				<File Id = "CM_F2SControlFile" Name ="CM_F2SControl.dll" Source ="!(loc.CMT442PKGFiles)\CM_F2SControl.dll" KeyPath ="yes" />
+			</Component>
+			<Component Id="CM_F2S_Calibration.dll" Guid="7b689d13-a251-439d-983a-8ade7f89dd3b">
+				<File Id = "CM_F2S_CalibrationFile" Name ="CM_F2S_Calibration.dll" Source ="!(loc.CMT442PKGFiles)\CM_F2S_Calibration.dll" KeyPath ="yes" />
+			</Component>
+			<Component Id="CM_F2S_LiveMode.dll" Guid="50dfa4ea-7fd8-47a5-b5f7-dec90c971a19">
+				<File Id = "CM_F2S_LiveModeFile" Name ="CM_F2S_LiveMode.dll" Source ="!(loc.CMT442PKGFiles)\CM_F2S_LiveMode.dll" KeyPath ="yes" />
+			</Component>
+			<Component Id="CM_F2S_MagStripe.dll" Guid="826c4ad7-88a0-481f-b1e5-5ae2a463dc1d">
+				<File Id = "CM_F2S_MagStripeFile" Name ="CM_F2S_MagStripe.dll" Source ="!(loc.CMT442PKGFiles)\CM_F2S_MagStripe.dll" KeyPath ="yes" />
+			</Component>
+			<Component Id="CM_F2S_Scanner.dll" Guid="f5a3fa56-ce90-4ec7-a797-c0601c15780f">
+				<File Id = "CM_F2S_ScannerFile" Name ="CM_F2S_Scanner.dll" Source ="!(loc.CMT442PKGFiles)\CM_F2S_Scanner.dll" KeyPath ="yes" />
+			</Component>
+			<Component Id="CM_PrintProcessing1.dll" Guid="5e425efc-e5d4-447f-aa14-698097502ed6">
+				<File Id = "CM_PrintProcessing1File" Name ="CM_PrintProcessing1.dll" Source ="!(loc.CMT442PKGFiles)\CM_PrintProcessing1.dll" KeyPath ="yes" />
+			</Component>
+			<Component Id="id500.info" Guid="595ec5c8-b719-400b-9740-39cd3b3a8e79">
+				<File Id = "id500File" Name ="id500.info" Source ="!(loc.CMT442PKGFiles)\id500.info" KeyPath ="yes" />
+			</Component>
+		</ComponentGroup>
+		<!-- CrossMatch USB Win10  Components LSSCANUSBPKGFiles -->
+		<ComponentGroup Id="LSSCANUSBComponents" Directory="CRWIN10DIR">
+			<Component Id="LSCANUsb.sys" Guid="8d7e6686-f942-42ae-af61-abe874d6fbad">
+				<File Id = "LSCANUsbFile" Name ="LSCANUsb.sys" Source ="!(loc.LSSCANUSBPKGFiles)\LSCANUsb.sys" KeyPath ="yes" />
+			</Component>
+			<Component Id="LSCANUsbamd64.sys" Guid="8aa9c641-2d70-49d1-9437-695313b33f4e">
+				<File Id = "LSCANUsbamd64File" Name ="LSCANUsbamd64.sys" Source ="!(loc.LSSCANUSBPKGFiles)\LSCANUsbamd64.sys" KeyPath ="yes" />
+			</Component>
+			<Component Id="LS_usb_cmt.cat" Guid="b9ef892a-a50f-4b13-b393-a2c2c3c12b36">
+				<File Id = "LS_usb_cmtFile" Name ="LS_usb_cmt.cat" Source ="!(loc.LSSCANUSBPKGFiles)\LS_usb_cmt.cat" KeyPath ="yes" />
+			</Component>
+			<Component Id="LS_usb_cmt.inf" Guid="ddc698f8-a232-4d1d-b1c5-e4d847fc58c0">
+				<File Id = "LS_usb_cmtFiles" Name ="LS_usb_cmt.inf" Source ="!(loc.LSSCANUSBPKGFiles)\LS_usb_cmt.inf" KeyPath ="yes" />
+			</Component>
+		</ComponentGroup>
+		<!-- L1_TP4100 USB Win10  Components L1_TP4100PKGFiles -->
+		<ComponentGroup Id="LTP4Components" Directory="LTPWIN10DIR">
+			<Component Id="idusb.cat" Guid="4431bf25-a770-4929-b361-b0f757ac2f74">
+				<File Id = "idusbCFile" Name ="idusb.cat" Source ="!(loc.L1_TP4100PKGFiles)\idusb.cat" KeyPath ="yes" />
+			</Component>
+			<Component Id="idUsb.inf" Guid="e505ed64-5cb6-42cd-9cb7-734a24304883">
+				<File Id = "idUsbIFile" Name ="idUsb.inf" Source ="!(loc.L1_TP4100PKGFiles)\idUsb.inf" KeyPath ="yes" />
+			</Component>
+			<Component Id="idUsb.sys" Guid="1e8fcec7-dd4c-4601-8479-8cb807f169f2">
+				<File Id = "idUsbSFile" Name ="idUsb.sys" Source ="!(loc.L1_TP4100PKGFiles)\idUsb.sys" KeyPath ="yes" />
+			</Component>
+		</ComponentGroup>
+
+		<ComponentGroup Id="ID700Comps" Directory="BINARIES700DIR">
+			<Component Id="ID700"
+					   Guid="{0DC9D02D-9BFD-467B-A47F-4904D45D5BF8}">
+				<File Id="cm_3x3_calibration.dll"
+					  Name="CM_3x3_Calibration.dll"
+					  Source="!(loc.TPLSCOREFiles)\CM_3x3_Calibration.dll" />
+				<File Id="cm_3x3_livemode.dll"
+					  Name="CM_3x3_LiveMode.dll"
+					  Source="!(loc.TPLSCOREFiles)\CM_3x3_LiveMode.dll" />
+				<File Id="cm_3x3_scanner.dll"
+					  Name="CM_3x3_Scanner.dll"
+					  Source="!(loc.TPLSCOREFiles)\CM_3x3_Scanner.dll" />
+				<File Id="cm_printprocessing_3x3.dll"
+					  Name="CM_PrintProcessing_3x3.dll"
+					  Source="!(loc.TPLSCOREFiles)\CM_PrintProcessing_3x3.dll" />
+				<File Id="id700.info"
+					  Name="id700.info"
+					  Source="!(loc.TPLSCOREFiles)\id700.info" />
+			</Component>
+		</ComponentGroup>
+		
+		
+
+		
+
+	</Fragment>
+</Wix>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+	<String Id="SCANCTRLPKGFiles">..\packages\ScanCtrl.1.0.0\content</String>
+	<String Id="PLATFORMSPKGFiles">..\packages\crossmatch.8.0.0.20\content\Platforms</String>
+	<String Id="CMT442PKGFiles">..\packages\CMT442.1.0.0\content</String>
+	<String Id="LSSCANUSBPKGFiles">..\packages\crossmatch.8.0.0.20\content\Drivers\LScan_USB</String>
+	<String Id="L1_TP4100PKGFiles">..\packages\L1_TP4100.1.0.0\content</String>
+	<String Id="TPLSPAYLOADPKGFiles">..\packages\TPLS_PayloadProcessor.1.0.0\content</String>
+	<String Id="TPLSCOREFiles">..\packages\TPLS.Core.1.0.7\content</String>
+	<String Id="CLIENTINTERFACESFiles">..\Client.Interfaces\bin\x86\Release</String>
+	<String Id="CLIENTLEGACYFiles">..\Client.Legacy.Proxy\bin\x86\Release</String>
+	<String Id="ComExcepFiles">..\Common.Exceptions\bin\x86\Release</String>
+	<String Id="ComExcepInterFiles">..\Common.Exceptions.Interfaces\bin\x86\Release</String>
+	<String Id="ORCHESTRATIONFiles">..\Orchestration.ClientCommunications.Registrar\bin\x86\Release</String>
+	<String Id="AWAREFiles">..\Common.Vendor.Aware\bin\x86\Release</String>
+	<String Id="AWARESequenceFiles">..\Common.Vendor.Cogent\bin\x86\Release</String>
+	<String Id="CMBSHAREDFiles">..\CBM.Shared\bin\x86\Release</String>
+	<String Id="CMLegacyFiles">..\Common.Legacy\bin\x86\Release</String>
+	<String Id="CMDataFiles">..\Common.Data\bin\x86\Release</String>
+	<String Id="CVCDataFiles">..\Common.Vendor.Cogent\bin\x86\Release</String>
+	<String Id="CVCMDataFiles">..\Common.Vendor.CrossMatch\bin\x86\Release</String>
+	<String Id="CVNISTDataFiles">..\Common.Vendor.NIST\bin\x86\Release</String>
+	<String Id="DataAccessFiles">..\DataAccess\bin\x86\Release</String>
+	<String Id="ProAccessFiles">..\Processing.Accessors\bin\x86\Release</String>
+	<String Id="OrchesDisFiles">..\Orchestration.Dispatcher\bin\x86\Release</String>
+	<String Id="OrchesCliComFiles">..\Orchestration.ClientCommunication\bin\x86\Release</String>
+	<String Id="OrchesCliComIFiles">..\Orchestration.ClientCommunication.Interfaces\bin\x86\Release</String>
+	<String Id="OrchesDisIFiles">..\Orchestration.Dispatcher.Interfaces\bin\x86\Release</String>
+	<String Id="TPLSDataAccess">..\DataAccess.Oracle\bin\x86\Release</String>
+	
+</WixLocalization>

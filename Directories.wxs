@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+	 xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+
+				<Directory Id="INSTALLDIR" Name="Department of State">
+					<!--<Merge Id="MsVc100crt"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\Microsoft_VC100_CRT_x86.msm"
+							   DiskId="1"/>
+					<Merge Id="MsVc100mfc"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\Microsoft_VC100_MFC_x86.msm"
+							   DiskId="1"/>
+					<Merge Id="MsVc90crt"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\Microsoft_VC90_CRT_x86.msm"
+							   DiskId="1"/>-->
+
+					<Directory Id="TPLSDIR" Name="TPLS">
+						<Directory Id="InputOutputDir" Name="FileInputOutput">
+							<Component Id="CompInOut" Guid="AECFF5A7-37AA-4604-A7FD-0B7CCE2CA8F2">
+								<CreateFolder>
+									<util:PermissionEx User="Authenticated Users" GenericAll="yes"/>
+								</CreateFolder>
+							</Component>
+						</Directory>
+
+						<!--<Merge Id="MsVc80atl"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\Microsoft_VC80_ATL_x86.msm"
+							   DiskId="1"/>
+						<Merge Id="MsVc80crt"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\Microsoft_VC80_CRT_x86.msm"
+							   DiskId="1"/>
+						<Merge Id="MsVc80mfc"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\Microsoft_VC80_MFC_x86.msm"
+							   DiskId="1"/>
+						<Merge Id="mfc42msm"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\MFC42.MSM"
+							   DiskId="1"/>
+						<Merge Id="MsVc80mfcloc"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\Microsoft_VC80_MFCLOC_x86.msm"
+							   DiskId="1"/>
+						<Merge Id="Msvcirtmsm"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\MSVCIRT.MSM"
+							   DiskId="1"/>
+						<Merge Id="msxmlw32"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\msxml3_wim32.msm"
+							   DiskId="1"/>
+						<Merge Id="MsVc100atl"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\Microsoft_VC100_ATL_x86.msm"
+							   DiskId="1"/>
+						<Merge Id="MsVc60msm"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\MSVCP60.MSM"
+							   DiskId="1"/>
+						<Merge Id="MsVc100mfcloc"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\Microsoft_VC100_MFCLOC_x86.msm"
+							   DiskId="1"/>
+
+						<Merge Id="MsVc100op"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\Microsoft_VC100_OpenMP_x86.msm"
+							   DiskId="1"/>
+						<Merge Id="MsVc90atl"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\Microsoft_VC90_ATL_x86.msm"
+							   DiskId="1"/>
+						<Merge Id="MsVc90mfcloc"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\Microsoft_VC90_MFCLOC_x86.msm"
+							   DiskId="1"/>
+
+						<Merge Id="MsVc90op"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\Microsoft_VC90_OpenMP_x86.msm"
+							   DiskId="1"/>
+						<Merge Id="MsVc80op"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\Microsoft_VC80_OpenMP_x86.msm"
+							   DiskId="1"/>
+						<Merge Id="VcUsrCrt"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\VC_User_CRT71_RTL_X86.msm"
+							   DiskId="1"/>
+						<Merge Id="atlmsm"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\ATL.MSM"
+							   DiskId="1"/>
+						<Merge Id="msxml4sys"
+							   Language="1033"
+							   SourceFile="!(loc.TPLSCOREFiles)\msxml4sys32.msm"
+							   DiskId="1"/>-->
+						<Directory Id="CMT442DIR" Name="CMT442">
+
+						</Directory>
+						<Directory Id="DRIVERSDIR" Name="Drivers">
+							<Directory Id="CROSSMATCHDIR" Name="CrossMatch">
+								<Directory Id="CRUSBDIR" Name="USB">
+									<Directory Id="CRWIN10DIR" Name="Win10">
+
+									</Directory>
+								</Directory>
+							</Directory>
+							<Directory Id="L1TP4100DIR" Name="L1_TP4100">
+								<Directory Id="LTPUSBDIR" Name="USB">
+									<Directory Id="LTPWIN10DIR" Name="Win10">
+
+									</Directory>
+								</Directory>
+							</Directory>
+						</Directory>
+						<Directory Id="ID700DIR" Name="ID700">
+							<Directory Id="BINARIES700DIR" Name="binaries">
+
+							</Directory>
+						</Directory>
+						<Directory Id="PLATFORMSDIR" Name="Platforms">
+
+						</Directory>
+						<Directory Id="SCANCTRLDIR" Name="ScanCtrl">
+							<Directory Id="SCANCTRLBINARIESDIR" Name="binaries">
+
+							</Directory>
+						</Directory>
+					</Directory>
+					<Directory Id="TPLSCLIENTDIR" Name="TPLS_Client">
+						<Directory Id="GAC" Name="GAC">
+
+						</Directory>
+					</Directory>
+				</Directory>
+			</Directory>
+			<!--<Directory Id="WindowsFolder">
+				-->
+			<!--<Directory Id="SystemFolder" />-->
+			<!--
+			</Directory>-->
+
+		</Directory>
+
+
+	</Fragment>
+</Wix>

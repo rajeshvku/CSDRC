@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+	 xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+	<Fragment>
+		<ComponentGroup  Id="TPLSDirRegistryComponentFiles" Directory="TPLSDIR">
+
+			<Component Id="Aware_FastCapture_32" Guid="5562278D-EBED-4C22-ABD5-BE1EB381F7B2">
+				<File Id="aware.awfastcapture.dll1"
+					  Name="Aware.AwFastCapture.dll"
+					  Source="!(loc.CMLegacyFiles)\Aware.AwFastCapture.dll" />
+				<File Id="awfastcapture.dll1"
+					  Name="AwFastCapture.dll"
+					  Source="!(loc.TPLSCOREFiles)\AwFastCapture.dll" />
+			</Component>
+			<Component Id="Aware_Original_dependacies" Guid="B031B8A2-DA77-4581-BA99-D768659740C8">
+				<File Id="ac_iow32.dll" Name="ac_iow32.dll" Source="!(loc.TPLSCOREFiles)\ac_iow32.dll" />
+				<File Id="awextract.dll" Name="awextract.dll"  Source="!(loc.TPLSCOREFiles)\awextract.dll"  />
+				<File Id="awmatch.dll" Name="awmatch.dll" Source="!(loc.TPLSCOREFiles)\awmatch.dll" />
+				<File Id="awquality.dll" Name="awquality.dll" Source="!(loc.TPLSCOREFiles)\awquality.dll" />
+				<File Id="awsegment.dll" Name="awsegment.dll"  Source="!(loc.TPLSCOREFiles)\awsegment.dll" />
+				<File Id="awsequencecontrol.dll" Name="AwSequenceControl.dll"  Source="!(loc.TPLSCOREFiles)\AwSequenceControl.dll" SelfRegCost="1"  />
+				<File Id="awslap.dll" Name="awslap.dll" Source="!(loc.TPLSCOREFiles)\awslap.dll" />
+			</Component>
+			<Component Id="Aware_SequenceCheck_32" Guid="444924D0-680D-419F-856E-0F52B2513EF3">
+				<File Id="aware.awsequence.dll1"
+					  Name="Aware.AwSequence.dll"
+					  Source="!(loc.CMLegacyFiles)\Aware.AwSequence.dll"/>
+				<File Id="awsequence.dll2"
+					  Name="awsequence.dll"
+					  Source="!(loc.TPLSCOREFiles)\awsequence.dll"/>
+			</Component>
+			<Component Id="Aware_WSQ1000_32" Guid="{17499394-22FC-4DEF-A455-6A28B2F043C4}">
+				<File Id="aware.awwsq1000.dll1"
+					  Name="Aware.AwWsq1000.dll"
+					  Source="!(loc.CMLegacyFiles)\Aware.AwWsq1000.dll" />
+				<File Id="wsq1000.dll1"
+					  Name="wsq1000.dll"
+					  Source="!(loc.TPLSCOREFiles)\wsq1000.dll" />
+			</Component>
+
+			<Component Id="CBMShared" Guid="{5CA8F37B-CCE0-40BA-A23E-5CBBE1897B29}">
+				<File Id="cbm.shared.dll"
+					  Name="CBM.Shared.dll"
+					  Source="!(loc.CMBSHAREDFiles)\CBM.Shared.dll"/>
+				<File Id="interop.comadmin.dll"
+					  Name="Interop.COMAdmin.dll"
+					  Source="!(loc.CMBSHAREDFiles)\Interop.COMAdmin.dll"  />
+			</Component>
+			<Component Id="Cogent" Guid="{CE11B35E-0954-4A18-AA51-BEBB715FD260}">
+				<File Id="acogent.exe" Name="ACogent.exe" Source="!(loc.TPLSCOREFiles)\ACogent.exe" />
+				<File Id="ci_utils.dll" Name="CI_Utils.dll" Source="!(loc.TPLSCOREFiles)\CI_Utils.dll" />
+				<File Id="csitools.dll" Name="Csitools.dll" Source="!(loc.TPLSCOREFiles)\Csitools.dll" />
+				<File Id="gear32pd.dll" Name="GEAR32PD.DLL" Source="!(loc.TPLSCOREFiles)\GEAR32PD.DLL"/>
+				<File Id="gear32sd.dll" Name="gear32sd.dll" Source="!(loc.TPLSCOREFiles)\gear32sd.dll"/>
+				<File Id="p2u_prcs.dll" Name="p2u_prcs.dll" Source="!(loc.TPLSCOREFiles)\p2u_prcs.dll" />
+				<File Id="prcs32.dll" Name="prcs32.dll" Source="!(loc.TPLSCOREFiles)\prcs32.dll" />
+			</Component>
+			<Component Id="CrossMatch_Redistributable" Guid="{51B5A2FF-B7EA-4B2E-AB15-2637D2B7074F}">
+				<File Id="cmtfinger.dll" Name="cmtfinger.dll"  Source="!(loc.TPLSCOREFiles)\cmtfinger.dll"/>
+				<File Id="ls1394.dll" Name="LS1394.dll" Source="!(loc.TPLSCOREFiles)\LS1394.dll"/>
+				<File Id="ls_usb_stub.dll" Name="LS_USB_Stub.dll"  Source="!(loc.TPLSCOREFiles)\LS_USB_Stub.dll"/>
+				<File Id="ls_usb_stub_100.dll" Name="LS_USB_Stub_100.dll" Source="!(loc.TPLSCOREFiles)\LS_USB_Stub_100.dll"/>
+				<File Id="ls_usb_stub_us.dll" Name="LS_USB_Stub_Us.dll"  Source="!(loc.TPLSCOREFiles)\LS_USB_Stub_Us.dll"/>
+			</Component>
+			<Component Id="L1_Redistributable" Guid="{2788D7CE-641F-426F-B16C-0486E69B2990}">
+				<File Id="id1394.dll" Name="id1394.dll" Source="!(loc.TPLSCOREFiles)\id1394.dll"/>
+				<File Id="idimf.dll" Name="IdImf.dll" Source="!(loc.TPLSCOREFiles)\IdImf.dll"/>
+				<File Id="idimq.dll" Name="IdImq.dll" Source="!(loc.TPLSCOREFiles)\IdImq.dll"/>
+				<File Id="idxtiff.dll" Name="IdxTiff.dll" Source="!(loc.TPLSCOREFiles)\IdxTiff.dll"/>
+				<File Id="pthreadvc.dll" Name="pthreadVC.dll"  Source="!(loc.TPLSCOREFiles)\pthreadVC.dll"/>
+				<File Id="saligen.dll" Name="saligen.dll" Source="!(loc.TPLSCOREFiles)\saligen.dll"/>
+				<File Id="salijag1.dll" Name="salijag1.dll" Source="!(loc.TPLSCOREFiles)\salijag1.dll"/>
+				<File Id="saliuni.dll" Name="saliuni.dll" Source="!(loc.TPLSCOREFiles)\saliuni.dll"/>
+				<File Id="saliusb.dll" Name="saliusb.dll" Source="!(loc.TPLSCOREFiles)\saliusb.dll"/>
+				<File Id="tpapi.dll" Name="tpapi.dll" Source="!(loc.TPLSCOREFiles)\tpapi.dll"/>
+			</Component>
+			<Component Id="LScanEssentials.dll" Guid="{A3BACA98-7522-43AB-8E87-07B3CD344F44}">
+				<File Id="lscanessentials.dll" Name="LScanEssentials.dll" Source="!(loc.TPLSCOREFiles)\LScanEssentials.dll"/>
+			</Component>
+			<Component Id="LScanEssentialsBioBase.dll" Guid="{424AE844-399F-4388-B167-900B7D5B182D}">
+				<File Id="lscanessentialsbiobase.dll" Name="LScanEssentialsBioBase.dll" Source="!(loc.TPLSCOREFiles)\LScanEssentialsBioBase.dll"/>
+			</Component>
+			<Component Id="LegacyConnectionManagerEncrypter" Guid="{3CA75CA2-9F19-46DC-9353-9927341B2133}">
+				<File Id="connectionmanagerencrypter.d" Name="ConnectionManagerEncrypter.dll" Source="!(loc.TPLSCOREFiles)\ConnectionManagerEncrypter.dll"/>
+			</Component>
+			<Component Id="Oracle.ManagedDataAccess.dll" Guid="{1738891A-7E6D-4686-BFB0-163027E4648D}">
+				<File Id="oracle.managedDataAccess.dll" Name="Oracle.ManagedDataAccess.dll" Source="!(loc.TPLSCOREFiles)\Oracle.ManagedDataAccess.dll"/>
+			</Component>
+			
+			<Component Id="Qt5Core.dll" Guid="{C11280A2-5E2D-405D-AAD2-EC092AACE8D2}">
+				<File Id="qt5core.dll" Name="Qt5Core.dll" Source="!(loc.TPLSCOREFiles)\Qt5Core.dll"/>
+			</Component>
+			<Component Id="Qt5Gui.dll" Guid="{DA0B37FF-8CB5-4316-BFFB-BD76A421BAB4}">
+				<File Id="qt5gui.dll" Name="Qt5Gui.dll" Source="!(loc.TPLSCOREFiles)\Qt5Gui.dll"/>
+			</Component>
+			<Component Id="Qt5Multimedia.dll" Guid="{2E420385-2FCE-4995-BB6A-12D06CAA2D65}">
+				<File Id="qt5multimedia.dll" Name="Qt5Multimedia.dll" Source="!(loc.TPLSCOREFiles)\Qt5Multimedia.dll"/>
+			</Component>
+			<Component Id="Qt5MultimediaWidgets.dll" Guid="{FEFE89B4-9B0D-40D0-A0BB-D2323DA7C67F}">
+				<File Id="qt5multimediawidgets.dll" Name="Qt5MultimediaWidgets.dll" Source="!(loc.TPLSCOREFiles)\Qt5MultimediaWidgets.dll"/>
+			</Component>
+			<Component Id="Qt5Network.dll" Guid="{6329E5B7-5E32-48CB-BC1C-6153215D5B66}">
+				<File Id="qt5network.dll" Name="Qt5Network.dll" Source="!(loc.TPLSCOREFiles)\Qt5Network.dll"/>
+			</Component>
+			<Component Id="Qt5Nfc.dll" Guid="{BC499D15-DD84-4A95-95CC-69032E2596F6}">
+				<File Id="qt5nfc.dll" Name="Qt5Nfc.dll" Source="!(loc.TPLSCOREFiles)\Qt5Nfc.dll"/>
+			</Component>
+			<Component Id="Qt5OpenGL.dll" Guid="{37B8A45D-BD56-412B-A18B-CA48B36819F6}">
+				<File Id="qt5opengl.dll" Name="Qt5OpenGL.dll" Source="!(loc.TPLSCOREFiles)\Qt5OpenGL.dll"/>
+			</Component>
+			<Component Id="Qt5Positioning.dll" Guid="{44531219-DD80-4360-86BB-3E9EF01B7190}">
+				<File Id="qt5positioning.dll" Name="Qt5Positioning.dll" Source="!(loc.TPLSCOREFiles)\Qt5Positioning.dll"/>
+			</Component>
+			<Component Id="Qt5PrintSupport.dll" Guid="{0510AA88-8165-49D1-BA2B-02CE93F7F569}">
+				<File Id="qt5printsupport.dll" Name="Qt5PrintSupport.dll" Source="!(loc.TPLSCOREFiles)\Qt5PrintSupport.dll"/>
+			</Component>
+			<Component Id="Qt5Qml.dll" Guid="{4E56DE50-1926-46EB-8FBB-525481732625}">
+				<File Id="qt5qml.dll" Name="Qt5Qml.dll" Source="!(loc.TPLSCOREFiles)\Qt5Qml.dll"/>
+			</Component>
+			<Component Id="Qt5Quick.dll" Guid="{BA925C3E-947F-4676-873C-65E845F6389A}">
+				<File Id="qt5quick.dll" Name="Qt5Quick.dll" Source="!(loc.TPLSCOREFiles)\Qt5Quick.dll"/>
+			</Component>
+			<Component Id="Qt5Sensors.dll" Guid="{685B24A7-52F4-4009-A1F9-DE9F5BE42288}">
+				<File Id="qt5sensors.dll" Name="Qt5Sensors.dll" Source="!(loc.TPLSCOREFiles)\Qt5Sensors.dll"/>
+			</Component>
+			<Component Id="Qt5Sql.dll" Guid="{EE1B2912-61F0-4111-BA59-2C60AF9E5BC3}">
+				<File Id="qt5sql.dll" Name="Qt5Sql.dll" Source="!(loc.TPLSCOREFiles)\Qt5Sql.dll"/>
+			</Component>
+			<Component Id="Qt5WebChannel.dll" Guid="{EB3A6B9D-7B0D-49A7-B647-CB2706107EB6}">
+				<File Id="qt5webchannel.dll" Name="Qt5WebChannel.dll" Source="!(loc.TPLSCOREFiles)\Qt5WebChannel.dll"/>
+			</Component>
+			<Component Id="Qt5WebKit.dll" Guid="{545F4DDB-88D3-4CC9-82EA-2EAA90579243}">
+				<File Id="qt5webkit.dll" Name="Qt5WebKit.dll" Source="!(loc.TPLSCOREFiles)\Qt5WebKit.dll"/>
+			</Component>
+			<Component Id="Qt5WebKitWidgets.dll" Guid="{B05DE8D0-C31C-411B-B696-34CE9FB767AE}">
+				<File Id="qt5webkitwidgets.dll" Name="Qt5WebKitWidgets.dll" Source="!(loc.TPLSCOREFiles)\Qt5WebKitWidgets.dll"/>
+			</Component>
+			<Component Id="Qt5Widgets.dll" Guid="{0EB1AB03-4165-46B6-9391-CA1D50048520}">
+				<File Id="qt5widgets.dll" Name="Qt5Widgets.dll" Source="!(loc.TPLSCOREFiles)\Qt5Widgets.dll"/>
+			</Component>
+			<Component Id="Qt5Xml.dll" Guid="{B26ED08E-1F49-4CB6-9F87-008281A86CCF}">
+				<File Id="qt5xml.dll" Name="Qt5Xml.dll" Source="!(loc.TPLSCOREFiles)\Qt5Xml.dll"/>
+			</Component>
+			<Component Id="TenPrintLiveScan" Guid="1BCC51AA-2997-43CC-A7CE-D5BB90EB7050">
+				<File Id="microsoft.applicationblocks"
+					  Name="Microsoft.ApplicationBlocks.Data.xml"
+					  Source="!(loc.TPLSDataAccess)\Microsoft.ApplicationBlocks.Data.xml" />
+
+				<File Id="objsafe.tlb"
+					  Name="objsafe.tlb"
+					  Source="!(loc.TPLSCOREFiles)\objsafe.tlb" />
+
+				<File Id="tpls.common.data.dll"
+					  Name="TPLS.Common.Data.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Common.Data.dll" />
+
+				<File Id="tpls.common.data.interfaces"
+					  Name="TPLS.Common.Data.Interfaces.dll"
+					  Source="!(loc.CLIENTLEGACYFiles)\TPLS.Common.Data.Interfaces.dll" />
+
+				<File Id="tpls.common.exceptions.dll"
+					  Name="TPLS.Common.Exceptions.dll"
+					  Source="!(loc.ComExcepFiles)\TPLS.Common.Exceptions.dll" />
+
+				<File Id="tpls.common.exceptions.inter" Name="TPLS.Common.Exceptions.Interfaces.dll" Source="!(loc.ComExcepInterFiles)\TPLS.Common.Exceptions.Interfaces.dll" />
+				<File Id="tpls.common.legacy.dll" Name="TPLS.Common.Legacy.dll" Source="!(loc.CMLegacyFiles)\TPLS.Common.Legacy.dll" />
+				<File Id="tpls.common.vendor.aware.dll" Name="TPLS.Common.Vendor.Aware.dll" Source="!(loc.CMDataFiles)\TPLS.Common.Vendor.Aware.dll" />
+				<File Id="tpls.common.vendor.cogent.dl" Name="TPLS.Common.Vendor.Cogent.dll" Source="!(loc.CVCDataFiles)\TPLS.Common.Vendor.Cogent.dll" />
+				<File Id="tpls.common.vendor.crossmatc" Name="TPLS.Common.Vendor.CrossMatch.dll" Source="!(loc.CVCMDataFiles)\TPLS.Common.Vendor.CrossMatch.dll" />
+				<File Id="tpls.common.vendor.identix.d" Name="TPLS.Common.Vendor.Identix.dll" Source="!(loc.OrchesDisFiles)\TPLS.Common.Vendor.Identix.dll" />
+				<File Id="tpls.common.vendor.nist.dll" Name="TPLS.Common.Vendor.NIST.dll" Source="!(loc.CVNISTDataFiles)\TPLS.Common.Vendor.NIST.dll" />
+				<File Id="tpls.dataaccess.dll"
+					  Name="TPLS.DataAccess.dll"
+					  Source="!(loc.ProAccessFiles)\TPLS.DataAccess.dll" />
+				<File Id="tpls.dataaccess.interfaces.d"
+					  Name="TPLS.DataAccess.Interfaces.dll"
+					  Source="!(loc.ProAccessFiles)\TPLS.DataAccess.Interfaces.dll" />
+				<File Id="tpls.dataaccess.oracle.dll"
+					  Name="TPLS.DataAccess.Oracle.dll"
+					  Source="!(loc.ProAccessFiles)\TPLS.DataAccess.Oracle.dll" />
+				<File Id="tpls.dataaccess.types.dll"
+					  Name="TPLS.DataAccess.Types.dll"
+					  Source="!(loc.ProAccessFiles)\TPLS.DataAccess.Types.dll" />
+				<File Id="tpls.hardware.fingerscanners"
+					  Name="TPLS.Hardware.FingerScanners.dll"
+					  Source="!(loc.OrchesDisFiles)\TPLS.Hardware.FingerScanners.dll"/>
+				<File Id="tpls.orchestration.clientcom1"
+					  Name="TPLS.Orchestration.ClientCommunications.dll"
+					  Source="!(loc.OrchesCliComFiles)\TPLS.Orchestration.ClientCommunications.dll"/>
+				<File Id="tpls.orchestration.clientcom2"
+					  Name="TPLS.Orchestration.ClientCommunications.Interfaces.dll"
+					  Source="!(loc.OrchesCliComIFiles)\TPLS.Orchestration.ClientCommunications.Interfaces.dll" />
+				<File Id="tpls.orchestration.configura"
+					  Name="TPLS.Orchestration.Configuration.dll"
+					  Source="!(loc.OrchesCliComFiles)\TPLS.Orchestration.Configuration.dll" />
+				<File Id="tpls.orchestration.configura1"
+					  Name="TPLS.Orchestration.Configuration.Interfaces.dll"
+					  Source="!(loc.OrchesCliComFiles)\TPLS.Orchestration.Configuration.Interfaces.dll" />
+				<File Id="tpls.orchestration.dispatche"
+					  Name="TPLS.Orchestration.Dispatcher.dll"
+					  Source="!(loc.OrchesCliComFiles)\TPLS.Orchestration.Dispatcher.dll" />
+				<File Id="tpls.orchestration.dispatche1"
+					  Name="TPLS.Orchestration.Dispatcher.Interfaces.dll"
+					  Source="!(loc.OrchesDisIFiles)\TPLS.Orchestration.Dispatcher.Interfaces.dll" />
+				<File Id="tpls.orchestration.drivers.d"
+					  Name="TPLS.Orchestration.Drivers.dll"
+					  Source="!(loc.OrchesCliComFiles)\TPLS.Orchestration.Drivers.dll" />
+				<File Id="tpls.orchestration.workflows"
+					  Name="TPLS.Orchestration.Workflows.dll"
+					  Source="!(loc.OrchesCliComFiles)\TPLS.Orchestration.Workflows.dll" />
+				<File Id="tpls.orchestration.workflows1"
+					  Name="TPLS.Orchestration.Workflows.Interfaces.dll"
+					  Source="!(loc.OrchesCliComFiles)\TPLS.Orchestration.Workflows.Interfaces.dll" />
+				<File Id="tpls.orchestration.workflows2"
+					  Name="TPLS.Orchestration.Workflows.Types.dll"
+					  Source="!(loc.OrchesCliComFiles)\TPLS.Orchestration.Workflows.Types.dll" />
+				<File Id="tpls.presentation.controls.d"
+					  Name="TPLS.Presentation.Controls.dll"
+					  Source="!(loc.OrchesCliComFiles)\TPLS.Presentation.Controls.dll" />
+				<File Id="tpls.presentation.dll"
+					  Name="TPLS.Presentation.dll"
+					  Source="!(loc.OrchesCliComFiles)\TPLS.Presentation.dll" />
+				<File Id="tpls.presentation.interfaces"
+					  Name="TPLS.Presentation.Interfaces.dll"
+					  Source="!(loc.OrchesCliComFiles)\TPLS.Presentation.Interfaces.dll" />
+				<File Id="tpls.processing.accessors.dl"
+					  Name="TPLS.Processing.Accessors.dll"
+					  Source="!(loc.OrchesCliComFiles)\TPLS.Processing.Accessors.dll" />
+				<File Id="tpls.processing.dll"
+					  Name="TPLS.Processing.dll"
+					  Source="!(loc.OrchesCliComFiles)\TPLS.Processing.dll" />
+				<File Id="tpls.processing.interfaces.d"
+					  Name="TPLS.Processing.Interfaces.dll"
+					  Source="!(loc.OrchesCliComFiles)\TPLS.Processing.Interfaces.dll" />
+			</Component>
+			<Component Id="SmithHeimannXP_DLL" Guid="{25846505-F9FF-4087-AA7C-D8656728EEBC}">
+				<File Id="_394hbs.dll" Name="1394HBS.dll" Source="!(loc.TPLSCOREFiles)\1394HBS.dll"/>
+				<File Id="capturedll.dll" Name="CaptureDLL.dll" Source="!(loc.TPLSCOREFiles)\CaptureDLL.dll"/>
+				<File Id="dheimann.dll" Name="DHeimann.dll" Source="!(loc.TPLSCOREFiles)\DHeimann.dll"/>
+				<File Id="ls_com.dll" Name="LS_COM.dll" Source="!(loc.TPLSCOREFiles)\LS_COM.dll"/>
+				<File Id="ls_grb.dll" Name="LS_GRB.dll" Source="!(loc.TPLSCOREFiles)\LS_GRB.dll"/>
+				<File Id="ls_hal.dll" Name="LS_HAL.dll" Source="!(loc.TPLSCOREFiles)\LS_HAL.dll"/>
+				<File Id="ls_ilm.cfg" Name="LS_ILM.cfg" Source="!(loc.TPLSCOREFiles)\LS_ILM.cfg"/>
+				<File Id="ls_ilm.dll" Name="LS_ILM.dll" Source="!(loc.TPLSCOREFiles)\LS_ILM.dll"/>
+				<File Id="ls_img.dll" Name="LS_IMG.dll" Source="!(loc.TPLSCOREFiles)\LS_IMG.dll"/>
+				<File Id="ls_itknd.dll" Name="LS_ITKND.dll" Source="!(loc.TPLSCOREFiles)\LS_ITKND.dll"/>
+				<File Id="ls_vis.dll" Name="LS_VIS.dll" Source="!(loc.TPLSCOREFiles)\LS_VIS.dll"/>
+				<File Id="lscan100.dll" Name="LSCAN100.dll" Source="!(loc.TPLSCOREFiles)\LSCAN100.dll"/>
+				<File Id="lscapturectrl.dll" Name="LsCaptureCtrl.dll" Source="!(loc.TPLSCOREFiles)\LsCaptureCtrl.dll"/>
+			</Component>
+			<Component Id="TplsOrchestrationClientCom" Guid="6c47970d-f1c3-4122-908d-62ff7ae6247b">
+				<File Id="TplsClientComExe"
+					  Name="TPLS.Orchestration.ClientCommunications.Server.exe"
+					  Source="!(loc.ORCHESTRATIONFiles)\TPLS.Orchestration.ClientCommunications.Server.exe"
+					  KeyPath="yes"/>
+
+			</Component>
+			<Component Id="TplsOrchestrationClientComconfig" Guid="9589B26C-529A-4A99-9517-8245D7158350" Permanent="yes">
+				<File Id="TplsClientComExeConfig"
+					  Name="TPLS.Orchestration.ClientCommunications.Server.exe.config"
+					  Source="!(loc.ORCHESTRATIONFiles)\TPLS.Orchestration.ClientCommunications.Server.exe.config"
+					  DiskId="1"
+					  KeyPath="yes" Vital="yes" />
+				<util:XmlFile Id="InOutConfig"
+								  File="[TPLSDIR]TPLS.Orchestration.ClientCommunications.Server.exe.config"
+								  Action="setValue"
+								  Value="[INSTALLDIR]TPLS\FileInputOutput\"
+								  ElementPath="//configuration/applicationSettings/TPLS.Orchestration.Properties.Settings/setting[\[]@name='FileInputOutputDirectory'[\]]/value"
+								  Sequence="1" />
+				<util:XmlFile Id="DataBackEndConfig"
+							  File="[TPLSDIR]TPLS.Orchestration.ClientCommunications.Server.exe.config"
+							  Action="setValue"
+							  Value="[VLOCATIONTYPE]"
+							  ElementPath="//configuration/applicationSettings/TPLS.Orchestration.Properties.Settings/setting[\[]@name='DataBackEnd'[\]]/value"
+							  Sequence="2" />
+				<util:XmlFile Id="DbTNSConfig"
+							  File="[TPLSDIR]TPLS.Orchestration.ClientCommunications.Server.exe.config"
+							  Action="setValue"
+							  Value="[VPOSTDBTNS]"
+							  ElementPath="//configuration/applicationSettings/TPLS.Orchestration.Properties.Settings/setting[\[]@name='PostDBTNS'[\]]/value"
+							  SelectionLanguage="XPath"
+							  Sequence="3" />
+				<util:XmlFile Id="ScoreConfig"
+							  File="[TPLSDIR]TPLS.Orchestration.ClientCommunications.Server.exe.config"
+							  Action="setValue"
+							  Value="5"
+							  ElementPath="//configuration/applicationSettings/TPLS.Orchestration.Properties.Settings/setting[\[]@name='ScoreThreshold'[\]]/value"
+							  Sequence="4" />
+				<util:XmlFile Id="PreviewConfig"
+							  File="[TPLSDIR]TPLS.Orchestration.ClientCommunications.Server.exe.config"
+							  Action="setValue"
+							  Value="False"
+							  ElementPath="//configuration/applicationSettings/TPLS.Orchestration.Properties.Settings/setting[\[]@name='PreviewCapturedImage'[\]]/value"
+							  Sequence="5" />
+				<util:XmlFile Id="DelayConfig"
+							  File="[TPLSDIR]TPLS.Orchestration.ClientCommunications.Server.exe.config"
+							  Action="setValue"
+							  Value="2000"
+							  ElementPath="//configuration/applicationSettings/TPLS.Orchestration.Properties.Settings/setting[\[]@name='BetweenTransactionDelay'[\]]/value"
+							  Sequence="6" />
+				<util:XmlFile Id="AttemptsConfig"
+							  File="[TPLSDIR]TPLS.Orchestration.ClientCommunications.Server.exe.config"
+							  Action="setValue"
+							  Value="100000"
+							  ElementPath="//configuration/applicationSettings/TPLS.Orchestration.Properties.Settings/setting[\[]@name='MaximumVerificationAttempts'[\]]/value"
+							  Sequence="7" />
+				<util:XmlFile Id="UIDelayConfig"
+							  File="[TPLSDIR]TPLS.Orchestration.ClientCommunications.Server.exe.config"
+							  Action="setValue"
+							  Value="1000"
+							  ElementPath="//configuration/applicationSettings/TPLS.Orchestration.Properties.Settings/setting[\[]@name='UserInterfaceFlashDelay'[\]]/value"
+							  Sequence="8" />
+				<util:XmlFile Id="DuplicateConfig"
+							  File="[TPLSDIR]TPLS.Orchestration.ClientCommunications.Server.exe.config"
+							  Action="setValue"
+							  Value="False"
+							  ElementPath="//configuration/userSettings/TPLS.Orchestration.Properties.Settings/setting[\[]@name='DuplicateCheck'[\]]/value"
+							  Sequence="9" />
+				<util:XmlFile Id="DirtyCheckConfig"
+							  File="[TPLSDIR]TPLS.Orchestration.ClientCommunications.Server.exe.config"
+							  Action="setValue"
+							  Value="True"
+							  ElementPath="//configuration/userSettings/TPLS.Orchestration.Properties.Settings/setting[\[]@name='ScannerDirtyCheck'[\]]/value"
+							  Sequence="10" />
+
+			</Component>
+
+
+			<!--Classes-->
+		</ComponentGroup>
+	</Fragment>
+</Wix>

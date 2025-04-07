@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+	 xmlns:util="http://schemas.microsoft.com/wix/UtilExtension" >
+	<Product Id="F4BA12B6-8614-47EB-BC61-D35F9DC16CA3"
+			 Name="Ten Print Live Scan"
+			 Language="1033" 
+			 Version="6.1.4" 
+			 Manufacturer="Department Of State" 
+			 UpgradeCode="f89c9f9d-1da0-42e8-82b2-d8374a9553d8">
+		<Package InstallerVersion ="300" 
+				 Compressed="yes" 
+				 InstallScope="perMachine" />
+		<MediaTemplate EmbedCab="yes"/>
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." 
+					  AllowSameVersionUpgrades ="yes"
+					  Schedule="afterInstallInitialize"
+					  RemoveFeatures="all"
+					  MigrateFeatures="yes"/>
+
+		
+		<UI Id="TPLSUI_InstallDir" >
+			<UIRef Id="WixUI_ErrorProgressText"/>
+			<!--<DailogRef Id="PostInformationDlg"/>-->
+			<UIRef Id="Custom_WixUI"/>
+			
+			<!-- Progress / Action Texts -->
+			<ProgressText Action="Install" Template="Installing [ProductName] ([Progress]) " />
+			
+
+		</UI>
+		<!-- Define Properties -->
+		<Property Id="VPOSTDBTNS" >
+			<RegistrySearch Id="SearchVPOSTDBTNS"
+							Root="HKLM"
+							Key="Software\Department of State\General Configuration"
+							Name="TNSName"
+							Type="raw" />
+		</Property>
+		<Property Id="ISJITCOMPILEINSTALLPROPERTYPARENT">
+			<RegistrySearch Id="SearchDotVersion"
+							Root="HKLM"
+							Key="Software\Microsoft\.NetFramework"
+							Name="InstallRoot"
+							Type="raw"/>
+		</Property>
+		<Property Id="VLOCATIONTYPE" Value="Database" />
+		<Property Id="POSTNAME" Value="0"/>
+		<Property Id="ARPPRODUCTION" Value="tenprintIcon"/>
+		<Property Id="ARPHELPTELEPHONE" Value="202-663-1177"/>
+		<Property Id="ARPCONTACT" Value="CA Support Desk"/>
+		<!--<Feature Id="msmFeature" Title="MSMPackages" AllowAdvertise="no" Display="hidden" Level="1">
+			<MergeRef Id="MsVc90crt"/>
+			<MergeRef Id="MsVc100crt"/>
+			<MergeRef Id="MsVc100mfc"/>
+			<MergeRef Id="MsVc80atl"/>
+			<MergeRef Id="MsVc80crt"/>
+			<MergeRef Id="MsVc80mfc"/>
+			<MergeRef Id="mfc42msm"/>
+			<MergeRef Id="MsVc80mfcloc"/>
+			<MergeRef Id="Msvcirtmsm"/>
+			<MergeRef Id="msxmlw32"/>
+			<MergeRef Id="MsVc100atl"/>
+			<MergeRef Id="MsVc60msm"/>
+			<MergeRef Id="MsVc100mfcloc"/>
+			<MergeRef Id="MsVc100op"/>
+			<MergeRef Id="MsVc90atl"/>
+			<MergeRef Id="MsVc90mfcloc"/>
+			<MergeRef Id="MsVc90op"/>
+			<MergeRef Id="MsVc80op"/>
+			<MergeRef Id="VcUsrCrt"/>
+			<MergeRef Id="atlmsm"/>
+			<MergeRef Id="msxml4sys"/>
+		</Feature>-->
+		
+		
+		<Feature Id="ProductFeature" Title="Ten Print Live Scan Client" Level="2">
+			<ComponentGroupRef Id="TPLSClientComponents" />
+			<ComponentGroupRef Id="SCANCTRLComponents" />
+			<ComponentGroupRef Id="PLATFORMComponents" />
+			<ComponentGroupRef Id="CMT442Components" />
+			<ComponentGroupRef Id="LSSCANUSBComponents" />
+			<ComponentGroupRef Id="LTP4Components" />
+			<ComponentGroupRef Id="ID700Comps" />
+
+			<ComponentGroupRef Id="TPLSDirRegistryComponentFiles" />
+			<ComponentGroupRef Id="AssemblyTPLSCLientFiles" />
+			<ComponentGroupRef Id="GacComponents"/>
+			<ComponentRef Id="CompInOut"/>
+			<!--<ComponentGroupRef Id="InstallDirFiles" />-->
+			<!--<ComponentGroupRef Id="COmCompoenetsFiles" />-->
+		</Feature>
+		
+		<Feature Id="idUsbFeature" Title="idUsb" Level="3" Display="collapse" AllowAdvertise="yes">
+			<Condition Level="0">Version &lt; 500</Condition>
+		</Feature>
+		<Feature Id="id1394eature" Title="id1394" Level="4" Display="collapse" AllowAdvertise="yes">
+			<Condition Level="0">Version &lt; 500</Condition>
+		</Feature>
+	</Product>
+	
+</Wix>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+		<UI Id="CustomWizard">
+			<Dialog Id="PostInformationDlg" Width="370" Height="270" Title="Post Information">
+				<Control Id="Title" Type="Text" X="15" Y="10" Width="340" Height="20" Transparent="yes" NoPrefix="yes">
+					<Text>Location Information</Text>
+				</Control>
+				<Control Id="Description" Type="Text" X="15" Y="40" Width="340" Height="20">
+					<Text>Please enter your information.</Text>
+				</Control>
+
+				<Control Id="PostDatabaseLabel" Type="Text" X="15" Y="70" Width="150" Height="15">
+					<Text>Post Database TNS:</Text>
+				</Control>
+				<Control Id="PostDatabaseTNS" Type="Edit" X="165" Y="68" Width="190" Height="18" Property="VPOSTDBTNS">
+					<Condition Action="disable">
+						<![CDATA[VLOCATIONTYPE  <> "Database"]]>
+					</Condition>
+					<Condition Action="enable">
+						<![CDATA[VLOCATIONTYPE = "Database"]]>
+					</Condition>
+				</Control>
+
+				<Control Id="ConnectionTypeLabel" Type="Text" X="15" Y="110" Width="200" Height="15">
+					<Text>This location connects to:</Text>
+				</Control>
+				<Control Id="PostDatabaseRadio" Type="RadioButtonGroup" X="25" Y="130" Width="190" Height="50" Property="VLOCATIONTYPE">
+					<RadioButtonGroup Property="VLOCATIONTYPE">
+						<RadioButton Value="Database" X="0" Y="0" Width="180" Height="15" Text="A Post Database"/>
+						<RadioButton Value="File" X="0" Y="25" Width="180" Height="15" Text="A WebService" />
+					</RadioButtonGroup>
+				</Control>
+
+				<Control Id="Back" Type="PushButton" X="180" Y="230" Width="56" Height="17" Default="no" Cancel="no" Text="Back">
+					<Publish Event="NewDialog" Value="WelcomeDlg">1</Publish>
+				</Control>
+				<Control Id="Next" Type="PushButton" X="240" Y="230" Width="56" Height="17" Default="yes" Cancel="no" Text="Next">
+					<Publish Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
+				</Control>
+				<Control Id="Cancel" Type="PushButton" X="300" Y="230" Width="56" Height="17" Default="no" Cancel="yes" Text="Cancel">
+					<Publish Event="SpawnDialog" Value="CancelDlg">1</Publish>
+				</Control>
+				
+			</Dialog>
+
+			
+		</UI>
+	</Fragment>
+</Wix>
